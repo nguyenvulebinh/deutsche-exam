@@ -112,6 +112,7 @@ function displayQuestion2() {
     // Reset radio buttons and styles
     document.querySelectorAll('input[name="answer"]').forEach(radio => {
         radio.checked = false;
+        radio.disabled = false;  // Re-enable radio buttons for the new question
     });
     document.querySelectorAll('.option-box').forEach(box => {
         box.classList.remove('correct', 'incorrect');
