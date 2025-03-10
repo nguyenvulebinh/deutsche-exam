@@ -1,296 +1,326 @@
 [
     {
-    "scenario": "Sie möchten ein Restaurant in Berlin finden. Wo finden Sie Informationen?",
-    "option_a": "www.berlinfood.de\nRestaurantführer Berlin\nFinden Sie die besten Pizzerien!\nBewertungen und Empfehlungen.",
-    "option_b": "www.berlinkunst.de\nKunstgalerien in Berlin\nExkursionen zu den besten Galerien.",
-    "answer": "a"
+      "scenario": "Sie möchten ein Kaffee trinken. Wo können Sie Informationen über ein Café finden?",
+      "option_b": "www.sportzentrum.de\nFitness für alle.\nKurse - Schwimmbad - Sauna\nÖffnungszeiten - Preise - Events",
+      "option_a": "www.cafehaus.de\nGemütliches Café in der Innenstadt.\nKaffee-Spezialitäten und Kuchen.\nÖffnungszeiten und Karte",
+      "answer": "a"
     },
     {
-    "scenario": "Sie interessieren sich für einen Sportverein in München. Wo bekommen Sie Informationen?",
-    "option_a": "www.muenchenatleten.de\nSportvereine in München\nHier finden Sie Fußball, Tennis und mehr.",
-    "option_b": "www.muenchenemail.de\nE-Mail Service für München\nAktuelle Nachrichten und Informationen.",
-    "answer": "a"
+      "scenario": "Sie möchten ein Hotel in Berlin buchen. Wo finden Sie Informationen?",
+      "option_b": "www.kinoberlin.de\nDas größte Kino in Berlin.\nAktuelle Filme - Tickets - Events\nAnfahrt - Preise",
+      "option_a": "[www.berlinhotel.com](https://www.berlinhotel.com)\nLuxus und Komfort in der Hauptstadt.\nZimmer buchen - Angebote - Galerie\nKontakt - Anfahrt",
+      "answer": "b"
     },
     {
-    "scenario": "Sie suchen ein Hotel in Frankfurt. Wo finden Sie Informationen?",
-    "option_a": "www.frankfurthotels.de\nBeste Hotels in Frankfurt\nPreise und Verfügbarkeit.\nReservieren Sie jetzt!",
-    "option_b": "www.frankfurtbank.de\nBankdienstleistungen in Frankfurt\nKontoeröffnung.\nKredite und Darlehen.",
-    "answer": "a"
+      "scenario": "Sie suchen ein Rezept für Apfelkuchen. Wo finden Sie es?",
+      "option_a": "www.blumenladen.de\nBlumen für jeden Anlass.\nRosen - Tulpen - Orchideen\nBestellen - Kontakt",
+      "option_b": "www.kochwelt.de\nLeckere Rezepte zum Nachkochen.\nApfelkuchen - Desserts - Vegetarisch\nKochtipps - Videos",
+      "answer": "b"
     },
     {
-    "scenario": "Sie möchten nach Stuttgart ziehen. Wo finden Sie Informationen über die Stadt?",
-    "option_a": "www.stuttgartinfo.de\nStadtinformationen Stuttgart\nSehenswürdigkeiten und Veranstaltungen.",
-    "option_b": "www.stuttgartspiel.com\nSpiele und Rätsel für Kinder\nUnterhaltung und Spaß.",
-    "answer": "a"
+      "scenario": "Sie brauchen Hilfe beim Verständnis einer deutschen Karte. Wo finden Sie Informationen?",
+      "option_a": "www.lernkarten.de\nKarten für Studenten.\nSprachkarten - Deutsche Grammatik - Vokabeln\nOnlinekurse - Übungen",
+      "option_b": "www.outdoorstore.de\nCamping- und Wanderbedarf.\nZelte - Rucksäcke - Schlafsäcke\nShop - Angebote - Kontakt",
+      "answer": "a"
     },
     {
-    "scenario": "Sie wollen eine Stadtführung in Hamburg machen. Wo finden Sie Informationen?",
-    "option_a": "www.hamburgtour.de\nStadtführungen in Hamburg\nBuchen Sie Ihr Ticket heute!",
-    "option_b": "www.hamburgnews.de\nNachrichten aus Hamburg\nAktuelle Informationen und Ereignisse.",
-    "answer": "a"
+      "scenario": "Sie möchten ein Fahrrad mieten. Wo finden Sie Informationen?",
+      "option_a": "www.fahrradverleih.de\nFahrräder für die Stadt und das Land.\nVerfügbarkeit - Preise - Stationen\nReservierung - Kontakt",
+      "option_b": "www.schuhe.de\nBeste Schuhe für Sport und Freizeit.\nSale - Neuheiten - Tipps\nKontakt - Standorte",
+      "answer": "a"
     },
     {
-    "scenario": "Sie möchten Informationen über öffentliche Verkehrsmittel in Köln. Wo finden Sie diese?",
-    "option_a": "www.koelnverkehre.de\nFahrpläne und Ticketpreise für Köln\nBus und Bahn Informationen.",
-    "option_b": "www.koelnpark.de\nParks und Grünflächen in Köln\nNatur erleben.",
-    "answer": "a"
+      "scenario": "Sie möchten ein Restaurant in Berlin finden. Wo finden Sie Informationen?",
+      "option_a": "www.berlinkunst.de\nKunstgalerien in Berlin\nExkursionen zu den besten Galerien.",
+      "option_b": "www.berlinfood.de\nRestaurantführer Berlin\nFinden Sie die besten Pizzerien!\nBewertungen und Empfehlungen.",
+      "answer": "b"
     },
     {
-    "scenario": "Sie planen einen Besuch in der Oper in Dresden. Wo finden Sie Informationen?",
-    "option_a": "www.dresdenoper.de\nAktuelle Aufführungen und Tickets.\nErleben Sie Kultur in Dresden.",
-    "option_b": "www.dresdentourismus.de\nAllgemeine Touristeninformationen.\nEssen und Trinken.",
-    "answer": "a"
+      "scenario": "Sie interessieren sich für einen Sportverein in München. Wo bekommen Sie Informationen?",
+      "option_b": "www.muenchenemail.de\nE-Mail Service für München\nAktuelle Nachrichten und Informationen.",
+      "option_a": "www.muenchenatleten.de\nSportvereine in München\nHier finden Sie Fußball, Tennis und mehr.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie suchen einen Kiosk in Ihrer Nähe. Wo finden Sie Informationen?",
-    "option_a": "www.kioskfinder.de\nFinden Sie Kioske in Ihrer Stadt\nSnacks und Getränke.",
-    "option_b": "www.stadtparke.de\nParks in der Stadt\nVeranstaltungen und Spiele.",
-    "answer": "a"
+      "scenario": "Sie suchen ein Hotel in Frankfurt. Wo finden Sie Informationen?",
+      "option_a": "www.frankfurthotels.de\nBeste Hotels in Frankfurt\nPreise und Verfügbarkeit.\nReservieren Sie jetzt!",
+      "option_b": "www.frankfurtbank.de\nBankdienstleistungen in Frankfurt\nKontoeröffnung.\nKredite und Darlehen.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie möchten einen Flug nach München buchen. Wo finden Sie Informationen?",
-    "option_a": "www.muenchenflughafen.de\nFluggesellschaften und Preise.\nBuchung leicht gemacht.",
-    "option_b": "www.muenchenreise.de\nReiseberichte und Tipps.\nPrivate Unterkünfte.",
-    "answer": "a"
+      "scenario": "Sie möchten nach Stuttgart ziehen. Wo finden Sie Informationen über die Stadt?",
+      "option_a": "www.stuttgartinfo.de\nStadtinformationen Stuttgart\nSehenswürdigkeiten und Veranstaltungen.",
+      "option_b": "[www.stuttgartspiel.com](https://www.google.com/search?q=https://www.stuttgartspiel.com)\nSpiele und Rätsel für Kinder\nUnterhaltung und Spaß.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie suchen nach einem Arzt in Berlin. Wo finden Sie Informationen?",
-    "option_a": "www.arztberlin.de\nÄrzteverzeichnis Berlin\nBewertungen und Kontakt.",
-    "option_b": "www.berlinreise.de\nReisetipps für Berlin\nSehenswürdigkeiten und Essen.",
-    "answer": "a"
+      "scenario": "Sie wollen eine Stadtführung in Hamburg machen. Wo finden Sie Informationen?",
+      "option_b": "www.hamburgnews.de\nNachrichten aus Hamburg\nAktuelle Informationen und Ereignisse.",
+      "option_a": "www.hamburgtour.de\nStadtführungen in Hamburg\nBuchen Sie Ihr Ticket heute!",
+      "answer": "a"
     },
     {
-    "scenario": "Sie möchten Ihre Deutschkenntnisse verbessern. Wo finden Sie Sprachkurse?",
-    "option_a": "www.deutschlernen.de\nSprachkurse für jedes Niveau\nIn Köln und Düsseldorf.",
-    "option_b": "www.deutschmusik.de\nDeutschsprachige Musik\nTop Hits und Playlist.",
-    "answer": "a"
+      "scenario": "Sie möchten Informationen über öffentliche Verkehrsmittel in Köln. Wo finden Sie diese?",
+      "option_b": "www.koelnpark.de\nParks und Grünflächen in Köln\nNatur erleben.",
+      "option_a": "www.koelnverkehre.de\nFahrpläne und Ticketpreise für Köln\nBus und Bahn Informationen.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie interessieren sich für die besten Cafés in Leipzig. Wo erfahren Sie mehr?",
-    "option_a": "www.leipzigcafes.de\nListe der besten Cafés in Leipzig\nÖffnungszeiten und Bewertungen.",
-    "option_b": "www.leipzigsport.de\nSportveranstaltungen in Leipzig\nErgebnisse und Neuigkeiten.",
-    "answer": "a"
+      "scenario": "Sie planen einen Besuch in der Oper in Dresden. Wo finden Sie Informationen?",
+      "option_a": "www.dresdenoper.de\nAktuelle Aufführungen und Tickets.\nErleben Sie Kultur in Dresden.",
+      "option_b": "www.dresdentourismus.de\nAllgemeine Touristeninformationen.\nEssen und Trinken.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie möchten in einem Schwimmbad in Hannover schwimmen gehen. Wo finden Sie Informationen?",
-    "option_a": "www.hannoverschwimmbad.de\nÖffnungszeiten und Preise.\nViele Schwimmmöglichkeiten!",
-    "option_b": "www.hannoverautos.de\nAuto-Verkaufsanzeigen\nFahrzeuge zu verkaufen.",
-    "answer": "a"
+      "scenario": "Sie suchen einen Kiosk in Ihrer Nähe. Wo finden Sie Informationen?",
+      "option_b": "www.stadtparke.de\nParks in der Stadt\nVeranstaltungen und Spiele.",
+      "option_a": "www.kioskfinder.de\nFinden Sie Kioske in Ihrer Stadt\nSnacks und Getränke.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie suchen nach einem Kindergarten für Ihr Kind. Wo finden Sie Informationen?",
-    "option_a": "www.kindergartenfinder.de\nFinden Sie Kindergärten in Ihrer Nähe\nDetails und Bewertungen.",
-    "option_b": "www.kinderbuch.de\nBücher für Kinder\nLesetipps und Empfehlungen.",
-    "answer": "a"
+      "scenario": "Sie möchten einen Flug nach München buchen. Wo finden Sie Informationen?",
+      "option_a": "www.muenchenreise.de\nReiseberichte und Tipps.\nPrivate Unterkünfte.",
+      "option_b": "www.muenchenflughafen.de\nFluggesellschaften und Preise.\nBuchung leicht gemacht.",
+      "answer": "b"
     },
     {
-    "scenario": "Sie möchten eine Immobilie kaufen. Wo finden Sie Informationen?",
-    "option_a": "www.immobilien.de\nKaufen oder mieten in Ihrer Stadt\nPreise und Angebote.",
-    "option_b": "www.immobilienkunst.de\nKunst für Ihr Zuhause\nGemälde und Skulpturen.",
-    "answer": "a"
+      "scenario": "Sie suchen nach einem Arzt in Berlin. Wo finden Sie Informationen?",
+      "option_b": "www.berlinreise.de\nReisetipps für Berlin\nSehenswürdigkeiten und Essen.",
+      "option_a": "www.arztberlin.de\nÄrzteverzeichnis Berlin\nBewertungen und Kontakt.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie planen eine Reise nach Wien. Wo finden Sie Informationen über die Stadt?",
-    "option_a": "www.wieninfo.at\nTouristeninformationen zu Wien\nSehenswürdigkeiten und Hotelbuchungen.",
-    "option_b": "www.wiendiskos.at\nDie besten Discos in Wien\nVergnügen und Musik.",
-    "answer": "a"
+      "scenario": "Sie möchten Ihre Deutschkenntnisse verbessern. Wo finden Sie Sprachkurse?",
+      "option_b": "www.deutschmusik.de\nDeutschsprachige Musik\nTop Hits und Playlist.",
+      "option_a": "www.deutschlernen.de\nSprachkurse für jedes Niveau\nIn Köln und Düsseldorf.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie möchten ein neues Handy kaufen. Wo finden Sie Informationen?",
-    "option_a": "www.handyvergleich.de\nDie besten Handys im Test\nPreise und Bewertungen.",
-    "option_b": "www.handyspiele.de\nSpiele für Handys\nSpiele und Downloads.",
-    "answer": "a"
+      "scenario": "Sie interessieren sich für die besten Cafés in Leipzig. Wo erfahren Sie mehr?",
+      "option_a": "www.leipzigsport.de\nSportveranstaltungen in Leipzig\nErgebnisse und Neuigkeiten.",
+      "option_b": "www.leipzigcafes.de\nListe der besten Cafés in Leipzig\nÖffnungszeiten und Bewertungen.",
+      "answer": "b"
     },
     {
-    "scenario": "Sie suchen einen neuen Frisör in Ihrer Stadt. Wo finden Sie Informationen?",
-    "option_a": "www.frisoerstudio.de\nFriseure in Ihrer Nähe\nPreise und Öffnungszeiten.",
-    "option_b": "www.frisoerdoktor.de\nGesundheitstipps für Haare\nSchönheit und Pflege.",
-    "answer": "a"
+      "scenario": "Sie möchten in einem Schwimmbad in Hannover schwimmen gehen. Wo finden Sie Informationen?",
+      "option_b": "www.hannoverautos.de\nAuto-Verkaufsanzeigen\nFahrzeuge zu verkaufen.",
+      "option_a": "www.hannoverschwimmbad.de\nÖffnungszeiten und Preise.\nViele Schwimmmöglichkeiten!",
+      "answer": "a"
     },
     {
-    "scenario": "Sie möchten ein Buch über Berlin lesen. Wo finden Sie Informationen?",
-    "option_a": "www.berlinbuch.de\nDie besten Bücher über Berlin\nLiteratur und Rezensionen.",
-    "option_b": "www.berlinrezept.de\nRezepte aus Berlin\nEssen und Kochen.",
-    "answer": "a"
+      "scenario": "Sie suchen nach einem Kindergarten für Ihr Kind. Wo finden Sie Informationen?",
+      "option_b": "www.kinderbuch.de\nBücher für Kinder\nLesetipps und Empfehlungen.",
+      "option_a": "www.kindergartenfinder.de\nFinden Sie Kindergärten in Ihrer Nähe\nDetails und Bewertungen.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie möchten einen Arzttermin vereinbaren. Wo finden Sie Informationen?",
-    "option_a": "www.terminarzt.de\nÄrzte und Termine\nSchnell und einfach buchen.",
-    "option_b": "www.terminsport.de\nSportereignisse und Tickets\nSportarten und Ergebnisse.",
-    "answer": "a"
+      "scenario": "Sie möchten eine Immobilie kaufen. Wo finden Sie Informationen?",
+      "option_a": "www.immobilienkunst.de\nKunst für Ihr Zuhause\nGemälde und Skulpturen.",
+      "option_b": "www.immobilien.de\nKaufen oder mieten in Ihrer Stadt\nPreise und Angebote.",
+      "answer": "b"
     },
     {
-    "scenario": "Sie möchten wissen, wie das Wetter morgen wird. Wo finden Sie Informationen?",
-    "option_a": "www.wetterdienst.de\nAktuelle Wettervorhersagen\nInformationen für Ihre Region.",
-    "option_b": "www.wetterspiele.de\nWetterspiele für Kinder\nLustige Unterhaltungen.",
-    "answer": "a"
+      "scenario": "Sie planen eine Reise nach Wien. Wo finden Sie Informationen über die Stadt?",
+      "option_a": "www.wieninfo.at\nTouristeninformationen zu Wien\nSehenswürdigkeiten und Hotelbuchungen.",
+      "option_b": "www.wiendiskos.at\nDie besten Discos in Wien\nVergnügen und Musik.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie möchten einen Tanzkurs besuchen. Wo finden Sie Informationen?",
-    "option_a": "www.tanzkurse.de\nKurze und lange Tänze\nInfo zu Terminen und Preisen.",
-    "option_b": "www.tanzschuhe.de\nSchuhe für Tänze\nGrößen und Modelle.",
-    "answer": "a"
+      "scenario": "Sie möchten ein neues Handy kaufen. Wo finden Sie Informationen?",
+      "option_a": "www.handyspiele.de\nSpiele für Handys\nSpiele und Downloads.",
+      "option_b": "www.handyvergleich.de\nDie besten Handys im Test\nPreise und Bewertungen.",
+      "answer": "b"
     },
     {
-    "scenario": "Sie interessieren sich für Natur und Umwelt. Wo finden Sie Informationen?",
-    "option_a": "www.naturfreund.de\nNaturschutz und Umwelt\nAktuelle Projekte und Volunteer.",
-    "option_b": "www.naturgeschichten.de\nGeschichten über Tiere\nUnterhaltung für Kinder.",
-    "answer": "a"
+      "scenario": "Sie suchen einen neuen Frisör in Ihrer Stadt. Wo finden Sie Informationen?",
+      "option_b": "www.frisoerdoktor.de\nGesundheitstipps für Haare\nSchönheit und Pflege.",
+      "option_a": "www.frisoerstudio.de\nFriseure in Ihrer Nähe\nPreise und Öffnungszeiten.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie suchen nach einem Gartenhaus. Wo finden Sie Informationen?",
-    "option_a": "www.gartenhaus.de\nVerschiedene Gartenhäuser\nTipps für den Kauf.",
-    "option_b": "www.gartenrezepte.de\nRezepte mit frischen Produkten\nKochen und genießen.",
-    "answer": "a"
+      "scenario": "Sie möchten ein Buch über Berlin lesen. Wo finden Sie Informationen?",
+      "option_b": "www.berlinrezept.de\nRezepte aus Berlin\nEssen und Kochen.",
+      "option_a": "www.berlinbuch.de\nDie besten Bücher über Berlin\nLiteratur und Rezensionen.",
+      "answer": "a"
     },
     {
-    "scenario": "Sie möchten ein Geschenk für einen Freund kaufen. Wo finden Sie Ideen?",
-    "option_a": "www.geschenkideen.de\nKreative Ideen für Geschenke\nFür jeden Anlass.",
-    "option_b": "www.geschenkbewertungen.de\nBewertungen über Geschenke\nKaufberatung und Tipps.",
-    "answer": "a"
+      "scenario": "Sie möchten einen Arzttermin vereinbaren. Wo finden Sie Informationen?",
+      "option_b": "www.terminsport.de\nSportereignisse und Tickets\nSportarten und Ergebnisse.",
+      "option_a": "www.terminarzt.de\nÄrzte und Termine\nSchnell und einfach buchen.",
+      "answer": "a"
     },
     {
-        "scenario": "Sie möchten eine neue Tasche kaufen. Wo finden Sie Informationen?",
-        "option_a": "www.taschenwelt.de\nModische Taschen für jeden Anlass\nQualität und Preis.",
-        "option_b": "www.taschenrezepte.de\nRezepte für Taschen\nWas tun mit alten Taschen.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie interessieren sich für die Geschichte der Deutschen. Wo können Sie mehr erfahren?",
-        "option_a": "www.deutschlandgeschichte.de\nGeschichte der Deutschen\nWichtige Ereignisse und Daten.",
-        "option_b": "www.deutschlandspiele.de\nSpiele über Deutschland\nUnterhaltung für Familien.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten einen neuen Fernseher kaufen. Wo finden Sie Informationen?",
-        "option_a": "www.tv-vergleich.de\nDie besten Fernseher 2023\nTests, Preise und Meinungen.",
-        "option_b": "www.tv-unterhaltung.de\nUnterhaltung im Fernsehen\nFilme und Serien.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie suchen nach einem neuen Hobby. Wo finden Sie Ideen?",
-        "option_a": "www.hobbys.de\nVerschiedene Hobbys entdecken\nTipps und Tricks.",
-        "option_b": "www.hobbyrezepte.de\nRezepte zum Selbermachen\nLeckere Ideen.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten einen Online-Kurs belegen. Wo finden Sie Informationen?",
-        "option_a": "www.onlinekurse.de\nKurse in verschiedenen Fächern\nVergleich und Anmeldung.",
-        "option_b": "www.onlineunterhaltung.de\nSpiele und Filme online\nSpaß und Freizeit.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten ein neues Rezept ausprobieren. Wo finden Sie Informationen?",
-        "option_a": "www.kuechenrezepte.de\nEinfach und lecker kochen\nSchnelle Rezepte für jeden Tag.",
-        "option_b": "www.kuechenwerkzeuge.de\nWerkzeuge für die Küche\nTipps für Ihre Küche.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten mehr über die deutsche Kultur erfahren. Wo finden Sie Informationen?",
-        "option_a": "www.deutschlandkultur.de\nKulturelle Veranstaltungen in Deutschland\nInformationen und Tipps.",
-        "option_b": "www.kulturspiele.de\nSpiele über Kultur\nLernspiele für Kinder.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie suchen nach einem Fitnessstudio in Ihrer Nähe. Wo finden Sie Informationen?",
-        "option_a": "www.fitnessstudios.de\nStudios in Ihrer Stadt\nÖffnungszeiten und Mitgliedschaften.",
-        "option_b": "www.fitnessrezepte.de\nGesunde Rezepte für Fitness\nErnährungstipps und Pläne.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten eine Fernsehsendung sehen. Wo finden Sie Informationen?",
-        "option_a": "www.tv-programm.de\nAktuelles TV-Programm\nSendezeiten und Sender.",
-        "option_b": "www.tv-spiel.de\nSpiele zu Fernsehsendungen\nInteraktive Unterhaltung.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie interessieren sich für nationale Feiertage in Deutschland. Wo können Sie mehr erfahren?",
-        "option_a": "www.deutschefeiertage.de\nAlle Feiertage in Deutschland\nInformative Artikel.",
-        "option_b": "www.feiertageideen.de\nIdeen für Feiertagspartys\nDekoration und Rezepte.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie suchen nach einem neuen Mobiltelefon. Wo finden Sie Informationen?",
-        "option_a": "www.mobilesmart.de\nDie neuesten Mobiltelefone\nVergleich und Kundenmeinungen.",
-        "option_b": "www.smartphoneunterhaltung.de\nApps und Spiele für Smartphones\nKreativität und Spaß.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten sich über gesunde Ernährung informieren. Wo finden Sie Informationen?",
-        "option_a": "www.ernährungswissen.de\nGesunde Ernährung und Tipps\nRezepte und Einkaufslisten.",
-        "option_b": "www.ernährungsdiagnostik.de\nTests und Diagnosen für Ernährung\nGesundheitsberatung.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten Ihre Lieblingsmusik online hören. Wo finden Sie Informationen?",
-        "option_a": "www.musikstreaming.de\nMusik für jeden Geschmack\nTop Hits und Playlists.",
-        "option_b": "www.musikquiz.de\nQuiz über Musik\nUnterhaltsame Herausforderungen.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie planen einen Wochenendausflug. Wo finden Sie Informationen über Ausflugsziele?",
-        "option_a": "www.ausflugsziele.de\nSchöne Orte für Ausflüge\nTipps und Anregungen.",
-        "option_b": "www.wochenendspiele.de\nSpiele für das Wochenende\nUnterhaltung und Spaß.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten einen Hund adoptieren. Wo finden Sie Informationen?",
-        "option_a": "www.hundevermittlung.de\nHunde zur Adoption\nDetails und Kontakt zu Tierheimen.",
-        "option_b": "www.hundespiele.de\nSpiele für Hunde\nUnterhalten Sie Ihren neuen Freund.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten mehr über nachhaltiges Leben erfahren. Wo finden Sie Informationen?",
-        "option_a": "www.nachhaltigkeit.de\nTipps für nachhaltiges Leben\nUmweltfreundliche Produkte.",
-        "option_b": "www.nachhaltigkeitsspiele.de\nSpiele rund um Natur und Umwelt\nInteraktive Unterhaltung.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten eine Reise nach Deutschland planen. Wo finden Sie Informationen?",
-        "option_a": "www.reiseinfo.de\nTipps für Reisen in Deutschland\nSehenswürdigkeiten und Routen.",
-        "option_b": "www.reiseumbauten.de\nUmbau von Reisen\nBauprojekte und Berichte.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie suchen nach einem neuen Laptop. Wo finden Sie Informationen?",
-        "option_a": "www.laptopvergleich.de\nDie besten Laptops im Test\nPreise und Bewertungen.",
-        "option_b": "www.laptopspiele.de\nSpiele für Laptops\nUnterhaltung und Spaß.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten mehr über verschiedene Freizeitaktivitäten erfahren. Wo finden Sie Informationen?",
-        "option_a": "www.freizeitaktivitaeten.de\nVerschiedene Freizeitaktivitäten\nTipps für Ihre Freizeit.",
-        "option_b": "www.freizeitspiele.de\nSpiele für die Freizeit\nUnterhaltung und Spaß.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie suchen nach einem passenden Geschenk für ein Kind. Wo finden Sie Ideen?",
-        "option_a": "www.kindergeschenke.de\nGeschenkideen für Kinder\nBeliebte Spielzeuge und Bücher.",
-        "option_b": "www.kinderrezepte.de\nEinfache Rezepte für Kinder\nKochen und Backen.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten einen neuen Computer kaufen. Wo finden Sie Informationen?",
-        "option_a": "www.computervergleich.de\nDie besten Computer 2023\nTests, Preise und Reviews.",
-        "option_b": "www.computerservice.de\nReparatur und Service für Computer\nTechnische Unterstützung.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten mehr über deutsche Serien erfahren. Wo finden Sie Informationen?",
-        "option_a": "www.deutschserien.de\nBeliebte deutsche Serien im Überblick\nEpisoden und Handlung.",
-        "option_b": "www.serieharte.data\nSerien mit Spannung\nFür Thriller und Drama Fans.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie planen einen Grillabend. Wo finden Sie Rezepte?",
-        "option_a": "www.grillrezepte.de\nEinfache und leckere Grillrezepte\nVon Fleisch bis Gemüse.",
-        "option_b": "www.grillsport.de\nSportarten beim Grillen\nAktivitäten für das Event.",
-        "answer": "a"
-      },
-      {
-        "scenario": "Sie möchten die beste Schokolade in Deutschland finden. Wo finden Sie Informationen?",
-        "option_a": "www.schokoladen.de\nDie besten Schokoladenmarken\nKaufempfehlungen und Preise.",
-        "option_b": "www.schokoladebacken.de\nRezepte für Schokoladendesserts\nBackideen und Anleitungen.",
-        "answer": "a"
-      }
+      "scenario": "Sie möchten wissen, wie das Wetter morgen wird. Wo finden Sie Informationen?",
+      "option_b": "www.wetterspiele.de\nWetterspiele für Kinder\nLustige Unterhaltungen.",
+      "option_a": "www.wetterdienst.de\nAktuelle Wettervorhersagen\nInformationen für Ihre Region.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten einen Tanzkurs besuchen. Wo finden Sie Informationen?",
+      "option_b": "www.tanzschuhe.de\nSchuhe für Tänze\nGrößen und Modelle.",
+      "option_a": "www.tanzkurse.de\nKurze und lange Tänze\nInfo zu Terminen und Preisen.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie interessieren sich für Natur und Umwelt. Wo finden Sie Informationen?",
+      "option_b": "www.naturgeschichten.de\nGeschichten über Tiere\nUnterhaltung für Kinder.",
+      "option_a": "www.naturfreund.de\nNaturschutz und Umwelt\nAktuelle Projekte und Volunteer.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie suchen nach einem Gartenhaus. Wo finden Sie Informationen?",
+      "option_b": "www.gartenrezepte.de\nRezepte mit frischen Produkten\nKochen und genießen.",
+      "option_a": "www.gartenhaus.de\nVerschiedene Gartenhäuser\nTipps für den Kauf.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten ein Geschenk für einen Freund kaufen. Wo finden Sie Ideen?",
+      "option_b": "www.geschenkbewertungen.de\nBewertungen über Geschenke\nKaufberatung und Tipps.",
+      "option_a": "www.geschenkideen.de\nKreative Ideen für Geschenke\nFür jeden Anlass.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten eine neue Tasche kaufen. Wo finden Sie Informationen?",
+      "option_b": "www.taschenrezepte.de\nRezepte für Taschen\nWas tun mit alten Taschen.",
+      "option_a": "www.taschenwelt.de\nModische Taschen für jeden Anlass\nQualität und Preis.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie interessieren sich für die Geschichte der Deutschen. Wo können Sie mehr erfahren?",
+      "option_b": "www.deutschlandspiele.de\nSpiele über Deutschland\nUnterhaltung für Familien.",
+      "option_a": "www.deutschlandgeschichte.de\nGeschichte der Deutschen\nWichtige Ereignisse und Daten.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten einen neuen Fernseher kaufen. Wo finden Sie Informationen?",
+      "option_b": "www.tv-unterhaltung.de\nUnterhaltung im Fernsehen\nFilme und Serien.",
+      "option_a": "www.tv-vergleich.de\nDie besten Fernseher 2023\nTests, Preise und Meinungen.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie suchen nach einem neuen Hobby. Wo finden Sie Ideen?",
+      "option_a": "www.hobbys.de\nVerschiedene Hobbys entdecken\nTipps und Tricks.",
+      "option_b": "www.hobbyrezepte.de\nRezepte zum Selbermachen\nLeckere Ideen.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten einen Online-Kurs belegen. Wo finden Sie Informationen?",
+      "option_a": "www.onlinekurse.de\nKurse in verschiedenen Fächern\nVergleich und Anmeldung.",
+      "option_b": "www.onlineunterhaltung.de\nSpiele und Filme online\nSpaß und Freizeit.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten ein neues Rezept ausprobieren. Wo finden Sie Informationen?",
+      "option_a": "www.kuechenrezepte.de\nEinfach und lecker kochen\nSchnelle Rezepte für jeden Tag.",
+      "option_b": "www.kuechenwerkzeuge.de\nWerkzeuge für die Küche\nTipps für Ihre Küche.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten mehr über die deutsche Kultur erfahren. Wo finden Sie Informationen?",
+      "option_a": "www.deutschlandkultur.de\nKulturelle Veranstaltungen in Deutschland\nInformationen und Tipps.",
+      "option_b": "www.kulturspiele.de\nSpiele über Kultur\nLernspiele für Kinder.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie suchen nach einem Fitnessstudio in Ihrer Nähe. Wo finden Sie Informationen?",
+      "option_b": "www.fitnessrezepte.de\nGesunde Rezepte für Fitness\nErnährungstipps und Pläne.",
+      "option_a": "www.fitnessstudios.de\nStudios in Ihrer Stadt\nÖffnungszeiten und Mitgliedschaften.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten eine Fernsehsendung sehen. Wo finden Sie Informationen?",
+      "option_b": "www.tv-spiel.de\nSpiele zu Fernsehsendungen\nInteraktive Unterhaltung.",
+      "option_a": "www.tv-programm.de\nAktuelles TV-Programm\nSendezeiten und Sender.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie interessieren sich für nationale Feiertage in Deutschland. Wo können Sie mehr erfahren?",
+      "option_b": "www.feiertageideen.de\nIdeen für Feiertagspartys\nDekoration und Rezepte.",
+      "option_a": "www.deutschefeiertage.de\nAlle Feiertage in Deutschland\nInformative Artikel.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie suchen nach einem neuen Mobiltelefon. Wo finden Sie Informationen?",
+      "option_b": "www.smartphoneunterhaltung.de\nApps und Spiele für Smartphones\nKreativität und Spaß.",
+      "option_a": "www.mobilesmart.de\nDie neuesten Mobiltelefone\nVergleich und Kundenmeinungen.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten sich über gesunde Ernährung informieren. Wo finden Sie Informationen?",
+      "option_b": "www.ernährungsdiagnostik.de\nTests und Diagnosen für Ernährung\nGesundheitsberatung.",
+      "option_a": "www.ernährungswissen.de\nGesunde Ernährung und Tipps\nRezepte und Einkaufslisten.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten Ihre Lieblingsmusik online hören. Wo finden Sie Informationen?",
+      "option_b": "www.musikquiz.de\nQuiz über Musik\nUnterhaltsame Herausforderungen.",
+      "option_a": "www.musikstreaming.de\nMusik für jeden Geschmack\nTop Hits und Playlists.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie planen einen Wochenendausflug. Wo finden Sie Informationen über Ausflugsziele?",
+      "option_b": "www.wochenendspiele.de\nSpiele für das Wochenende\nUnterhaltung und Spaß.",
+      "option_a": "www.ausflugsziele.de\nSchöne Orte für Ausflüge\nTipps und Anregungen.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten einen Hund adoptieren. Wo finden Sie Informationen?",
+      "option_b": "www.hundespiele.de\nSpiele für Hunde\nUnterhalten Sie Ihren neuen Freund.",
+      "option_a": "www.hundevermittlung.de\nHunde zur Adoption\nDetails und Kontakt zu Tierheimen.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten mehr über nachhaltiges Leben erfahren. Wo finden Sie Informationen?",
+      "option_b": "www.nachhaltigkeitsspiele.de\nSpiele rund um Natur und Umwelt\nInteraktive Unterhaltung.",
+      "option_a": "www.nachhaltigkeit.de\nTipps für nachhaltiges Leben\nUmweltfreundliche Produkte.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten eine Reise nach Deutschland planen. Wo finden Sie Informationen?",
+      "option_b": "www.reiseumbauten.de\nUmbau von Reisen\nBauprojekte und Berichte.",
+      "option_a": "www.reiseinfo.de\nTipps für Reisen in Deutschland\nSehenswürdigkeiten und Routen.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie suchen nach einem neuen Laptop. Wo finden Sie Informationen?",
+      "option_b": "www.laptopspiele.de\nSpiele für Laptops\nUnterhaltung und Spaß.",
+      "option_a": "www.laptopvergleich.de\nDie besten Laptops im Test\nPreise und Bewertungen.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten mehr über verschiedene Freizeitaktivitäten erfahren. Wo finden Sie Informationen?",
+      "option_b": "www.freizeitspiele.de\nSpiele für die Freizeit\nUnterhaltung und Spaß.",
+      "option_a": "www.freizeitaktivitaeten.de\nVerschiedene Freizeitaktivitäten\nTipps für Ihre Freizeit.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie suchen nach einem passenden Geschenk für ein Kind. Wo finden Sie Ideen?",
+      "option_b": "www.kinderrezepte.de\nEinfache Rezepte für Kinder\nKochen und Backen.",
+      "option_a": "www.kindergeschenke.de\nGeschenkideen für Kinder\nBeliebte Spielzeuge und Bücher.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten einen neuen Computer kaufen. Wo finden Sie Informationen?",
+      "option_b": "www.computerservice.de\nReparatur und Service für Computer\nTechnische Unterstützung.",
+      "option_a": "www.computervergleich.de\nDie besten Computer 2023\nTests, Preise und Reviews.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten mehr über deutsche Serien erfahren. Wo finden Sie Informationen?",
+      "option_b": "www.serieharte.data\nSerien mit Spannung\nFür Thriller und Drama Fans.",
+      "option_a": "www.deutschserien.de\nBeliebte deutsche Serien im Überblick\nEpisoden und Handlung.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie planen einen Grillabend. Wo finden Sie Rezepte?",
+      "option_b": "www.grillsport.de\nSportarten beim Grillen\nAktivitäten für das Event.",
+      "option_a": "www.grillrezepte.de\nEinfache und leckere Grillrezepte\nVon Fleisch bis Gemüse.",
+      "answer": "a"
+    },
+    {
+      "scenario": "Sie möchten die beste Schokolade in Deutschland finden. Wo finden Sie Informationen?",
+      "option_b": "www.schokoladebacken.de\nRezepte für Schokoladendesserts\nBackideen und Anleitungen.",
+      "option_a": "www.schokoladen.de\nDie besten Schokoladenmarken\nKaufempfehlungen und Preise.",
+      "answer": "a"
+    }
 ]
