@@ -1,0 +1,543 @@
+[
+    {
+      "Location": "Im Supermarkt",
+      "Noticeboard": "Angebot der Woche!\n\nTomaten 1 Kilo 1,50 Euro\n\nGültig bis Samstag",
+      "Statement": "Tomaten sind diese Woche billig.",
+      "Answer": "richtig"
+    },
+    {
+      "Location": "Im Café",
+      "Noticeboard": "Kuchen und Kaffee\n\nSonderangebot!\nZusammen nur 4 Euro",
+      "Statement": "Kuchen und Kaffee kosten zusammen 5 Euro.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Am Kino",
+      "Noticeboard": "Kinoprogramm:\n\n18:00 Uhr: Animationsfilm\n20:30 Uhr: Actionfilm",
+      "Statement": "Um 19 Uhr gibt es einen Film.",
+      "Answer": "richtig"
+    },
+    {
+      "Location": "In der Arztpraxis",
+      "Noticeboard": "Rezeptabholung:\n\nMontag - Freitag\n14:00 - 16:00 Uhr",
+      "Statement": "Am Morgen können Sie Ihr Rezept abholen.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "In der Bibliothek",
+      "Noticeboard": "Bibliothek geschlossen\n\nwegen Renovierung\n\nWir öffnen wieder am 15. Mai",
+      "Statement": "Die Bibliothek ist jetzt geöffnet.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Am Schwimmbad",
+      "Noticeboard": "Badezeit für Familien:\n\nSamstag und Sonntag\n10:00 - 18:00 Uhr",
+      "Statement": "Familien können am Montag schwimmen.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Im Hotel",
+      "Noticeboard": "Frühstücksraum\n\nFrühstück:\n7:00 - 10:00 Uhr",
+      "Statement": "Das Frühstück ist bis 11 Uhr.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "In der Schule",
+      "Noticeboard": "Wichtig!\n\nMorgen kein Unterricht\n\nFeiertag!",
+      "Statement": "Morgen gehen die Kinder zur Schule.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Im Park",
+      "Noticeboard": "Hunde an der Leine führen!",
+      "Statement": "Hier dürfen Hunde frei laufen.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Im Museum",
+      "Noticeboard": "Fotoapparat erlaubt\n\nOhne Blitz!",
+      "Statement": "Man darf hier Fotos machen.",
+      "Answer": "richtig"
+    },
+    {
+      "Location": "Im Restaurant",
+      "Noticeboard": "Mittagstisch:\n\n12:00 - 14:00 Uhr\n\nMenü: 8 Euro",
+      "Statement": "Das Mittagessen kostet 8 Euro.",
+      "Answer": "richtig"
+    },
+    {
+      "Location": "Am Bahnhof",
+      "Noticeboard": "Gleis 3:\n\nZug nach Berlin\n\nAbfahrt: 15:30 Uhr",
+      "Statement": "Der Zug nach Berlin fährt um halb vier.",
+      "Answer": "richtig"
+    },
+    {
+      "Location": "Am Flughafen",
+      "Noticeboard": "Information\n\nSchalter 5\n\nfür alle Flüge nach Italien",
+      "Statement": "Für Flüge nach Spanien ist Schalter 5.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "An der Bushaltestelle",
+      "Noticeboard": "Nächste Busse:\n\nLinie 20 Richtung Zentrum\n\nIn 5 Minuten",
+      "Statement": "Der Bus kommt in 10 Minuten.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Im Fitnessstudio",
+      "Noticeboard": "Neukunden-Aktion!\n\nErster Monat gratis!",
+      "Statement": "Der erste Monat kostet kein Geld.",
+      "Answer": "richtig"
+    },
+    {
+      "Location": "In der Bäckerei",
+      "Noticeboard": "Frische Brötchen\n\nAb 6 Uhr morgens",
+      "Statement": "Um 5 Uhr gibt es hier Brötchen.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "In der Apotheke",
+      "Noticeboard": "Heute geschlossen\n\nWegen Inventur",
+      "Statement": "Die Apotheke ist heute geöffnet.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "An der Bank",
+      "Noticeboard": "Geldautomat\n\n24 Stunden geöffnet",
+      "Statement": "Man kann hier nur tagsüber Geld abheben.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Beim Friseur",
+      "Noticeboard": "Termine nach Vereinbarung",
+      "Statement": "Man kann ohne Termin zum Friseur kommen.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Im Sportverein",
+      "Noticeboard": "Anmeldung zum Yoga-Kurs\n\nBis 30. September",
+      "Statement": "Man kann sich jetzt noch für Yoga anmelden.",
+      "Answer": "richtig"
+    },
+    {
+      "Location": "Im Kaufhaus",
+      "Noticeboard": "Sonderverkauf!\n\n20% Rabatt auf alle Jacken",
+      "Statement": "Hosen sind billiger.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Am See",
+      "Noticeboard": "Baden verboten!\n\nLebensgefahr!",
+      "Statement": "Hier darf man schwimmen.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Im Büro",
+      "Noticeboard": "Pause!\n\n13:00 - 14:00 Uhr",
+      "Statement": "Von 13 bis 14 Uhr ist keine Pause.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Im Hotelzimmer",
+      "Noticeboard": "Bitte nicht stören!\n\n",
+      "Statement": "Man soll an die Tür klopfen.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Im Zug",
+      "Noticeboard": "Ruhebereich\n\nBitte leise sein!",
+      "Statement": "Hier darf man laut sprechen.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "In der Eisdiele",
+      "Noticeboard": "Hausgemachtes Eis\n\nProbieren Sie unsere neuen Sorten!",
+      "Statement": "Das Eis ist nicht selbstgemacht.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Am Spielplatz",
+      "Noticeboard": "Für Kinder bis 12 Jahre",
+      "Statement": "Auch Erwachsene dürfen hier spielen.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Im Schwimmbad Kasse",
+      "Noticeboard": "Tageskarte 5 Euro\n\nKinder bis 6 Jahre frei",
+      "Statement": "Kinder zahlen immer Eintritt.",
+      "Answer": "falsch"
+    },
+    {
+      "Location": "Vor dem Restaurant",
+      "Noticeboard": "Wir suchen einen Koch/eine Köchin",
+      "Statement": "Das Restaurant braucht Personal.",
+      "Answer": "richtig"
+    },
+    {
+      "Location": "Im Wartezimmer",
+      "Noticeboard": "Bitte warten Sie hier.\n\nWir rufen Sie auf.",
+      "Statement": "Man soll direkt ins Sprechzimmer gehen.",
+      "Answer": "falsch"
+    },
+    {
+        "Location": "An der Bibliothek",
+        "Noticeboard": "Aufgrund von Renovierungsarbeiten \nbleibt die Bibliothek bis zum \n15. Oktober geschlossen.",
+        "Statement": "Die Bibliothek ist geöffnet.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Im Supermarkt",
+        "Noticeboard": "Heute im Angebot: \nTomaten 1,99 Euro pro Kilo.",
+        "Statement": "Tomaten kosten heute 1,99 Euro pro Kilo.",
+        "Answer": "richtig"
+    },
+    {
+        "Location": "Im Kino",
+        "Noticeboard": "Filmvorstellungen:\nMontag-Freitag: 16:00, 19:00 Uhr\nSamstag-Sonntag: 14:00, 17:00, 20:00 Uhr",
+        "Statement": "Der letzte Film startet am Samstag um 20 Uhr.",
+        "Answer": "richtig"
+    },
+    {
+        "Location": "Im Café",
+        "Noticeboard": "Heute geschlossen wegen Krankheit.",
+        "Statement": "Das Café ist heute geöffnet.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Im Stadtpark",
+        "Noticeboard": "Hunde müssen an der Leine geführt werden.",
+        "Statement": "Hunde dürfen ohne Leine im Park spielen.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "In der Schule",
+        "Noticeboard": "Nächste Woche Fallen die Mathekurse wegen \nLehrerkonferenz aus.",
+        "Statement": "Nächste Woche findet der Mathekurs wie gewohnt statt.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Im Schwimmbad",
+        "Noticeboard": "Öffnungszeiten:\nTäglich von 9.00 bis 21.00 Uhr.",
+        "Statement": "Sie können um 20.00 Uhr schwimmen gehen.",
+        "Answer": "richtig"
+    },
+    {
+        "Location": "Am Flughafen",
+        "Noticeboard": "Kofferservice derzeit \nnicht verfügbar.",
+        "Statement": "Sie können Ihren Koffer hier aufgeben.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "In der Bäckerei",
+        "Noticeboard": "Frisches Brot ab 7:00 Uhr erhältlich.",
+        "Statement": "Sie können um 6:30 Uhr frisches Brot kaufen.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Im Fitnessstudio",
+        "Noticeboard": "Yoga-Kurs \nMontag und Mittwoch: 18:00 Uhr.",
+        "Statement": "Der Yoga-Kurs ist am Dienstag.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Auf dem Campingplatz",
+        "Noticeboard": "Bitte Ruhezeiten beachten: \n22:00 - 7:00 Uhr.",
+        "Statement": "Nach 22:00 Uhr ist Lärm erlaubt.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Am Museum",
+        "Noticeboard": "Letzter Einlass: 17:30 Uhr.",
+        "Statement": "Nach 17:30 Uhr können Sie das Museum betreten.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "An der Polizeiwache",
+        "Noticeboard": "Öffnungszeiten: \n24 Stunden geöffnet.",
+        "Statement": "Die Polizeiwache hat um Mitternacht geschlossen.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Im Restaurant",
+        "Noticeboard": "Heute ist Pizzatag: \nAlle Pizzen 5 Euro.",
+        "Statement": "Heute sind Pizzen günstiger.",
+        "Answer": "richtig"
+    },
+    {
+        "Location": "Am Bahnhof",
+        "Noticeboard": "Bitte Fahrkarten \nnur am Automaten kaufen.",
+        "Statement": "Fahrkarten sind am Schalter erhältlich.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "In der Arztpraxis",
+        "Noticeboard": "Wegen Urlaubs \nab 10. März geschlossen.",
+        "Statement": "Am 10. März ist die Praxis geschlossen.",
+        "Answer": "richtig"
+    },
+    {
+        "Location": "Am Spielplatz",
+        "Noticeboard": "Spielgeräte ab \n3 Jahren geeignet.",
+        "Statement": "Die Spielgeräte sind für Kinder unter 3 Jahren geeignet.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Im Hotel",
+        "Noticeboard": "Frühstück serviert von \n6:30 bis 10:00 Uhr.",
+        "Statement": "Frühstück gibt es von 10:30 Uhr bis 12:00 Uhr.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Im Rathaus",
+        "Noticeboard": "Nächster Bürgersprechabend: \nJeden ersten Montag im Monat.",
+        "Statement": "Der Bürgersprechabend ist nächsten Dienstag.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Am Strand",
+        "Noticeboard": "Wasserrettung im Dienst \nvon 10:00 bis 18:00 Uhr.",
+        "Statement": "Die Rettungsschwimmer arbeiten um 9:00 Uhr.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Auf der Autobahn",
+        "Noticeboard": "Maximale Geschwindigkeit \n130 km/h.",
+        "Statement": "Die Höchstgeschwindigkeit beträgt 150 km/h.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Im Krankenhaus",
+        "Noticeboard": "Besuchszeiten: \n14:00 bis 18:00 Uhr.",
+        "Statement": "Besucher sind um 12:00 Uhr willkommen.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Am Fahrkartenschalter",
+        "Noticeboard": "Heute keine \nKreditkartenzahlung möglich.",
+        "Statement": "Sie können mit Kreditkarte bezahlen.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Im Sportverein",
+        "Noticeboard": "Anmeldung zum Fußballturnier \nbis zum 1. Juni.",
+        "Statement": "Sie können sich bis zum 2. Juni anmelden.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "In der Zoohandlung",
+        "Noticeboard": "Futterverkauf bis \n18:00 Uhr.",
+        "Statement": "Futter kaufen nach 18:00 Uhr ist möglich.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "Am Theater",
+        "Noticeboard": "Nächste Vorstellung: \nMittwoch, 20:00 Uhr.",
+        "Statement": "Die Vorstellung ist am Montag.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "In der Musikschule",
+        "Noticeboard": "Klavierunterricht fällt diese Woche aus.",
+        "Statement": "Es gibt diese Woche keinen Klavierunterricht.",
+        "Answer": "richtig"
+    },
+    {
+        "Location": "Auf dem Bauernhof",
+        "Noticeboard": "Hofladen täglich geöffnet von \n8:00 bis 17:00 Uhr.",
+        "Statement": "Der Hofladen öffnet um 16:00 Uhr.",
+        "Answer": "richtig"
+    },
+    {
+        "Location": "In der Volkshochschule",
+        "Noticeboard": "Nächster Kursstart: \n15. April.",
+        "Statement": "Die Kurse beginnen am 20. April.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "In der Metzgerei",
+        "Noticeboard": "Frische Wurstwaren \nab 9:00 Uhr.",
+        "Statement": "Um 8:00 Uhr gibt es frische Wurst.",
+        "Answer": "falsch"
+    },
+    {
+        "Location": "In der Bäckerei",
+        "Noticeboard": "Frische Brötchen\nJeden Morgen ab 6.00 Uhr",
+        "Statement": "Am Abend kaufen Sie frische Brötchen.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "Im Supermarkt",
+        "Noticeboard": "Montag: Obst und Gemüse\nzum halben Preis!",
+        "Statement": "Am Montag ist Obst billiger.",
+        "Answer": "richtig"
+      },
+      {
+        "Location": "Am Schwimmbad",
+        "Noticeboard": "Öffnungszeiten:\nMo-Fr: 10-20 Uhr\nSa: 10-18 Uhr\nSo: 12-16 Uhr",
+        "Statement": "Am Samstag schließt das Schwimmbad früher als am Sonntag.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "In der Bibliothek",
+        "Noticeboard": "Ruhetag jeden Dienstag",
+        "Statement": "Am Dienstag ist die Bibliothek geöffnet.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "Am Spielplatz",
+        "Noticeboard": "Hunde sind hier nicht erlaubt.",
+        "Statement": "Sie können Ihren Hund auf den Spielplatz bringen.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "Im Kino",
+        "Noticeboard": "Filmfest: Alle Filme nur 5 Euro!\nBis zum 30. November",
+        "Statement": "Im Dezember kosten die Filme auch 5 Euro.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "Im Fitnessstudio",
+        "Noticeboard": "Yoga-Kurs\njeden Freitag um 18 Uhr",
+        "Statement": "Der Yoga-Kurs ist donnerstags.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "An der Apotheke",
+        "Noticeboard": "Notdienst\ndiese Woche: 24 Stunden geöffnet",
+        "Statement": "Die Apotheke ist nachts geschlossen.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "Am Bahnhof",
+        "Noticeboard": "Zugverspätung:\nDer Zug nach Berlin hat\n30 Minuten Verspätung.",
+        "Statement": "Der Zug nach Berlin ist pünktlich.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "Im Einkaufszentrum",
+        "Noticeboard": "Winter-Sale: 50% Rabatt\nauf alle Winterjacken",
+        "Statement": "Sie bekommen einen Rabatt auf Sommerjacken.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "In der Arztpraxis",
+        "Noticeboard": "Bitte keine Handys\nim Wartezimmer",
+        "Statement": "Sie dürfen im Wartezimmer telefonieren.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "Im Museum",
+        "Noticeboard": "Eintritt frei\njeden ersten Sonntag\nim Monat",
+        "Statement": "Am ersten Sonntag im Monat ist der Eintritt kostenlos.",
+        "Answer": "richtig"
+      },
+      {
+        "Location": "Auf dem Marktplatz",
+        "Noticeboard": "Wochenmarkt\njeden Samstag von 8-14 Uhr",
+        "Statement": "Der Wochenmarkt ist auch am Sonntag.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "An der Universität",
+        "Noticeboard": "Vorlesungsfreie Zeit beginnt am 15. Juli.",
+        "Statement": "Ab dem 15. Juli sind keine Vorlesungen.",
+        "Answer": "richtig"
+      },
+      {
+        "Location": "Im Restaurant",
+        "Noticeboard": "Mittagsmenü: Pasta oder Salat\nmit Getränk für 9,90 Euro",
+        "Statement": "Das Mittagsmenü kostet 8 Euro.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "In der Stadtbücherei",
+        "Noticeboard": "Lesestunde für Kinder\njedes Wochenende um 10 Uhr",
+        "Statement": "Die Lesestunde ist am Mittwoch.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "In der Schule",
+        "Noticeboard": "Ferien:\n1. bis 10. Oktober",
+        "Statement": "Der 5. Oktober ist ein Ferientag.",
+        "Answer": "richtig"
+      },
+      {
+        "Location": "Im Hotel",
+        "Noticeboard": "Frühstücksbuffet\nvon 7 bis 10 Uhr",
+        "Statement": "Das Frühstück endet um 11 Uhr.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "In der Waschküche",
+        "Noticeboard": "Bitte Wäsche\nnicht unbeaufsichtigt lassen.",
+        "Statement": "Sie müssen bei der Wäsche bleiben.",
+        "Answer": "richtig"
+      },
+      {
+        "Location": "In der Tierklinik",
+        "Noticeboard": "Sprechstunde nur\nmit Terminvereinbarung",
+        "Statement": "Sie brauchen keinen Termin.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "In der Volkshochschule",
+        "Noticeboard": "Anmeldeschluss\nfür Sprachkurse:\n30. September",
+        "Statement": "Am 1. Oktober können Sie sich noch anmelden.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "Am Flughafen",
+        "Noticeboard": "Gepäckaufbewahrung\n24/7 geöffnet",
+        "Statement": "Die Gepäckaufbewahrung ist immer offen.",
+        "Answer": "richtig"
+      },
+      {
+        "Location": "Im Einkaufszentrum",
+        "Noticeboard": "Kinderland\nWerkstatt für Kinder ab 4 Jahren\nSamstag: 10-14 Uhr",
+        "Statement": "Die Werkstatt ist für Kinder ab 6 Jahren.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "An der Rezeption des Hotels",
+        "Noticeboard": "Bitte beim Check-out\nZimmerschlüssel abgeben.",
+        "Statement": "Sie können den Zimmerschlüssel behalten.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "In der Tierhandlung",
+        "Noticeboard": "Montag: Ruhetag",
+        "Statement": "Am Montag hat die Tierhandlung geschlossen.",
+        "Answer": "richtig"
+      },
+      {
+        "Location": "Im Park",
+        "Noticeboard": "Keine Fahrräder auf den Wegen",
+        "Statement": "Sie können mit dem Fahrrad im Park fahren.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "In der Pizzeria",
+        "Noticeboard": "Dienstags: Pizza Margherita\nzum halben Preis",
+        "Statement": "Mittwochs gibt es Rabatte auf Pizza Margherita.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "Auf dem Bauernmarkt",
+        "Noticeboard": "Frische Erdbeeren\naus der Region",
+        "Statement": "Die Erdbeeren kommen aus dem Ausland.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "An der Tankstelle",
+        "Noticeboard": "Autowäsche\nDienstag bis Samstag 8-18 Uhr",
+        "Statement": "Sonntags können Sie Ihr Auto waschen.",
+        "Answer": "falsch"
+      },
+      {
+        "Location": "In der Bank",
+        "Noticeboard": "Kundenservice: Montag - Freitag 9-17 Uhr",
+        "Statement": "Der Kundenservice ist am Samstag geschlossen.",
+        "Answer": "richtig"
+      }
+  ]
+  

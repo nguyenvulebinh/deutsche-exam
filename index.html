@@ -11,7 +11,6 @@
     <div class="container">
         <!-- Task Selection -->
         <div id="task-selection" class="task-selection">
-            <h1>German Exam Practice</h1>
             <div class="task-grid">
                 <button class="task-btn" data-task="lesen1">
                     <h2>Lesen, Teil 1</h2>
@@ -20,6 +19,10 @@
                 <button class="task-btn" data-task="lesen2">
                     <h2>Lesen, Teil 2</h2>
                     <p>Welche Anzeige passt?</p>
+                </button>
+                <button class="task-btn" data-task="lesen3">
+                    <h2>Lesen, Teil 3</h2>
+                    <p>Richtig oder Falsch?</p>
                 </button>
             </div>
         </div>
@@ -87,6 +90,46 @@
                     <div class="controls">
                         <button id="submit-btn2" class="btn">Prüfen</button>
                         <button id="next-btn2" class="btn" style="display: none;">Nächste Frage</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Lesen Teil 3 -->
+        <div id="lesen3-container" class="task-container" style="display: none;">
+            <header>
+                <button class="back-btn">← Zurück</button>
+                <h1>Lesen, Teil 3</h1>
+                <div class="instruction">
+                    <p>Lesen Sie die Anzeige und die Aussage.</p>
+                    <p>Ist die Aussage richtig (+) oder falsch (–)?</p>
+                </div>
+            </header>
+
+            <main>
+                <div class="question-container">
+                    <h2 id="location-text" class="location-title"></h2>
+                    
+                    <div class="noticeboard">
+                        <div id="noticeboard-content" class="noticeboard-content"></div>
+                    </div>
+
+                    <div class="statement-section">
+                        <p id="statement-text"></p>
+                        
+                        <div class="answer-options">
+                            <label class="answer-option">
+                                <input type="radio" name="answer3" value="richtig"> richtig
+                            </label>
+                            <label class="answer-option">
+                                <input type="radio" name="answer3" value="falsch"> falsch
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button id="submit-btn3" class="btn">Prüfen</button>
+                        <button id="next-btn3" class="btn" style="display: none;">Nächste Frage</button>
                     </div>
                 </div>
             </main>

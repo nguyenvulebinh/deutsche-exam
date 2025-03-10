@@ -1,326 +1,302 @@
 [
-    {
-      "scenario": "Sie möchten einen Kaffee trinken. Wo können Sie Informationen über ein Café finden?",
-      "a": "www.sportzentrum.de\nFitness für alle.\nKurse - Schwimmbad - Sauna\nÖffnungszeiten - Preise - Events",
-      "b": "www.cafehaus.de\nGemütliches Café in der Innenstadt.\nKaffee-Spezialitäten und Kuchen.\nÖffnungszeiten und Karte",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten ein Hotel in Berlin buchen. Wo finden Sie Informationen?",
-      "b": "www.kinoberlin.de\nDas größte Kino in Berlin.\nAktuelle Filme - Tickets - Events\nAnfahrt - Preise",
-      "a": "www.berlinhotel.com\nLuxus und Komfort in der Hauptstadt.\nZimmer buchen - Angebote - Galerie\nKontakt - Anfahrt",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie suchen ein Rezept für Apfelkuchen. Wo finden Sie es?",
-      "a": "www.blumenladen.de\nBlumen für jeden Anlass.\nRosen - Tulpen - Orchideen\nBestellen - Kontakt",
-      "b": "www.kochwelt.de\nLeckere Rezepte zum Nachkochen.\nApfelkuchen - Desserts - Vegetarisch\nKochtipps - Videos",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie brauchen Hilfe beim Verständnis einer deutschen Karte. Wo finden Sie Informationen?",
-      "a": "www.lernkarten.de\nKarten für Studenten.\nSprachkarten - Deutsche Grammatik - Vokabeln\nOnlinekurse - Übungen",
-      "b": "www.outdoorstore.de\nCamping- und Wanderbedarf.\nZelte - Rucksäcke - Schlafsäcke - Karten\nShop - Angebote - Kontakt",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten ein Fahrrad mieten. Wo finden Sie Informationen?",
-      "b": "www.schuhe.de\nBeste Schuhe für Sport und Freizeit.\nSale - Neuheiten - Tipps\nKontakt - Standorte",
-      "a": "www.fahrradverleih.de\nFahrräder für die Stadt und das Land.\nVerfügbarkeit - Preise - Stationen\nReservierung - Kontakt",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten ein Restaurant in Berlin finden. Wo finden Sie Informationen?",
-      "a": "www.berlinkunst.de\nKunstgalerien in Berlin\nExkursionen zu den besten Galerien.",
-      "b": "www.berlinfood.de\nRestaurantführer Berlin\nFinden Sie die besten Pizzerien!\nBewertungen und Empfehlungen.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie interessieren sich für einen Sportverein in München. Wo bekommen Sie Informationen?",
-      "b": "www.muenchenemail.de\nE-Mail Service für München\nAktuelle Nachrichten und Informationen.",
-      "a": "www.muenchenatleten.de\nSportvereine in München\nHier finden Sie Fußball, Tennis und mehr.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie suchen ein Hotel in Frankfurt. Wo finden Sie Informationen?",
-      "b": "www.frankfurthotels.de\nBeste Hotels in Frankfurt\nPreise und Verfügbarkeit.\nReservieren Sie jetzt!",
-      "a": "www.frankfurtbank.de\nBankdienstleistungen in Frankfurt\nKontoeröffnung.\nKredite und Darlehen.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten nach Stuttgart ziehen. Wo finden Sie Informationen über die Stadt?",
-      "a": "www.stuttgartinfo.de\nStadtinformationen Stuttgart\nSehenswürdigkeiten und Veranstaltungen.",
-      "b": "www.stuttgartspiel.com\nSpiele und Rätsel für Kinder\nUnterhaltung und Spaß.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie wollen eine Stadtführung in Hamburg machen. Wo finden Sie Informationen?",
-      "b": "www.hamburgnews.de\nNachrichten aus Hamburg\nAktuelle Informationen und Ereignisse.",
-      "a": "www.hamburgtour.de\nStadtführungen in Hamburg\nBuchen Sie Ihr Ticket heute!",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten Informationen über öffentliche Verkehrsmittel in Köln. Wo finden Sie diese?",
-      "b": "www.koelnpark.de\nParks und Grünflächen in Köln\nNatur erleben.",
-      "a": "www.koelnverkehre.de\nFahrpläne und Ticketpreise für Köln\nBus und Bahn Informationen.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie planen einen Besuch in der Oper in Dresden. Wo finden Sie Informationen?",
-      "a": "www.dresdenoper.de\nAktuelle Aufführungen und Tickets.\nErleben Sie Kultur in Dresden.",
-      "b": "www.dresdentourismus.de\nAllgemeine Touristeninformationen.\nEssen und Trinken.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie suchen einen Kiosk in Ihrer Nähe. Wo finden Sie Informationen?",
-      "b": "www.stadtparke.de\nParks in der Stadt\nVeranstaltungen und Spiele.",
-      "a": "www.kioskfinder.de\nFinden Sie Kioske in Ihrer Stadt\nSnacks und Getränke.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten einen Flug nach München buchen. Wo finden Sie Informationen?",
-      "a": "www.muenchenreise.de\nReiseberichte und Tipps.\nPrivate Unterkünfte.",
-      "b": "www.muenchenflughafen.de\nFluggesellschaften und Preise.\nBuchung leicht gemacht.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie suchen nach einem Arzt in Berlin. Wo finden Sie Informationen?",
-      "b": "www.berlinreise.de\nReisetipps für Berlin\nSehenswürdigkeiten und Essen.",
-      "a": "www.arztberlin.de\nÄrzteverzeichnis Berlin\nBewertungen und Kontakt.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten Ihre Deutschkenntnisse verbessern. Wo finden Sie Sprachkurse?",
-      "b": "www.deutschmusik.de\nDeutschsprachige Musik\nTop Hits und Playlist.",
-      "a": "www.deutschlernen.de\nSprachkurse für jedes Niveau\nIn Köln und Düsseldorf.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie interessieren sich für die besten Cafés in Leipzig. Wo erfahren Sie mehr?",
-      "a": "www.leipzigsport.de\nSportveranstaltungen in Leipzig\nErgebnisse und Neuigkeiten.",
-      "b": "www.leipzigcafes.de\nListe der besten Cafés in Leipzig\nÖffnungszeiten und Bewertungen.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten in einem Schwimmbad in Hannover schwimmen gehen. Wo finden Sie Informationen?",
-      "a": "www.hannoverautos.de\nAuto-Verkaufsanzeigen\nFahrzeuge zu verkaufen.",
-      "b": "www.hannoverschwimmbad.de\nÖffnungszeiten und Preise.\nViele Schwimmmöglichkeiten!",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie suchen nach einem Kindergarten für Ihr Kind. Wo finden Sie Informationen?",
-      "a": "www.kinderbuch.de\nBücher für Kinder\nLesetipps und Empfehlungen.",
-      "b": "www.kindergartenfinder.de\nFinden Sie Kindergärten in Ihrer Nähe\nDetails und Bewertungen.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten eine Immobilie kaufen. Wo finden Sie Informationen?",
-      "a": "www.immobilienkunst.de\nKunst für Ihr Zuhause\nGemälde und Skulpturen.",
-      "b": "www.immobilien.de\nKaufen oder mieten in Ihrer Stadt\nPreise und Angebote.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie planen eine Reise nach Wien. Wo finden Sie Informationen über die Stadt?",
-      "a": "www.wieninfo.at\nTouristeninformationen zu Wien\nSehenswürdigkeiten und Hotelbuchungen.",
-      "b": "www.wiendiskos.at\nDie besten Discos in Wien\nVergnügen und Musik.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten ein neues Handy kaufen. Wo finden Sie Informationen?",
-      "a": "www.handyspiele.de\nSpiele für Handys\nSpiele und Downloads.",
-      "b": "www.handyvergleich.de\nDie besten Handys im Test\nPreise und Bewertungen.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie suchen einen neuen Frisör in Ihrer Stadt. Wo finden Sie Informationen?",
-      "b": "www.frisoerdoktor.de\nGesundheitstipps für Haare\nSchönheit und Pflege.",
-      "a": "www.frisoerstudio.de\nFriseure in Ihrer Nähe\nPreise und Öffnungszeiten.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten ein Buch über Berlin lesen. Wo finden Sie Informationen?",
-      "b": "www.berlinrezept.de\nRezepte aus Berlin\nEssen und Kochen.",
-      "a": "www.berlinbuch.de\nDie besten Bücher über Berlin\nLiteratur und Rezensionen.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten einen Arzttermin vereinbaren. Wo finden Sie Informationen?",
-      "a": "www.terminsport.de\nSportereignisse und Tickets\nSportarten und Ergebnisse.",
-      "b": "www.terminarzt.de\nÄrzte und Termine\nSchnell und einfach buchen.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten wissen, wie das Wetter morgen wird. Wo finden Sie Informationen?",
-      "a": "www.wetterspiele.de\nWetterspiele für Kinder\nLustige Unterhaltungen.",
-      "b": "www.wetterdienst.de\nAktuelle Wettervorhersagen\nInformationen für Ihre Region.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten einen Tanzkurs besuchen. Wo finden Sie Informationen?",
-      "a": "www.tanzschuhe.de\nSchuhe für Tänze\nGrößen und Modelle.",
-      "b": "www.tanzkurse.de\nKurze und lange Tänze\nInfo zu Terminen und Preisen.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie interessieren sich für Natur und Umwelt. Wo finden Sie Informationen?",
-      "b": "www.naturgeschichten.de\nGeschichten über Tiere\nUnterhaltung für Kinder.",
-      "a": "www.naturfreund.de\nNaturschutz und Umwelt\nAktuelle Projekte und Volunteer.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie suchen nach einem Gartenhaus. Wo finden Sie Informationen?",
-      "b": "www.gartenrezepte.de\nRezepte mit frischen Produkten\nKochen und genießen.",
-      "a": "www.gartenhaus.de\nVerschiedene Gartenhäuser\nTipps für den Kauf.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten ein Geschenk für einen Freund kaufen. Wo finden Sie Ideen?",
-      "b": "www.geschenkbewertungen.de\nBewertungen über Geschenke\nKaufberatung und Tipps.",
-      "a": "www.geschenkideen.de\nKreative Ideen für Geschenke\nFür jeden Anlass.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten eine neue Tasche kaufen. Wo finden Sie Informationen?",
-      "b": "www.taschenrezepte.de\nRezepte für Taschen\nWas tun mit alten Taschen.",
-      "a": "www.taschenwelt.de\nModische Taschen für jeden Anlass\nQualität und Preis.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie interessieren sich für die Geschichte der Deutschen. Wo können Sie mehr erfahren?",
-      "a": "www.deutschlandspiele.de\nSpiele über Deutschland\nUnterhaltung für Familien.",
-      "b": "www.deutschlandgeschichte.de\nGeschichte der Deutschen\nWichtige Ereignisse und Daten.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten einen neuen Fernseher kaufen. Wo finden Sie Informationen?",
-      "a": "www.tv-unterhaltung.de\nUnterhaltung im Fernsehen\nFilme und Serien.",
-      "b": "www.tv-vergleich.de\nDie besten Fernseher 2023\nTests, Preise und Meinungen.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie suchen nach einem neuen Hobby. Wo finden Sie Ideen?",
-      "a": "www.hobbys.de\nVerschiedene Hobbys entdecken\nTipps und Tricks.",
-      "b": "www.hobbyrezepte.de\nRezepte zum Selbermachen\nLeckere Ideen.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten einen Online-Kurs belegen. Wo finden Sie Informationen?",
-      "a": "www.onlinekurse.de\nKurse in verschiedenen Fächern\nVergleich und Anmeldung.",
-      "b": "www.onlineunterhaltung.de\nSpiele und Filme online\nSpaß und Freizeit.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten ein neues Rezept ausprobieren. Wo finden Sie Informationen?",
-      "a": "www.kuechenrezepte.de\nEinfach und lecker kochen\nSchnelle Rezepte für jeden Tag.",
-      "b": "www.kuechenwerkzeuge.de\nWerkzeuge für die Küche\nTipps für Ihre Küche.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten mehr über die deutsche Kultur erfahren. Wo finden Sie Informationen?",
-      "a": "www.deutschlandkultur.de\nKulturelle Veranstaltungen in Deutschland\nInformationen und Tipps.",
-      "b": "www.kulturspiele.de\nSpiele über Kultur\nLernspiele für Kinder.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie suchen nach einem Fitnessstudio in Ihrer Nähe. Wo finden Sie Informationen?",
-      "a": "www.fitnessrezepte.de\nGesunde Rezepte für Fitness\nErnährungstipps und Pläne.",
-      "b": "www.fitnessstudios.de\nStudios in Ihrer Stadt\nÖffnungszeiten und Mitgliedschaften.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten eine Fernsehsendung sehen. Wo finden Sie Informationen?",
-      "b": "www.tv-spiel.de\nSpiele zu Fernsehsendungen\nInteraktive Unterhaltung.",
-      "a": "www.tv-programm.de\nAktuelles TV-Programm\nSendezeiten und Sender.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie interessieren sich für nationale Feiertage in Deutschland. Wo können Sie mehr erfahren?",
-      "b": "www.feiertageideen.de\nIdeen für Feiertagspartys\nDekoration und Rezepte.",
-      "a": "www.deutschefeiertage.de\nAlle Feiertage in Deutschland\nInformative Artikel.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie suchen nach einem neuen Mobiltelefon. Wo finden Sie Informationen?",
-      "a": "www.smartphoneunterhaltung.de\nApps und Spiele für Smartphones\nKreativität und Spaß.",
-      "b": "www.mobilesmart.de\nDie neuesten Mobiltelefone\nVergleich und Kundenmeinungen.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten sich über gesunde Ernährung informieren. Wo finden Sie Informationen?",
-      "b": "www.ernährungsdiagnostik.de\nTests und Diagnosen für Ernährung\nGesundheitsberatung.",
-      "a": "www.ernährungswissen.de\nGesunde Ernährung und Tipps\nRezepte und Einkaufslisten.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten Ihre Lieblingsmusik online hören. Wo finden Sie Informationen?",
-      "b": "www.musikquiz.de\nQuiz über Musik\nUnterhaltsame Herausforderungen.",
-      "a": "www.musikstreaming.de\nMusik für jeden Geschmack\nTop Hits und Playlists.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie planen einen Wochenendausflug. Wo finden Sie Informationen über Ausflugsziele?",
-      "b": "www.wochenendspiele.de\nSpiele für das Wochenende\nUnterhaltung und Spaß.",
-      "a": "www.ausflugsziele.de\nSchöne Orte für Ausflüge\nTipps und Anregungen.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten einen Hund adoptieren. Wo finden Sie Informationen?",
-      "b": "www.hundespiele.de\nSpiele für Hunde\nUnterhalten Sie Ihren neuen Freund.",
-      "a": "www.hundevermittlung.de\nHunde zur Adoption\nDetails und Kontakt zu Tierheimen.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten mehr über nachhaltiges Leben erfahren. Wo finden Sie Informationen?",
-      "b": "www.nachhaltigkeitsspiele.de\nSpiele rund um Natur und Umwelt\nInteraktive Unterhaltung.",
-      "a": "www.nachhaltigkeit.de\nTipps für nachhaltiges Leben\nUmweltfreundliche Produkte.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten eine Reise nach Deutschland planen. Wo finden Sie Informationen?",
-      "b": "www.reiseumbauten.de\nUmbau von Reisen\nBauprojekte und Berichte.",
-      "a": "www.reiseinfo.de\nTipps für Reisen in Deutschland\nSehenswürdigkeiten und Routen.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie suchen nach einem neuen Laptop. Wo finden Sie Informationen?",
-      "b": "www.laptopspiele.de\nSpiele für Laptops\nUnterhaltung und Spaß.",
-      "a": "www.laptopvergleich.de\nDie besten Laptops im Test\nPreise und Bewertungen.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten mehr über verschiedene Freizeitaktivitäten erfahren. Wo finden Sie Informationen?",
-      "b": "www.freizeitspiele.de\nSpiele für die Freizeit\nUnterhaltung und Spaß.",
-      "a": "www.freizeitaktivitaeten.de\nVerschiedene Freizeitaktivitäten\nTipps für Ihre Freizeit.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie suchen nach einem passenden Geschenk für ein Kind. Wo finden Sie Ideen?",
-      "b": "www.kinderrezepte.de\nEinfache Rezepte für Kinder\nKochen und Backen.",
-      "a": "www.kindergeschenke.de\nGeschenkideen für Kinder\nBeliebte Spielzeuge und Bücher.",
-      "answer": "a"
-    },
-    {
-      "scenario": "Sie möchten einen neuen Computer kaufen. Wo finden Sie Informationen?",
-      "a": "www.computerservice.de\nReparatur und Service für Computer\nTechnische Unterstützung.",
-      "b": "www.computervergleich.de\nDie besten Computer 2023\nTests, Preise und Reviews.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten mehr über deutsche Serien erfahren. Wo finden Sie Informationen?",
-      "a": "www.serieharte.data\nSerien mit Spannung\nFür Thriller und Drama Fans.",
-      "b": "www.deutschserien.de\nBeliebte deutsche Serien im Überblick\nEpisoden und Handlung.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie planen einen Grillabend. Wo finden Sie Rezepte?",
-      "a": "www.grillsport.de\nSportarten beim Grillen\nAktivitäten für das Event.",
-      "b": "www.grillrezepte.de\nEinfache und leckere Grillrezepte\nVon Fleisch bis Gemüse.",
-      "answer": "b"
-    },
-    {
-      "scenario": "Sie möchten die beste Schokolade in Deutschland finden. Wo finden Sie Informationen?",
-      "a": "www.schokoladebacken.de\nRezepte für Schokoladendesserts\nBackideen und Anleitungen.",
-      "b": "www.schokoladen.de\nDie besten Schokoladenmarken\nKaufempfehlungen und Preise.",
-      "answer": "b"
-    }
+  {
+    "scenario": "Sie möchten Pizza essen. Wo finden Sie eine Speisekarte?",
+    "answer": "www.pizzeria-bella-italia.de\nPizza Pasta Salate Getränke Online bestellen Öffnungszeiten",
+    "interferer": "www.hotel-zur-post.de\nZimmer Frühstück Mittagessen Abendessen Restaurant Bar Preise"
+  },
+  {
+    "scenario": "Sie suchen ein Geschenk für einen Freund zum Geburtstag.",
+    "answer": "www.geschenkidee-online.de\nOriginelle Geschenke für jeden Anlass Geburtstag Weihnachten Hochzeit",
+    "interferer": "www.blumen-sonnenschein.de\nBlumensträuße Rosen Gestecke Trauerfloristik Lieferung"
+  },
+  {
+    "scenario": "Sie wollen wissen, wann der Bus zum Bahnhof fährt.",
+    "interferer": "www.fahrrad-reparatur.de\nFahrradreparatur Werkstatt Zubehör Ersatzteile Service",
+    "answer": "www.bus-fahrplan-online.de\nFahrpläne Abfahrtszeiten Ankunftszeiten Haltestellen Informationen"
+  },
+  {
+    "scenario": "Sie möchten ein Buch für Kinder kaufen.",
+    "answer": "www.kinderbuch-paradies.de\nBücher für Kinder und Jugendliche Vorlesebücher Lernbücher Bilderbücher",
+    "interferer": "www.spielzeug-traum.de\nSpielzeug Puppen Autos Spiele Eisenbahnen Modelleisenbahnen"
+  },
+  {
+    "scenario": "Sie brauchen neue Schuhe für den Winter.",
+    "interferer": "www.modehaus-schick.de\nDamenmode Herrenmode Kleider Röcke Hosen Jacken Mäntel",
+    "answer": "www.schuhhaus-winterfest.de\nWinterschuhe Stiefel Stiefeletten Warme Schuhe für Damen Herren Kinder"
+  },
+  {
+    "scenario": "Sie möchten einen Kaffee trinken gehen.",
+    "answer": "www.cafe-sonnenschein.de\nKaffee Kuchen Eis Getränke Frühstück Mittagstisch Terrasse",
+    "interferer": "www.restaurant-goldener-loewe.de\nRegionale Küche Mittag Abendessen Spezialitäten Weinkarte Reservierung"
+  },
+  {
+    "scenario": "Sie suchen eine Wohnung in Berlin.",
+    "answer": "www.berlin-wohnungen.de\nWohnungen zur Miete und zum Kauf in Berlin Stadtteile Angebote",
+    "interferer": "www.ferienwohnung-deutschland.de\nFerienwohnungen in Deutschland Urlaub Unterkunft Ferienhaus"
+  },
+  {
+    "scenario": "Sie möchten ein Auto mieten für ein Wochenende.",
+    "answer": "www.mietwagen-express.de\nMietwagen PKW Transporter Wochenendtarife Sonderangebote",
+    "interferer": "www.fahrradverleih-berlin.de\nFahrradverleih Mountainbikes E-Bikes Touren Reparatur Service"
+  },
+  {
+    "scenario": "Sie wollen wissen, wie das Wetter morgen wird.",
+    "answer": "www.wettervorhersage-online.de\nWetter morgen Übermorgen 7 Tage Wetterbericht Regenradar",
+    "interferer": "www.nachrichten-heute.de\nNachrichten Politik Wirtschaft Sport Kultur Regional International"
+  },
+  {
+    "scenario": "Sie möchten einen Deutschkurs besuchen.",
+    "answer": "www.sprachschule-international.de\nDeutschkurse für Anfänger Fortgeschrittene Intensivkurse Abendkurse",
+    "interferer": "www.sportverein-eintracht.de\nSportkurse Fitness Yoga Fußball Schwimmen Tennis Mitgliedschaft"
+  },
+  {
+    "scenario": "Sie suchen ein Rezept für einen Kuchen.",
+    "answer": "www.kuchen-rezepte-welt.de\nRezepte für Kuchen Torten Kekse Backen einfach schnell lecker",
+    "interferer": "www.kochbuch-online.de\nRezepte für Suppen Hauptspeisen Desserts Salate Vorspeisen"
+  },
+  {
+    "scenario": "Sie möchten ein Ticket für ein Fußballspiel kaufen.",
+    "answer": "www.fussball-tickets-online.de\nTickets für Bundesliga Champions League DFB-Pokal Spiele Termine",
+    "interferer": "www.kino-programm-heute.de\nKinoprogramm Filme heute Abend Vorstellungen Tickets online kaufen"
+  },
+  {
+    "scenario": "Sie wollen ein neues Handy kaufen.",
+    "answer": "www.handy-shop-online.de\nHandys Smartphones Tablets Zubehör Verträge Angebote Marken",
+    "interferer": "www.moebel-discount.de\nMöbel Sofas Betten Schränke Tische Stühle Lampen Wohnaccessoires"
+  },
+  {
+    "scenario": "Sie möchten einen Arzttermin machen.",
+    "answer": "www.arztpraxis-zentrum.de\nÄrzte Allgemeinmedizin Innere Medizin Termine online buchen Sprechzeiten",
+    "interferer": "www.apotheke-gesundheit.de\nApotheke Medikamente Beratung Notdienst Öffnungszeiten"
+  },
+  {
+    "scenario": "Sie suchen ein Hotel in München.",
+    "answer": "www.hotel-muenchen-zentrum.de\nHotels in München Zentrum Stadtmitte Übernachtung Zimmer Preise",
+    "interferer": "www.jugendherberge-bayern.de\nJugendherbergen in Bayern Übernachtung für junge Leute Gruppen Familien"
+  },
+  {
+    "scenario": "Sie möchten wissen, was in der Stadt los ist.",
+    "answer": "www.stadt-veranstaltungen.de\nVeranstaltungen Konzerte Theater Ausstellungen Feste Termine",
+    "interferer": "www.stadt-information.de\nStadtplan Sehenswürdigkeiten Geschichte Informationen Tourismus"
+  },
+  {
+    "scenario": "Sie wollen ein Geschenk zum Muttertag finden.",
+    "answer": "www.muttertagsgeschenke-online.de\nGeschenke zum Muttertag Blumen Schmuck Pralinen Ideen Tipps",
+    "interferer": "www.vatertagsgeschenke.de\nGeschenke zum Vatertag Grillen Bier Werkzeug Technik Gadgets"
+  },
+  {
+    "scenario": "Sie möchten ein Fahrrad kaufen.",
+    "answer": "www.fahrradladen-online.de\nFahrräder Mountainbikes Citybikes E-Bikes Kinderfahrräder Zubehör",
+    "interferer": "www.autohaus-meier.de\nAutos Neuwagen Gebrauchtwagen Werkstatt Service Reparatur Finanzierung"
+  },
+  {
+    "scenario": "Sie suchen Informationen über Museen in Hamburg.",
+    "answer": "www.museen-hamburg.de\nMuseen in Hamburg Ausstellungen Öffnungszeiten Eintrittspreise Informationen",
+    "interferer": "www.theater-hamburg.de\nTheater in Hamburg Spielplan Vorstellungen Tickets Preise"
+  },
+  {
+    "scenario": "Sie möchten einen Tisch in einem Restaurant reservieren.",
+    "answer": "www.restaurant-reservierung-online.de\nTischreservierung Restaurants finden Tisch online reservieren kostenlos",
+    "interferer": "www.kochkurse-online.de\nKochkurse Online-Kochkurse Rezepte Kochen lernen Tipps Tricks"
+  },
+  {
+    "scenario": "Sie wollen wissen, wie spät es ist.",
+    "answer": "www.die-uhrzeit.de\nAktuelle Uhrzeit Atomuhr Weltzeit Zeitzonen Zeitumrechnung",
+    "interferer": "www.wetter-deutschland.de\nWetter Deutschland Vorhersage Temperaturen Regen Wind Sonne"
+  },
+  {
+    "scenario": "Sie suchen einen Parkplatz in der Innenstadt.",
+    "answer": "www.parkhaus-finder.de\nParkhäuser Parkplätze Innenstadt Parkgebühren Öffnungszeiten Navigation",
+    "interferer": "www.tankstellen-suche.de\nTankstellen Benzinpreise Dieselpreise Autowäsche Shop Angebote"
+  },
+  {
+    "scenario": "Sie möchten einen Brief verschicken.",
+    "answer": "www.post-online.de\nPostfilialen Briefmarken Pakete Briefe Porto Preise Services",
+    "interferer": "www.bank-online.de\nOnline-Banking Konten Kredite Geldanlagen Überweisungen Daueraufträge"
+  },
+  {
+    "scenario": "Sie wollen ein Eis essen gehen.",
+    "answer": "www.eisdiele-sonnenschein.de\nEis Eisbecher Eissorten Kaffee Kuchen Getränke Terrasse Öffnungszeiten",
+    "interferer": "www.baeckerei-lecker.de\nBäckerei Brot Brötchen Kuchen Gebäck Torten Frühstück Mittagstisch"
+  },
+  {
+    "scenario": "Sie suchen eine Apotheke in Ihrer Nähe.",
+    "answer": "www.apotheken-notdienst.de\nApotheken Notdienst Apothekenfinder Suche Öffnungszeiten Medikamente",
+    "interferer": "www.krankenhaus-info.de\nKrankenhäuser Kliniken Ärzte Notaufnahme Informationen Behandlung"
+  },
+  {
+    "scenario": "Sie möchten einen Film im Kino sehen.",
+    "answer": "www.kino-programm-online.de\nKinoprogramm Filme heute Abend Vorstellungen Tickets online kaufen",
+    "interferer": "www.fernsehprogramm-heute.de\nFernsehprogramm Heute Abend Sender Sendungen Filme Serien Dokumentationen"
+  },
+  {
+    "scenario": "Sie wollen wissen, wie man öffentliche Verkehrsmittel benutzt.",
+    "answer": "www.oepnv-info.de\nÖffentlicher Nahverkehr Bus Bahn Straßenbahn Fahrpläne Tickets Informationen",
+    "interferer": "www.taxi-zentrale.de\nTaxis Taxi bestellen Taxi rufen Fahrpreise Service Informationen"
+  },
+  {
+    "scenario": "Sie suchen eine günstige Unterkunft für eine Nacht.",
+    "answer": "www.hostel-buchung-online.de\nHostels Jugendherbergen Günstige Übernachtung Zimmer Preise Bewertungen",
+    "interferer": "www.luxushotel-angebote.de\nLuxushotels 5 Sterne Hotels Wellness Spa Angebote Suiten Zimmer"
+  },
+  {
+    "scenario": "Sie möchten etwas über deutsche Geschichte lernen.",
+    "answer": "www.deutsche-geschichte-online.de\nDeutsche Geschichte Epochen Ereignisse Personen Informationen Lernen",
+    "interferer": "www.deutsche-kueche-rezepte.de\nDeutsche Küche Rezepte Regionale Küche Spezialitäten Kochen Essen"
+  },
+  {
+    "scenario": "Sie wollen wissen, ob ein Geschäft heute geöffnet ist.",
+    "answer": "www.oeffnungszeiten-heute.de\nÖffnungszeiten Geschäfte Supermärkte Banken Apotheken heute Sonntag",
+    "interferer": "www.feiertage-deutschland.de\nFeiertage Deutschland Kalender Gesetzliche Feiertage Termine Informationen"
+  },
+  {
+    "scenario": "Sie möchten ein Busticket nach München kaufen.",
+    "interferer": "www.bahn-online.de\nZugtickets online buchen Sparpreise Fahrplanauskunft Reiseinformationen",
+    "answer": "www.bus-tickets-muenchen.de\nBustickets nach München Fernbusse Direktverbindungen Preise Fahrpläne"
+  },
+  {
+    "scenario": "Sie suchen ein günstiges Hotel in Berlin für Studenten.",
+    "interferer": "www.studentenwohnheim-berlin.de\nStudentenwohnheime Zimmer Apartments WG-Zimmer Berlin Anmeldung",
+    "answer": "www.billige-hotels-berlin.de\nGünstige Hotels Berlin Budget Hotels Jugendherbergen Pensionen Angebote"
+  },
+  {
+    "scenario": "Sie wollen wissen, ob das Schwimmbad heute geöffnet ist.",
+    "interferer": "www.freizeitpark-spass.de\nFreizeitpark Achterbahnen Karussells Shows Attraktionen Öffnungszeiten",
+    "answer": "www.schwimmbad-info.de\nSchwimmbäder Öffnungszeiten Eintrittspreise Kurse Angebote Informationen"
+  },
+  {
+    "scenario": "Sie möchten ein Geschenk für Weihnachten bestellen.",
+    "answer": "www.weihnachtsgeschenke-online.de\nWeihnachtsgeschenke Geschenkideen für Familie Freunde Kinder Kollegen",
+    "interferer": "www.ostergeschenke-shop.de\nOstergeschenke Schokolade Ostereier Osterhasen Dekoration Bastelideen"
+  },
+  {
+    "scenario": "Sie brauchen eine neue Lampe für Ihr Wohnzimmer.",
+    "answer": "www.moebelhaus-online.de\nMöbel für Wohnzimmer Schlafzimmer Küche Bad Lampen Teppiche",
+    "interferer": "www.baumarkt-online.de\nBaumarkt Werkzeug Farben Gartenartikel Holz Eisenwaren Lampen"
+  },
+  {
+    "scenario": "Sie möchten einen Friseurtermin vereinbaren.",
+    "answer": "www.friseur-salon-schoen.de\nFriseur Damen Herren Kinder Haarschnitte Frisuren Farbe Termine",
+    "interferer": "www.kosmetikstudio-beauty.de\nKosmetik Nagelstudio Fußpflege Massage Gesichtsbehandlung Wellness"
+  },
+  {
+    "scenario": "Sie suchen ein Rezept für Nudelsalat.",
+    "answer": "www.salat-rezepte-welt.de\nSalatrezepte Grüner Salat Nudelsalat Kartoffelsalat Reissalat einfach",
+    "interferer": "www.suppen-rezepte-online.de\nSuppen Rezepte Gemüsesuppe Hühnersuppe Tomatensuppe schnell kochen"
+  },
+  {
+    "scenario": "Sie möchten ein Konzertticket für ein Rockkonzert kaufen.",
+    "answer": "www.konzert-tickets-online.de\nKonzerttickets Rock Pop Klassik Jazz Festivals Termine Künstler",
+    "interferer": "www.theater-tickets-berlin.de\nTheatertickets Oper Ballett Musical Schauspiel Berlin Vorstellungen"
+  },
+  {
+    "scenario": "Sie wollen wissen, wo man gut frühstücken kann.",
+    "answer": "www.cafe-fruehstueck-berlin.de\nCafés Frühstück Brunch Berlin lecker gemütlich Auswahl Empfehlungen",
+    "interferer": "www.restaurant-berlin-mitte.de\nRestaurants Berlin Mitte Mittagessen Abendessen Spezialitäten Reservierung"
+  },
+  {
+    "scenario": "Sie suchen eine Bank in der Nähe.",
+    "answer": "www.bank-filialen-finder.de\nBank Filialen Geldautomaten Öffnungszeiten Standorte Suche in der Nähe",
+    "interferer": "www.supermarkt-angebote.de\nSupermarkt Angebote Lebensmittel Getränke Prospekte Aktionen Rabatte"
+  },
+  {
+    "scenario": "Sie möchten ein Geschenk zum Valentinstag finden.",
+    "answer": "www.valentinstagsgeschenke-shop.de\nValentinstagsgeschenke Blumen Pralinen Schmuck Romantische Geschenke",
+    "interferer": "www.osterdekoration-online.de\nOsterdekoration Ostereier Osterhasen Frühlingsdeko Bastelmaterialien"
+  },
+  {
+    "scenario": "Sie brauchen Hilfe beim Computer.",
+    "answer": "www.computer-hilfe-online.de\nComputerhilfe PC-Service Reparatur Installation Software Probleme lösen",
+    "interferer": "www.handy-reparatur-service.de\nHandy Reparatur Display Akku Wasserschaden Schnellservice Günstig"
+  },
+  {
+    "scenario": "Sie wollen wissen, wie lange ein Museum geöffnet hat.",
+    "answer": "www.museum-oeffnungszeiten.de\nMuseum Öffnungszeiten Eintrittspreise Adresse Anfahrt Informationen",
+    "interferer": "www.stadtfuehrung-berlin.de\nStadtführung Berlin Touristenattraktionen Sehenswürdigkeiten Geschichte Kultur"
+  },
+  {
+    "scenario": "Sie suchen eine günstige Flugverbindung nach Spanien.",
+    "answer": "www.billig-fluege-spanien.de\nBilligflüge Spanien Flugangebote Direktflüge Fluggesellschaften Preise",
+    "interferer": "www.ferienhaus-spanien-meer.de\nFerienhäuser Spanien Meer Urlaub Unterkunft Ferienwohnung Strand Nähe"
+  },
+  {
+    "scenario": "Sie möchten einen Kuchen zum Geburtstag backen.",
+    "answer": "www.backzutaten-online.de\nBackzutaten Mehl Zucker Eier Butter Schokolade Nüsse Dekoration",
+    "interferer": "www.kochbuecher-shop.de\nKochbücher Backbücher Rezeptbücher Internationale Küche Vegetarische Küche"
+  },
+  {
+    "scenario": "Sie wollen wissen, was im Fernsehen kommt.",
+    "answer": "www.tv-programm-heute-abend.de\nTV Programm Heute Abend Sender Sendungen Filme Serien Übersicht",
+    "interferer": "www.radio-sender-online.de\nRadiosender Online Radio Musik Nachrichten Sport Kultur Senderliste"
+  },
+  {
+    "scenario": "Sie suchen ein Sportgeschäft für Sportschuhe.",
+    "answer": "www.sportgeschaeft-online.de\nSportgeschäft Sportschuhe Sportbekleidung Sportartikel Marken Angebote",
+    "interferer": "www.mode-boutique-damen.de\nMode Boutique Damenmode Kleider Röcke Blusen Hosen Accessoires Schuhe"
+  },
+  {
+    "scenario": "Sie möchten einen Sprachkurs in Englisch finden.",
+    "answer": "www.sprachkurse-englisch-online.de\nEnglischkurse Online Englisch lernen Anfänger Fortgeschrittene Kurse",
+    "interferer": "www.fitnessstudio-mitgliedschaft.de\nFitnessstudio Mitgliedschaft Kurse Geräte Training Wellness Angebote"
+  },
+  {
+    "scenario": "Sie wollen wissen, ob es in Berlin schneit.",
+    "answer": "www.wetter-berlin-aktuell.de\nWetter Berlin Aktuell Temperatur Regen Schnee Vorhersage Wetterbericht",
+    "interferer": "www.verkehr-berlin-live.de\nVerkehr Berlin Live Stau Baustellen Verkehrsmeldungen Aktuelle Lage"
+  },
+  {
+    "scenario": "Sie suchen ein Restaurant mit italienischer Küche.",
+    "answer": "www.italienisches-restaurant-berlin.de\nItalienisches Restaurant Berlin Pizza Pasta Fisch Fleisch Wein Ambiente",
+    "interferer": "www.deutsches-restaurant-berlin.de\nDeutsches Restaurant Berlin Regionale Küche Spezialitäten Biergarten Mittagstisch"
+  },
+  {
+    "scenario": "Sie möchten ein Taxi bestellen.",
+    "answer": "www.taxi-zentrale-berlin.de\nTaxi Zentrale Berlin Taxi bestellen Telefonnummer Online Bestellung App",
+    "interferer": "www.fahrrad-verleih-berlin.de\nFahrrad Verleih Berlin Fahrräder Mieten Citybikes Mountainbikes E-Bikes"
+  },
+  {
+    "scenario": "Sie wollen wissen, wie man einen Brief richtig adressiert.",
+    "answer": "www.post-brief-adressieren.de\nPost Brief Adressieren Anleitung Format Vorlage Umschlag Beschriften",
+    "interferer": "www.email-schreiben-tipps.de\nEmail Schreiben Tipps Tricks Richtig formulieren Betreff Anrede Gruß"
+  },
+  {
+    "scenario": "Sie suchen ein Möbelgeschäft für ein neues Sofa.",
+    "answer": "www.moebel-sofas-online.de\nMöbel Sofas Couches Ecksofas Ledersofas Stoffsofas Auswahl Angebote",
+    "interferer": "www.elektro-geraete-shop.de\nElektro Geräte Kühlschränke Waschmaschinen Spülmaschinen Fernseher Angebote"
+  },
+  {
+    "scenario": "Sie möchten wissen, wann der Zug nach Hamburg abfährt.",
+    "answer": "www.fahrplan-zug-hamburg.de\nFahrplan Zug Hamburg Abfahrtszeiten Ankunftszeiten Gleisnummer Informationen",
+    "interferer": "www.stadtplan-hamburg-zentrum.de\nStadtplan Hamburg Zentrum Straßen Sehenswürdigkeiten Hotels Parkplätze"
+  },
+  {
+    "scenario": "Sie brauchen eine neue Brille.",
+    "answer": "www.optiker-online-brillen.de\nOptiker Brillen Sonnenbrillen Kontaktlinsen Sehtest Beratung Angebote",
+    "interferer": "www.hoergeraete-akustiker.de\nHörgeräte Akustiker Hörtest Beratung Anpassung Reparatur Batterien"
+  },
+  {
+    "scenario": "Sie wollen wissen, wie man einen Kuchen ohne Ei backt.",
+    "answer": "www.vegane-kuchen-rezepte.de\nVegane Kuchen Rezepte Ohne Ei Milch Butter Einfach Lecker Backen",
+    "interferer": "www.glutenfreie-rezepte-backen.de\nGlutenfreie Rezepte Backen Brot Kuchen Kekse Zöliakie Unverträglichkeit"
+  },
+  {
+    "scenario": "Sie suchen eine Werkstatt für Ihr Auto.",
+    "answer": "www.auto-werkstatt-suche.de\nAuto Werkstatt Reparatur Service Inspektion Ölwechsel Reifen Wechsel",
+    "interferer": "www.fahrrad-werkstatt-reparatur.de\nFahrrad Werkstatt Reparatur Inspektion Reifenwechsel Bremsen Service"
+  },
+  {
+    "scenario": "Sie möchten ein Geschenk zum Geburtstag für eine Frau finden.",
+    "answer": "www.geschenke-frauen-geburtstag.de\nGeschenke Frauen Geburtstag Ideen Persönlich Originell Schön Praktisch",
+    "interferer": "www.geschenke-maenner-geburtstag.de\nGeschenke Männer Geburtstag Technik Gadgets Erlebnis Gutscheine Bier"
+  },
+  {
+    "scenario": "Sie wollen wissen, ob heute ein Feiertag ist.",
+    "answer": "www.feiertage-heute-deutschland.de\nFeiertage Heute Deutschland Kalender Gesetzliche Feiertage Übersicht",
+    "interferer": "www.wochentag-heute-ermitteln.de\nWochentag Heute Datum Aktueller Wochentag Kalender Datum ermitteln"
+  },
+  {
+    "scenario": "Sie suchen ein Geschäft für Sportbekleidung.",
+    "answer": "www.sportbekleidung-online-shop.de\nSportbekleidung Trainingsanzüge T-Shirts Hosen Jacken Schuhe Marken",
+    "interferer": "www.mode-accessoires-online.de\nMode Accessoires Schmuck Uhren Taschen Gürtel Schals Tücher Angebote"
+  }
 ]
