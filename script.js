@@ -7,8 +7,8 @@ let currentTask = null;
 async function loadAllQuestions() {
     try {
         const [response1, response2] = await Promise.all([
-            fetch('datasets/reading_task_1.json'),
-            fetch('datasets/reading_task_2.json')
+            fetch('./datasets/reading_task_1.json'),
+            fetch('./datasets/reading_task_2.json')
         ]);
         
         questions = shuffleArray(await response1.json());
