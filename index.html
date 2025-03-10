@@ -3,37 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>German Exam Practice - Reading Task 1</title>
+    <title>German Exam Practice</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Lesen, Teil 1</h1>
-            <div class="instruction">
-                <p>Sind die Aussagen richtig (+) oder falsch (–)?</p>
-                <p>Kreuzen Sie an.</p>
+        <!-- Task Selection -->
+        <div id="task-selection" class="task-selection">
+            <h1>German Exam Practice</h1>
+            <div class="task-grid">
+                <button class="task-btn" data-task="lesen1">
+                    <h2>Lesen, Teil 1</h2>
+                    <p>Richtig oder Falsch?</p>
+                </button>
+                <button class="task-btn" data-task="lesen2">
+                    <h2>Lesen, Teil 2</h2>
+                    <p>Welche Anzeige passt?</p>
+                </button>
             </div>
-        </header>
+        </div>
 
-        <main>
-            <div class="question-container">
-                <div class="text-box">
-                    <div id="text-content">
-                        <!-- Text will be inserted here -->
+        <!-- Lesen Teil 1 -->
+        <div id="lesen1-container" class="task-container" style="display: none;">
+            <header>
+                <button class="back-btn">← Zurück</button>
+                <h1>Lesen, Teil 1</h1>
+                <div class="instruction">
+                    <p>Sind die Aussagen richtig (+) oder falsch (–)?</p>
+                    <p>Kreuzen Sie an.</p>
+                </div>
+            </header>
+
+            <main>
+                <div class="question-container">
+                    <div class="text-box">
+                        <div id="text-content"></div>
+                    </div>
+                    <div id="statements"></div>
+                    <div class="controls">
+                        <button id="submit-btn" class="btn">Prüfen</button>
+                        <button id="next-btn" class="btn" style="display: none;">Nächste Frage</button>
                     </div>
                 </div>
+            </main>
+        </div>
 
-                <div id="statements">
-                    <!-- Statements will be inserted here -->
+        <!-- Lesen Teil 2 -->
+        <div id="lesen2-container" class="task-container" style="display: none;">
+            <header>
+                <button class="back-btn">← Zurück</button>
+                <h1>Lesen, Teil 2</h1>
+                <div class="instruction">
+                    <p>Lesen Sie die Texte und die Aufgaben.</p>
+                    <p> Welche Anzeige ist interessant für Sie? </p>
+                    <p>Kreuzen Sie an: a oder b?</p>
                 </div>
+            </header>
 
-                <div class="controls">
-                    <button id="submit-btn" class="btn">Prüfen</button>
-                    <button id="next-btn" class="btn" style="display: none;">Nächste Frage</button>
+            <main>
+                <div class="question-container">
+                    <div class="scenario-text" id="scenario-text"></div>
+                    <div class="options-container">
+                        <div class="option-box" id="option-a">
+                            <div class="option-label">a</div>
+                            <div class="option-content"></div>
+                        </div>
+                        <div class="option-box" id="option-b">
+                            <div class="option-label">b</div>
+                            <div class="option-content"></div>
+                        </div>
+                    </div>
+                    <div class="answer-section">
+                        <div class="answer-options">
+                            <label class="answer-option">
+                                <input type="radio" name="answer" value="a"> a
+                            </label>
+                            <label class="answer-option">
+                                <input type="radio" name="answer" value="b"> b
+                            </label>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button id="submit-btn2" class="btn">Prüfen</button>
+                        <button id="next-btn2" class="btn" style="display: none;">Nächste Frage</button>
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
