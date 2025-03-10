@@ -332,7 +332,7 @@ function displayWritingTask1() {
             // Create radio buttons for options
             const optionsDiv = document.createElement('div');
             optionsDiv.className = 'options';
-            
+                        
             // Create a flex container for horizontal layout
             const optionsContainer = document.createElement('div');
             optionsContainer.style.display = 'flex';
@@ -342,6 +342,7 @@ function displayWritingTask1() {
             field.options.forEach(option => {
                 const optionLabel = document.createElement('label');
                 optionLabel.className = 'option';
+                optionLabel.style.display = 'flex';
                 
                 const input = document.createElement('input');
                 input.type = 'radio';
