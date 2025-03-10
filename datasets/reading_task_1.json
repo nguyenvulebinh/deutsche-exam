@@ -1,0 +1,530 @@
+[
+    {
+      "text": "Hallo Anna,\nIch hoffe, es geht dir gut! Ich lade dich zu meiner Geburtstagsparty am Freitag um 18 Uhr ein. Wir feiern bei mir zu Hause. Es gibt Essen und Getränke. Bring bitte gute Laune mit! Ich freue mich auf dich!\nLiebe Grüße,\nTom",
+      "statements": [
+        {
+          "statement": "Tom hat am Freitag Geburtstag.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Die Party beginnt um 18 Uhr.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Die Feier findet im Park statt.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Felix,\nIch bin letzte Woche in Berlin angekommen. Die Stadt ist sehr interessant und die Leute sind freundlich. Ich besuche viele Museen und esse viel deutsches Essen. Ich hoffe, du kommst mich bald besuchen!\nBis bald,\nLena",
+      "statements": [
+        {
+          "statement": "Lena ist vor einer Woche in Berlin angekommen.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Lena findet die Stadt langweilig.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Lena möchte, dass Felix sie besucht.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Lieber Paul,\nIch mache einen Ausflug am Sonntag. Wir fahren mit dem Bus zum See. Es wird Spaß machen! Kommt bitte um 9 Uhr zur Haltestelle. Ich habe Snacks für alle dabei.\nViele Grüße,\nSarah",
+      "statements": [
+        {
+          "statement": "Sarah fährt am Samstag zum See.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Der Ausflug beginnt um 9 Uhr.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Sarah bringt Snacks für alle mit.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Anna,\n\nich bin jetzt zu Hause. Der Deutschkurs war sehr interessant. Ich habe viele neue Wörter gelernt. Morgen gehe ich ins Kino. Gehst du mit? Schreib mir bitte!\n\nViele Grüße,\nLena",
+      "statements": [
+        {
+          "statement": "Lena ist im Deutschkurs.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Der Deutschkurs war langweilig.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Lena möchte morgen ins Kino gehen.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Guten Tag Frau Müller,\n\ndas Zimmer ist für Sie reserviert. Zimmernummer 203 im zweiten Stock. Das Frühstück ist von 7 Uhr bis 10 Uhr im Restaurant im Erdgeschoss. \n\nWir wünschen Ihnen einen schönen Aufenthalt!\n\nMit freundlichen Grüßen,\nIhr Hotel Kaiser",
+      "statements": [
+        {
+          "statement": "Frau Müller hat Zimmernummer 302.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Das Frühstück ist im ersten Stock.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Das Frühstück beginnt um 7 Uhr.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Liebe Familie Schmidt,\n\nvielen Dank für Ihre Anfrage. Der Schwimmkurs für Kinder beginnt am Montag, den 15. Juli um 15 Uhr. Er findet jeden Montag und Mittwoch statt.  Die Kosten betragen 50 Euro pro Monat.\n\nMit freundlichen Grüßen,\nSchwimmschule Neptun",
+      "statements": [
+        {
+          "statement": "Der Schwimmkurs ist am Dienstag.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Der Kurs kostet 50 Euro.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Der Kurs ist für Erwachsene.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Max,\n\nwir treffen uns morgen um 14 Uhr am Kino, oder? Welchen Film wollen wir sehen? Ich mag Komödien und Actionfilme. Horrorfilme finde ich nicht gut. Schreib mir bitte, welchen Film du aussuchst!\n\nBis morgen,\nDein Freund Tom",
+      "statements": [
+        {
+          "statement": "Tom und Max treffen sich am Nachmittag.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Tom mag keine Actionfilme.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Tom weiß noch nicht, welchen Film sie sehen.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Sehr geehrte Damen und Herren,\n\nunser Geschäft ist heute geschlossen. Wir haben am Samstag von 9 Uhr bis 16 Uhr geöffnet. Am Sonntag ist unser Geschäft immer geschlossen. Vielen Dank für Ihr Verständnis.\n\nIhr Team von Schuhhaus Meier",
+      "statements": [
+        {
+          "statement": "Das Geschäft ist heute geöffnet.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Am Samstag ist das Geschäft bis 17 Uhr geöffnet.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Am Sonntag ist das Geschäft zu.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Liebe Oma,\n\nvielen Dank für das Geschenk zum Geburtstag! Ich habe mich sehr gefreut. Das Buch ist toll! Ich lese es jeden Tag. Nächstes Wochenende komme ich dich besuchen. Bis bald!\n\nDein Enkelkind Lisa",
+      "statements": [
+        {
+          "statement": "Lisa hat Geburtstag.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Oma hat Lisa ein Spiel geschenkt.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Lisa besucht Oma in dieser Woche.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Guten Tag,\n\nich möchte bitte eine Pizza Margherita zum Mitnehmen bestellen. Ist das möglich? Und wie lange dauert das? Ich hole die Pizza in 20 Minuten ab.\n\nVielen Dank,\nPeter Schmidt",
+      "statements": [
+        {
+          "statement": "Peter möchte eine Pizza essen.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Peter möchte die Pizza im Restaurant essen.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Peter holt die Pizza in einer halben Stunde ab.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Frau Weber,\n\nunser Deutschkurs beginnt am Montag, 7. Oktober um 9 Uhr. Der Kurs findet im Raum 102 im ersten Stock statt. Bitte bringen Sie Ihr Kursbuch mit. Wir freuen uns auf Sie!\n\nMit freundlichen Grüßen,\nIhr Sprachinstitut ABC",
+      "statements": [
+        {
+          "statement": "Der Deutschkurs beginnt im November.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Der Kurs ist im Erdgeschoss.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Frau Weber soll ein Buch mitbringen.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Liebe Sarah,\n\ndanke für deine Nachricht. Ich kann am Samstag leider nicht kommen. Ich bin krank und muss zu Hause bleiben. Aber am Sonntag habe ich Zeit. Vielleicht können wir uns am Sonntag treffen?\n\nViele Grüße,\nLena",
+      "statements": [
+        {
+          "statement": "Lena kann am Samstag kommen.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Lena ist nicht gesund.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Lena möchte Sarah am Sonntag treffen.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Achtung!\n\nWegen Bauarbeiten ist die Straße von Montag bis Freitag gesperrt. Die Buslinie 5 fährt nicht bis zur Haltestelle Rathaus. Bitte benutzen Sie die Haltestelle Kirche.\n\nVielen Dank für Ihr Verständnis,\nDie Stadtverwaltung",
+      "statements": [
+        {
+          "statement": "Die Straße ist das ganze Wochenende gesperrt.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Die Buslinie 5 fährt zum Rathaus.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Man soll zur Haltestelle Kirche gehen.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Peter,\n\nich bin im Café Central. Komm doch auch! Ich trinke einen Kaffee und esse Kuchen. Das Café ist sehr gemütlich und die Musik ist gut. Ich warte hier auf dich!\n\nBis gleich,\nJulia",
+      "statements": [
+        {
+          "statement": "Julia ist zu Hause.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Julia trinkt Tee.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Julia wartet auf Peter.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Sehr geehrte Frau Schmidt,\n\nvielen Dank für Ihre Bestellung. Ihr Paket ist fertig und wird morgen verschickt. Die Lieferung dauert normalerweise 2-3 Werktage. Sie können Ihre Bestellung online verfolgen.\n\nMit freundlichen Grüßen,\nIhr Online-Shop Team",
+      "statements": [
+        {
+          "statement": "Frau Schmidt hat etwas bestellt.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Das Paket kommt heute an.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Die Lieferung dauert weniger als zwei Tage.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Mama,\n\nich bin gut in Berlin angekommen. Das Hotel ist schön und das Wetter ist super. Ich gehe jetzt in die Stadt und schaue mir alles an. Bis bald!\n\nLiebe Grüße,\nDein Sohn Tim",
+      "statements": [
+        {
+          "statement": "Tim ist in Hamburg.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Das Wetter ist schlecht.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Tim ist im Hotel.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Liebe Freunde,\n\nwir machen am Sonntag ein Picknick im Park. Wer hat Lust mitzukommen? Wir treffen uns um 11 Uhr am Eingang vom Park. Bitte bringt etwas zu essen und trinken mit. Wir freuen uns auf euch!\n\nViele Grüße,\nAnna und Markus",
+      "statements": [
+        {
+          "statement": "Das Picknick ist am Samstag.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Das Picknick ist im Wald.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Man soll Essen mitbringen.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Guten Morgen Herr Müller,\n\nbitte kommen Sie heute Nachmittag um 15 Uhr in mein Büro. Wir müssen über das neue Projekt sprechen. Danke und bis später.\n\nMit freundlichen Grüßen,\nFrau Klein",
+      "statements": [
+        {
+          "statement": "Herr Müller soll am Morgen kommen.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Das Treffen ist um 3 Uhr.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Sie sprechen über Urlaub.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Lisa,\n\nkannst du mir bitte dein Fahrrad leihen? Ich möchte heute zum See fahren. Ich brauche es bis morgen Abend. Ich bringe es dir dann zurück. Danke!\n\nViele Grüße,\nMax",
+      "statements": [
+        {
+          "statement": "Max möchte ein Auto leihen.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Max fährt zum See.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Max bringt das Fahrrad morgen früh zurück.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Wichtige Information für alle Kunden:\n\nUnser Supermarkt schließt heute wegen einer Veranstaltung um 18 Uhr.  Morgen sind wir wieder wie gewohnt von 8 Uhr bis 20 Uhr für Sie da. Vielen Dank für Ihr Verständnis.\n\nIhr Supermarkt Team",
+      "statements": [
+        {
+          "statement": "Der Supermarkt ist heute bis 20 Uhr geöffnet.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Der Supermarkt ist morgen geschlossen.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Heute gibt es eine Party im Supermarkt.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Lieber Herr Schneider,\n\nIhre Rechnung für den Monat August ist da. Der Betrag ist 55 Euro. Bitte bezahlen Sie die Rechnung bis zum 15. September. Vielen Dank.\n\nMit freundlichen Grüßen,\nIhr Energieversorger",
+      "statements": [
+        {
+          "statement": "Die Rechnung ist für Juli.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Herr Schneider muss 55 Euro bezahlen.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Herr Schneider hat schon bezahlt.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Kinder,\n\nkommt bitte schnell zum Essen! Das Mittagessen ist fertig. Es gibt Nudeln mit Tomatensoße und Salat. Guten Appetit!\n\nMama",
+      "statements": [
+        {
+          "statement": "Es gibt Suppe zum Mittagessen.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Das Essen ist noch nicht fertig.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Es gibt Salat.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Sehr geehrte Fahrgäste,\n\nbitte beachten Sie: Der Zug nach München hat 10 Minuten Verspätung. Grund dafür sind Bauarbeiten auf der Strecke. Wir bitten um Entschuldigung.\n\nIhre Deutsche Bahn",
+      "statements": [
+        {
+          "statement": "Der Zug fährt nach Hamburg.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Der Zug ist pünktlich.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Es gibt Probleme mit der Strecke.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Frau Schulz,\n\ndas Rezept für den Kuchen ist sehr gut. Danke! Der Kuchen war lecker. Ich backe ihn bald wieder. Viele Grüße und bis zum nächsten Mal.\n\nIhre Nachbarin Frau Meyer",
+      "statements": [
+        {
+          "statement": "Frau Meyer hat ein Rezept bekommen.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Der Kuchen hat nicht geschmeckt.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Frau Meyer möchte das Rezept nicht mehr benutzen.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Liebe Familie Weber,\n\nherzlichen Glückwunsch zur Geburt Ihres Sohnes! Wir wünschen Ihnen alles Gute und viel Freude mit dem Baby. Viele liebe Grüße von uns allen.\n\nFamilie Schmidt",
+      "statements": [
+        {
+          "statement": "Familie Weber hat ein Mädchen bekommen.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Familie Schmidt gratuliert.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Familie Weber hat Geburtstag.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Guten Tag,\n\nich möchte mich für den Job als Verkäuferin bewerben. Ich bin 20 Jahre alt und spreche Deutsch und Englisch. Ich habe Erfahrung im Verkauf. Ich freue mich auf ein Gespräch mit Ihnen.\n\nMit freundlichen Grüßen,\nAnna Berger",
+      "statements": [
+        {
+          "statement": "Anna sucht einen Job als Lehrerin.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Anna ist jünger als 20 Jahre.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Anna kann Englisch sprechen.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Julia,\n\nich gehe morgen ins Fitnessstudio. Es gibt einen neuen Kurs für Yoga und ich möchte daran teilnehmen. Der Kurs beginnt um 18 Uhr. Hast du Lust mitzukommen?\n\nViele Grüße,\nKlara",
+      "statements": [
+        {
+          "statement": "Klara geht morgen ins Fitnessstudio.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Der Yoga-Kurs beginnt um 17 Uhr.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Klara möchte, dass Julia mitkommt.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Liebe Familie Meier,\n\nwir haben einen neuen Hund adoptiert! Er heißt Max und ist sehr verspielt. Wir freuen uns darauf, wenn ihr ihn besuchen kommt. Er liebt Kinder und spielt gerne im Garten.\n\nHerzliche Grüße,\nFamilie Schmidt",
+      "statements": [
+        {
+          "statement": "Die Familie Meier hat einen neuen Hund.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Der Hund heißt Max.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Max mag keine Kinder.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Stefan,\n\nich habe mir ein neues Smartphone gekauft! Es hat eine tolle Kamera und viel Speicherplatz. Ich kann damit viele Fotos machen. Wenn du willst, kann ich dir die Fotos zeigen!\n\nBis bald,\nMartin",
+      "statements": [
+        {
+          "statement": "Stefan hat ein neues Smartphone.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Das Smartphone hat eine gute Kamera.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Martin kann keine Fotos mit dem Smartphone machen.",
+          "answer": "falsch"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Anja,\n\nnächste Woche fliege ich nach Spanien! Ich freue mich sehr. Ich will die Strände besuchen und die Kultur erleben. Hast du Tipps für mich?\n\nViele Grüße,\nNico",
+      "statements": [
+        {
+          "statement": "Nico fliegt nächste Woche nach Spanien.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Nico will nicht die Strände besuchen.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Nico fragt Anja nach Tipps.",
+          "answer": "richtig"
+        }
+      ]
+    },
+    {
+      "text": "Hallo Oma,\n\nich möchte dir ein Rezept für meinen leckeren Apfelkuchen schicken! Er ist einfach zuzubereiten und schmeckt fantastisch. Ich werde ihn am Sonntag backen und dir mitbringen!\n\nLiebe Grüße,\nPia",
+      "statements": [
+        {
+          "statement": "Pia backt einen Apfelkuchen.",
+          "answer": "richtig"
+        },
+        {
+          "statement": "Das Rezept für den Kuchen ist sehr kompliziert.",
+          "answer": "falsch"
+        },
+        {
+          "statement": "Pia wird den Kuchen nicht mitbringen.",
+          "answer": "falsch"
+        }
+      ]
+    }
+  ]
+  
