@@ -1,15 +1,15 @@
 [
     {
-      "scenario": "Sie möchten ein Kaffee trinken. Wo können Sie Informationen über ein Café finden?",
-      "option_b": "www.sportzentrum.de\nFitness für alle.\nKurse - Schwimmbad - Sauna\nÖffnungszeiten - Preise - Events",
-      "option_a": "www.cafehaus.de\nGemütliches Café in der Innenstadt.\nKaffee-Spezialitäten und Kuchen.\nÖffnungszeiten und Karte",
-      "answer": "a"
+      "scenario": "Sie möchten einen Kaffee trinken. Wo können Sie Informationen über ein Café finden?",
+      "option_a": "www.sportzentrum.de\nFitness für alle.\nKurse - Schwimmbad - Sauna\nÖffnungszeiten - Preise - Events",
+      "option_b": "www.cafehaus.de\nGemütliches Café in der Innenstadt.\nKaffee-Spezialitäten und Kuchen.\nÖffnungszeiten und Karte",
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten ein Hotel in Berlin buchen. Wo finden Sie Informationen?",
       "option_b": "www.kinoberlin.de\nDas größte Kino in Berlin.\nAktuelle Filme - Tickets - Events\nAnfahrt - Preise",
-      "option_a": "[www.berlinhotel.com](https://www.berlinhotel.com)\nLuxus und Komfort in der Hauptstadt.\nZimmer buchen - Angebote - Galerie\nKontakt - Anfahrt",
-      "answer": "b"
+      "option_a": "www.berlinhotel.com\nLuxus und Komfort in der Hauptstadt.\nZimmer buchen - Angebote - Galerie\nKontakt - Anfahrt",
+      "answer": "a"
     },
     {
       "scenario": "Sie suchen ein Rezept für Apfelkuchen. Wo finden Sie es?",
@@ -20,13 +20,13 @@
     {
       "scenario": "Sie brauchen Hilfe beim Verständnis einer deutschen Karte. Wo finden Sie Informationen?",
       "option_a": "www.lernkarten.de\nKarten für Studenten.\nSprachkarten - Deutsche Grammatik - Vokabeln\nOnlinekurse - Übungen",
-      "option_b": "www.outdoorstore.de\nCamping- und Wanderbedarf.\nZelte - Rucksäcke - Schlafsäcke\nShop - Angebote - Kontakt",
+      "option_b": "www.outdoorstore.de\nCamping- und Wanderbedarf.\nZelte - Rucksäcke - Schlafsäcke - Karten\nShop - Angebote - Kontakt",
       "answer": "a"
     },
     {
       "scenario": "Sie möchten ein Fahrrad mieten. Wo finden Sie Informationen?",
-      "option_a": "www.fahrradverleih.de\nFahrräder für die Stadt und das Land.\nVerfügbarkeit - Preise - Stationen\nReservierung - Kontakt",
       "option_b": "www.schuhe.de\nBeste Schuhe für Sport und Freizeit.\nSale - Neuheiten - Tipps\nKontakt - Standorte",
+      "option_a": "www.fahrradverleih.de\nFahrräder für die Stadt und das Land.\nVerfügbarkeit - Preise - Stationen\nReservierung - Kontakt",
       "answer": "a"
     },
     {
@@ -43,14 +43,14 @@
     },
     {
       "scenario": "Sie suchen ein Hotel in Frankfurt. Wo finden Sie Informationen?",
-      "option_a": "www.frankfurthotels.de\nBeste Hotels in Frankfurt\nPreise und Verfügbarkeit.\nReservieren Sie jetzt!",
-      "option_b": "www.frankfurtbank.de\nBankdienstleistungen in Frankfurt\nKontoeröffnung.\nKredite und Darlehen.",
-      "answer": "a"
+      "option_b": "www.frankfurthotels.de\nBeste Hotels in Frankfurt\nPreise und Verfügbarkeit.\nReservieren Sie jetzt!",
+      "option_a": "www.frankfurtbank.de\nBankdienstleistungen in Frankfurt\nKontoeröffnung.\nKredite und Darlehen.",
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten nach Stuttgart ziehen. Wo finden Sie Informationen über die Stadt?",
       "option_a": "www.stuttgartinfo.de\nStadtinformationen Stuttgart\nSehenswürdigkeiten und Veranstaltungen.",
-      "option_b": "[www.stuttgartspiel.com](https://www.google.com/search?q=https://www.stuttgartspiel.com)\nSpiele und Rätsel für Kinder\nUnterhaltung und Spaß.",
+      "option_b": "www.stuttgartspiel.com\nSpiele und Rätsel für Kinder\nUnterhaltung und Spaß.",
       "answer": "a"
     },
     {
@@ -103,15 +103,15 @@
     },
     {
       "scenario": "Sie möchten in einem Schwimmbad in Hannover schwimmen gehen. Wo finden Sie Informationen?",
-      "option_b": "www.hannoverautos.de\nAuto-Verkaufsanzeigen\nFahrzeuge zu verkaufen.",
-      "option_a": "www.hannoverschwimmbad.de\nÖffnungszeiten und Preise.\nViele Schwimmmöglichkeiten!",
-      "answer": "a"
+      "option_a": "www.hannoverautos.de\nAuto-Verkaufsanzeigen\nFahrzeuge zu verkaufen.",
+      "option_b": "www.hannoverschwimmbad.de\nÖffnungszeiten und Preise.\nViele Schwimmmöglichkeiten!",
+      "answer": "b"
     },
     {
       "scenario": "Sie suchen nach einem Kindergarten für Ihr Kind. Wo finden Sie Informationen?",
-      "option_b": "www.kinderbuch.de\nBücher für Kinder\nLesetipps und Empfehlungen.",
-      "option_a": "www.kindergartenfinder.de\nFinden Sie Kindergärten in Ihrer Nähe\nDetails und Bewertungen.",
-      "answer": "a"
+      "option_a": "www.kinderbuch.de\nBücher für Kinder\nLesetipps und Empfehlungen.",
+      "option_b": "www.kindergartenfinder.de\nFinden Sie Kindergärten in Ihrer Nähe\nDetails und Bewertungen.",
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten eine Immobilie kaufen. Wo finden Sie Informationen?",
@@ -145,21 +145,21 @@
     },
     {
       "scenario": "Sie möchten einen Arzttermin vereinbaren. Wo finden Sie Informationen?",
-      "option_b": "www.terminsport.de\nSportereignisse und Tickets\nSportarten und Ergebnisse.",
-      "option_a": "www.terminarzt.de\nÄrzte und Termine\nSchnell und einfach buchen.",
-      "answer": "a"
+      "option_a": "www.terminsport.de\nSportereignisse und Tickets\nSportarten und Ergebnisse.",
+      "option_b": "www.terminarzt.de\nÄrzte und Termine\nSchnell und einfach buchen.",
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten wissen, wie das Wetter morgen wird. Wo finden Sie Informationen?",
-      "option_b": "www.wetterspiele.de\nWetterspiele für Kinder\nLustige Unterhaltungen.",
-      "option_a": "www.wetterdienst.de\nAktuelle Wettervorhersagen\nInformationen für Ihre Region.",
-      "answer": "a"
+      "option_a": "www.wetterspiele.de\nWetterspiele für Kinder\nLustige Unterhaltungen.",
+      "option_b": "www.wetterdienst.de\nAktuelle Wettervorhersagen\nInformationen für Ihre Region.",
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten einen Tanzkurs besuchen. Wo finden Sie Informationen?",
-      "option_b": "www.tanzschuhe.de\nSchuhe für Tänze\nGrößen und Modelle.",
-      "option_a": "www.tanzkurse.de\nKurze und lange Tänze\nInfo zu Terminen und Preisen.",
-      "answer": "a"
+      "option_a": "www.tanzschuhe.de\nSchuhe für Tänze\nGrößen und Modelle.",
+      "option_b": "www.tanzkurse.de\nKurze und lange Tänze\nInfo zu Terminen und Preisen.",
+      "answer": "b"
     },
     {
       "scenario": "Sie interessieren sich für Natur und Umwelt. Wo finden Sie Informationen?",
@@ -177,7 +177,7 @@
       "scenario": "Sie möchten ein Geschenk für einen Freund kaufen. Wo finden Sie Ideen?",
       "option_b": "www.geschenkbewertungen.de\nBewertungen über Geschenke\nKaufberatung und Tipps.",
       "option_a": "www.geschenkideen.de\nKreative Ideen für Geschenke\nFür jeden Anlass.",
-      "answer": "a"
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten eine neue Tasche kaufen. Wo finden Sie Informationen?",
@@ -187,15 +187,15 @@
     },
     {
       "scenario": "Sie interessieren sich für die Geschichte der Deutschen. Wo können Sie mehr erfahren?",
-      "option_b": "www.deutschlandspiele.de\nSpiele über Deutschland\nUnterhaltung für Familien.",
-      "option_a": "www.deutschlandgeschichte.de\nGeschichte der Deutschen\nWichtige Ereignisse und Daten.",
-      "answer": "a"
+      "option_a": "www.deutschlandspiele.de\nSpiele über Deutschland\nUnterhaltung für Familien.",
+      "option_b": "www.deutschlandgeschichte.de\nGeschichte der Deutschen\nWichtige Ereignisse und Daten.",
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten einen neuen Fernseher kaufen. Wo finden Sie Informationen?",
-      "option_b": "www.tv-unterhaltung.de\nUnterhaltung im Fernsehen\nFilme und Serien.",
-      "option_a": "www.tv-vergleich.de\nDie besten Fernseher 2023\nTests, Preise und Meinungen.",
-      "answer": "a"
+      "option_a": "www.tv-unterhaltung.de\nUnterhaltung im Fernsehen\nFilme und Serien.",
+      "option_b": "www.tv-vergleich.de\nDie besten Fernseher 2023\nTests, Preise und Meinungen.",
+      "answer": "b"
     },
     {
       "scenario": "Sie suchen nach einem neuen Hobby. Wo finden Sie Ideen?",
@@ -223,9 +223,9 @@
     },
     {
       "scenario": "Sie suchen nach einem Fitnessstudio in Ihrer Nähe. Wo finden Sie Informationen?",
-      "option_b": "www.fitnessrezepte.de\nGesunde Rezepte für Fitness\nErnährungstipps und Pläne.",
-      "option_a": "www.fitnessstudios.de\nStudios in Ihrer Stadt\nÖffnungszeiten und Mitgliedschaften.",
-      "answer": "a"
+      "option_a": "www.fitnessrezepte.de\nGesunde Rezepte für Fitness\nErnährungstipps und Pläne.",
+      "option_b": "www.fitnessstudios.de\nStudios in Ihrer Stadt\nÖffnungszeiten und Mitgliedschaften.",
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten eine Fernsehsendung sehen. Wo finden Sie Informationen?",
@@ -241,9 +241,9 @@
     },
     {
       "scenario": "Sie suchen nach einem neuen Mobiltelefon. Wo finden Sie Informationen?",
-      "option_b": "www.smartphoneunterhaltung.de\nApps und Spiele für Smartphones\nKreativität und Spaß.",
-      "option_a": "www.mobilesmart.de\nDie neuesten Mobiltelefone\nVergleich und Kundenmeinungen.",
-      "answer": "a"
+      "option_a": "www.smartphoneunterhaltung.de\nApps und Spiele für Smartphones\nKreativität und Spaß.",
+      "option_b": "www.mobilesmart.de\nDie neuesten Mobiltelefone\nVergleich und Kundenmeinungen.",
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten sich über gesunde Ernährung informieren. Wo finden Sie Informationen?",
@@ -297,30 +297,30 @@
       "scenario": "Sie suchen nach einem passenden Geschenk für ein Kind. Wo finden Sie Ideen?",
       "option_b": "www.kinderrezepte.de\nEinfache Rezepte für Kinder\nKochen und Backen.",
       "option_a": "www.kindergeschenke.de\nGeschenkideen für Kinder\nBeliebte Spielzeuge und Bücher.",
-      "answer": "a"
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten einen neuen Computer kaufen. Wo finden Sie Informationen?",
-      "option_b": "www.computerservice.de\nReparatur und Service für Computer\nTechnische Unterstützung.",
-      "option_a": "www.computervergleich.de\nDie besten Computer 2023\nTests, Preise und Reviews.",
-      "answer": "a"
+      "option_a": "www.computerservice.de\nReparatur und Service für Computer\nTechnische Unterstützung.",
+      "option_b": "www.computervergleich.de\nDie besten Computer 2023\nTests, Preise und Reviews.",
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten mehr über deutsche Serien erfahren. Wo finden Sie Informationen?",
-      "option_b": "www.serieharte.data\nSerien mit Spannung\nFür Thriller und Drama Fans.",
-      "option_a": "www.deutschserien.de\nBeliebte deutsche Serien im Überblick\nEpisoden und Handlung.",
-      "answer": "a"
+      "option_a": "www.serieharte.data\nSerien mit Spannung\nFür Thriller und Drama Fans.",
+      "option_b": "www.deutschserien.de\nBeliebte deutsche Serien im Überblick\nEpisoden und Handlung.",
+      "answer": "b"
     },
     {
       "scenario": "Sie planen einen Grillabend. Wo finden Sie Rezepte?",
-      "option_b": "www.grillsport.de\nSportarten beim Grillen\nAktivitäten für das Event.",
-      "option_a": "www.grillrezepte.de\nEinfache und leckere Grillrezepte\nVon Fleisch bis Gemüse.",
-      "answer": "a"
+      "option_a": "www.grillsport.de\nSportarten beim Grillen\nAktivitäten für das Event.",
+      "option_b": "www.grillrezepte.de\nEinfache und leckere Grillrezepte\nVon Fleisch bis Gemüse.",
+      "answer": "b"
     },
     {
       "scenario": "Sie möchten die beste Schokolade in Deutschland finden. Wo finden Sie Informationen?",
-      "option_b": "www.schokoladebacken.de\nRezepte für Schokoladendesserts\nBackideen und Anleitungen.",
-      "option_a": "www.schokoladen.de\nDie besten Schokoladenmarken\nKaufempfehlungen und Preise.",
-      "answer": "a"
+      "option_a": "www.schokoladebacken.de\nRezepte für Schokoladendesserts\nBackideen und Anleitungen.",
+      "option_b": "www.schokoladen.de\nDie besten Schokoladenmarken\nKaufempfehlungen und Preise.",
+      "answer": "b"
     }
-]
+  ]
