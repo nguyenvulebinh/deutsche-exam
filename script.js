@@ -106,8 +106,8 @@ function displayQuestion2() {
     const question = questions2[currentQuestionIndex];
     
     document.getElementById('scenario-text').textContent = question.scenario;
-    document.getElementById('option-a').querySelector('.option-content').textContent = question.option_a;
-    document.getElementById('option-b').querySelector('.option-content').textContent = question.option_b;
+    document.getElementById('option-a').querySelector('.option-content').textContent = question.a;
+    document.getElementById('option-b').querySelector('.option-content').textContent = question.b;
     
     // Reset radio buttons and styles
     document.querySelectorAll('input[name="answer"]').forEach(radio => {
