@@ -336,8 +336,8 @@ function displayWritingTask1() {
             // Create a flex container for horizontal layout
             const optionsContainer = document.createElement('div');
             optionsContainer.style.display = 'flex';
-            optionsContainer.style.gap = '2rem';
             optionsContainer.style.marginTop = '0.5rem';
+            optionsContainer.style.alignItems = 'center';
             
             field.options.forEach(option => {
                 const optionLabel = document.createElement('label');

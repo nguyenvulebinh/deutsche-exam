@@ -524,6 +524,8 @@ h1 {
 .options > div {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-top: 0.5rem;
 }
 
@@ -533,6 +535,7 @@ h1 {
     gap: 0.5rem;
     cursor: pointer;
     font-size: 1.1rem;
+    min-width: 100px;
 }
 
 .option span {
@@ -608,16 +611,22 @@ h1 {
         padding: 1.5rem;
     }
 
-    .options {
+    .options > div {
         gap: 0.8rem;
     }
     
     .option {
         font-size: 1rem;
+        min-width: 80px;
     }
     
     .option span {
         font-size: 1rem;
+    }
+    
+    .option input[type="radio"] {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -632,5 +641,20 @@ h1 {
 
     .form-group input[type="text"] {
         padding: 0.6rem;
+    }
+
+    .options > div {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .option {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .option input[type="radio"] {
+        width: 18px;
+        height: 18px;
     }
 } 
