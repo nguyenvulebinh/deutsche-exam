@@ -3,25 +3,28 @@ let questions = [];
 let questions2 = [];
 let questions3 = [];
 let currentTask = null;
+let writingTasks = [];
 
 // Load questions for all tasks
 async function loadAllQuestions() {
     try {
-        const [response1, response2, response3] = await Promise.all([
+        const [response1, response2, response3, response4] = await Promise.all([
             fetch('./datasets/reading_task_1.json'),
             fetch('./datasets/reading_task_2.json'),
-            fetch('./datasets/reading_task_3.json')
+            fetch('./datasets/reading_task_3.json'),
+            fetch('./datasets/writing_task_1.json')
         ]);
         
-        if (!response1.ok || !response2.ok || !response3.ok) {
+        if (!response1.ok || !response2.ok || !response3.ok || !response4.ok) {
             throw new Error('Failed to load questions');
         }
 
         questions = shuffleArray(await response1.json());
         questions2 = shuffleArray(await response2.json());
         questions3 = shuffleArray(await response3.json());
+        writingTasks = shuffleArray(await response4.json()); // Shuffle initially
 
-        console.log('Loaded questions:', { questions, questions2, questions3 });
+        console.log('Loaded questions:', { questions, questions2, questions3, writingTasks });
     } catch (error) {
         console.error('Error loading questions:', error);
         alert('Failed to load questions. Please refresh the page.');
@@ -43,8 +46,14 @@ function showTaskSelection() {
     document.getElementById('lesen1-container').style.display = 'none';
     document.getElementById('lesen2-container').style.display = 'none';
     document.getElementById('lesen3-container').style.display = 'none';
+    document.getElementById('schreiben1-container').style.display = 'none';
     currentTask = null;
     currentQuestionIndex = 0;
+    
+    // Reshuffle writing tasks when returning to selection
+    if (writingTasks.length > 0) {
+        writingTasks = shuffleArray([...writingTasks]);
+    }
 }
 
 function showTask(taskId) {
@@ -52,14 +61,20 @@ function showTask(taskId) {
     document.getElementById('lesen1-container').style.display = taskId === 'lesen1' ? 'block' : 'none';
     document.getElementById('lesen2-container').style.display = taskId === 'lesen2' ? 'block' : 'none';
     document.getElementById('lesen3-container').style.display = taskId === 'lesen3' ? 'block' : 'none';
+    document.getElementById('schreiben1-container').style.display = taskId === 'schreiben1' ? 'block' : 'none';
     currentTask = taskId;
     currentQuestionIndex = 0;
+    
     if (taskId === 'lesen1') {
         displayQuestion1();
     } else if (taskId === 'lesen2') {
         displayQuestion2();
-    } else {
+    } else if (taskId === 'lesen3') {
         displayQuestion3();
+    } else if (taskId === 'schreiben1') {
+        // Reshuffle writing tasks when starting the task
+        writingTasks = shuffleArray([...writingTasks]);
+        displayWritingTask1();
     }
 }
 
@@ -280,6 +295,157 @@ function checkAnswers3() {
     document.getElementById('next-btn3').style.display = 'block';
 }
 
+// Schreiben Teil 1 Functions
+function displayWritingTask1() {
+    if (currentQuestionIndex >= writingTasks.length) {
+        currentQuestionIndex = 0;
+        writingTasks = shuffleArray([...writingTasks]); // Shuffle when starting over
+    }
+
+    const task = writingTasks[currentQuestionIndex];
+    
+    // Display task text
+    document.getElementById('task-text').textContent = task.text;
+    
+    // Set form title
+    document.querySelector('.form-container h2').textContent = task.form.title;
+    
+    // Create form fields
+    const form = document.getElementById('registration-form');
+    form.innerHTML = ''; // Clear existing fields
+    
+    task.form.fields.forEach(field => {
+        const formGroup = document.createElement('div');
+        formGroup.className = 'form-group';
+        
+        const label = document.createElement('label');
+        label.textContent = field.label;
+        formGroup.appendChild(label);
+        
+        // Generate a safe ID by removing special characters and spaces
+        const safeId = field.label
+            .toLowerCase()
+            .replace(':', '')
+            .replace(/[^a-z0-9]/g, '_');
+        
+        if (field.options) {
+            // Create radio buttons for options
+            const optionsDiv = document.createElement('div');
+            optionsDiv.className = 'options';
+            
+            // Create a flex container for horizontal layout
+            const optionsContainer = document.createElement('div');
+            optionsContainer.style.display = 'flex';
+            optionsContainer.style.gap = '2rem';
+            optionsContainer.style.marginTop = '0.5rem';
+            
+            field.options.forEach(option => {
+                const optionLabel = document.createElement('label');
+                optionLabel.className = 'option';
+                
+                const input = document.createElement('input');
+                input.type = 'radio';
+                input.name = safeId;
+                input.value = option;
+                input.required = true;
+                
+                const optionText = document.createElement('span');
+                optionText.textContent = option;
+                
+                optionLabel.appendChild(input);
+                optionLabel.appendChild(optionText);
+                optionsContainer.appendChild(optionLabel);
+            });
+            
+            optionsDiv.appendChild(optionsContainer);
+            formGroup.appendChild(optionsDiv);
+        } else {
+            // Create text input
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.required = true;
+            input.id = safeId;
+            formGroup.appendChild(input);
+        }
+
+        // Add a div for showing the correct answer (hidden initially)
+        const answerDiv = document.createElement('div');
+        answerDiv.className = 'correct-answer';
+        answerDiv.style.display = 'none';
+        answerDiv.innerHTML = `<span>Richtige Antwort: ${field.answer}</span>`;
+        formGroup.appendChild(answerDiv);
+        
+        form.appendChild(formGroup);
+    });
+
+    // Reset validation styles
+    document.querySelectorAll('.form-group').forEach(group => {
+        group.classList.remove('correct', 'incorrect');
+        group.querySelector('.correct-answer').style.display = 'none';
+    });
+
+    document.getElementById('submit-btn-schreiben1').style.display = 'block';
+    document.getElementById('next-btn-schreiben1').style.display = 'none';
+}
+
+function checkAnswersSchreiben1() {
+    const task = writingTasks[currentQuestionIndex];
+    const form = document.getElementById('registration-form');
+    let allAnswered = true;
+    let allCorrect = true;
+    let emptyFields = [];
+
+    task.form.fields.forEach(field => {
+        // Generate the same safe ID as in displayWritingTask1
+        const safeId = field.label
+            .toLowerCase()
+            .replace(':', '')
+            .replace(/[^a-z0-9]/g, '_');
+            
+        let input;
+        let value;
+
+        if (field.options) {
+            input = form.querySelector(`input[name="${safeId}"]:checked`);
+            value = input ? input.value : null;
+        } else {
+            input = form.querySelector(`#${safeId}`);
+            value = input ? input.value.trim() : null;
+        }
+
+        if (!value) {
+            allAnswered = false;
+            emptyFields.push(field.label);
+            return;
+        }
+
+        const formGroup = input.closest('.form-group');
+        const isCorrect = value.toLowerCase() === field.answer.toLowerCase();
+        
+        formGroup.classList.remove('correct', 'incorrect');
+        formGroup.classList.add(isCorrect ? 'correct' : 'incorrect');
+        
+        // Show the correct answer
+        const answerDiv = formGroup.querySelector('.correct-answer');
+        answerDiv.style.display = 'block';
+        
+        if (!isCorrect) allCorrect = false;
+    });
+
+    if (!allAnswered) {
+        alert(`Bitte füllen Sie die folgenden Felder aus:\n${emptyFields.join('\n')}`);
+        return;
+    }
+
+    // Disable all inputs
+    form.querySelectorAll('input').forEach(input => {
+        input.disabled = true;
+    });
+
+    document.getElementById('submit-btn-schreiben1').style.display = 'none';
+    document.getElementById('next-btn-schreiben1').style.display = 'block';
+}
+
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
     loadAllQuestions();
@@ -313,5 +479,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('next-btn3').addEventListener('click', () => {
         currentQuestionIndex++;
         displayQuestion3();
+    });
+
+    // Schreiben Teil 1 buttons
+    document.getElementById('submit-btn-schreiben1').addEventListener('click', checkAnswersSchreiben1);
+    document.getElementById('next-btn-schreiben1').addEventListener('click', () => {
+        currentQuestionIndex++;
+        displayWritingTask1();
     });
 }); 

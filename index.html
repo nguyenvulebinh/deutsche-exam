@@ -10,21 +10,23 @@
 <body>
     <div class="container">
         <!-- Task Selection -->
-        <div id="task-selection" class="task-selection">
-            <div class="task-grid">
-                <button class="task-btn" data-task="lesen1">
-                    <h2>Lesen, Teil 1</h2>
-                    <p>Richtig oder Falsch?</p>
-                </button>
-                <button class="task-btn" data-task="lesen2">
-                    <h2>Lesen, Teil 2</h2>
-                    <p>Welche Anzeige passt?</p>
-                </button>
-                <button class="task-btn" data-task="lesen3">
-                    <h2>Lesen, Teil 3</h2>
-                    <p>Richtig oder Falsch?</p>
-                </button>
-            </div>
+        <div id="task-selection" class="task-grid">
+            <button class="task-btn" data-task="lesen1">
+                <h2>Lesen, Teil 1</h2>
+                <p>Richtig oder Falsch?</p>
+            </button>
+            <button class="task-btn" data-task="lesen2">
+                <h2>Lesen, Teil 2</h2>
+                <p>Welche Anzeige passt?</p>
+            </button>
+            <button class="task-btn" data-task="lesen3">
+                <h2>Lesen, Teil 3</h2>
+                <p>Richtig oder Falsch?</p>
+            </button>
+            <button class="task-btn" data-task="schreiben1">
+                <h2>Schreiben, Teil 1</h2>
+                <p>Formular ausfüllen</p>
+            </button>
         </div>
 
         <!-- Lesen Teil 1 -->
@@ -130,6 +132,37 @@
                     <div class="controls">
                         <button id="submit-btn3" class="btn">Prüfen</button>
                         <button id="next-btn3" class="btn" style="display: none;">Nächste Frage</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Schreiben Teil 1 -->
+        <div id="schreiben1-container" class="task-container" style="display: none;">
+            <header>
+                <button class="back-btn">← Zurück</button>
+                <h1>Schreiben, Teil 1</h1>
+                <div class="instruction">
+                    <p>Lesen Sie die Aufgabe und füllen Sie das Formular aus.</p>
+                </div>
+            </header>
+
+            <main>
+                <div class="question-container">
+                    <div class="text-box">
+                        <div id="task-text"></div>
+                    </div>
+                    
+                    <div class="form-container">
+                        <h2></h2>
+                        <form id="registration-form">
+                            <!-- Form fields will be added dynamically -->
+                        </form>
+                    </div>
+
+                    <div class="controls">
+                        <button id="submit-btn-schreiben1" class="btn">Prüfen</button>
+                        <button id="next-btn-schreiben1" class="btn" style="display: none;">Nächste Aufgabe</button>
                     </div>
                 </div>
             </main>
