@@ -4,30 +4,54 @@ let questions2 = [];
 let questions3 = [];
 let currentTask = null;
 let writingTasks = [];
+let writingTasks2 = [];
 
 // Load questions for all tasks
 async function loadAllQuestions() {
+    const files = [
+        { name: 'reading_task_1.json', variable: 'questions' },
+        { name: 'reading_task_2.json', variable: 'questions2' },
+        { name: 'reading_task_3.json', variable: 'questions3' },
+        { name: 'writing_task_1.json', variable: 'writingTasks' },
+        { name: 'writing_task_2.json', variable: 'writingTasks2' }
+    ];
+
     try {
-        const [response1, response2, response3, response4] = await Promise.all([
-            fetch('./datasets/reading_task_1.json'),
-            fetch('./datasets/reading_task_2.json'),
-            fetch('./datasets/reading_task_3.json'),
-            fetch('./datasets/writing_task_1.json')
-        ]);
+        const loadFile = async (file) => {
+            try {
+                console.log(`Loading ${file.name}...`);
+                const response = await fetch(`./datasets/${file.name}`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${file.name}: ${response.status} ${response.statusText}`);
+                }
+                const data = await response.json();
+                console.log(`Successfully loaded ${file.name}`);
+                return { ...file, data: shuffleArray(data) };
+            } catch (error) {
+                console.error(`Error loading ${file.name}:`, error);
+                return { ...file, error };
+            }
+        };
+
+        const results = await Promise.all(files.map(loadFile));
         
-        if (!response1.ok || !response2.ok || !response3.ok || !response4.ok) {
-            throw new Error('Failed to load questions');
+        let hasErrors = false;
+        results.forEach(result => {
+            if (result.error) {
+                hasErrors = true;
+            } else {
+                window[result.variable] = result.data;
+            }
+        });
+
+        if (hasErrors) {
+            alert('Some files failed to load. The application may not work correctly. Please check the console for details.');
         }
 
-        questions = shuffleArray(await response1.json());
-        questions2 = shuffleArray(await response2.json());
-        questions3 = shuffleArray(await response3.json());
-        writingTasks = shuffleArray(await response4.json()); // Shuffle initially
-
-        console.log('Loaded questions:', { questions, questions2, questions3, writingTasks });
+        console.log('Finished loading all questions');
     } catch (error) {
-        console.error('Error loading questions:', error);
-        alert('Failed to load questions. Please refresh the page.');
+        console.error('Error in loadAllQuestions:', error);
+        alert('Failed to load questions. Please check your internet connection and try refreshing the page.');
     }
 }
 
@@ -47,12 +71,16 @@ function showTaskSelection() {
     document.getElementById('lesen2-container').style.display = 'none';
     document.getElementById('lesen3-container').style.display = 'none';
     document.getElementById('schreiben1-container').style.display = 'none';
+    document.getElementById('schreiben2-container').style.display = 'none';
     currentTask = null;
     currentQuestionIndex = 0;
     
     // Reshuffle writing tasks when returning to selection
     if (writingTasks.length > 0) {
         writingTasks = shuffleArray([...writingTasks]);
+    }
+    if (writingTasks2.length > 0) {
+        writingTasks2 = shuffleArray([...writingTasks2]);
     }
 }
 
@@ -62,6 +90,7 @@ function showTask(taskId) {
     document.getElementById('lesen2-container').style.display = taskId === 'lesen2' ? 'block' : 'none';
     document.getElementById('lesen3-container').style.display = taskId === 'lesen3' ? 'block' : 'none';
     document.getElementById('schreiben1-container').style.display = taskId === 'schreiben1' ? 'block' : 'none';
+    document.getElementById('schreiben2-container').style.display = taskId === 'schreiben2' ? 'block' : 'none';
     currentTask = taskId;
     currentQuestionIndex = 0;
     
@@ -72,9 +101,9 @@ function showTask(taskId) {
     } else if (taskId === 'lesen3') {
         displayQuestion3();
     } else if (taskId === 'schreiben1') {
-        // Reshuffle writing tasks when starting the task
-        writingTasks = shuffleArray([...writingTasks]);
         displayWritingTask1();
+    } else if (taskId === 'schreiben2') {
+        displayWritingTask2();
     }
 }
 
@@ -447,6 +476,192 @@ function checkAnswersSchreiben1() {
     document.getElementById('next-btn-schreiben1').style.display = 'block';
 }
 
+async function displayWritingTask2() {
+    if (currentQuestionIndex >= writingTasks2.length) {
+        currentQuestionIndex = 0;
+        writingTasks2 = shuffleArray([...writingTasks2]); // Shuffle when starting over
+    }
+
+    const task = writingTasks2[currentQuestionIndex];
+    
+    // Update the content in the existing container
+    const contextContent = document.querySelector('#schreiben2-container .context-content');
+    const requirementsList = document.querySelector('#schreiben2-container .requirements-list');
+    
+    // Clear previous content
+    contextContent.textContent = task.context;
+    requirementsList.innerHTML = task.requirements.map(req => `<li>${req}</li>`).join('');
+    
+    // Reset the textarea and hide feedback/suggestions
+    document.getElementById('userText').value = '';
+    document.getElementById('feedback').style.display = 'none';
+    document.getElementById('suggestions').style.display = 'none';
+}
+
+async function submitWriting() {
+    const userText = document.getElementById('userText').value.trim();
+    if (!userText) {
+        alert('Bitte schreiben Sie zuerst Ihre Antwort.');
+        return;
+    }
+
+    // Mockup service response
+    const mockFeedback = {
+        overall: "Gut strukturierte Antwort mit einigen Verbesserungsmöglichkeiten.",
+        points: [
+            "✓ Die Einleitung ist klar und zweckmäßig",
+            "✓ Alle Hauptpunkte wurden behandelt",
+            "⚠ Einige grammatikalische Fehler in den Nebensätzen",
+            "⚠ Der Schlusssatz könnte stärker sein"
+        ],
+        score: "75/100"
+    };
+
+    const feedbackSection = document.getElementById('feedback');
+    const feedbackContent = feedbackSection.querySelector('.feedback-content');
+    feedbackContent.innerHTML = `
+        <p><strong>Gesamtbewertung:</strong> ${mockFeedback.overall}</p>
+        <p><strong>Punktzahl:</strong> ${mockFeedback.score}</p>
+        <ul style="list-style: none; padding-left: 0;">
+            ${mockFeedback.points.map(point => `<li>${point}</li>`).join('')}
+        </ul>
+    `;
+    feedbackSection.style.display = 'block';
+}
+
+async function getSuggestions() {
+    const task = writingTasks2[currentQuestionIndex];
+    
+    try {
+        // Show loading indicator
+        const suggestionsSection = document.getElementById('suggestions');
+        const suggestionsContent = suggestionsSection.querySelector('.suggestions-content');
+        suggestionsContent.innerHTML = `
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Vorschläge werden geladen...</p>
+            </div>
+        `;
+        suggestionsSection.style.display = 'block';
+
+        // Prepare the API request data
+        const requestData = {
+            assistant_id: "writing_task_2_a1",
+            input: {
+                messages: [
+                    {
+                        role: "human",
+                        content: JSON.stringify({
+                            context: task.context,
+                            requirements: task.requirements
+                        })
+                    }
+                ]
+            }
+        };
+
+        // Make the API call
+        const response = await fetch('https://isl.nguyenbinh.dev/agent/runs/wait', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestData)
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to fetch suggestions');
+        }
+
+        const data = await response.json();
+        
+        // Extract the suggestions from the AI response
+        const aiMessage = data.messages.find(msg => msg.type === 'ai');
+        if (!aiMessage) {
+            throw new Error('No AI response found');
+        }
+
+        let suggestions;
+        let formattedTip;
+        let exampleLetter;
+
+        try {
+            // Try to parse the JSON content from the AI message
+            const cleanedContent = aiMessage.content.replace(/```json\n|\n```/g, '');
+            suggestions = JSON.parse(cleanedContent);
+            formattedTip = suggestions.tip
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\n\n/g, '</p><p>')
+                .replace(/\*\s+/g, '<li>')
+                .replace(/\n(\d+\.\s+)/g, '</p><p><strong>$1</strong>');
+            exampleLetter = suggestions.example_letter;
+        } catch (parseError) {
+            console.warn('Failed to parse JSON response, using raw content:', parseError);
+            // If JSON parsing fails, use the raw content
+            formattedTip = aiMessage.content
+                .replace(/```json\n|\n```/g, '')  // Remove code block markers
+                .replace(/\\n/g, '\n')  // Replace escaped newlines
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')  // Format bold text
+                .replace(/\n\n/g, '</p><p>');  // Convert double newlines to paragraphs
+            exampleLetter = '';  // No example letter in raw format
+        }
+        
+        suggestionsContent.innerHTML = `
+            <div class="suggestions-box">
+                <div class="tips-section">
+                    <h4>Tipps zum Schreiben</h4>
+                    <div class="tip-content">
+                        <p>${formattedTip}</p>
+                    </div>
+                </div>
+                ${exampleLetter ? `
+                <div class="example-section">
+                    <h4>Beispielbrief</h4>
+                    <div class="example-content">
+                        <pre>${exampleLetter}</pre>
+                    </div>
+                </div>
+                ` : ''}
+            </div>
+        `;
+    } catch (error) {
+        console.error('Error getting suggestions:', error);
+        const suggestionsSection = document.getElementById('suggestions');
+        const suggestionsContent = suggestionsSection.querySelector('.suggestions-content');
+        suggestionsContent.innerHTML = `
+            <div class="error-message">
+                <p>Fehler beim Laden der Vorschläge. Bitte versuchen Sie es erneut.</p>
+            </div>
+        `;
+    }
+}
+
+// Skip functions for each task type
+function skipQuestion1() {
+    currentQuestionIndex++;
+    displayQuestion1();
+}
+
+function skipQuestion2() {
+    currentQuestionIndex++;
+    displayQuestion2();
+}
+
+function skipQuestion3() {
+    currentQuestionIndex++;
+    displayQuestion3();
+}
+
+function skipWritingTask1() {
+    currentQuestionIndex++;
+    displayWritingTask1();
+}
+
+function skipWritingTask2() {
+    currentQuestionIndex++;
+    displayWritingTask2();
+}
+
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
     loadAllQuestions();
@@ -467,6 +682,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentQuestionIndex++;
         displayQuestion1();
     });
+    document.getElementById('skip-btn1').addEventListener('click', skipQuestion1);
 
     // Teil 2 buttons
     document.getElementById('submit-btn2').addEventListener('click', checkAnswers2);
@@ -474,6 +690,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentQuestionIndex++;
         displayQuestion2();
     });
+    document.getElementById('skip-btn2').addEventListener('click', skipQuestion2);
 
     // Teil 3 buttons
     document.getElementById('submit-btn3').addEventListener('click', checkAnswers3);
@@ -481,6 +698,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentQuestionIndex++;
         displayQuestion3();
     });
+    document.getElementById('skip-btn3').addEventListener('click', skipQuestion3);
 
     // Schreiben Teil 1 buttons
     document.getElementById('submit-btn-schreiben1').addEventListener('click', checkAnswersSchreiben1);
@@ -488,4 +706,5 @@ document.addEventListener('DOMContentLoaded', () => {
         currentQuestionIndex++;
         displayWritingTask1();
     });
+    document.getElementById('skip-btn-schreiben1').addEventListener('click', skipWritingTask1);
 }); 

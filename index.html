@@ -10,29 +10,37 @@
 <body>
     <div class="container">
         <!-- Task Selection -->
-        <div id="task-selection" class="task-grid">
-            <button class="task-btn" data-task="lesen1">
-                <h2>Lesen, Teil 1</h2>
-                <p>Richtig oder Falsch?</p>
-            </button>
-            <button class="task-btn" data-task="lesen2">
-                <h2>Lesen, Teil 2</h2>
-                <p>Welche Anzeige passt?</p>
-            </button>
-            <button class="task-btn" data-task="lesen3">
-                <h2>Lesen, Teil 3</h2>
-                <p>Richtig oder Falsch?</p>
-            </button>
-            <button class="task-btn" data-task="schreiben1">
-                <h2>Schreiben, Teil 1</h2>
-                <p>Formular ausfüllen</p>
-            </button>
+        <div id="task-selection" class="task-selection">
+            <h1>Deutsche Prüfung A1</h1>
+            <div class="task-grid">
+                <button class="task-btn" data-task="lesen1">
+                    <h2>Lesen, Teil 1</h2>
+                    <p>Lesen Sie die Aussagen und entscheiden Sie, ob sie richtig oder falsch sind.</p>
+                </button>
+                <button class="task-btn" data-task="lesen2">
+                    <h2>Lesen, Teil 2</h2>
+                    <p>Lesen Sie die Texte und wählen Sie die richtige Antwort.</p>
+                </button>
+                <button class="task-btn" data-task="lesen3">
+                    <h2>Lesen, Teil 3</h2>
+                    <p>Lesen Sie die Anzeigen und entscheiden Sie, ob die Aussagen richtig oder falsch sind.</p>
+                </button>
+                <button class="task-btn" data-task="schreiben1">
+                    <h2>Schreiben, Teil 1</h2>
+                    <p>Füllen Sie das Formular mit den richtigen Informationen aus.</p>
+                </button>
+                <button class="task-btn" data-task="schreiben2">
+                    <h2>Schreiben, Teil 2</h2>
+                    <p>Schreiben Sie eine E-Mail oder einen Brief basierend auf dem gegebenen Kontext.</p>
+                </button>
+            </div>
         </div>
 
+        <!-- Task Containers -->
         <!-- Lesen Teil 1 -->
         <div id="lesen1-container" class="task-container" style="display: none;">
             <header>
-                <button class="back-btn">← Zurück</button>
+                <button class="back-btn" onclick="showTaskSelection()">← Zurück</button>
                 <h1>Lesen, Teil 1</h1>
                 <div class="instruction">
                     <p>Sind die Aussagen richtig (+) oder falsch (–)?</p>
@@ -49,6 +57,7 @@
                     <div class="controls">
                         <button id="submit-btn" class="btn">Prüfen</button>
                         <button id="next-btn" class="btn" style="display: none;">Nächste Frage</button>
+                        <button id="skip-btn1" class="btn btn-skip">Überspringen</button>
                     </div>
                 </div>
             </main>
@@ -57,11 +66,11 @@
         <!-- Lesen Teil 2 -->
         <div id="lesen2-container" class="task-container" style="display: none;">
             <header>
-                <button class="back-btn">← Zurück</button>
+                <button class="back-btn" onclick="showTaskSelection()">← Zurück</button>
                 <h1>Lesen, Teil 2</h1>
                 <div class="instruction">
                     <p>Lesen Sie die Texte und die Aufgaben.</p>
-                    <p> Welche Anzeige ist interessant für Sie? </p>
+                    <p>Welche Anzeige ist interessant für Sie?</p>
                     <p>Kreuzen Sie an: a oder b?</p>
                 </div>
             </header>
@@ -92,6 +101,7 @@
                     <div class="controls">
                         <button id="submit-btn2" class="btn">Prüfen</button>
                         <button id="next-btn2" class="btn" style="display: none;">Nächste Frage</button>
+                        <button id="skip-btn2" class="btn btn-skip">Überspringen</button>
                     </div>
                 </div>
             </main>
@@ -100,7 +110,7 @@
         <!-- Lesen Teil 3 -->
         <div id="lesen3-container" class="task-container" style="display: none;">
             <header>
-                <button class="back-btn">← Zurück</button>
+                <button class="back-btn" onclick="showTaskSelection()">← Zurück</button>
                 <h1>Lesen, Teil 3</h1>
                 <div class="instruction">
                     <p>Lesen Sie die Anzeige und die Aussage.</p>
@@ -132,6 +142,7 @@
                     <div class="controls">
                         <button id="submit-btn3" class="btn">Prüfen</button>
                         <button id="next-btn3" class="btn" style="display: none;">Nächste Frage</button>
+                        <button id="skip-btn3" class="btn btn-skip">Überspringen</button>
                     </div>
                 </div>
             </main>
@@ -140,7 +151,7 @@
         <!-- Schreiben Teil 1 -->
         <div id="schreiben1-container" class="task-container" style="display: none;">
             <header>
-                <button class="back-btn">← Zurück</button>
+                <button class="back-btn" onclick="showTaskSelection()">← Zurück</button>
                 <h1>Schreiben, Teil 1</h1>
                 <div class="instruction">
                     <p>Lesen Sie die Aufgabe und füllen Sie das Formular aus.</p>
@@ -163,6 +174,54 @@
                     <div class="controls">
                         <button id="submit-btn-schreiben1" class="btn">Prüfen</button>
                         <button id="next-btn-schreiben1" class="btn" style="display: none;">Nächste Aufgabe</button>
+                        <button id="skip-btn-schreiben1" class="btn btn-skip">Überspringen</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Schreiben Teil 2 -->
+        <div id="schreiben2-container" class="task-container" style="display: none;">
+            <header>
+                <button class="back-btn" onclick="showTaskSelection()">← Zurück</button>
+                <h1>Schreiben, Teil 2</h1>
+                <div class="instruction">
+                    <p>Lesen Sie die Aufgabe und schreiben Sie eine E-Mail oder einen Brief.</p>
+                </div>
+            </header>
+
+            <main>
+                <div class="question-container">
+                    <div class="writing-task-2">
+                        <div class="context-box">
+                            <h3 class="context-title">Kontext</h3>
+                            <div class="context-content"></div>
+                        </div>
+
+                        <div class="requirements">
+                            <h3 class="context-title">Anforderungen</h3>
+                            <ul class="requirements-list"></ul>
+                        </div>
+
+                        <div class="writing-area">
+                            <textarea id="userText" placeholder="Schreiben Sie Ihre Antwort hier..."></textarea>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button class="btn" onclick="submitWriting()">Antwort einreichen</button>
+                            <button class="btn" onclick="getSuggestions()">Vorschläge anzeigen</button>
+                            <button class="btn btn-skip" onclick="skipWritingTask2()">Überspringen</button>
+                        </div>
+
+                        <div id="feedback" class="feedback-section" style="display: none;">
+                            <h3 class="feedback-title">Feedback</h3>
+                            <div class="feedback-content"></div>
+                        </div>
+
+                        <div id="suggestions" class="suggestions-section" style="display: none;">
+                            <h3 class="suggestions-title">Vorschläge</h3>
+                            <div class="suggestions-content"></div>
+                        </div>
                     </div>
                 </div>
             </main>

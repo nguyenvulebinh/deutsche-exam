@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "context": "Sie haben eine E-Mail von Ihrer Freundin Anna erhalten. Sie plant eine Geburtstagsparty für ihren Sohn und bittet Sie um Hilfe bei der Organisation.",
+        "requirements": [
+            "Bedanken Sie sich für die E-Mail",
+            "Machen Sie drei konkrete Vorschläge für die Party",
+            "Fragen Sie nach weiteren Details (Datum, Anzahl der Gäste, Budget)"
+        ]
+    },
+    {
+        "id": 2,
+        "context": "Sie haben eine interessante Stellenanzeige in der Zeitung gelesen. Die Firma 'TechStart GmbH' sucht einen Praktikanten im Bereich Marketing für 6 Monate.",
+        "requirements": [
+            "Stellen Sie sich kurz vor",
+            "Erklären Sie Ihre Motivation für das Praktikum",
+            "Fragen Sie nach den Arbeitsbedingungen (Arbeitszeiten, Vergütung, Start-Datum)"
+        ]
+    },
+    {
+        "id": 3,
+        "context": "Sie haben ein Paket bestellt, das beschädigt angekommen ist. Schreiben Sie eine Beschwerde-E-Mail an den Kundenservice.",
+        "requirements": [
+            "Beschreiben Sie das Problem mit dem Paket",
+            "Fügen Sie Details zur Bestellung hinzu (Bestellnummer, Datum)",
+            "Formulieren Sie Ihre Erwartungen zur Lösung des Problems"
+        ]
+    }
+] 
