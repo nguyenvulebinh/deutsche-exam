@@ -8,50 +8,29 @@ let writingTasks2 = [];
 
 // Load questions for all tasks
 async function loadAllQuestions() {
-    const files = [
-        { name: 'reading_task_1.json', variable: 'questions' },
-        { name: 'reading_task_2.json', variable: 'questions2' },
-        { name: 'reading_task_3.json', variable: 'questions3' },
-        { name: 'writing_task_1.json', variable: 'writingTasks' },
-        { name: 'writing_task_2.json', variable: 'writingTasks2' }
-    ];
-
     try {
-        const loadFile = async (file) => {
-            try {
-                console.log(`Loading ${file.name}...`);
-                const response = await fetch(`./datasets/${file.name}`);
-                if (!response.ok) {
-                    throw new Error(`Failed to load ${file.name}: ${response.status} ${response.statusText}`);
-                }
-                const data = await response.json();
-                console.log(`Successfully loaded ${file.name}`);
-                return { ...file, data: shuffleArray(data) };
-            } catch (error) {
-                console.error(`Error loading ${file.name}:`, error);
-                return { ...file, error };
-            }
-        };
-
-        const results = await Promise.all(files.map(loadFile));
+        const [response1, response2, response3, response4, response5] = await Promise.all([
+            fetch('./datasets/reading_task_1.json'),
+            fetch('./datasets/reading_task_2.json'),
+            fetch('./datasets/reading_task_3.json'),
+            fetch('./datasets/writing_task_1.json'),
+            fetch('./datasets/writing_task_2.json')
+        ]);
         
-        let hasErrors = false;
-        results.forEach(result => {
-            if (result.error) {
-                hasErrors = true;
-            } else {
-                window[result.variable] = result.data;
-            }
-        });
-
-        if (hasErrors) {
-            alert('Some files failed to load. The application may not work correctly. Please check the console for details.');
+        if (!response1.ok || !response2.ok || !response3.ok || !response4.ok || !response5.ok) {
+            throw new Error('Failed to load questions');
         }
 
-        console.log('Finished loading all questions');
+        questions = shuffleArray(await response1.json());
+        questions2 = shuffleArray(await response2.json());
+        questions3 = shuffleArray(await response3.json());
+        writingTasks = shuffleArray(await response4.json());
+        writingTasks2 = shuffleArray(await response5.json());
+
+        console.log('Loaded questions:', { questions, questions2, questions3, writingTasks, writingTasks2 });
     } catch (error) {
-        console.error('Error in loadAllQuestions:', error);
-        alert('Failed to load questions. Please check your internet connection and try refreshing the page.');
+        console.error('Error loading questions:', error);
+        alert('Failed to load questions. Please refresh the page.');
     }
 }
 
@@ -533,17 +512,9 @@ async function getSuggestions() {
     const task = writingTasks2[currentQuestionIndex];
     
     try {
-        // Show loading indicator
-        const suggestionsSection = document.getElementById('suggestions');
-        const suggestionsContent = suggestionsSection.querySelector('.suggestions-content');
-        suggestionsContent.innerHTML = `
-            <div class="loading-spinner">
-                <div class="spinner"></div>
-                <p>Vorschläge werden geladen...</p>
-            </div>
-        `;
-        suggestionsSection.style.display = 'block';
-
+        // Show the progress bar overlay
+        document.getElementById('progress-overlay').style.display = 'flex';
+        
         // Prepare the API request data
         const requestData = {
             assistant_id: "writing_task_2_a1",
@@ -586,53 +557,84 @@ async function getSuggestions() {
         let exampleLetter;
 
         try {
-            // Try to parse the JSON content from the AI message
-            const cleanedContent = aiMessage.content.replace(/```json\n|\n```/g, '');
-            suggestions = JSON.parse(cleanedContent);
-            formattedTip = suggestions.tip
-                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                .replace(/\n\n/g, '</p><p>')
-                .replace(/\*\s+/g, '<li>')
-                .replace(/\n(\d+\.\s+)/g, '</p><p><strong>$1</strong>');
-            exampleLetter = suggestions.example_letter;
+            // Extract JSON content from the message by finding content between curly braces
+            const content = aiMessage.content;
+            console.log('Raw AI response:', content);
+
+            // console.log('Content:', JSON.parse(content.replace(/```json|```/g, '')));
+
+            // Try to find JSON content between the first { and last }
+            const startTipIdx = content.indexOf('"tip": "') + 8;
+            const endTipIdx = content.lastIndexOf('"example_letter": "') - 2;
+            
+            if (startTipIdx === -1 || endTipIdx === -1) {
+                throw new Error('No tip found');
+            }
+
+            formattedTip = content.slice(startTipIdx, endTipIdx + 1);
+            formattedTip = formattedTip.replace(/\\n/g, '<br>');
+            formattedTip = formattedTip.replace(/"/g, '"');
+            console.log('Extracted tip:', formattedTip);
+
+            const startExampleLetterIdx = content.indexOf('"example_letter": "') + 19;
+            const endExampleLetterIdx = content.lastIndexOf('"') - 1;
+
+            if (startExampleLetterIdx === -1 || endExampleLetterIdx === -1) {
+                throw new Error('No example letter found');
+            }
+
+            exampleLetter = content.slice(startExampleLetterIdx, endExampleLetterIdx + 1);
+            exampleLetter = exampleLetter.replace(/\\n/g, '<br>');
+            exampleLetter = exampleLetter.replace(/"/g, '"');
+            console.log('Extracted example letter:', exampleLetter);
+
+
         } catch (parseError) {
-            console.warn('Failed to parse JSON response, using raw content:', parseError);
-            // If JSON parsing fails, use the raw content
-            formattedTip = aiMessage.content
-                .replace(/```json\n|\n```/g, '')  // Remove code block markers
-                .replace(/\\n/g, '\n')  // Replace escaped newlines
-                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')  // Format bold text
-                .replace(/\n\n/g, '</p><p>');  // Convert double newlines to paragraphs
-            exampleLetter = '';  // No example letter in raw format
+            console.warn('Failed to parse JSON response:', parseError);
+            console.warn('Content that failed to parse:', aiMessage.content);
+            
+            // Fallback to using raw content with basic formatting
+            const content = aiMessage.content
+                .replace(/```json\n|\n```/g, '') // Remove code block markers
+                .replace(/^\{|\}$/g, '') // Remove outer curly braces
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Convert bold markdown
+                .replace(/\\n\\n/g, '</p><p>') // Convert double newlines to paragraphs
+                .replace(/\\n/g, '<br>') // Convert single newlines to line breaks
+                .replace(/^"|"$/g, ''); // Remove outer quotes if present
+            
+            formattedTip = `<p>${content}</p>`;
+            exampleLetter = '';
         }
+
+        // Update the UI with formatted content
+        const suggestionsSection = document.getElementById('suggestions');
+        const suggestionsContent = suggestionsSection.querySelector('.suggestions-content');
         
         suggestionsContent.innerHTML = `
             <div class="suggestions-box">
                 <div class="tips-section">
                     <h4>Tipps zum Schreiben</h4>
                     <div class="tip-content">
-                        <p>${formattedTip}</p>
+                        ${formattedTip}
                     </div>
                 </div>
                 ${exampleLetter ? `
                 <div class="example-section">
                     <h4>Beispielbrief</h4>
                     <div class="example-content">
-                        <pre>${exampleLetter}</pre>
+                        <pre style="white-space: pre-wrap; font-family: inherit;">${exampleLetter}</pre>
                     </div>
                 </div>
                 ` : ''}
             </div>
         `;
+        suggestionsSection.style.display = 'block';
     } catch (error) {
         console.error('Error getting suggestions:', error);
-        const suggestionsSection = document.getElementById('suggestions');
-        const suggestionsContent = suggestionsSection.querySelector('.suggestions-content');
-        suggestionsContent.innerHTML = `
-            <div class="error-message">
-                <p>Fehler beim Laden der Vorschläge. Bitte versuchen Sie es erneut.</p>
-            </div>
-        `;
+        alert('Failed to get suggestions. Please try again.');
+    } finally {
+        // Hide the progress bar overlay
+        document.getElementById('progress-overlay').style.display = 'none';
     }
 }
 
@@ -662,9 +664,36 @@ function skipWritingTask2() {
     displayWritingTask2();
 }
 
+// Create progress overlay function
+function createProgressOverlay() {
+    const overlay = document.createElement('div');
+    overlay.id = 'progress-overlay';
+    
+    const container = document.createElement('div');
+    container.className = 'progress-container';
+    
+    const text = document.createElement('div');
+    text.className = 'progress-text';
+    text.textContent = 'Vorschläge werden geladen...';
+    
+    const bar = document.createElement('div');
+    bar.className = 'progress-bar';
+    
+    const fill = document.createElement('div');
+    fill.className = 'progress-bar-fill';
+    
+    bar.appendChild(fill);
+    container.appendChild(text);
+    container.appendChild(bar);
+    overlay.appendChild(container);
+    
+    document.body.appendChild(overlay);
+}
+
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
     loadAllQuestions();
+    createProgressOverlay();
     
     // Task selection buttons
     document.querySelectorAll('.task-btn').forEach(btn => {

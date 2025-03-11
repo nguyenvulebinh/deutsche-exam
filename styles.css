@@ -905,66 +905,60 @@ h1 {
     }
 }
 
-.loading-spinner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#progress-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
     justify-content: center;
-    padding: 2rem;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+.progress-container {
+    width: 300px;
     text-align: center;
 }
 
-.loading-spinner p {
-    margin-top: 1rem;
-    color: #666;
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #f0f0f0;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 10px 0;
 }
 
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #3498db;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+.progress-bar-fill {
+    height: 100%;
+    background-color: #4CAF50;
+    animation: progress-animation 2s infinite ease-in-out;
+    transform-origin: left;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.progress-text {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
-.error-message {
-    background-color: #fff3f3;
-    border-left: 4px solid #dc3545;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 4px;
-}
-
-.error-message p {
-    color: #dc3545;
-    margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-    .loading-spinner {
-        padding: 1.5rem;
+@keyframes progress-animation {
+    0% {
+        transform: scaleX(0);
     }
-
-    .spinner {
-        width: 32px;
-        height: 32px;
-        border-width: 3px;
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
     }
 }
 
-@media screen and (max-width: 480px) {
-    .loading-spinner {
-        padding: 1rem;
-    }
-
-    .spinner {
-        width: 28px;
-        height: 28px;
-    }
+/* Make sure the overlay is above everything else */
+#schreiben2-container {
+    position: relative;
 } 
