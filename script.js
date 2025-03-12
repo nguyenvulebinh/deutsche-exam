@@ -484,28 +484,62 @@ async function submitWriting() {
         return;
     }
 
-    // Mockup service response
-    const mockFeedback = {
-        overall: "Gut strukturierte Antwort mit einigen Verbesserungsmöglichkeiten.",
-        points: [
-            "✓ Die Einleitung ist klar und zweckmäßig",
-            "✓ Alle Hauptpunkte wurden behandelt",
-            "⚠ Einige grammatikalische Fehler in den Nebensätzen",
-            "⚠ Der Schlusssatz könnte stärker sein"
-        ],
-        score: "75/100"
-    };
+    try {
+        // Show loading overlay
+        document.getElementById('progress-overlay').style.display = 'flex';
 
-    const feedbackSection = document.getElementById('feedback');
-    const feedbackContent = feedbackSection.querySelector('.feedback-content');
-    feedbackContent.innerHTML = `
-        <p><strong>Gesamtbewertung:</strong> ${mockFeedback.overall}</p>
-        <p><strong>Punktzahl:</strong> ${mockFeedback.score}</p>
-        <ul style="list-style: none; padding-left: 0;">
-            ${mockFeedback.points.map(point => `<li>${point}</li>`).join('')}
-        </ul>
-    `;
-    feedbackSection.style.display = 'block';
+        const task = writingTasks2[currentQuestionIndex];
+        const requestData = {
+            assistant_id: "writing_task_2_a1_scoring",
+            input: {
+                messages: [
+                    {
+                        type: "human",
+                        content: JSON.stringify({
+                            context: task.context,
+                            requirements: task.requirements,
+                            student_letter: userText
+                        })
+                    }
+                ]
+            }
+        };
+
+        const response = await fetch('https://isl.nguyenbinh.dev/agent/runs/wait', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestData)
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to get feedback');
+        }
+
+        const data = await response.json();
+        const aiMessage = data.messages.find(msg => msg.type === 'ai');
+        
+        if (!aiMessage) {
+            throw new Error('No feedback received');
+        }
+
+        // Extract markdown content (remove the markdown code block markers)
+        const markdownContent = aiMessage.content.replace(/```markdown\n|\n```/g, '');
+
+        // Display the feedback using marked.js
+        const feedbackSection = document.getElementById('feedback');
+        const feedbackContent = feedbackSection.querySelector('.feedback-content');
+        feedbackContent.innerHTML = marked.parse(markdownContent);
+        feedbackSection.style.display = 'block';
+
+    } catch (error) {
+        console.error('Error getting feedback:', error);
+        alert('Failed to get feedback. Please try again.');
+    } finally {
+        // Hide loading overlay
+        document.getElementById('progress-overlay').style.display = 'none';
+    }
 }
 
 async function getSuggestions() {
@@ -521,7 +555,7 @@ async function getSuggestions() {
             input: {
                 messages: [
                     {
-                        role: "human",
+                        type: "human",
                         content: JSON.stringify({
                             context: task.context,
                             requirements: task.requirements
@@ -545,90 +579,21 @@ async function getSuggestions() {
         }
 
         const data = await response.json();
-        
-        // Extract the suggestions from the AI response
         const aiMessage = data.messages.find(msg => msg.type === 'ai');
+        
         if (!aiMessage) {
-            throw new Error('No AI response found');
+            throw new Error('No suggestions received');
         }
 
-        let suggestions;
-        let formattedTip;
-        let exampleLetter;
+        // Extract markdown content (remove the markdown code block markers)
+        const markdownContent = aiMessage.content.replace(/```markdown\n|\n```/g, '');
 
-        try {
-            // Extract JSON content from the message by finding content between curly braces
-            const content = aiMessage.content;
-            console.log('Raw AI response:', content);
-
-            // console.log('Content:', JSON.parse(content.replace(/```json|```/g, '')));
-
-            // Try to find JSON content between the first { and last }
-            const startTipIdx = content.indexOf('"tip": "') + 8;
-            const endTipIdx = content.lastIndexOf('"example_letter": "') - 2;
-            
-            if (startTipIdx === -1 || endTipIdx === -1) {
-                throw new Error('No tip found');
-            }
-
-            formattedTip = content.slice(startTipIdx, endTipIdx + 1);
-            formattedTip = formattedTip.replace(/\\n/g, '<br>');
-            formattedTip = formattedTip.replace(/"/g, '"');
-            console.log('Extracted tip:', formattedTip);
-
-            const startExampleLetterIdx = content.indexOf('"example_letter": "') + 19;
-            const endExampleLetterIdx = content.lastIndexOf('"') - 1;
-
-            if (startExampleLetterIdx === -1 || endExampleLetterIdx === -1) {
-                throw new Error('No example letter found');
-            }
-
-            exampleLetter = content.slice(startExampleLetterIdx, endExampleLetterIdx + 1);
-            exampleLetter = exampleLetter.replace(/\\n/g, '<br>');
-            exampleLetter = exampleLetter.replace(/"/g, '"');
-            console.log('Extracted example letter:', exampleLetter);
-
-
-        } catch (parseError) {
-            console.warn('Failed to parse JSON response:', parseError);
-            console.warn('Content that failed to parse:', aiMessage.content);
-            
-            // Fallback to using raw content with basic formatting
-            const content = aiMessage.content
-                .replace(/```json\n|\n```/g, '') // Remove code block markers
-                .replace(/^\{|\}$/g, '') // Remove outer curly braces
-                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Convert bold markdown
-                .replace(/\\n\\n/g, '</p><p>') // Convert double newlines to paragraphs
-                .replace(/\\n/g, '<br>') // Convert single newlines to line breaks
-                .replace(/^"|"$/g, ''); // Remove outer quotes if present
-            
-            formattedTip = `<p>${content}</p>`;
-            exampleLetter = '';
-        }
-
-        // Update the UI with formatted content
+        // Update the UI with formatted content using marked.js
         const suggestionsSection = document.getElementById('suggestions');
         const suggestionsContent = suggestionsSection.querySelector('.suggestions-content');
-        
-        suggestionsContent.innerHTML = `
-            <div class="suggestions-box">
-                <div class="tips-section">
-                    <h4>Tipps zum Schreiben</h4>
-                    <div class="tip-content">
-                        ${formattedTip}
-                    </div>
-                </div>
-                ${exampleLetter ? `
-                <div class="example-section">
-                    <h4>Beispielbrief</h4>
-                    <div class="example-content">
-                        <pre style="white-space: pre-wrap; font-family: inherit;">${exampleLetter}</pre>
-                    </div>
-                </div>
-                ` : ''}
-            </div>
-        `;
+        suggestionsContent.innerHTML = marked.parse(markdownContent);
         suggestionsSection.style.display = 'block';
+        
     } catch (error) {
         console.error('Error getting suggestions:', error);
         alert('Failed to get suggestions. Please try again.');
