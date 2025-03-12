@@ -5,19 +5,21 @@ let questions3 = [];
 let currentTask = null;
 let writingTasks = [];
 let writingTasks2 = [];
+let wordDatabase = [];
 
 // Load questions for all tasks
 async function loadAllQuestions() {
     try {
-        const [response1, response2, response3, response4, response5] = await Promise.all([
+        const [response1, response2, response3, response4, response5, wordsResponse] = await Promise.all([
             fetch('./datasets/reading_task_1.json'),
             fetch('./datasets/reading_task_2.json'),
             fetch('./datasets/reading_task_3.json'),
             fetch('./datasets/writing_task_1.json'),
-            fetch('./datasets/writing_task_2.json')
+            fetch('./datasets/writing_task_2.json'),
+            fetch('./datasets/a1_words.json')
         ]);
         
-        if (!response1.ok || !response2.ok || !response3.ok || !response4.ok || !response5.ok) {
+        if (!response1.ok || !response2.ok || !response3.ok || !response4.ok || !response5.ok || !wordsResponse.ok) {
             throw new Error('Failed to load questions');
         }
 
@@ -26,8 +28,21 @@ async function loadAllQuestions() {
         questions3 = shuffleArray(await response3.json());
         writingTasks = shuffleArray(await response4.json());
         writingTasks2 = shuffleArray(await response5.json());
+        
+        // Process word database
+        const wordsData = await wordsResponse.json();
+        const allWords = [];
+        for (const category in wordsData) {
+            // Add category to each word
+            const wordsWithCategory = wordsData[category].map(word => ({
+                ...word,
+                category: category
+            }));
+            allWords.push(...wordsWithCategory);
+        }
+        wordDatabase = shuffleArray(allWords);
 
-        console.log('Loaded questions:', { questions, questions2, questions3, writingTasks, writingTasks2 });
+        console.log('Loaded questions:', { questions, questions2, questions3, writingTasks, writingTasks2, wordDatabase });
     } catch (error) {
         console.error('Error loading questions:', error);
         alert('Failed to load questions. Please refresh the page.');
@@ -51,8 +66,27 @@ function showTaskSelection() {
     document.getElementById('lesen3-container').style.display = 'none';
     document.getElementById('schreiben1-container').style.display = 'none';
     document.getElementById('schreiben2-container').style.display = 'none';
+    document.getElementById('wortubung-container').style.display = 'none';
     currentTask = null;
     currentQuestionIndex = 0;
+    
+    // Reset word practice state
+    if (document.querySelector('#wortubung-container .feedback-box')) {
+        document.querySelector('#wortubung-container .feedback-box').style.display = 'none';
+    }
+    if (document.querySelector('#wortubung-container .correct-answer')) {
+        document.querySelector('#wortubung-container .correct-answer').style.display = 'none';
+    }
+    if (document.getElementById('word-answer')) {
+        document.getElementById('word-answer').value = '';
+        document.getElementById('word-answer').disabled = false;
+    }
+    if (document.getElementById('submit-btn-wortubung')) {
+        document.getElementById('submit-btn-wortubung').style.display = 'block';
+    }
+    if (document.getElementById('next-btn-wortubung')) {
+        document.getElementById('next-btn-wortubung').style.display = 'none';
+    }
     
     // Reshuffle writing tasks when returning to selection
     if (writingTasks.length > 0) {
@@ -60,6 +94,10 @@ function showTaskSelection() {
     }
     if (writingTasks2.length > 0) {
         writingTasks2 = shuffleArray([...writingTasks2]);
+    }
+    // Reshuffle word database when returning to selection
+    if (wordDatabase.length > 0) {
+        wordDatabase = shuffleArray([...wordDatabase]);
     }
 }
 
@@ -70,6 +108,7 @@ function showTask(taskId) {
     document.getElementById('lesen3-container').style.display = taskId === 'lesen3' ? 'block' : 'none';
     document.getElementById('schreiben1-container').style.display = taskId === 'schreiben1' ? 'block' : 'none';
     document.getElementById('schreiben2-container').style.display = taskId === 'schreiben2' ? 'block' : 'none';
+    document.getElementById('wortubung-container').style.display = taskId === 'wortubung' ? 'block' : 'none';
     currentTask = taskId;
     currentQuestionIndex = 0;
     
@@ -83,6 +122,8 @@ function showTask(taskId) {
         displayWritingTask1();
     } else if (taskId === 'schreiben2') {
         displayWritingTask2();
+    } else if (taskId === 'wortubung') {
+        displayWordPractice();
     }
 }
 
@@ -629,6 +670,85 @@ function skipWritingTask2() {
     displayWritingTask2();
 }
 
+// Word Practice Functions
+function displayWordPractice() {
+    if (currentQuestionIndex >= wordDatabase.length) {
+        currentQuestionIndex = 0;
+        wordDatabase = shuffleArray(wordDatabase);
+    }
+
+    const word = wordDatabase[currentQuestionIndex];
+    const hintTypes = ['english', 'meaning'];
+    const randomHintType = hintTypes[Math.floor(Math.random() * hintTypes.length)];
+    
+    const hintTypeElement = document.querySelector('#wortubung-container .hint-type');
+    const hintContentElement = document.querySelector('#wortubung-container .hint-content');
+    const topicElement = document.querySelector('#wortubung-container .topic');
+    
+    // Show the topic/category
+    topicElement.textContent = `Thema: ${word.category}`;
+    
+    // Set hint type and content based on random selection
+    switch (randomHintType) {
+        case 'english':
+            hintTypeElement.textContent = 'Englisches Wort:';
+            hintContentElement.textContent = word.english;
+            break;
+        case 'meaning':
+            hintTypeElement.textContent = 'Bedeutung auf Englisch:';
+            hintContentElement.textContent = word.meaning;
+            break;
+        case 'bedeutung':
+            hintTypeElement.textContent = 'Bedeutung auf Deutsch:';
+            hintContentElement.textContent = word.bedeutung;
+            break;
+    }
+    
+    // Reset the input and feedback
+    document.getElementById('word-answer').value = '';
+    document.getElementById('word-answer').disabled = false;
+    document.querySelector('#wortubung-container .feedback-box').style.display = 'none';
+    document.querySelector('#wortubung-container .correct-answer').style.display = 'none';
+    document.getElementById('submit-btn-wortubung').style.display = 'block';
+    document.getElementById('next-btn-wortubung').style.display = 'none';
+}
+
+function checkWordAnswer() {
+    const word = wordDatabase[currentQuestionIndex];
+    const userAnswer = document.getElementById('word-answer').value.trim();
+    const feedbackBox = document.querySelector('#wortubung-container .feedback-box');
+    const feedbackMessage = document.querySelector('#wortubung-container .feedback-message');
+    const correctAnswer = document.querySelector('#wortubung-container .correct-answer');
+    const correctWord = document.querySelector('#wortubung-container .correct-word');
+    const wordDetails = document.querySelector('#wortubung-container .word-details');
+    
+    feedbackBox.style.display = 'block';
+    
+    if (userAnswer.toLowerCase() === word.german.toLowerCase()) {
+        feedbackMessage.textContent = 'Richtig! 👏';
+        feedbackMessage.style.color = '#4CAF50';
+    } else {
+        feedbackMessage.textContent = 'Leider falsch. 😔';
+        feedbackMessage.style.color = '#f44336';
+    }
+    correctAnswer.style.display = 'block';
+    correctWord.textContent = word.german;
+    wordDetails.innerHTML = `
+        Englisch: ${word.english}<br>
+        Bedeutung: ${word.meaning}<br>
+        Bedeutung (Deutsch): ${word.bedeutung}
+    `;
+    
+    document.getElementById('word-answer').disabled = true;
+    document.getElementById('submit-btn-wortubung').style.display = 'none';
+    document.getElementById('next-btn-wortubung').style.display = 'block';
+}
+
+function skipWordPractice() {
+    currentQuestionIndex++;
+    displayWordPractice();
+}
+
 // Create progress overlay function
 function createProgressOverlay() {
     const overlay = document.createElement('div');
@@ -701,4 +821,19 @@ document.addEventListener('DOMContentLoaded', () => {
         displayWritingTask1();
     });
     document.getElementById('skip-btn-schreiben1').addEventListener('click', skipWritingTask1);
+
+    // Word Practice event listeners
+    document.getElementById('submit-btn-wortubung')?.addEventListener('click', checkWordAnswer);
+    document.getElementById('next-btn-wortubung')?.addEventListener('click', () => {
+        currentQuestionIndex++;
+        displayWordPractice();
+    });
+    document.getElementById('skip-btn-wortubung')?.addEventListener('click', skipWordPractice);
+    
+    // Add enter key support for word practice
+    document.getElementById('word-answer')?.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' && !this.disabled) {
+            checkWordAnswer();
+        }
+    });
 }); 

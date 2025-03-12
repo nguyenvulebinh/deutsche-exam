@@ -33,6 +33,10 @@
                     <h2>Schreiben, Teil 2</h2>
                     <p>Schreiben Sie eine E-Mail oder einen Brief basierend auf dem gegebenen Kontext.</p>
                 </button>
+                <button class="task-btn" data-task="wortubung">
+                    <h2>Wortübungsaufgabe</h2>
+                    <p>Üben Sie deutsche Wörter mit ihrer Bedeutung auf Englisch oder Deutsch.</p>
+                </button>
             </div>
         </div>
 
@@ -221,6 +225,47 @@
                         <div id="suggestions" class="suggestions-section" style="display: none;">
                             <h3 class="suggestions-title">Vorschläge</h3>
                             <div class="suggestions-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Wortübungsaufgabe -->
+        <div id="wortubung-container" class="task-container" style="display: none;">
+            <header>
+                <button class="back-btn" onclick="showTaskSelection()">← Zurück</button>
+                <h1>Wortübungsaufgabe</h1>
+                <div class="instruction">
+                    <p>Schreiben Sie das richtige deutsche Wort.</p>
+                </div>
+            </header>
+
+            <main>
+                <div class="question-container">
+                    <div class="word-practice">
+                        <div class="topic"></div>
+                        <div class="hint-box">
+                            <h3 class="hint-type"></h3>
+                            <p class="hint-content"></p>
+                        </div>
+
+                        <div class="answer-box">
+                            <input type="text" id="word-answer" placeholder="Schreiben Sie das deutsche Wort hier...">
+                        </div>
+
+                        <div class="controls">
+                            <button id="submit-btn-wortubung" class="btn">Prüfen</button>
+                            <button id="next-btn-wortubung" class="btn" style="display: none;">Nächstes Wort</button>
+                            <button id="skip-btn-wortubung" class="btn btn-skip">Überspringen</button>
+                        </div>
+
+                        <div class="feedback-box" style="display: none;">
+                            <p class="feedback-message"></p>
+                            <div class="correct-answer" style="display: none;">
+                                <p>Die richtige Antwort ist: <span class="correct-word"></span></p>
+                                <p class="word-details"></p>
+                            </div>
                         </div>
                     </div>
                 </div>

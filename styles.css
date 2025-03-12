@@ -961,4 +961,99 @@ h1 {
 /* Make sure the overlay is above everything else */
 #schreiben2-container {
     position: relative;
+}
+
+/* Word Practice Styles */
+.word-practice {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.topic {
+    text-align: center;
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.hint-box {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hint-box h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.hint-box p {
+    font-size: 1.3em;
+    color: #2196F3;
+    margin: 0;
+}
+
+.answer-box {
+    margin-bottom: 30px;
+}
+
+.answer-box input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.answer-box input:focus {
+    border-color: #2196F3;
+    outline: none;
+}
+
+.answer-box input:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.feedback-box {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.feedback-message {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.correct-answer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.correct-answer p {
+    margin: 10px 0;
+}
+
+.correct-word {
+    font-weight: bold;
+    color: #2196F3;
+}
+
+.word-details {
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
 } 

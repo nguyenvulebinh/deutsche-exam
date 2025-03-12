@@ -1,0 +1,2551 @@
+{
+    "Zeit": [
+      {
+        "german": "die Woche",
+        "english": "the week",
+        "meaning": "A period of seven days.",
+        "bedeutung": "Ein Zeitraum von sieben Tagen."
+      },
+      {
+        "german": "der Montag",
+        "english": "Monday",
+        "meaning": "The first day of the workweek.",
+        "bedeutung": "Der erste Tag der Arbeitswoche."
+      },
+      {
+        "german": "der Dienstag",
+        "english": "Tuesday",
+        "meaning": "The second day of the workweek.",
+        "bedeutung": "Der zweite Tag der Arbeitswoche."
+      },
+      {
+        "german": "der Mittwoch",
+        "english": "Wednesday",
+        "meaning": "The middle day of the workweek.",
+        "bedeutung": "Der mittlere Tag der Arbeitswoche."
+      },
+      {
+        "german": "der Donnerstag",
+        "english": "Thursday",
+        "meaning": "The fourth day of the workweek.",
+        "bedeutung": "Der vierte Tag der Arbeitswoche."
+      },
+      {
+        "german": "der Freitag",
+        "english": "Friday",
+        "meaning": "The last day of the workweek for many people.",
+        "bedeutung": "Der letzte Arbeitstag für viele."
+      },
+      {
+        "german": "der Samstag",
+        "english": "Saturday",
+        "meaning": "A weekend day following Friday.",
+        "bedeutung": "Ein Wochenendtag nach Freitag."
+      },
+      {
+        "german": "der Sonntag",
+        "english": "Sunday",
+        "meaning": "A weekend day often used for rest.",
+        "bedeutung": "Ein Wochenendtag, der oft zur Erholung genutzt wird."
+      },
+      {
+        "german": "das Wochenende",
+        "english": "the weekend",
+        "meaning": "The period including Saturday and Sunday.",
+        "bedeutung": "Der Zeitraum, der Samstag und Sonntag umfasst."
+      },
+      {
+        "german": "der Feiertag",
+        "english": "the holiday",
+        "meaning": "A day when work is typically suspended.",
+        "bedeutung": "Ein Tag, an dem in der Regel nicht gearbeitet wird."
+      },
+      {
+        "german": "das Jahr",
+        "english": "the year",
+        "meaning": "A period of 12 months.",
+        "bedeutung": "Ein Zeitraum von 12 Monaten."
+      },
+      {
+        "german": "der Monat",
+        "english": "the month",
+        "meaning": "A division of the year, usually lasting 28–31 days.",
+        "bedeutung": "Eine Zeiteinheit, meist 28–31 Tage lang."
+      },
+      {
+        "german": "der Januar",
+        "english": "January",
+        "meaning": "The first month of the year.",
+        "bedeutung": "Der erste Monat des Jahres."
+      },
+      {
+        "german": "der Februar",
+        "english": "February",
+        "meaning": "The second month of the year.",
+        "bedeutung": "Der zweite Monat des Jahres."
+      },
+      {
+        "german": "der März",
+        "english": "March",
+        "meaning": "The third month of the year.",
+        "bedeutung": "Der dritte Monat des Jahres."
+      },
+      {
+        "german": "der April",
+        "english": "April",
+        "meaning": "The fourth month of the year.",
+        "bedeutung": "Der vierte Monat des Jahres."
+      },
+      {
+        "german": "der Mai",
+        "english": "May",
+        "meaning": "The fifth month of the year.",
+        "bedeutung": "Der fünfte Monat des Jahres."
+      },
+      {
+        "german": "der Juni",
+        "english": "June",
+        "meaning": "The sixth month of the year.",
+        "bedeutung": "Der sechste Monat des Jahres."
+      },
+      {
+        "german": "der Juli",
+        "english": "July",
+        "meaning": "The seventh month of the year.",
+        "bedeutung": "Der siebte Monat des Jahres."
+      },
+      {
+        "german": "der August",
+        "english": "August",
+        "meaning": "The eighth month of the year.",
+        "bedeutung": "Der achte Monat des Jahres."
+      },
+      {
+        "german": "der September",
+        "english": "September",
+        "meaning": "The ninth month of the year.",
+        "bedeutung": "Der neunte Monat des Jahres."
+      },
+      {
+        "german": "der Oktober",
+        "english": "October",
+        "meaning": "The tenth month of the year.",
+        "bedeutung": "Der zehnte Monat des Jahres."
+      },
+      {
+        "german": "der November",
+        "english": "November",
+        "meaning": "The eleventh month of the year.",
+        "bedeutung": "Der elfte Monat des Jahres."
+      },
+      {
+        "german": "der Dezember",
+        "english": "December",
+        "meaning": "The twelfth month of the year.",
+        "bedeutung": "Der zwölfte Monat des Jahres."
+      },
+      {
+        "german": "der Frühling",
+        "english": "the spring",
+        "meaning": "The season when nature awakens.",
+        "bedeutung": "Die Jahreszeit, in der die Natur erwacht."
+      },
+      {
+        "german": "der Sommer",
+        "english": "the summer",
+        "meaning": "The warm season of the year.",
+        "bedeutung": "Die warme Jahreszeit."
+      },
+      {
+        "german": "der Herbst",
+        "english": "the autumn",
+        "meaning": "The season when leaves fall.",
+        "bedeutung": "Die Jahreszeit, in der Blätter fallen."
+      },
+      {
+        "german": "der Winter",
+        "english": "the winter",
+        "meaning": "The cold season of the year.",
+        "bedeutung": "Die kalte Jahreszeit."
+      },
+      {
+        "german": "der Tag",
+        "english": "the day",
+        "meaning": "A period of 24 hours.",
+        "bedeutung": "Ein Zeitraum von 24 Stunden."
+      },
+      {
+        "german": "der Morgen",
+        "english": "the morning",
+        "meaning": "The early part of the day.",
+        "bedeutung": "Der frühe Teil des Tages."
+      },
+      {
+        "german": "der Vormittag",
+        "english": "forenoon",
+        "meaning": "The period before noon.",
+        "bedeutung": "Die Zeit vor dem Mittag."
+      },
+      {
+        "german": "der Mittag",
+        "english": "noon",
+        "meaning": "Midday or 12 o'clock.",
+        "bedeutung": "Die Mittagszeit, 12 Uhr."
+      },
+      {
+        "german": "der Nachmittag",
+        "english": "the afternoon",
+        "meaning": "The period after noon until evening.",
+        "bedeutung": "Die Zeit nach dem Mittag bis zum Abend."
+      },
+      {
+        "german": "der Abend",
+        "english": "the evening",
+        "meaning": "The latter part of the day.",
+        "bedeutung": "Der spätere Teil des Tages."
+      },
+      {
+        "german": "die Nacht",
+        "english": "the night",
+        "meaning": "The period of darkness after evening.",
+        "bedeutung": "Die Zeit der Dunkelheit nach dem Abend."
+      },
+      {
+        "german": "die Uhrzeit",
+        "english": "the time",
+        "meaning": "A specific point measured in hours and minutes.",
+        "bedeutung": "Ein bestimmter Zeitpunkt, gemessen in Stunden und Minuten."
+      },
+      {
+        "german": "der Anfang",
+        "english": "the beginning",
+        "meaning": "The start or commencement of something.",
+        "bedeutung": "Der Beginn oder Start von etwas."
+      },
+      {
+        "german": "das Ende",
+        "english": "the end",
+        "meaning": "The final part or conclusion.",
+        "bedeutung": "Der abschließende Teil oder Schluss."
+      },
+      {
+        "german": "Wie spät ist es?",
+        "english": "What time is it?",
+        "meaning": "A question asking for the current time.",
+        "bedeutung": "Eine Frage nach der aktuellen Uhrzeit."
+      },
+      {
+        "german": "Wie viel Uhr ist es?",
+        "english": "What time is it?",
+        "meaning": "A question asking for the current time.",
+        "bedeutung": "Eine Frage nach der aktuellen Uhrzeit."
+      },
+      {
+        "german": "Es ist 9 Uhr",
+        "english": "It is 9 o'clock",
+        "meaning": "A statement indicating the time is nine o'clock.",
+        "bedeutung": "Eine Aussage, dass es neun Uhr ist."
+      }
+    ],
+    "Persönliche Informationen": [
+      {
+        "german": "der Vorname",
+        "english": "the first name",
+        "meaning": "The given name of a person.",
+        "bedeutung": "Der persönliche, bei der Geburt vergebene Name."
+      },
+      {
+        "german": "der Nachname",
+        "english": "the last name",
+        "meaning": "The family or surname of a person.",
+        "bedeutung": "Der Familienname einer Person."
+      },
+      {
+        "german": "der Familienname",
+        "english": "the family name",
+        "meaning": "Another term for a surname.",
+        "bedeutung": "Ein anderer Ausdruck für den Nachnamen."
+      },
+      {
+        "german": "heißen",
+        "english": "to be called",
+        "meaning": "Used to state someone's name.",
+        "bedeutung": "Wird verwendet, um den Namen von jemandem anzugeben."
+      },
+      {
+        "german": "buchstabieren",
+        "english": "to spell",
+        "meaning": "To name the letters of a word in order.",
+        "bedeutung": "Die Buchstaben eines Wortes in der richtigen Reihenfolge nennen."
+      },
+      {
+        "german": "die Frau",
+        "english": "the woman",
+        "meaning": "An adult female person.",
+        "bedeutung": "Eine erwachsene weibliche Person."
+      },
+      {
+        "german": "der Mann",
+        "english": "the man",
+        "meaning": "An adult male person.",
+        "bedeutung": "Eine erwachsene männliche Person."
+      },
+      {
+        "german": "männlich",
+        "english": "male",
+        "meaning": "Relating to the male gender.",
+        "bedeutung": "Bezieht sich auf das männliche Geschlecht."
+      },
+      {
+        "german": "weiblich",
+        "english": "female",
+        "meaning": "Relating to the female gender.",
+        "bedeutung": "Bezieht sich auf das weibliche Geschlecht."
+      },
+      {
+        "german": "das Mädchen",
+        "english": "the girl",
+        "meaning": "A young female child.",
+        "bedeutung": "Ein junges weibliches Kind."
+      },
+      {
+        "german": "der Junge",
+        "english": "the boy",
+        "meaning": "A young male child.",
+        "bedeutung": "Ein junges männliches Kind."
+      },
+      {
+        "german": "die Adresse",
+        "english": "the address",
+        "meaning": "The details of where someone lives.",
+        "bedeutung": "Die Angaben, wo jemand wohnt."
+      },
+      {
+        "german": "der Wohnort",
+        "english": "the place of residence",
+        "meaning": "The location where a person lives.",
+        "bedeutung": "Der Ort, an dem jemand wohnt."
+      },
+      {
+        "german": "wohnen",
+        "english": "to live",
+        "meaning": "To reside in a place.",
+        "bedeutung": "An einem Ort wohnen."
+      },
+      {
+        "german": "leben",
+        "english": "to live",
+        "meaning": "To exist or reside.",
+        "bedeutung": "Zu existieren oder zu wohnen."
+      },
+      {
+        "german": "die Straße",
+        "english": "the street",
+        "meaning": "A public road in a town or city.",
+        "bedeutung": "Eine öffentliche Straße in einer Stadt oder Gemeinde."
+      },
+      {
+        "german": "der Platz",
+        "english": "the square",
+        "meaning": "An open area in a town or city.",
+        "bedeutung": "Ein offener Platz in einer Stadt."
+      },
+      {
+        "german": "die Nummer",
+        "english": "the number",
+        "meaning": "A numeral used as an identifier.",
+        "bedeutung": "Eine Ziffer oder Nummer als Identifikation."
+      },
+      {
+        "german": "die Hausnummer",
+        "english": "the house number",
+        "meaning": "The number assigned to a house.",
+        "bedeutung": "Die Nummer, die einem Haus zugeordnet ist."
+      },
+      {
+        "german": "die Stadt",
+        "english": "the city",
+        "meaning": "A large urban area with many people.",
+        "bedeutung": "Eine große, bevölkerte Stadt."
+      },
+      {
+        "german": "die Postleitzahl",
+        "english": "the postal code",
+        "meaning": "A code used to designate a specific area for mail delivery.",
+        "bedeutung": "Ein Code zur Bestimmung eines Zustellgebiets."
+      },
+      {
+        "german": "das Dorf",
+        "english": "the village",
+        "meaning": "A small settlement, usually in a rural area.",
+        "bedeutung": "Eine kleine Siedlung in ländlicher Umgebung."
+      },
+      {
+        "german": "das Land",
+        "english": "the country",
+        "meaning": "A nation or area of territory.",
+        "bedeutung": "Eine Nation oder ein Staatsgebiet."
+      },
+      {
+        "german": "das Telefon",
+        "english": "the telephone",
+        "meaning": "A device for voice communication over distances.",
+        "bedeutung": "Ein Gerät zur Fernkommunikation per Stimme."
+      },
+      {
+        "german": "telefonieren",
+        "english": "to telephone",
+        "meaning": "To communicate by phone.",
+        "bedeutung": "Per Telefon kommunizieren."
+      },
+      {
+        "german": "anrufen",
+        "english": "to call",
+        "meaning": "To contact someone by phone.",
+        "bedeutung": "Jemanden telefonisch kontaktieren."
+      },
+      {
+        "german": "das Handy",
+        "english": "the mobile phone",
+        "meaning": "A portable telephone device.",
+        "bedeutung": "Ein tragbares Mobiltelefon."
+      },
+      {
+        "german": "die E-Mail",
+        "english": "the e-mail",
+        "meaning": "An electronic message sent via the internet.",
+        "bedeutung": "Eine elektronische Nachricht, die über das Internet gesendet wird."
+      },
+      {
+        "german": "das Geburtsdatum",
+        "english": "the date of birth",
+        "meaning": "The day on which someone was born.",
+        "bedeutung": "Das Datum der Geburt einer Person."
+      },
+      {
+        "german": "das Geburtstag",
+        "english": "the birthday",
+        "meaning": "The anniversary of the day someone was born.",
+        "bedeutung": "Der Jahrestag der Geburt."
+      },
+      {
+        "german": "die Familie",
+        "english": "the family",
+        "meaning": "A group of related people.",
+        "bedeutung": "Eine Gruppe von Verwandten."
+      },
+      {
+        "german": "der Familienstand",
+        "english": "the marital status",
+        "meaning": "The state of being married or single.",
+        "bedeutung": "Der Familien- oder Ehestand einer Person."
+      },
+      {
+        "german": "verheiratet",
+        "english": "married",
+        "meaning": "Having a spouse.",
+        "bedeutung": "Mit einem Ehepartner verbunden."
+      },
+      {
+        "german": "ledig",
+        "english": "single",
+        "meaning": "Not married.",
+        "bedeutung": "Unverheiratet."
+      },
+      {
+        "german": "die Ehefrau",
+        "english": "the wife",
+        "meaning": "A female partner in a marriage.",
+        "bedeutung": "Die weibliche Person in einer Ehe."
+      },
+      {
+        "german": "der Ehemann",
+        "english": "the husband",
+        "meaning": "A male partner in a marriage.",
+        "bedeutung": "Der männliche Partner in einer Ehe."
+      },
+      {
+        "german": "die Hochzeit",
+        "english": "the wedding",
+        "meaning": "A ceremony in which two people are married.",
+        "bedeutung": "Die Zeremonie, in der eine Ehe geschlossen wird."
+      },
+      {
+        "german": "der Vater",
+        "english": "the father",
+        "meaning": "A male parent.",
+        "bedeutung": "Ein männlicher Elternteil."
+      },
+      {
+        "german": "die Mutter",
+        "english": "the mother",
+        "meaning": "A female parent.",
+        "bedeutung": "Ein weiblicher Elternteil."
+      },
+      {
+        "german": "die Eltern",
+        "english": "the parents",
+        "meaning": "A person's mother and father.",
+        "bedeutung": "Die Mutter und der Vater einer Person."
+      },
+      {
+        "german": "das Kind",
+        "english": "the child",
+        "meaning": "A young person.",
+        "bedeutung": "Ein junger Mensch."
+      },
+      {
+        "german": "das Baby",
+        "english": "the baby",
+        "meaning": "A very young child.",
+        "bedeutung": "Ein sehr kleines Kind."
+      },
+      {
+        "german": "der Sohn",
+        "english": "the son",
+        "meaning": "A male child.",
+        "bedeutung": "Ein männliches Kind."
+      },
+      {
+        "german": "die Tochter",
+        "english": "the daughter",
+        "meaning": "A female child.",
+        "bedeutung": "Ein weibliches Kind."
+      },
+      {
+        "german": "der Bruder",
+        "english": "the brother",
+        "meaning": "A male sibling.",
+        "bedeutung": "Ein männliches Geschwisterkind."
+      },
+      {
+        "german": "die Schwester",
+        "english": "the sister",
+        "meaning": "A female sibling.",
+        "bedeutung": "Ein weibliches Geschwisterkind."
+      },
+      {
+        "german": "die Geschwister",
+        "english": "the siblings",
+        "meaning": "Brothers and sisters.",
+        "bedeutung": "Alle Geschwister, Brüder und Schwestern."
+      },
+      {
+        "german": "die Großmutter / die Oma",
+        "english": "the grandmother / grandma",
+        "meaning": "The mother of one’s parent.",
+        "bedeutung": "Die Mutter eines Elternteils."
+      },
+      {
+        "german": "der Großvater / der Opa",
+        "english": "the grandfather / grandpa",
+        "meaning": "The father of one’s parent.",
+        "bedeutung": "Der Vater eines Elternteils."
+      },
+      {
+        "german": "die Großeltern",
+        "english": "the grandparents",
+        "meaning": "The parents of one’s parents.",
+        "bedeutung": "Die Eltern der eigenen Eltern."
+      },
+      {
+        "german": "die Nichte",
+        "english": "the niece",
+        "meaning": "The daughter of one’s sibling.",
+        "bedeutung": "Die Tochter eines Geschwisters."
+      },
+      {
+        "german": "der Neffe",
+        "english": "the nephew",
+        "meaning": "The son of one’s sibling.",
+        "bedeutung": "Der Sohn eines Geschwisters."
+      },
+      {
+        "german": "die Enkelin",
+        "english": "the granddaughter",
+        "meaning": "The daughter of one’s child.",
+        "bedeutung": "Die Tochter eines Kindes."
+      },
+      {
+        "german": "der Enkel",
+        "english": "the grandson",
+        "meaning": "The son of one’s child.",
+        "bedeutung": "Der Sohn eines Kindes."
+      },
+      {
+        "german": "die Verwandten",
+        "english": "the relatives",
+        "meaning": "Family members or kin.",
+        "bedeutung": "Verwandte oder Familienmitglieder."
+      }
+    ],
+    "Berufe (männlich/weiblich)": [
+      {
+        "german": "der Arzt/die Ärztin",
+        "english": "the doctor (m/f)",
+        "meaning": "A medical professional who treats patients.",
+        "bedeutung": "Ein medizinischer Fachmann oder eine Fachfrau, die Patienten behandelt."
+      },
+      {
+        "german": "der Architekt / die Architektin",
+        "english": "the architect (m/f)",
+        "meaning": "A professional who designs buildings.",
+        "bedeutung": "Eine Fachperson, die Gebäude entwirft."
+      },
+      {
+        "german": "der Autofahrer / die Autofahrerin",
+        "english": "the driver (m/f)",
+        "meaning": "Someone who drives a vehicle.",
+        "bedeutung": "Jemand, der ein Fahrzeug fährt."
+      },
+      {
+        "german": "der Bäcker / die Bäckerin",
+        "english": "the baker (m/f)",
+        "meaning": "A person who bakes bread and pastries.",
+        "bedeutung": "Eine Person, die Brot und Gebäck backt."
+      },
+      {
+        "german": "der Elektriker / die Elektrikerin",
+        "english": "the electrician (m/f)",
+        "meaning": "A professional who works with electrical systems.",
+        "bedeutung": "Eine Fachperson, die mit elektrischen Anlagen arbeitet."
+      },
+      {
+        "german": "der Flugbegleiter / die Flugbegleiterin",
+        "english": "the flight attendant (m/f)",
+        "meaning": "A person who assists airline passengers.",
+        "bedeutung": "Eine Person, die Passagiere im Flugzeug betreut."
+      },
+      {
+        "german": "der Feuerwehrmann / die Feuerwehrfrau",
+        "english": "the firefighter (m/f)",
+        "meaning": "A person who fights fires.",
+        "bedeutung": "Eine Person, die Brände bekämpft."
+      },
+      {
+        "german": "der Friseur / die Friseurin",
+        "english": "the hairdresser (m/f)",
+        "meaning": "A person who cuts and styles hair.",
+        "bedeutung": "Eine Person, die Haare schneidet und stylt."
+      },
+      {
+        "german": "der Hausmann / die Hausfrau",
+        "english": "the homemaker (m/f)",
+        "meaning": "A person who manages a household.",
+        "bedeutung": "Eine Person, die den Haushalt führt."
+      },
+      {
+        "german": "der Ingenieur / die Ingenieurin",
+        "english": "the engineer (m/f)",
+        "meaning": "A professional who applies scientific principles to design and build.",
+        "bedeutung": "Eine Fachperson, die Wissenschaft zum Entwerfen und Bauen einsetzt."
+      },
+      {
+        "german": "der Journalist / die Journalistin",
+        "english": "the journalist (m/f)",
+        "meaning": "A person who reports news and events.",
+        "bedeutung": "Eine Person, die Nachrichten berichtet."
+      },
+      {
+        "german": "der Kellner / die Kellnerin",
+        "english": "the waiter/waitress",
+        "meaning": "A person who serves food and drinks in a restaurant.",
+        "bedeutung": "Eine Person, die in einem Restaurant bedient."
+      },
+      {
+        "german": "der Koch / die Köchin",
+        "english": "the cook (m/f)",
+        "meaning": "A person who prepares meals.",
+        "bedeutung": "Eine Person, die Speisen zubereitet."
+      },
+      {
+        "german": "der Lehrer / die Lehrerin",
+        "english": "the teacher (m/f)",
+        "meaning": "A person who educates students.",
+        "bedeutung": "Eine Person, die Schüler unterrichtet."
+      },
+      {
+        "german": "der Mechaniker / die Mechanikerin",
+        "english": "the mechanic (m/f)",
+        "meaning": "A person who repairs vehicles or machines.",
+        "bedeutung": "Eine Person, die Fahrzeuge oder Maschinen repariert."
+      },
+      {
+        "german": "der Pilot / die Pilotin",
+        "english": "the pilot (m/f)",
+        "meaning": "A person who flies an aircraft.",
+        "bedeutung": "Eine Person, die ein Flugzeug steuert."
+      },
+      {
+        "german": "der Polizist / die Polizistin",
+        "english": "the police officer (m/f)",
+        "meaning": "A law enforcement officer.",
+        "bedeutung": "Ein Beamter oder eine Beamtin der Polizei."
+      },
+      {
+        "german": "der Sänger / die Sängerin",
+        "english": "the singer (m/f)",
+        "meaning": "A person who sings.",
+        "bedeutung": "Eine Person, die singt."
+      },
+      {
+        "german": "der Sekretär / die Sekretärin",
+        "english": "the secretary (m/f)",
+        "meaning": "A person who handles administrative tasks.",
+        "bedeutung": "Eine Person, die administrative Aufgaben erledigt."
+      },
+      {
+        "german": "der Schauspieler / die Schauspielerin",
+        "english": "the actor/actress",
+        "meaning": "A person who performs in films or on stage.",
+        "bedeutung": "Eine Person, die in Theaterstücken oder Filmen auftritt."
+      },
+      {
+        "german": "der Schüler / die Schülerin",
+        "english": "the pupil/student (m)",
+        "meaning": "A young person attending school.",
+        "bedeutung": "Ein junger Mensch, der die Schule besucht."
+      },
+      {
+        "german": "der Student / die Studentin",
+        "english": "the student (m/f)",
+        "meaning": "A person who studies at a college or university.",
+        "bedeutung": "Eine Person, die an einer Hochschule studiert."
+      },
+      {
+        "german": "der Professor / die Professorin",
+        "english": "the professor (m/f)",
+        "meaning": "A senior academic instructor.",
+        "bedeutung": "Ein hochrangiger Dozent an einer Universität."
+      },
+      {
+        "german": "der Verkäufer / die Verkäuferin",
+        "english": "the salesperson (m/f)",
+        "meaning": "A person who sells goods.",
+        "bedeutung": "Eine Person, die Waren verkauft."
+      }
+    ],
+    "Kleidung & Farben": [
+      {
+        "german": "die Kleidung",
+        "english": "the clothing",
+        "meaning": "Garments or attire worn on the body.",
+        "bedeutung": "Kleidungsstücke, die am Körper getragen werden."
+      },
+      {
+        "german": "der Pullover",
+        "english": "the sweater",
+        "meaning": "A knitted garment worn on the upper body.",
+        "bedeutung": "Ein gestricktes Kleidungsstück für den Oberkörper."
+      },
+      {
+        "german": "der Rock",
+        "english": "the skirt",
+        "meaning": "A garment worn by women that hangs from the waist.",
+        "bedeutung": "Ein Kleidungsstück, das ab der Taille hängt."
+      },
+      {
+        "german": "die Hose",
+        "english": "the trousers",
+        "meaning": "Clothing that covers the legs.",
+        "bedeutung": "Ein Kleidungsstück, das die Beine bedeckt."
+      },
+      {
+        "german": "das Hemd",
+        "english": "the shirt",
+        "meaning": "A garment worn on the upper body, typically with sleeves.",
+        "bedeutung": "Ein Kleidungsstück mit Ärmeln für den Oberkörper."
+      },
+      {
+        "german": "die Schuhe",
+        "english": "the shoes",
+        "meaning": "Footwear that protects and covers the feet.",
+        "bedeutung": "Schuhe, die die Füße schützen."
+      },
+      {
+        "german": "die Jacke",
+        "english": "the jacket",
+        "meaning": "A short coat worn over other clothes.",
+        "bedeutung": "Ein kurzer Mantel, der über Kleidung getragen wird."
+      },
+      {
+        "german": "der Mantel",
+        "english": "the coat",
+        "meaning": "A long garment worn for warmth.",
+        "bedeutung": "Ein langer Überzieher zum Schutz vor Kälte."
+      },
+      {
+        "german": "die Jeans",
+        "english": "the jeans",
+        "meaning": "Trousers made from denim fabric.",
+        "bedeutung": "Hosen aus Denim-Stoff."
+      },
+      {
+        "german": "die Größe",
+        "english": "the size",
+        "meaning": "The measurement or dimensions of something.",
+        "bedeutung": "Die Maße oder Dimensionen von etwas."
+      },
+      {
+        "german": "die Farbe",
+        "english": "the color",
+        "meaning": "A visual attribute of objects, like red or blue.",
+        "bedeutung": "Ein visuelles Merkmal, z. B. Rot oder Blau."
+      },
+      {
+        "german": "rot",
+        "english": "red",
+        "meaning": "A color resembling blood or fire.",
+        "bedeutung": "Eine Farbe wie bei Blut oder Feuer."
+      },
+      {
+        "german": "schwarz",
+        "english": "black",
+        "meaning": "The darkest color, like the night.",
+        "bedeutung": "Die dunkelste Farbe, wie die Nacht."
+      },
+      {
+        "german": "weiß",
+        "english": "white",
+        "meaning": "A light color, like snow.",
+        "bedeutung": "Eine helle Farbe, ähnlich wie Schnee."
+      },
+      {
+        "german": "grau",
+        "english": "gray",
+        "meaning": "A neutral color between black and white.",
+        "bedeutung": "Eine neutrale Farbe zwischen Schwarz und Weiß."
+      },
+      {
+        "german": "blau",
+        "english": "blue",
+        "meaning": "The color of a clear sky.",
+        "bedeutung": "Die Farbe eines klaren Himmels."
+      },
+      {
+        "german": "grün",
+        "english": "green",
+        "meaning": "The color typical of grass.",
+        "bedeutung": "Die Farbe, die man bei Gras sieht."
+      },
+      {
+        "german": "gelb",
+        "english": "yellow",
+        "meaning": "A bright color like that of the sun.",
+        "bedeutung": "Eine helle Farbe, ähnlich wie die Sonne."
+      },
+      {
+        "german": "braun",
+        "english": "brown",
+        "meaning": "A color resembling earth or wood.",
+        "bedeutung": "Eine Farbe wie Erde oder Holz."
+      }
+    ],
+    "Freizeitaktivitäten": [
+      {
+        "german": "die Freizeit",
+        "english": "free time",
+        "meaning": "Time available for leisure activities.",
+        "bedeutung": "Zeit, die man für Freizeitaktivitäten hat."
+      },
+      {
+        "german": "das Hobby",
+        "english": "the hobby",
+        "meaning": "An activity done for pleasure in one's spare time.",
+        "bedeutung": "Eine Tätigkeit, die man in der Freizeit gern macht."
+      },
+      {
+        "german": "Fußball spielen",
+        "english": "to play football",
+        "meaning": "To engage in a soccer game.",
+        "bedeutung": "An einem Fußballspiel teilnehmen."
+      },
+      {
+        "german": "Karten spielen",
+        "english": "to play cards",
+        "meaning": "To engage in a card game.",
+        "bedeutung": "Ein Kartenspiel spielen."
+      },
+      {
+        "german": "Gitarre spielen",
+        "english": "to play the guitar",
+        "meaning": "To perform music using a guitar.",
+        "bedeutung": "Musik auf einer Gitarre spielen."
+      },
+      {
+        "german": "Musik hören",
+        "english": "to listen to music",
+        "meaning": "To enjoy music by listening to it.",
+        "bedeutung": "Musik anhören."
+      },
+      {
+        "german": "wandern",
+        "english": "to hike",
+        "meaning": "To walk in nature for exercise or pleasure.",
+        "bedeutung": "In der Natur spazieren gehen."
+      },
+      {
+        "german": "schwimmen",
+        "english": "to swim",
+        "meaning": "To move through water using the limbs.",
+        "bedeutung": "Sich im Wasser fortbewegen."
+      },
+      {
+        "german": "lesen",
+        "english": "to read",
+        "meaning": "To look at and comprehend written text.",
+        "bedeutung": "Geschriebenen Text lesen und verstehen."
+      },
+      {
+        "german": "das Buch",
+        "english": "the book",
+        "meaning": "A bound written work.",
+        "bedeutung": "Ein zusammengebundenes Schriftstück."
+      },
+      {
+        "german": "die Zeitung",
+        "english": "the newspaper",
+        "meaning": "A printed publication with news articles.",
+        "bedeutung": "Eine gedruckte Publikation mit Nachrichten."
+      },
+      {
+        "german": "fernsehen",
+        "english": "to watch TV",
+        "meaning": "To view television programs.",
+        "bedeutung": "Fernsehprogramme anschauen."
+      },
+      {
+        "german": "tanzen",
+        "english": "to dance",
+        "meaning": "To move rhythmically to music.",
+        "bedeutung": "Sich rhythmisch zur Musik bewegen."
+      },
+      {
+        "german": "Computer spielen",
+        "english": "to play computer games",
+        "meaning": "To engage in video games on a computer.",
+        "bedeutung": "Am Computer Spiele spielen."
+      },
+      {
+        "german": "Sport treiben / machen",
+        "english": "to do sports",
+        "meaning": "To engage in physical exercise.",
+        "bedeutung": "Sportliche Aktivitäten ausüben."
+      },
+      {
+        "german": "ins Kino gehen",
+        "english": "to go to the cinema",
+        "meaning": "To visit a movie theater.",
+        "bedeutung": "Ins Kino gehen, um einen Film zu sehen."
+      },
+      {
+        "german": "das Kino",
+        "english": "the cinema",
+        "meaning": "A place where movies are shown.",
+        "bedeutung": "Ein Ort, an dem Filme gezeigt werden."
+      },
+      {
+        "german": "Rad fahren",
+        "english": "to cycle",
+        "meaning": "To ride a bicycle.",
+        "bedeutung": "Mit dem Fahrrad fahren."
+      },
+      {
+        "german": "spazieren gehen",
+        "english": "to go for a walk",
+        "meaning": "To take a leisurely walk.",
+        "bedeutung": "Einen gemütlichen Spaziergang machen."
+      },
+      {
+        "german": "in die Disco gehen",
+        "english": "to go to the disco",
+        "meaning": "To visit a nightclub for dancing.",
+        "bedeutung": "Eine Diskothek besuchen."
+      },
+      {
+        "german": "die Disco",
+        "english": "the disco",
+        "meaning": "A venue where people dance to music.",
+        "bedeutung": "Ein Ort zum Tanzen und Musikhören."
+      },
+      {
+        "german": "das Museum",
+        "english": "the museum",
+        "meaning": "A place where art or historical items are exhibited.",
+        "bedeutung": "Ein Ort, an dem Kunst oder Geschichte ausgestellt wird."
+      },
+      {
+        "german": "der Verein",
+        "english": "the club",
+        "meaning": "An organization or association.",
+        "bedeutung": "Eine Organisation oder ein Verein."
+      },
+      {
+        "german": "der Sportverein",
+        "english": "the sports club",
+        "meaning": "A club focused on sporting activities.",
+        "bedeutung": "Ein Verein, der sich sportlichen Aktivitäten widmet."
+      },
+      {
+        "german": "sich anmelden",
+        "english": "to register",
+        "meaning": "To sign up for membership or an activity.",
+        "bedeutung": "Sich zu einer Aktivität anmelden."
+      },
+      {
+        "german": "die Anmeldung",
+        "english": "the registration",
+        "meaning": "The process of signing up.",
+        "bedeutung": "Der Vorgang des Anmeldens."
+      },
+      {
+        "german": "das Schwimmbad",
+        "english": "the swimming pool",
+        "meaning": "A pool designated for swimming.",
+        "bedeutung": "Ein Becken zum Schwimmen."
+      },
+      {
+        "german": "gefallen",
+        "english": "to please",
+        "meaning": "To be liked by someone.",
+        "bedeutung": "Jemandem zusagen."
+      },
+      {
+        "german": "das gefällt mir",
+        "english": "I like it",
+        "meaning": "An expression indicating approval.",
+        "bedeutung": "Ein Ausdruck, dass etwas gefällt."
+      },
+      {
+        "german": "schön",
+        "english": "beautiful",
+        "meaning": "Pleasing in appearance.",
+        "bedeutung": "Ansprechend oder attraktiv."
+      },
+      {
+        "german": "interessant",
+        "english": "interesting",
+        "meaning": "Arousing curiosity or attention.",
+        "bedeutung": "Erregt Neugier oder Aufmerksamkeit."
+      },
+      {
+        "german": "mögen",
+        "english": "to like",
+        "meaning": "To find something agreeable.",
+        "bedeutung": "Etwas gern haben."
+      },
+      {
+        "german": "geöffnet",
+        "english": "open",
+        "meaning": "Not closed; available for business.",
+        "bedeutung": "Offen und zugänglich."
+      },
+      {
+        "german": "geschlossen",
+        "english": "closed",
+        "meaning": "Not open; shut.",
+        "bedeutung": "Nicht geöffnet; verschlossen."
+      },
+      {
+        "german": "die Eintrittskarte",
+        "english": "the admission ticket",
+        "meaning": "A ticket required for entry.",
+        "bedeutung": "Ein Ticket zum Einlass."
+      }
+    ],
+    "Körper & Gesundheit": [
+      {
+        "german": "das Auge",
+        "english": "the eye",
+        "meaning": "The organ of sight.",
+        "bedeutung": "Das Sehorgan."
+      },
+      {
+        "german": "die Hand",
+        "english": "the hand",
+        "meaning": "The part of the body at the end of the arm.",
+        "bedeutung": "Das Körperteil am Ende des Arms."
+      },
+      {
+        "german": "der Arm",
+        "english": "the arm",
+        "meaning": "The limb connecting the shoulder to the hand.",
+        "bedeutung": "Das Glied, das Schulter und Hand verbindet."
+      },
+      {
+        "german": "das Bein",
+        "english": "the leg",
+        "meaning": "The limb used for walking.",
+        "bedeutung": "Das Glied zum Gehen."
+      },
+      {
+        "german": "der Kopf",
+        "english": "the head",
+        "meaning": "The upper part of the body containing the brain.",
+        "bedeutung": "Der obere Teil des Körpers, der das Gehirn enthält."
+      },
+      {
+        "german": "der Fuß",
+        "english": "the foot",
+        "meaning": "The lower extremity used for standing and walking.",
+        "bedeutung": "Das untere Glied, das zum Stehen und Gehen dient."
+      },
+      {
+        "german": "der Mund",
+        "english": "the mouth",
+        "meaning": "The opening in the face used for eating and speaking.",
+        "bedeutung": "Die Öffnung im Gesicht zum Essen und Sprechen."
+      },
+      {
+        "german": "der Zahn",
+        "english": "the tooth",
+        "meaning": "A hard structure in the mouth used for chewing.",
+        "bedeutung": "Eine harte Struktur im Mund zum Kauen."
+      },
+      {
+        "german": "die Nase",
+        "english": "the nose",
+        "meaning": "The facial feature used for smelling.",
+        "bedeutung": "Das Gesichtsteil, mit dem man riecht."
+      },
+      {
+        "german": "das Ohr",
+        "english": "the ear",
+        "meaning": "The organ of hearing.",
+        "bedeutung": "Das Hörorgan."
+      },
+      {
+        "german": "das Haar",
+        "english": "the hair",
+        "meaning": "Filamentous strands growing from the skin.",
+        "bedeutung": "Fadenartige Strukturen, die aus der Haut wachsen."
+      },
+      {
+        "german": "der Bauch",
+        "english": "the stomach",
+        "meaning": "The part of the body between the chest and hips.",
+        "bedeutung": "Der Bereich zwischen Brust und Hüfte."
+      },
+      {
+        "german": "schlafen",
+        "english": "to sleep",
+        "meaning": "To rest in a state of reduced consciousness.",
+        "bedeutung": "Sich in einen Ruhezustand begeben."
+      },
+      {
+        "german": "krank",
+        "english": "sick",
+        "meaning": "Not feeling well; ill.",
+        "bedeutung": "Nicht gesund oder unwohl."
+      },
+      {
+        "german": "das Fieber",
+        "english": "the fever",
+        "meaning": "A higher than normal body temperature.",
+        "bedeutung": "Eine erhöhte Körpertemperatur."
+      },
+      {
+        "german": "der Arzt",
+        "english": "the doctor",
+        "meaning": "A professional who treats illnesses.",
+        "bedeutung": "Ein Fachmann, der Krankheiten behandelt."
+      },
+      {
+        "german": "der Zahnarzt",
+        "english": "the dentist",
+        "meaning": "A doctor who specializes in oral health.",
+        "bedeutung": "Ein Arzt, der sich auf Zähne spezialisiert."
+      },
+      {
+        "german": "die Apotheke",
+        "english": "the pharmacy",
+        "meaning": "A place where medicines are dispensed.",
+        "bedeutung": "Ein Geschäft, in dem Medikamente verkauft werden."
+      },
+      {
+        "german": "das Medikament",
+        "english": "the medication",
+        "meaning": "A substance used for treating illness.",
+        "bedeutung": "Ein Stoff, der zur Behandlung von Krankheiten verwendet wird."
+      },
+      {
+        "german": "die Praxis",
+        "english": "the practice",
+        "meaning": "The office or facility where a doctor works.",
+        "bedeutung": "Die Arztpraxis oder Einrichtung, in der ein Arzt tätig ist."
+      }
+    ],
+    "Essen & Trinken": [
+      {
+        "german": "essen",
+        "english": "to eat",
+        "meaning": "To consume food.",
+        "bedeutung": "Nahrung zu sich nehmen."
+      },
+      {
+        "german": "trinken",
+        "english": "to drink",
+        "meaning": "To consume a liquid.",
+        "bedeutung": "Flüssigkeit zu sich nehmen."
+      },
+      {
+        "german": "Hunger haben",
+        "english": "to be hungry",
+        "meaning": "To feel the need to eat.",
+        "bedeutung": "Das Bedürfnis zu essen haben."
+      },
+      {
+        "german": "Durst haben",
+        "english": "to be thirsty",
+        "meaning": "To feel the need to drink.",
+        "bedeutung": "Das Bedürfnis zu trinken haben."
+      },
+      {
+        "german": "das Frühstück",
+        "english": "the breakfast",
+        "meaning": "The first meal of the day.",
+        "bedeutung": "Die erste Mahlzeit des Tages."
+      },
+      {
+        "german": "frühstücken",
+        "english": "to have breakfast",
+        "meaning": "To eat the morning meal.",
+        "bedeutung": "Das Frühstück einnehmen."
+      },
+      {
+        "german": "das Mittagessen",
+        "english": "the lunch",
+        "meaning": "A meal eaten around midday.",
+        "bedeutung": "Eine Mahlzeit zur Mittagszeit."
+      },
+      {
+        "german": "das Abendessen",
+        "english": "the dinner",
+        "meaning": "The main meal of the day, usually in the evening.",
+        "bedeutung": "Die Hauptmahlzeit am Abend."
+      },
+      {
+        "german": "das Brot",
+        "english": "the bread",
+        "meaning": "A staple food made from flour.",
+        "bedeutung": "Ein Grundnahrungsmittel aus Mehl."
+      },
+      {
+        "german": "das Brötchen",
+        "english": "the bread roll",
+        "meaning": "A small, round loaf of bread.",
+        "bedeutung": "Ein kleines rundes Brot."
+      },
+      {
+        "german": "die Butter",
+        "english": "the butter",
+        "meaning": "A dairy product made from churned cream.",
+        "bedeutung": "Ein Milchprodukt aus Sahne."
+      },
+      {
+        "german": "die Milch",
+        "english": "the milk",
+        "meaning": "A white liquid produced by mammals.",
+        "bedeutung": "Ein weißes Getränk, das von Säugetieren produziert wird."
+      },
+      {
+        "german": "der Käse",
+        "english": "the cheese",
+        "meaning": "A dairy product made from curdled milk.",
+        "bedeutung": "Ein Milchprodukt aus geronnener Milch."
+      },
+      {
+        "german": "das Ei",
+        "english": "the egg",
+        "meaning": "An oval reproductive body laid by birds.",
+        "bedeutung": "Ein ovales Fortpflanzungsprodukt von Vögeln."
+      },
+      {
+        "german": "der Fisch",
+        "english": "the fish",
+        "meaning": "A cold-blooded aquatic animal.",
+        "bedeutung": "Ein wasserlebendes Tier."
+      },
+      {
+        "german": "das Fleisch",
+        "english": "the meat",
+        "meaning": "Animal flesh used as food.",
+        "bedeutung": "Fleisch, das als Nahrungsmittel dient."
+      },
+      {
+        "german": "das Hähnchen",
+        "english": "the chicken",
+        "meaning": "Poultry often eaten as food.",
+        "bedeutung": "Geflügel, das als Speise dient."
+      },
+      {
+        "german": "der Schinken",
+        "english": "the ham",
+        "meaning": "Cured pork meat.",
+        "bedeutung": "Gepökeltes Schweinefleisch."
+      },
+      {
+        "german": "das Gemüse",
+        "english": "the vegetables",
+        "meaning": "Edible plants or parts of plants.",
+        "bedeutung": "Essbare Pflanzenteile oder Gemüse."
+      },
+      {
+        "german": "die Tomate",
+        "english": "the tomato",
+        "meaning": "A red fruit used as a vegetable.",
+        "bedeutung": "Eine rote Frucht, die oft als Gemüse verwendet wird."
+      },
+      {
+        "german": "die Kartoffel",
+        "english": "the potato",
+        "meaning": "A starchy tuber used as food.",
+        "bedeutung": "Eine stärkehaltige Knolle, die als Nahrungsmittel dient."
+      },
+      {
+        "german": "die Pommes frites",
+        "english": "the fries",
+        "meaning": "Deep-fried strips of potato.",
+        "bedeutung": "Frittierte Kartoffelstreifen."
+      },
+      {
+        "german": "der Salat",
+        "english": "the salad",
+        "meaning": "A dish of mixed vegetables, often served with dressing.",
+        "bedeutung": "Ein Gemisch aus Gemüse, oft mit Dressing serviert."
+      },
+      {
+        "german": "das Öl",
+        "english": "the oil",
+        "meaning": "A viscous liquid used in cooking.",
+        "bedeutung": "Eine viskose Flüssigkeit, die zum Kochen verwendet wird."
+      },
+      {
+        "german": "die Nudeln",
+        "english": "the noodles",
+        "meaning": "Pasta in various shapes, usually made from wheat.",
+        "bedeutung": "Teigwaren in verschiedenen Formen, meist aus Weizen."
+      },
+      {
+        "german": "die Suppe",
+        "english": "the soup",
+        "meaning": "A liquid dish made by boiling ingredients.",
+        "bedeutung": "Eine flüssige Speise, die durch Kochen zubereitet wird."
+      },
+      {
+        "german": "der Kuchen",
+        "english": "the cake",
+        "meaning": "A sweet baked dessert.",
+        "bedeutung": "Ein süßes, gebackenes Dessert."
+      },
+      {
+        "german": "das Obst",
+        "english": "the fruit",
+        "meaning": "Edible sweet or sour produce from plants.",
+        "bedeutung": "Essbare Früchte von Pflanzen."
+      },
+      {
+        "german": "die Orange",
+        "english": "the orange",
+        "meaning": "A citrus fruit known for its bright color.",
+        "bedeutung": "Eine Zitrusfrucht mit leuchtender Farbe."
+      },
+      {
+        "german": "der Apfel",
+        "english": "the apple",
+        "meaning": "A round fruit with red, green, or yellow skin.",
+        "bedeutung": "Eine runde Frucht mit roter, grüner oder gelber Schale."
+      },
+      {
+        "german": "die Banane",
+        "english": "the banana",
+        "meaning": "A long, curved fruit with a yellow peel.",
+        "bedeutung": "Eine lange, gebogene Frucht mit gelber Schale."
+      },
+      {
+        "german": "die Birne",
+        "english": "the pear",
+        "meaning": "A sweet fruit with a rounded base and tapering top.",
+        "bedeutung": "Eine süße Frucht mit breiter Basis und schmaler Spitze."
+      },
+      {
+        "german": "die Zitrone",
+        "english": "the lemon",
+        "meaning": "A sour, yellow citrus fruit.",
+        "bedeutung": "Eine saure, gelbe Zitrusfrucht."
+      },
+      {
+        "german": "der Reis",
+        "english": "the rice",
+        "meaning": "A staple grain used worldwide as food.",
+        "bedeutung": "Ein Grundnahrungsmittel in Form von Getreide."
+      },
+      {
+        "german": "das Salz",
+        "english": "the salt",
+        "meaning": "A mineral used to flavor food.",
+        "bedeutung": "Ein Mineral, das zum Würzen von Speisen dient."
+      },
+      {
+        "german": "das Getränk",
+        "english": "the beverage",
+        "meaning": "Any drinkable liquid.",
+        "bedeutung": "Ein Getränk, das man trinken kann."
+      },
+      {
+        "german": "das Wasser",
+        "english": "the water",
+        "meaning": "A clear, essential liquid for life.",
+        "bedeutung": "Eine klare Flüssigkeit, die lebenswichtig ist."
+      },
+      {
+        "german": "der Kaffee",
+        "english": "the coffee",
+        "meaning": "A brewed drink made from roasted coffee beans.",
+        "bedeutung": "Ein Getränk aus gerösteten Kaffeebohnen."
+      },
+      {
+        "german": "der Tee",
+        "english": "the tea",
+        "meaning": "A hot beverage made by steeping tea leaves.",
+        "bedeutung": "Ein Heißgetränk aus aufgegossenen Teeblättern."
+      },
+      {
+        "german": "der Saft",
+        "english": "the juice",
+        "meaning": "A liquid extracted from fruits.",
+        "bedeutung": "Ein aus Früchten gewonnener Saft."
+      },
+      {
+        "german": "das Bier",
+        "english": "the beer",
+        "meaning": "An alcoholic beverage made from malt and hops.",
+        "bedeutung": "Ein alkoholisches Getränk aus Malz und Hopfen."
+      },
+      {
+        "german": "der Wein",
+        "english": "the wine",
+        "meaning": "An alcoholic drink made from fermented grapes.",
+        "bedeutung": "Ein alkoholisches Getränk aus vergorenen Trauben."
+      },
+      {
+        "german": "kaufen / einkaufen",
+        "english": "to buy / to shop",
+        "meaning": "To purchase goods.",
+        "bedeutung": "Waren kaufen oder einkaufen."
+      },
+      {
+        "german": "verkaufen",
+        "english": "to sell",
+        "meaning": "To exchange goods for money.",
+        "bedeutung": "Waren gegen Geld anbieten."
+      },
+      {
+        "german": "günstig / billig",
+        "english": "cheap/inexpensive",
+        "meaning": "Low in price.",
+        "bedeutung": "Preiswert oder kostengünstig."
+      },
+      {
+        "german": "teuer",
+        "english": "expensive",
+        "meaning": "High in price.",
+        "bedeutung": "Kostspielig oder hochpreisig."
+      },
+      {
+        "german": "das Geschäft",
+        "english": "the store",
+        "meaning": "A place where goods are sold.",
+        "bedeutung": "Ein Geschäft, in dem Waren verkauft werden."
+      },
+      {
+        "german": "die Bäckerei",
+        "english": "the bakery",
+        "meaning": "A shop where bread and pastries are made and sold.",
+        "bedeutung": "Ein Laden, in dem Brot und Gebäck hergestellt und verkauft werden."
+      },
+      {
+        "german": "der Supermarkt",
+        "english": "the supermarket",
+        "meaning": "A large store offering a wide range of products.",
+        "bedeutung": "Ein großer Laden mit vielen Waren."
+      },
+      {
+        "german": "die Öffnungszeiten",
+        "english": "the opening hours",
+        "meaning": "The times when a store is open.",
+        "bedeutung": "Die Zeiten, zu denen ein Geschäft geöffnet ist."
+      },
+      {
+        "german": "die Lebensmittel",
+        "english": "the groceries",
+        "meaning": "Food and other items purchased at a store.",
+        "bedeutung": "Lebensmittel und andere Einkäufe."
+      },
+      {
+        "german": "das Kilo",
+        "english": "the kilo",
+        "meaning": "A unit of weight equal to 1000 grams.",
+        "bedeutung": "Eine Gewichtseinheit von 1000 Gramm."
+      },
+      {
+        "german": "das Pfund",
+        "english": "the pound",
+        "meaning": "A unit of weight used in some countries.",
+        "bedeutung": "Eine Gewichtseinheit, die in einigen Ländern genutzt wird."
+      },
+      {
+        "german": "das Gramm",
+        "english": "the gram",
+        "meaning": "A unit of mass equal to one thousandth of a kilogram.",
+        "bedeutung": "Eine Masseinheit, ein Tausendstel Kilogramm."
+      },
+      {
+        "german": "der Preis",
+        "english": "the price",
+        "meaning": "The cost of something.",
+        "bedeutung": "Der Geldbetrag, der für etwas verlangt wird."
+      },
+      {
+        "german": "die Kasse",
+        "english": "the cash register",
+        "meaning": "A machine or counter for processing payments.",
+        "bedeutung": "Ein Gerät oder Schalter zur Zahlungsabwicklung."
+      },
+      {
+        "german": "das Geld",
+        "english": "the money",
+        "meaning": "Currency used to buy goods and services.",
+        "bedeutung": "Währung, die für Transaktionen verwendet wird."
+      },
+      {
+        "german": "das Restaurant",
+        "english": "the restaurant",
+        "meaning": "A place where meals are served to customers.",
+        "bedeutung": "Ein Ort, an dem Speisen serviert werden."
+      },
+      {
+        "german": "das Café",
+        "english": "the café",
+        "meaning": "A small restaurant serving light meals and drinks.",
+        "bedeutung": "Ein kleiner Laden, der Snacks und Getränke anbietet."
+      },
+      {
+        "german": "die Speisekarte",
+        "english": "the menu",
+        "meaning": "A list of food and drink items available.",
+        "bedeutung": "Eine Liste der angebotenen Speisen und Getränke."
+      },
+      {
+        "german": "bestellen",
+        "english": "to order",
+        "meaning": "To request food or goods.",
+        "bedeutung": "Etwas, z. B. Essen, anfordern."
+      },
+      {
+        "german": "die Rechnung",
+        "english": "the bill",
+        "meaning": "A statement of charges for goods or services.",
+        "bedeutung": "Eine Aufstellung des zu zahlenden Betrags."
+      }
+    ],
+    "Verkehr & Reisen": [
+      {
+        "german": "der Weg",
+        "english": "the way",
+        "meaning": "A route or path to a destination.",
+        "bedeutung": "Ein Weg oder Pfad zu einem Ziel."
+      },
+      {
+        "german": "wo?",
+        "english": "where?",
+        "meaning": "A question asking for a location.",
+        "bedeutung": "Eine Frage nach dem Ort."
+      },
+      {
+        "german": "woher?",
+        "english": "from where?",
+        "meaning": "A question asking about the origin.",
+        "bedeutung": "Eine Frage nach der Herkunft."
+      },
+      {
+        "german": "wohin?",
+        "english": "to where?",
+        "meaning": "A question asking for a destination.",
+        "bedeutung": "Eine Frage nach dem Ziel."
+      },
+      {
+        "german": "wie weit?",
+        "english": "how far?",
+        "meaning": "A question about distance.",
+        "bedeutung": "Eine Frage nach der Entfernung."
+      },
+      {
+        "german": "wie lange?",
+        "english": "how long?",
+        "meaning": "A question about duration.",
+        "bedeutung": "Eine Frage nach der Zeitdauer."
+      },
+      {
+        "german": "geradeaus",
+        "english": "straight ahead",
+        "meaning": "Continuing directly forward.",
+        "bedeutung": "Direkt geradeaus."
+      },
+      {
+        "german": "links",
+        "english": "left",
+        "meaning": "Towards the left side.",
+        "bedeutung": "Zur linken Seite."
+      },
+      {
+        "german": "rechts",
+        "english": "right",
+        "meaning": "Towards the right side.",
+        "bedeutung": "Zur rechten Seite."
+      },
+      {
+        "german": "die Ecke",
+        "english": "the corner",
+        "meaning": "The point where two lines or surfaces meet.",
+        "bedeutung": "Der Schnittpunkt zweier Linien oder Flächen."
+      },
+      {
+        "german": "das Auto",
+        "english": "the car",
+        "meaning": "A motor vehicle for personal transportation.",
+        "bedeutung": "Ein Kraftfahrzeug für den privaten Transport."
+      },
+      {
+        "german": "der Bus",
+        "english": "the bus",
+        "meaning": "A large vehicle for public transportation.",
+        "bedeutung": "Ein großes Fahrzeug für den öffentlichen Nahverkehr."
+      },
+      {
+        "german": "das Fahrrad",
+        "english": "the bicycle",
+        "meaning": "A two-wheeled vehicle powered by pedaling.",
+        "bedeutung": "Ein Fahrrad, das durch Treten angetrieben wird."
+      },
+      {
+        "german": "der Zug",
+        "english": "the train",
+        "meaning": "A series of connected vehicles running on rails.",
+        "bedeutung": "Eine Reihe von Wagen, die auf Schienen fahren."
+      },
+      {
+        "german": "die Straßenbahn",
+        "english": "the tram",
+        "meaning": "A rail vehicle that runs along city streets.",
+        "bedeutung": "Ein Schienenfahrzeug, das in der Stadt verkehrt."
+      },
+      {
+        "german": "die U-Bahn",
+        "english": "the subway",
+        "meaning": "An underground urban train system.",
+        "bedeutung": "Ein unterirdisches städtisches Bahnsystem."
+      },
+      {
+        "german": "das Taxi",
+        "english": "the taxi",
+        "meaning": "A vehicle for hire.",
+        "bedeutung": "Ein gemietetes Fahrzeug für Fahrten."
+      },
+      {
+        "german": "das Schiff",
+        "english": "the ship",
+        "meaning": "A large boat for traveling on water.",
+        "bedeutung": "Ein großes Wasserfahrzeug."
+      },
+      {
+        "german": "parken",
+        "english": "to park",
+        "meaning": "To leave a vehicle stationary.",
+        "bedeutung": "Ein Fahrzeug abstellen."
+      },
+      {
+        "german": "halten",
+        "english": "to stop",
+        "meaning": "To cease movement.",
+        "bedeutung": "Anhalten oder stoppen."
+      },
+      {
+        "german": "die Autobahn",
+        "english": "the highway",
+        "meaning": "A main road designed for fast traffic.",
+        "bedeutung": "Eine Schnellstraße für den Fernverkehr."
+      },
+      {
+        "german": "der Unfall",
+        "english": "the accident",
+        "meaning": "An unexpected event causing damage or injury.",
+        "bedeutung": "Ein unvorhergesehenes Ereignis mit Schaden."
+      },
+      {
+        "german": "die Polizei",
+        "english": "the police",
+        "meaning": "Law enforcement officers.",
+        "bedeutung": "Die Ordnungshüter oder Strafverfolger."
+      },
+      {
+        "german": "der Führerschein",
+        "english": "the driver's license",
+        "meaning": "An official document permitting someone to drive.",
+        "bedeutung": "Ein amtlicher Ausweis, der zum Fahren berechtigt."
+      },
+      {
+        "german": "das Flugzeug",
+        "english": "the airplane",
+        "meaning": "A powered flying vehicle with wings.",
+        "bedeutung": "Ein motorisiertes Fluggerät mit Flügeln."
+      },
+      {
+        "german": "fliegen",
+        "english": "to fly",
+        "meaning": "To travel through the air.",
+        "bedeutung": "Sich in der Luft fortbewegen."
+      },
+      {
+        "german": "der Flughafen",
+        "english": "the airport",
+        "meaning": "A facility where airplanes take off and land.",
+        "bedeutung": "Ein Ort, an dem Flugzeuge starten und landen."
+      },
+      {
+        "german": "der Bahnhof",
+        "english": "the train station",
+        "meaning": "A place where trains stop for passengers.",
+        "bedeutung": "Ein Haltepunkt für Züge."
+      },
+      {
+        "german": "die Haltestelle",
+        "english": "the stop",
+        "meaning": "A designated place for public transport to pick up passengers.",
+        "bedeutung": "Ein festgelegter Haltepunkt im öffentlichen Verkehr."
+      },
+      {
+        "german": "die Linie",
+        "english": "the line",
+        "meaning": "A specific route or service in public transportation.",
+        "bedeutung": "Eine bestimmte Route im Nahverkehr."
+      },
+      {
+        "german": "abfahren",
+        "english": "to depart",
+        "meaning": "To leave a station or start a journey.",
+        "bedeutung": "Von einem Ort abfahren."
+      },
+      {
+        "german": "die Abfahrt",
+        "english": "the departure",
+        "meaning": "The act or time of leaving.",
+        "bedeutung": "Der Zeitpunkt des Abfahrens."
+      },
+      {
+        "german": "abfliegen",
+        "english": "to take off",
+        "meaning": "When an airplane leaves the ground.",
+        "bedeutung": "Der Moment, in dem ein Flugzeug startet."
+      },
+      {
+        "german": "der Abflug",
+        "english": "the flight departure",
+        "meaning": "The scheduled time an airplane leaves.",
+        "bedeutung": "Die geplante Abflugzeit."
+      },
+      {
+        "german": "ankommen",
+        "english": "to arrive",
+        "meaning": "To reach a destination.",
+        "bedeutung": "An einem Zielort eintreffen."
+      },
+      {
+        "german": "die Ankunft",
+        "english": "the arrival",
+        "meaning": "The act or time of arriving.",
+        "bedeutung": "Der Zeitpunkt des Eintreffens."
+      },
+      {
+        "german": "dauern",
+        "english": "to last",
+        "meaning": "To continue for a period of time.",
+        "bedeutung": "Über einen bestimmten Zeitraum andauern."
+      },
+      {
+        "german": "einsteigen",
+        "english": "to board",
+        "meaning": "To get into a vehicle.",
+        "bedeutung": "In ein Fahrzeug einsteigen."
+      },
+      {
+        "german": "aussteigen",
+        "english": "to disembark",
+        "meaning": "To leave a vehicle.",
+        "bedeutung": "Aus einem Fahrzeug aussteigen."
+      },
+      {
+        "german": "umsteigen",
+        "english": "to change (transport)",
+        "meaning": "To transfer from one mode of transport to another.",
+        "bedeutung": "Von einem Verkehrsmittel in ein anderes wechseln."
+      },
+      {
+        "german": "die Fahrkarte",
+        "english": "the ticket",
+        "meaning": "A document allowing travel on public transport.",
+        "bedeutung": "Ein Fahrschein für den öffentlichen Nahverkehr."
+      },
+      {
+        "german": "das Ticket",
+        "english": "the ticket",
+        "meaning": "Proof of purchase for a journey.",
+        "bedeutung": "Ein Dokument, das den Kauf einer Fahrt bestätigt."
+      },
+      {
+        "german": "reservieren",
+        "english": "to reserve",
+        "meaning": "To book in advance.",
+        "bedeutung": "Etwas im Voraus buchen."
+      },
+      {
+        "german": "erste Klasse",
+        "english": "first class",
+        "meaning": "The highest standard of service on transport.",
+        "bedeutung": "Die beste Sitz- oder Serviceklasse."
+      },
+      {
+        "german": "das Gepäck",
+        "english": "the luggage",
+        "meaning": "Bags or suitcases used when traveling.",
+        "bedeutung": "Reisegepäck wie Taschen oder Koffer."
+      },
+      {
+        "german": "der Koffer",
+        "english": "the suitcase",
+        "meaning": "A large case for carrying clothes while traveling.",
+        "bedeutung": "Ein großer Behälter zum Transport von Kleidung."
+      },
+      {
+        "german": "die Tasche",
+        "english": "the bag",
+        "meaning": "A container used for carrying items.",
+        "bedeutung": "Ein Behältnis zum Transport von Gegenständen."
+      },
+      {
+        "german": "die Reisetasche",
+        "english": "the travel bag",
+        "meaning": "A bag specifically used for travel.",
+        "bedeutung": "Eine Tasche, die zum Reisen genutzt wird."
+      },
+      {
+        "german": "der Urlaub / die Ferien",
+        "english": "vacation / holidays",
+        "meaning": "Time off from work or school.",
+        "bedeutung": "Freizeit von Arbeit oder Schule."
+      },
+      {
+        "german": "die Reise",
+        "english": "the trip",
+        "meaning": "A journey to a different place.",
+        "bedeutung": "Eine Reise zu einem anderen Ort."
+      },
+      {
+        "german": "reisen",
+        "english": "to travel",
+        "meaning": "To go from one place to another.",
+        "bedeutung": "Von einem Ort zum anderen reisen."
+      },
+      {
+        "german": "der Tourist",
+        "english": "the tourist (m)",
+        "meaning": "A person who travels for pleasure.",
+        "bedeutung": "Ein Reisender zu Erholungszwecken."
+      },
+      {
+        "german": "die Touristin",
+        "english": "the tourist (f)",
+        "meaning": "A female person traveling for pleasure.",
+        "bedeutung": "Eine Reisende zu Erholungszwecken."
+      },
+      {
+        "german": "die Information",
+        "english": "the information",
+        "meaning": "Details or facts provided about something.",
+        "bedeutung": "Bereitgestellte Daten oder Fakten."
+      },
+      {
+        "german": "das Reisebüro",
+        "english": "the travel agency",
+        "meaning": "A company that arranges travel plans.",
+        "bedeutung": "Ein Unternehmen, das Reisen organisiert."
+      },
+      {
+        "german": "der Reiseführer",
+        "english": "the travel guide",
+        "meaning": "A book or person providing travel advice.",
+        "bedeutung": "Ein Führer oder Buch mit Reisetipps."
+      },
+      {
+        "german": "der Ausflug",
+        "english": "the excursion",
+        "meaning": "A short journey for leisure.",
+        "bedeutung": "Ein kurzer, freizeitbezogener Ausflug."
+      },
+      {
+        "german": "besichtigen",
+        "english": "to sightsee",
+        "meaning": "To visit and view attractions.",
+        "bedeutung": "Sehenswürdigkeiten besichtigen."
+      },
+      {
+        "german": "besuchen",
+        "english": "to visit",
+        "meaning": "To go to see someone or someplace.",
+        "bedeutung": "Einen Ort oder eine Person aufsuchen."
+      },
+      {
+        "german": "die Sehenswürdigkeit",
+        "english": "the attraction",
+        "meaning": "A place of interest for visitors.",
+        "bedeutung": "Ein interessanter Ort für Touristen."
+      },
+      {
+        "german": "das Hotel",
+        "english": "the hotel",
+        "meaning": "An establishment providing lodging for travelers.",
+        "bedeutung": "Eine Unterkunft für Reisende."
+      },
+      {
+        "german": "die Rezeption",
+        "english": "the reception",
+        "meaning": "The front desk area of a hotel.",
+        "bedeutung": "Der Empfangsbereich in einem Hotel."
+      },
+      {
+        "german": "das Formular",
+        "english": "the form",
+        "meaning": "A document with blank fields to be filled in.",
+        "bedeutung": "Ein Dokument mit auszufüllenden Feldern."
+      },
+      {
+        "german": "ausfüllen",
+        "english": "to fill out",
+        "meaning": "To complete a form by providing information.",
+        "bedeutung": "Ein Formular mit Angaben ausfüllen."
+      },
+      {
+        "german": "der Schlüssel",
+        "english": "the key",
+        "meaning": "A small tool used to open locks.",
+        "bedeutung": "Ein kleines Werkzeug, um Schlösser zu öffnen."
+      },
+      {
+        "german": "zahlen / bezahlen",
+        "english": "to pay",
+        "meaning": "To give money in exchange for goods or services.",
+        "bedeutung": "Geld als Bezahlung übergeben."
+      },
+      {
+        "german": "das Einzelzimmer",
+        "english": "the single room",
+        "meaning": "A hotel room intended for one person.",
+        "bedeutung": "Ein Hotelzimmer für eine einzelne Person."
+      },
+      {
+        "german": "das Doppelzimmer",
+        "english": "the double room",
+        "meaning": "A hotel room intended for two people.",
+        "bedeutung": "Ein Hotelzimmer für zwei Personen."
+      },
+      {
+        "german": "die Halbpension",
+        "english": "half board",
+        "meaning": "Accommodation with breakfast and one other meal.",
+        "bedeutung": "Unterkunft mit Frühstück und einer weiteren Mahlzeit."
+      },
+      {
+        "german": "die Vollpension",
+        "english": "full board",
+        "meaning": "Accommodation with all meals provided.",
+        "bedeutung": "Unterkunft mit allen Mahlzeiten."
+      }
+    ],
+    "Wohnen & Leben": [
+      {
+        "german": "die Wohnung / das Apartment",
+        "english": "the apartment",
+        "meaning": "A self-contained housing unit in a building.",
+        "bedeutung": "Eine eigenständige Wohneinheit in einem Gebäude."
+      },
+      {
+        "german": "das Haus",
+        "english": "the house",
+        "meaning": "A building used as a residence.",
+        "bedeutung": "Ein Gebäude zum Wohnen."
+      },
+      {
+        "german": "das Zimmer",
+        "english": "the room",
+        "meaning": "An enclosed space within a building.",
+        "bedeutung": "Ein abgegrenzter Bereich in einem Gebäude."
+      },
+      {
+        "german": "das Wohnzimmer",
+        "english": "the living room",
+        "meaning": "A room in a house for socializing and relaxing.",
+        "bedeutung": "Ein Raum im Haus zum Beisammensein."
+      },
+      {
+        "german": "das Schlafzimmer",
+        "english": "the bedroom",
+        "meaning": "A room for sleeping.",
+        "bedeutung": "Ein Raum zum Schlafen."
+      },
+      {
+        "german": "das Kinderzimmer",
+        "english": "the children's room",
+        "meaning": "A room designated for children.",
+        "bedeutung": "Ein Raum, der für Kinder bestimmt ist."
+      },
+      {
+        "german": "die Küche",
+        "english": "the kitchen",
+        "meaning": "A room where food is prepared and cooked.",
+        "bedeutung": "Ein Raum zur Zubereitung von Speisen."
+      },
+      {
+        "german": "das Badezimmer",
+        "english": "the bathroom",
+        "meaning": "A room containing a bath or shower for personal hygiene.",
+        "bedeutung": "Ein Raum mit Badewanne oder Dusche."
+      },
+      {
+        "german": "die Toilette / das WC",
+        "english": "the toilet",
+        "meaning": "A facility used for bodily waste elimination.",
+        "bedeutung": "Eine Einrichtung zur Entsorgung von Körperabfällen."
+      },
+      {
+        "german": "der Raum",
+        "english": "the room",
+        "meaning": "An enclosed area within a building.",
+        "bedeutung": "Ein abgeschlossener Bereich in einem Gebäude."
+      },
+      {
+        "german": "der Quadratmeter",
+        "english": "the square meter",
+        "meaning": "A unit of area measurement.",
+        "bedeutung": "Eine Flächeneinheit von einem Quadratmeter."
+      },
+      {
+        "german": "der Stock",
+        "english": "the floor",
+        "meaning": "A level or story of a building.",
+        "bedeutung": "Eine Ebene in einem Gebäude."
+      },
+      {
+        "german": "die Miete",
+        "english": "the rent",
+        "meaning": "A payment made regularly for the use of property.",
+        "bedeutung": "Die regelmäßige Zahlung für die Nutzung einer Immobilie."
+      },
+      {
+        "german": "der Mieter",
+        "english": "the tenant",
+        "meaning": "A person who rents property from a landlord.",
+        "bedeutung": "Eine Person, die eine Immobilie mietet."
+      },
+      {
+        "german": "der Vermieter",
+        "english": "the landlord",
+        "meaning": "A person who rents out property to tenants.",
+        "bedeutung": "Eine Person, die eine Immobilie vermietet."
+      },
+      {
+        "german": "vermieten",
+        "english": "to rent out",
+        "meaning": "To lease property to someone.",
+        "bedeutung": "Eine Immobilie an jemanden vermieten."
+      },
+      {
+        "german": "umziehen",
+        "english": "to move (house)",
+        "meaning": "To change one's residence.",
+        "bedeutung": "Den Wohnort wechseln."
+      },
+      {
+        "german": "die Tür",
+        "english": "the door",
+        "meaning": "A movable barrier for an entrance.",
+        "bedeutung": "Eine bewegliche Barriere, die einen Eingang verschließt."
+      },
+      {
+        "german": "das Fenster",
+        "english": "the window",
+        "meaning": "An opening in a wall to let in light and air.",
+        "bedeutung": "Eine Öffnung in einer Wand für Licht und Luft."
+      },
+      {
+        "german": "die Wand",
+        "english": "the wall",
+        "meaning": "A vertical structure that divides or encloses spaces.",
+        "bedeutung": "Eine vertikale Trennwand in einem Gebäude."
+      },
+      {
+        "german": "der Eingang",
+        "english": "the entrance",
+        "meaning": "A point of entry into a building.",
+        "bedeutung": "Der Zugang zu einem Gebäude."
+      },
+      {
+        "german": "der Ausgang",
+        "english": "the exit",
+        "meaning": "A way out of a building.",
+        "bedeutung": "Der Ausgang aus einem Gebäude."
+      },
+      {
+        "german": "der Balkon",
+        "english": "the balcony",
+        "meaning": "A platform projecting from the wall of a building.",
+        "bedeutung": "Eine aus dem Gebäude herausragende Plattform."
+      },
+      {
+        "german": "der Garten",
+        "english": "the garden",
+        "meaning": "An area of land for growing plants.",
+        "bedeutung": "Ein Grundstück zur Bepflanzung."
+      },
+      {
+        "german": "die Möbel",
+        "english": "the furniture",
+        "meaning": "Movable articles that make a room suitable for living.",
+        "bedeutung": "Einrichtungsgegenstände, die einen Raum bewohnbar machen."
+      },
+      {
+        "german": "der Tisch",
+        "english": "the table",
+        "meaning": "A piece of furniture with a flat top and legs.",
+        "bedeutung": "Ein Möbelstück mit flacher Oberfläche und Beinen."
+      },
+      {
+        "german": "der Stuhl",
+        "english": "the chair",
+        "meaning": "A seat typically having four legs and a back.",
+        "bedeutung": "Ein Sitzmöbel für eine Person."
+      },
+      {
+        "german": "der Schrank",
+        "english": "the cupboard",
+        "meaning": "A storage cabinet with doors.",
+        "bedeutung": "Ein Möbelstück zum Verstauen von Gegenständen."
+      },
+      {
+        "german": "das Bett",
+        "english": "the bed",
+        "meaning": "A piece of furniture for sleeping.",
+        "bedeutung": "Ein Möbelstück zum Schlafen."
+      },
+      {
+        "german": "der Herd",
+        "english": "the stove",
+        "meaning": "An appliance used for cooking.",
+        "bedeutung": "Ein Gerät zum Kochen."
+      },
+      {
+        "german": "der Kühlschrank",
+        "english": "the refrigerator",
+        "meaning": "An appliance used for keeping food cold.",
+        "bedeutung": "Ein Gerät, das Lebensmittel kühl hält."
+      },
+      {
+        "german": "die Dusche",
+        "english": "the shower",
+        "meaning": "A place where one bathes with running water.",
+        "bedeutung": "Ein Bereich, in dem man duscht."
+      },
+      {
+        "german": "das Handtuch",
+        "english": "the towel",
+        "meaning": "A cloth used for drying the body.",
+        "bedeutung": "Ein Tuch, um den Körper abzutrocknen."
+      },
+      {
+        "german": "das Bild",
+        "english": "the picture",
+        "meaning": "A visual representation such as a painting or photo.",
+        "bedeutung": "Ein visuelles Kunstwerk oder Foto."
+      },
+      {
+        "german": "der Spiegel",
+        "english": "the mirror",
+        "meaning": "A reflective surface.",
+        "bedeutung": "Eine reflektierende Oberfläche."
+      },
+      {
+        "german": "die Uhr",
+        "english": "the clock",
+        "meaning": "A device for telling time.",
+        "bedeutung": "Ein Gerät zur Zeitanzeige."
+      },
+      {
+        "german": "anmachen",
+        "english": "to turn on",
+        "meaning": "To activate a device or appliance.",
+        "bedeutung": "Ein Gerät einschalten."
+      },
+      {
+        "german": "ausmachen",
+        "english": "to turn off",
+        "meaning": "To deactivate a device or appliance.",
+        "bedeutung": "Ein Gerät ausschalten."
+      },
+      {
+        "german": "aufmachen",
+        "english": "to open",
+        "meaning": "To cause something to become open.",
+        "bedeutung": "Etwas öffnen."
+      },
+      {
+        "german": "zumachen",
+        "english": "to close",
+        "meaning": "To shut something.",
+        "bedeutung": "Etwas schließen."
+      },
+      {
+        "german": "der Aufzug",
+        "english": "the elevator",
+        "meaning": "A machine used for transporting people between floors.",
+        "bedeutung": "Ein Gerät, das Personen zwischen Etagen befördert."
+      },
+      {
+        "german": "die Treppe",
+        "english": "the stairs",
+        "meaning": "A series of steps for moving between levels in a building.",
+        "bedeutung": "Eine Treppe, die Stockwerke verbindet."
+      }
+    ],
+    "Post & Bank": [
+      {
+        "german": "die Post",
+        "english": "the post office",
+        "meaning": "A facility where mail is sent and received.",
+        "bedeutung": "Ein Ort, an dem Post verschickt und empfangen wird."
+      },
+      {
+        "german": "der Brief",
+        "english": "the letter",
+        "meaning": "A written message sent by mail.",
+        "bedeutung": "Eine schriftliche Nachricht, die per Post versendet wird."
+      },
+      {
+        "german": "die Briefmarke",
+        "english": "the stamp",
+        "meaning": "A small adhesive label used on mail.",
+        "bedeutung": "Ein klebriges Etikett für den Postversand."
+      },
+      {
+        "german": "die Postkarte",
+        "english": "the postcard",
+        "meaning": "A card sent by mail without an envelope.",
+        "bedeutung": "Eine Karte, die ohne Umschlag verschickt wird."
+      },
+      {
+        "german": "schicken",
+        "english": "to send",
+        "meaning": "To dispatch something to a recipient.",
+        "bedeutung": "Etwas an jemanden senden."
+      },
+      {
+        "german": "abholen",
+        "english": "to pick up",
+        "meaning": "To collect something that has been sent.",
+        "bedeutung": "Etwas abholen."
+      },
+      {
+        "german": "der Absender",
+        "english": "the sender",
+        "meaning": "The person who sends a letter or package.",
+        "bedeutung": "Die Person, die etwas verschickt."
+      },
+      {
+        "german": "der Empfänger",
+        "english": "the recipient",
+        "meaning": "The person who receives a letter or package.",
+        "bedeutung": "Die Person, die etwas erhält."
+      },
+      {
+        "german": "das Fax",
+        "english": "the fax",
+        "meaning": "A document sent via telephone line.",
+        "bedeutung": "Ein über das Telefon gesendetes Dokument."
+      },
+      {
+        "german": "die Telefonnummer",
+        "english": "the telephone number",
+        "meaning": "A series of digits used to call someone.",
+        "bedeutung": "Eine Zahlenfolge zum Telefonieren."
+      },
+      {
+        "german": "das Telefonbuch",
+        "english": "the phone book",
+        "meaning": "A directory of telephone numbers.",
+        "bedeutung": "Ein Verzeichnis von Telefonnummern."
+      },
+      {
+        "german": "der Anruf",
+        "english": "the call",
+        "meaning": "A telephone conversation.",
+        "bedeutung": "Ein Telefonat."
+      },
+      {
+        "german": "der Anrufbeantworter",
+        "english": "the answering machine",
+        "meaning": "A device that records voicemail messages.",
+        "bedeutung": "Ein Gerät, das Sprachnachrichten aufzeichnet."
+      },
+      {
+        "german": "besetzt",
+        "english": "busy",
+        "meaning": "Occupied or in use.",
+        "bedeutung": "Besetzt oder nicht frei."
+      },
+      {
+        "german": "die Bank",
+        "english": "the bank",
+        "meaning": "A financial institution where money is managed.",
+        "bedeutung": "Eine Finanzinstitution."
+      },
+      {
+        "german": "der Schalter",
+        "english": "the counter",
+        "meaning": "A service desk in a bank or post office.",
+        "bedeutung": "Ein Schalter in einer Bank oder Post."
+      },
+      {
+        "german": "bar zahlen",
+        "english": "to pay in cash",
+        "meaning": "To settle a bill using physical money.",
+        "bedeutung": "Mit Bargeld bezahlen."
+      },
+      {
+        "german": "die Kreditkarte",
+        "english": "the credit card",
+        "meaning": "A card used to make purchases on credit.",
+        "bedeutung": "Eine Karte, mit der auf Kredit bezahlt wird."
+      },
+      {
+        "german": "das Konto",
+        "english": "the account",
+        "meaning": "A record of financial transactions at a bank.",
+        "bedeutung": "Ein Bankkonto."
+      },
+      {
+        "german": "überweisen",
+        "english": "to transfer",
+        "meaning": "To send money from one account to another.",
+        "bedeutung": "Geld von einem Konto auf ein anderes überweisen."
+      },
+      {
+        "german": "ankreuzen",
+        "english": "to tick/mark",
+        "meaning": "To mark a box or option on a form.",
+        "bedeutung": "Ein Kästchen ankreuzen."
+      },
+      {
+        "german": "unterschreiben",
+        "english": "to sign",
+        "meaning": "To write one’s signature.",
+        "bedeutung": "Mit der eigenen Unterschrift versehen."
+      },
+      {
+        "german": "der Geldautomat",
+        "english": "the ATM",
+        "meaning": "A machine for withdrawing cash.",
+        "bedeutung": "Ein Automat zum Abheben von Bargeld."
+      },
+      {
+        "german": "der Pass",
+        "english": "the passport",
+        "meaning": "An official document for international travel.",
+        "bedeutung": "Ein amtliches Reisedokument."
+      },
+      {
+        "german": "der Ausweis",
+        "english": "the ID card",
+        "meaning": "A document used for personal identification.",
+        "bedeutung": "Ein Ausweisdokument zur Identifikation."
+      },
+      {
+        "german": "gültig",
+        "english": "valid",
+        "meaning": "Legally acceptable or effective.",
+        "bedeutung": "Rechtsgültig oder anerkannt."
+      }
+    ],
+    "Schule & Büro": [
+      {
+        "german": "die Schule",
+        "english": "the school",
+        "meaning": "An institution for educating children.",
+        "bedeutung": "Eine Einrichtung zur Bildung von Kindern."
+      },
+      {
+        "german": "die Klasse",
+        "english": "the class",
+        "meaning": "A group of students taught together.",
+        "bedeutung": "Eine Gruppe von Schülern, die gemeinsam unterrichtet werden."
+      },
+      {
+        "german": "der Lehrer",
+        "english": "the teacher (m)",
+        "meaning": "A male instructor in a school.",
+        "bedeutung": "Ein männlicher Pädagoge."
+      },
+      {
+        "german": "die Lehrerin",
+        "english": "the teacher (f)",
+        "meaning": "A female instructor in a school.",
+        "bedeutung": "Eine weibliche Pädagogin."
+      },
+      {
+        "german": "der Schüler",
+        "english": "the pupil/student (m)",
+        "meaning": "A male student attending school.",
+        "bedeutung": "Ein männlicher Schüler."
+      },
+      {
+        "german": "die Schülerin",
+        "english": "the pupil/student (f)",
+        "meaning": "A female student attending school.",
+        "bedeutung": "Eine weibliche Schülerin."
+      },
+      {
+        "german": "lernen",
+        "english": "to learn",
+        "meaning": "To acquire knowledge or skills.",
+        "bedeutung": "Wissen oder Fähigkeiten erwerben."
+      },
+      {
+        "german": "der Unterricht",
+        "english": "the lesson",
+        "meaning": "A period of instruction in school.",
+        "bedeutung": "Eine Unterrichtsstunde."
+      },
+      {
+        "german": "der Kurs",
+        "english": "the course",
+        "meaning": "A series of classes or lectures.",
+        "bedeutung": "Ein Kurs von Unterrichtseinheiten."
+      },
+      {
+        "german": "die Pause",
+        "english": "the break",
+        "meaning": "A short period of rest during school or work.",
+        "bedeutung": "Eine kurze Erholungsphase."
+      },
+      {
+        "german": "die Hausaufgabe",
+        "english": "the homework",
+        "meaning": "School assignments to be completed at home.",
+        "bedeutung": "Aufgaben, die zu Hause erledigt werden."
+      },
+      {
+        "german": "die Prüfung",
+        "english": "the exam",
+        "meaning": "A test of knowledge or skills.",
+        "bedeutung": "Ein Test, der Wissen überprüft."
+      },
+      {
+        "german": "die Lösung",
+        "english": "the solution",
+        "meaning": "An answer or explanation to a problem.",
+        "bedeutung": "Die Antwort auf ein Problem."
+      },
+      {
+        "german": "der Fehler",
+        "english": "the mistake",
+        "meaning": "An error or incorrect act.",
+        "bedeutung": "Ein Irrtum oder Fehler."
+      },
+      {
+        "german": "die Arbeit / der Job",
+        "english": "the work / the job",
+        "meaning": "Employment or tasks one performs for a living.",
+        "bedeutung": "Tätigkeit oder Beruf zur Erwerbsarbeit."
+      },
+      {
+        "german": "arbeiten",
+        "english": "to work",
+        "meaning": "To perform tasks as part of a job.",
+        "bedeutung": "Arbeiten oder beruflich tätig sein."
+      },
+      {
+        "german": "der Beruf",
+        "english": "the profession",
+        "meaning": "A paid occupation or career.",
+        "bedeutung": "Ein bezahlter Beruf oder Tätigkeit."
+      },
+      {
+        "german": "der Arbeitsplatz",
+        "english": "the workplace",
+        "meaning": "The location where one works.",
+        "bedeutung": "Der Ort, an dem jemand arbeitet."
+      },
+      {
+        "german": "der Chef / die Chefin",
+        "english": "the boss (m/f)",
+        "meaning": "The person in charge at work.",
+        "bedeutung": "Die verantwortliche Person am Arbeitsplatz."
+      },
+      {
+        "german": "der Kollege",
+        "english": "the colleague (m)",
+        "meaning": "A male co-worker.",
+        "bedeutung": "Ein männlicher Mitarbeiter."
+      },
+      {
+        "german": "die Kollegin",
+        "english": "the colleague (f)",
+        "meaning": "A female co-worker.",
+        "bedeutung": "Eine weibliche Mitarbeiterin."
+      },
+      {
+        "german": "die Firma",
+        "english": "the company",
+        "meaning": "A business organization.",
+        "bedeutung": "Ein Unternehmen oder Firma."
+      },
+      {
+        "german": "das Büro",
+        "english": "the office",
+        "meaning": "A place where professional work is conducted.",
+        "bedeutung": "Ein Arbeitsraum oder Büro."
+      },
+      {
+        "german": "arbeitslos",
+        "english": "unemployed",
+        "meaning": "Not having a job.",
+        "bedeutung": "Ohne Beschäftigung."
+      },
+      {
+        "german": "der Arbeiter",
+        "english": "the worker",
+        "meaning": "A person engaged in physical or manual work.",
+        "bedeutung": "Eine Person, die körperliche Arbeit verrichtet."
+      },
+      {
+        "german": "das Praktikum",
+        "english": "the internship",
+        "meaning": "A temporary work experience, often for students.",
+        "bedeutung": "Eine befristete praktische Arbeitserfahrung."
+      },
+      {
+        "german": "die Ausbildung",
+        "english": "the training",
+        "meaning": "Education and practical instruction in a specific field.",
+        "bedeutung": "Berufliche Schulung oder Ausbildung."
+      }
+    ]
+  }
+  
