@@ -7,6 +7,12 @@ let writingTasks = [];
 let writingTasks2 = [];
 let wordDatabase = [];
 
+// Lesen Test Variables
+let testQuestions = [];
+let currentTestQuestion = 0;
+let userAnswers = [];
+let testStarted = false;
+
 // Load questions for all tasks
 async function loadAllQuestions() {
     try {
@@ -23,7 +29,14 @@ async function loadAllQuestions() {
             throw new Error('Failed to load questions');
         }
 
-        questions = shuffleArray(await response1.json());
+        // Load and shuffle Lesen Teil 1 questions and their statements
+        const lesen1Data = await response1.json();
+        questions = lesen1Data.map(question => ({
+            ...question,
+            statements: shuffleArray([...question.statements]).slice(0, 3)
+        }));
+        questions = shuffleArray(questions);
+
         questions2 = shuffleArray(await response2.json());
         questions3 = shuffleArray(await response3.json());
         writingTasks = shuffleArray(await response4.json());
@@ -67,6 +80,7 @@ function showTaskSelection() {
     document.getElementById('schreiben1-container').style.display = 'none';
     document.getElementById('schreiben2-container').style.display = 'none';
     document.getElementById('wortubung-container').style.display = 'none';
+    document.getElementById('lesen-test-container').style.display = 'none';
     currentTask = null;
     currentQuestionIndex = 0;
     
@@ -109,21 +123,43 @@ function showTask(taskId) {
     document.getElementById('schreiben1-container').style.display = taskId === 'schreiben1' ? 'block' : 'none';
     document.getElementById('schreiben2-container').style.display = taskId === 'schreiben2' ? 'block' : 'none';
     document.getElementById('wortubung-container').style.display = taskId === 'wortubung' ? 'block' : 'none';
+    document.getElementById('lesen-test-container').style.display = taskId === 'lesen-test' ? 'block' : 'none';
     currentTask = taskId;
     currentQuestionIndex = 0;
     
-    if (taskId === 'lesen1') {
-        displayQuestion1();
-    } else if (taskId === 'lesen2') {
-        displayQuestion2();
-    } else if (taskId === 'lesen3') {
-        displayQuestion3();
-    } else if (taskId === 'schreiben1') {
-        displayWritingTask1();
-    } else if (taskId === 'schreiben2') {
-        displayWritingTask2();
-    } else if (taskId === 'wortubung') {
-        displayWordPractice();
+    // Shuffle questions based on the selected task
+    switch (taskId) {
+        case 'lesen1':
+            questions = shuffleArray([...questions]);
+            displayQuestion1();
+            break;
+        case 'lesen2':
+            questions2 = shuffleArray([...questions2]);
+            displayQuestion2();
+            break;
+        case 'lesen3':
+            questions3 = shuffleArray([...questions3]);
+            displayQuestion3();
+            break;
+        case 'schreiben1':
+            writingTasks = shuffleArray([...writingTasks]);
+            displayWritingTask1();
+            break;
+        case 'schreiben2':
+            writingTasks2 = shuffleArray([...writingTasks2]);
+            displayWritingTask2();
+            break;
+        case 'wortubung':
+            wordDatabase = shuffleArray([...wordDatabase]);
+            displayWordPractice();
+            break;
+        case 'lesen-test':
+            // Reset test state and initialize new test
+            currentTestQuestion = 0;
+            userAnswers = [];
+            testStarted = false;
+            initializeLesenTest();
+            break;
     }
 }
 
@@ -775,6 +811,308 @@ function createProgressOverlay() {
     document.body.appendChild(overlay);
 }
 
+// Initialize test questions
+function initializeLesenTest() {
+    // Shuffle each part separately
+    const shuffledQuestions1 = shuffleArray([...questions]);
+    const shuffledQuestions2 = shuffleArray([...questions2]);
+    const shuffledQuestions3 = shuffleArray([...questions3]);
+    
+    // Take the required number of questions from each part and add type
+    testQuestions = [
+        // Teil 1 - 2 questions (always first)
+        ...shuffledQuestions1.slice(0, 2).map(q => ({ type: 'teil1', ...q })),
+        // Teil 2 - 5 questions (always second)
+        ...shuffledQuestions2.slice(0, 5).map(q => ({ type: 'teil2', ...q })),
+        // Teil 3 - 5 questions (always last)
+        ...shuffledQuestions3.slice(0, 5).map(q => ({ type: 'teil3', ...q }))
+    ];
+    
+    currentTestQuestion = 0;
+    userAnswers = new Array(testQuestions.length).fill(null);
+    testStarted = true;
+    displayTestQuestion();
+    updateProgressBar();
+}
+
+function displayTestQuestion() {
+    const question = testQuestions[currentTestQuestion];
+    const sections = ['lesen-test-teil1', 'lesen-test-teil2', 'lesen-test-teil3'];
+    
+    // Hide all sections first
+    sections.forEach(section => {
+        document.getElementById(section).style.display = 'none';
+    });
+    
+    // Update progress indicator
+    document.getElementById('current-question').textContent = currentTestQuestion + 1;
+    
+    switch (question.type) {
+        case 'teil1':
+            displayTeil1TestQuestion(question);
+            break;
+        case 'teil2':
+            displayTeil2TestQuestion(question);
+            break;
+        case 'teil3':
+            displayTeil3TestQuestion(question);
+            break;
+    }
+}
+
+function displayTeil1TestQuestion(question) {
+    document.getElementById('lesen-test-teil1').style.display = 'block';
+    document.getElementById('test-text-content').innerHTML = question.text.replace(/\n/g, '<br>');
+    
+    const statementsContainer = document.getElementById('test-statements');
+    statementsContainer.innerHTML = '';
+    
+    question.statements.forEach((statement, index) => {
+        const statementDiv = document.createElement('div');
+        statementDiv.className = 'statement';
+        statementDiv.innerHTML = `
+            <span class="statement-number">${index + 1}</span>
+            <div class="statement-content">
+                <div class="statement-text">${statement.statement}</div>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="test-statement${index}" value="richtig">
+                        +
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="test-statement${index}" value="falsch">
+                        –
+                    </label>
+                </div>
+            </div>
+        `;
+        statementsContainer.appendChild(statementDiv);
+    });
+}
+
+function displayTeil2TestQuestion(question) {
+    document.getElementById('lesen-test-teil2').style.display = 'block';
+    document.getElementById('test-scenario-text').textContent = question.scenario;
+    
+    const optionA = document.getElementById('test-option-a').querySelector('.option-content');
+    const optionB = document.getElementById('test-option-b').querySelector('.option-content');
+    
+    // Randomly assign answer and interferer
+    const isAnswerA = Math.random() < 0.5;
+    optionA.innerHTML = (isAnswerA ? question.answer : question.interferer).split('\n').join('<br>');
+    optionB.innerHTML = (isAnswerA ? question.interferer : question.answer).split('\n').join('<br>');
+    
+    // Store the correct answer
+    question.correctPosition = isAnswerA ? 'a' : 'b';
+    
+    // Reset radio buttons
+    document.querySelectorAll('input[name="test-answer"]').forEach(radio => {
+        radio.checked = false;
+    });
+}
+
+function displayTeil3TestQuestion(question) {
+    document.getElementById('lesen-test-teil3').style.display = 'block';
+    document.getElementById('test-location-text').textContent = question.Location;
+    document.getElementById('test-noticeboard-content').textContent = question.Noticeboard;
+    document.getElementById('test-statement-text').textContent = question.Statement;
+    
+    // Reset radio buttons
+    document.querySelectorAll('input[name="test-answer3"]').forEach(radio => {
+        radio.checked = false;
+    });
+}
+
+function collectCurrentAnswer() {
+    const question = testQuestions[currentTestQuestion];
+    let answer = null;
+    
+    switch (question.type) {
+        case 'teil1':
+            answer = [];
+            question.statements.forEach((_, index) => {
+                const selected = document.querySelector(`input[name="test-statement${index}"]:checked`);
+                answer.push(selected ? selected.value : null);
+            });
+            break;
+        case 'teil2':
+            const selected = document.querySelector('input[name="test-answer"]:checked');
+            answer = selected ? selected.value : null;
+            break;
+        case 'teil3':
+            const selected3 = document.querySelector('input[name="test-answer3"]:checked');
+            answer = selected3 ? selected3.value : null;
+            break;
+    }
+    
+    return answer;
+}
+
+function updateProgressBar() {
+    const progress = ((currentTestQuestion + 1) / testQuestions.length) * 100;
+    document.querySelector('.progress-fill').style.width = `${progress}%`;
+}
+
+function handleTestSubmit() {
+    const answer = collectCurrentAnswer();
+    
+    if (!answer || (Array.isArray(answer) && answer.includes(null))) {
+        alert('Bitte beantworten Sie alle Fragen.');
+        return;
+    }
+    
+    userAnswers[currentTestQuestion] = answer;
+    
+    if (currentTestQuestion < testQuestions.length - 1) {
+        currentTestQuestion++;
+        displayTestQuestion();
+        updateProgressBar();
+    } else {
+        showTestResults();
+    }
+}
+
+function showTestResults() {
+    // Hide all question sections
+    document.getElementById('lesen-test-teil1').style.display = 'none';
+    document.getElementById('lesen-test-teil2').style.display = 'none';
+    document.getElementById('lesen-test-teil3').style.display = 'none';
+    document.getElementById('test-submit-btn').style.display = 'none';
+    
+    // Show results section
+    const resultsSection = document.getElementById('test-results');
+    resultsSection.style.display = 'block';
+    
+    // Calculate scores
+    let teil1Score = 0;
+    let teil2Score = 0;
+    let teil3Score = 0;
+    
+    const reviewList = document.getElementById('question-review-list');
+    reviewList.innerHTML = '';
+    
+    testQuestions.forEach((question, index) => {
+        const userAnswer = userAnswers[index];
+        let isCorrect = false;
+        let questionDetails = '';
+        let userAnswerText = '';
+        let correctAnswerText = '';
+        
+        switch (question.type) {
+            case 'teil1':
+                isCorrect = userAnswer.every((ans, i) => ans === question.statements[i].answer);
+                if (isCorrect) teil1Score++;
+                
+                // Format question details for Teil 1
+                questionDetails = `
+                    <div class="text-box">
+                        <div class="text-content">${question.text}</div>
+                    </div>
+                    <div class="statements-list">
+                        ${question.statements.map((stmt, i) => `
+                            <div class="statement ${userAnswer[i] === stmt.answer ? 'correct' : 'incorrect'}">
+                                <span class="statement-number">${i + 1}</span>
+                                <div class="statement-content">
+                                    <div class="statement-text">${stmt.statement}</div>
+                                    <div class="answer-details">
+                                        Ihre Antwort: ${userAnswer[i] || 'Keine Antwort'}
+                                        <br>
+                                        Richtige Antwort: ${stmt.answer}
+                                    </div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>`;
+                break;
+                
+            case 'teil2':
+                isCorrect = userAnswer === question.correctPosition;
+                if (isCorrect) teil2Score++;
+                
+                // Format question details for Teil 2
+                questionDetails = `
+                    <div class="scenario-text">${question.scenario}</div>
+                    <div class="options-container">
+                        <div class="option-box ${question.correctPosition === 'a' ? 'correct' : ''}">
+                            <div class="option-label">a</div>
+                            <div class="option-content">${question.correctPosition === 'a' ? question.answer : question.interferer}</div>
+                        </div>
+                        <div class="option-box ${question.correctPosition === 'b' ? 'correct' : ''}">
+                            <div class="option-label">b</div>
+                            <div class="option-content">${question.correctPosition === 'b' ? question.answer : question.interferer}</div>
+                        </div>
+                    </div>
+                    <div class="answer-details">
+                        Ihre Antwort: ${userAnswer || 'Keine Antwort'}
+                        <br>
+                        Richtige Antwort: ${question.correctPosition}
+                    </div>`;
+                break;
+                
+            case 'teil3':
+                isCorrect = userAnswer === question.Answer;
+                if (isCorrect) teil3Score++;
+                
+                // Format question details for Teil 3
+                questionDetails = `
+                    <h2 class="location-title">${question.Location}</h2>
+                    <div class="noticeboard">
+                        <div class="noticeboard-content">${question.Noticeboard}</div>
+                    </div>
+                    <div class="statement-section">
+                        <p>${question.Statement}</p>
+                        <div class="answer-details">
+                            Ihre Antwort: ${userAnswer || 'Keine Antwort'}
+                            <br>
+                            Richtige Antwort: ${question.Answer}
+                        </div>
+                    </div>`;
+                break;
+        }
+        
+        // Create review item with collapsible details
+        const reviewItem = document.createElement('div');
+        reviewItem.className = `review-item ${isCorrect ? 'correct' : 'incorrect'}`;
+        reviewItem.innerHTML = `
+            <div class="review-header">
+                <div class="question-number">Frage ${index + 1} (${question.type})</div>
+                <div class="result-icon">${isCorrect ? '✓' : '✗'}</div>
+            </div>
+            <div class="question-details" style="display: none;">
+                ${questionDetails}
+            </div>
+        `;
+        
+        // Add click handler to toggle details
+        reviewItem.querySelector('.review-header').addEventListener('click', function() {
+            const details = this.nextElementSibling;
+            const isExpanded = details.style.display !== 'none';
+            details.style.display = isExpanded ? 'none' : 'block';
+            this.classList.toggle('expanded', !isExpanded);
+        });
+        
+        reviewList.appendChild(reviewItem);
+    });
+    
+    // Update scores
+    document.getElementById('teil1-score').textContent = teil1Score;
+    document.getElementById('teil2-score').textContent = teil2Score;
+    document.getElementById('teil3-score').textContent = teil3Score;
+    document.getElementById('total-score').textContent = teil1Score + teil2Score + teil3Score;
+}
+
+function restartLesenTest() {
+    // Reset all variables and start new test
+    currentTestQuestion = 0;
+    userAnswers = [];
+    testStarted = false;
+    initializeLesenTest();
+    
+    // Hide results and show first question
+    document.getElementById('test-results').style.display = 'none';
+    document.getElementById('test-submit-btn').style.display = 'block';
+}
+
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
     loadAllQuestions();
@@ -836,4 +1174,7 @@ document.addEventListener('DOMContentLoaded', () => {
             checkWordAnswer();
         }
     });
+
+    // Lesen Test event listeners
+    document.getElementById('test-submit-btn')?.addEventListener('click', handleTestSubmit);
 }); 

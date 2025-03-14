@@ -37,6 +37,10 @@
                     <h2>Wortübungsaufgabe</h2>
                     <p>Üben Sie deutsche Wörter mit ihrer Bedeutung auf Englisch oder Deutsch.</p>
                 </button>
+                <button class="task-btn" data-task="lesen-test">
+                    <h2>Lesen Test</h2>
+                    <p>Beantworten Sie alle Fragen aus Teil 1, Teil 2 und Teil 3.</p>
+                </button>
             </div>
         </div>
 
@@ -267,6 +271,110 @@
                                 <p class="word-details"></p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Lesen Test Container -->
+        <div id="lesen-test-container" class="task-container" style="display: none;">
+            <header>
+                <button class="back-btn" onclick="showTaskSelection()">← Zurück</button>
+                <h1>Lesen Test</h1>
+                <div class="instruction">
+                    <p>Beantworten Sie alle Fragen aus Teil 1, Teil 2 und Teil 3.</p>
+                    <p>Am Ende sehen Sie Ihre Gesamtpunktzahl.</p>
+                </div>
+                <div class="progress-indicator">
+                    <div class="progress-text">Frage <span id="current-question">1</span> von <span id="total-questions">12</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div class="question-container">
+                    <!-- Teil 1 Questions -->
+                    <div id="lesen-test-teil1" class="test-section">
+                        <h2>Teil 1</h2>
+                        <div class="text-box">
+                            <div id="test-text-content"></div>
+                        </div>
+                        <div id="test-statements"></div>
+                    </div>
+
+                    <!-- Teil 2 Questions -->
+                    <div id="lesen-test-teil2" class="test-section" style="display: none;">
+                        <h2>Teil 2</h2>
+                        <div class="scenario-text" id="test-scenario-text"></div>
+                        <div class="options-container">
+                            <div class="option-box" id="test-option-a">
+                                <div class="option-label">a</div>
+                                <div class="option-content"></div>
+                            </div>
+                            <div class="option-box" id="test-option-b">
+                                <div class="option-label">b</div>
+                                <div class="option-content"></div>
+                            </div>
+                        </div>
+                        <div class="answer-section">
+                            <div class="answer-options">
+                                <label class="answer-option">
+                                    <input type="radio" name="test-answer" value="a"> a
+                                </label>
+                                <label class="answer-option">
+                                    <input type="radio" name="test-answer" value="b"> b
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Teil 3 Questions -->
+                    <div id="lesen-test-teil3" class="test-section" style="display: none;">
+                        <h2>Teil 3</h2>
+                        <h2 id="test-location-text" class="location-title"></h2>
+                        <div class="noticeboard">
+                            <div id="test-noticeboard-content" class="noticeboard-content"></div>
+                        </div>
+                        <div class="statement-section">
+                            <p id="test-statement-text"></p>
+                            <div class="answer-options">
+                                <label class="answer-option">
+                                    <input type="radio" name="test-answer3" value="richtig"> richtig
+                                </label>
+                                <label class="answer-option">
+                                    <input type="radio" name="test-answer3" value="falsch"> falsch
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results Section -->
+                    <div id="test-results" class="test-results" style="display: none;">
+                        <h2>Testergebnisse</h2>
+                        <div class="score-summary">
+                            <div class="total-score">
+                                Gesamtpunktzahl: <span id="total-score">0</span> von <span id="max-score">12</span>
+                            </div>
+                            <div class="section-scores">
+                                <div class="section-score">Teil 1: <span id="teil1-score">0</span> von 2</div>
+                                <div class="section-score">Teil 2: <span id="teil2-score">0</span> von 5</div>
+                                <div class="section-score">Teil 3: <span id="teil3-score">0</span> von 5</div>
+                            </div>
+                        </div>
+                        <div class="question-review">
+                            <h3>Überprüfung der Antworten</h3>
+                            <div id="question-review-list"></div>
+                        </div>
+                        <div class="test-controls">
+                            <button class="btn" onclick="restartLesenTest()">Test wiederholen</button>
+                            <button class="btn" onclick="showTaskSelection()">Zurück zum Menü</button>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button id="test-submit-btn" class="btn">Weiter</button>
                     </div>
                 </div>
             </main>

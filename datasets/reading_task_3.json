@@ -1,543 +1,1112 @@
 [
-    {
-      "Location": "Im Supermarkt",
-      "Noticeboard": "Angebot der Woche!\n\nTomaten 1 Kilo 1,50 Euro\n\nGültig bis Samstag",
-      "Statement": "Tomaten sind diese Woche billig.",
-      "Answer": "richtig"
-    },
-    {
-      "Location": "Im Café",
-      "Noticeboard": "Kuchen und Kaffee\n\nSonderangebot!\nZusammen nur 4 Euro",
-      "Statement": "Kuchen und Kaffee kosten zusammen 5 Euro.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Am Kino",
-      "Noticeboard": "Kinoprogramm:\n\n18:00 Uhr: Animationsfilm\n20:30 Uhr: Actionfilm",
-      "Statement": "Um 19 Uhr gibt es einen Film.",
-      "Answer": "richtig"
-    },
-    {
-      "Location": "In der Arztpraxis",
-      "Noticeboard": "Rezeptabholung:\n\nMontag - Freitag\n14:00 - 16:00 Uhr",
-      "Statement": "Am Morgen können Sie Ihr Rezept abholen.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "In der Bibliothek",
-      "Noticeboard": "Bibliothek geschlossen\n\nwegen Renovierung\n\nWir öffnen wieder am 15. Mai",
-      "Statement": "Die Bibliothek ist jetzt geöffnet.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Am Schwimmbad",
-      "Noticeboard": "Badezeit für Familien:\n\nSamstag und Sonntag\n10:00 - 18:00 Uhr",
-      "Statement": "Familien können am Montag schwimmen.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Im Hotel",
-      "Noticeboard": "Frühstücksraum\n\nFrühstück:\n7:00 - 10:00 Uhr",
-      "Statement": "Das Frühstück ist bis 11 Uhr.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "In der Schule",
-      "Noticeboard": "Wichtig!\n\nMorgen kein Unterricht\n\nFeiertag!",
-      "Statement": "Morgen gehen die Kinder zur Schule.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Im Park",
-      "Noticeboard": "Hunde an der Leine führen!",
-      "Statement": "Hier dürfen Hunde frei laufen.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Im Museum",
-      "Noticeboard": "Fotoapparat erlaubt\n\nOhne Blitz!",
-      "Statement": "Man darf hier Fotos machen.",
-      "Answer": "richtig"
-    },
-    {
-      "Location": "Im Restaurant",
-      "Noticeboard": "Mittagstisch:\n\n12:00 - 14:00 Uhr\n\nMenü: 8 Euro",
-      "Statement": "Das Mittagessen kostet 8 Euro.",
-      "Answer": "richtig"
-    },
-    {
-      "Location": "Am Bahnhof",
-      "Noticeboard": "Gleis 3:\n\nZug nach Berlin\n\nAbfahrt: 15:30 Uhr",
-      "Statement": "Der Zug nach Berlin fährt um halb vier.",
-      "Answer": "richtig"
-    },
-    {
-      "Location": "Am Flughafen",
-      "Noticeboard": "Information\n\nSchalter 5\n\nfür alle Flüge nach Italien",
-      "Statement": "Für Flüge nach Spanien ist Schalter 5.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "An der Bushaltestelle",
-      "Noticeboard": "Nächste Busse:\n\nLinie 20 Richtung Zentrum\n\nIn 5 Minuten",
-      "Statement": "Der Bus kommt in 10 Minuten.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Im Fitnessstudio",
-      "Noticeboard": "Neukunden-Aktion!\n\nErster Monat gratis!",
-      "Statement": "Der erste Monat kostet kein Geld.",
-      "Answer": "richtig"
-    },
-    {
-      "Location": "In der Bäckerei",
-      "Noticeboard": "Frische Brötchen\n\nAb 6 Uhr morgens",
-      "Statement": "Um 5 Uhr gibt es hier Brötchen.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "In der Apotheke",
-      "Noticeboard": "Heute geschlossen\n\nWegen Inventur",
-      "Statement": "Die Apotheke ist heute geöffnet.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "An der Bank",
-      "Noticeboard": "Geldautomat\n\n24 Stunden geöffnet",
-      "Statement": "Man kann hier nur tagsüber Geld abheben.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Beim Friseur",
-      "Noticeboard": "Termine nach Vereinbarung",
-      "Statement": "Man kann ohne Termin zum Friseur kommen.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Im Sportverein",
-      "Noticeboard": "Anmeldung zum Yoga-Kurs\n\nBis 30. September",
-      "Statement": "Man kann sich jetzt noch für Yoga anmelden.",
-      "Answer": "richtig"
-    },
-    {
-      "Location": "Im Kaufhaus",
-      "Noticeboard": "Sonderverkauf!\n\n20% Rabatt auf alle Jacken",
-      "Statement": "Hosen sind billiger.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Am See",
-      "Noticeboard": "Baden verboten!\n\nLebensgefahr!",
-      "Statement": "Hier darf man schwimmen.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Im Büro",
-      "Noticeboard": "Pause!\n\n13:00 - 14:00 Uhr",
-      "Statement": "Von 13 bis 14 Uhr ist keine Pause.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Im Hotelzimmer",
-      "Noticeboard": "Bitte nicht stören!\n\n",
-      "Statement": "Man soll an die Tür klopfen.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Im Zug",
-      "Noticeboard": "Ruhebereich\n\nBitte leise sein!",
-      "Statement": "Hier darf man laut sprechen.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "In der Eisdiele",
-      "Noticeboard": "Hausgemachtes Eis\n\nProbieren Sie unsere neuen Sorten!",
-      "Statement": "Das Eis ist nicht selbstgemacht.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Am Spielplatz",
-      "Noticeboard": "Für Kinder bis 12 Jahre",
-      "Statement": "Auch Erwachsene dürfen hier spielen.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Im Schwimmbad Kasse",
-      "Noticeboard": "Tageskarte 5 Euro\n\nKinder bis 6 Jahre frei",
-      "Statement": "Kinder zahlen immer Eintritt.",
-      "Answer": "falsch"
-    },
-    {
-      "Location": "Vor dem Restaurant",
-      "Noticeboard": "Wir suchen einen Koch/eine Köchin",
-      "Statement": "Das Restaurant braucht Personal.",
-      "Answer": "richtig"
-    },
-    {
-      "Location": "Im Wartezimmer",
-      "Noticeboard": "Bitte warten Sie hier.\n\nWir rufen Sie auf.",
-      "Statement": "Man soll direkt ins Sprechzimmer gehen.",
-      "Answer": "falsch"
-    },
-    {
-        "Location": "An der Bibliothek",
-        "Noticeboard": "Aufgrund von Renovierungsarbeiten \nbleibt die Bibliothek bis zum \n15. Oktober geschlossen.",
-        "Statement": "Die Bibliothek ist geöffnet.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Im Supermarkt",
-        "Noticeboard": "Heute im Angebot: \nTomaten 1,99 Euro pro Kilo.",
-        "Statement": "Tomaten kosten heute 1,99 Euro pro Kilo.",
-        "Answer": "richtig"
-    },
-    {
-        "Location": "Im Kino",
-        "Noticeboard": "Filmvorstellungen:\nMontag-Freitag: 16:00, 19:00 Uhr\nSamstag-Sonntag: 14:00, 17:00, 20:00 Uhr",
-        "Statement": "Der letzte Film startet am Samstag um 20 Uhr.",
-        "Answer": "richtig"
-    },
-    {
-        "Location": "Im Café",
-        "Noticeboard": "Heute geschlossen wegen Krankheit.",
-        "Statement": "Das Café ist heute geöffnet.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Im Stadtpark",
-        "Noticeboard": "Hunde müssen an der Leine geführt werden.",
-        "Statement": "Hunde dürfen ohne Leine im Park spielen.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "In der Schule",
-        "Noticeboard": "Nächste Woche Fallen die Mathekurse wegen \nLehrerkonferenz aus.",
-        "Statement": "Nächste Woche findet der Mathekurs wie gewohnt statt.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Im Schwimmbad",
-        "Noticeboard": "Öffnungszeiten:\nTäglich von 9.00 bis 21.00 Uhr.",
-        "Statement": "Sie können um 20.00 Uhr schwimmen gehen.",
-        "Answer": "richtig"
-    },
-    {
-        "Location": "Am Flughafen",
-        "Noticeboard": "Kofferservice derzeit \nnicht verfügbar.",
-        "Statement": "Sie können Ihren Koffer hier aufgeben.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "In der Bäckerei",
-        "Noticeboard": "Frisches Brot ab 7:00 Uhr erhältlich.",
-        "Statement": "Sie können um 6:30 Uhr frisches Brot kaufen.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Im Fitnessstudio",
-        "Noticeboard": "Yoga-Kurs \nMontag und Mittwoch: 18:00 Uhr.",
-        "Statement": "Der Yoga-Kurs ist am Dienstag.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Auf dem Campingplatz",
-        "Noticeboard": "Bitte Ruhezeiten beachten: \n22:00 - 7:00 Uhr.",
-        "Statement": "Nach 22:00 Uhr ist Lärm erlaubt.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Am Museum",
-        "Noticeboard": "Letzter Einlass: 17:30 Uhr.",
-        "Statement": "Nach 17:30 Uhr können Sie das Museum betreten.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "An der Polizeiwache",
-        "Noticeboard": "Öffnungszeiten: \n24 Stunden geöffnet.",
-        "Statement": "Die Polizeiwache hat um Mitternacht geschlossen.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Im Restaurant",
-        "Noticeboard": "Heute ist Pizzatag: \nAlle Pizzen 5 Euro.",
-        "Statement": "Heute sind Pizzen günstiger.",
-        "Answer": "richtig"
-    },
-    {
-        "Location": "Am Bahnhof",
-        "Noticeboard": "Bitte Fahrkarten \nnur am Automaten kaufen.",
-        "Statement": "Fahrkarten sind am Schalter erhältlich.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "In der Arztpraxis",
-        "Noticeboard": "Wegen Urlaubs \nab 10. März geschlossen.",
-        "Statement": "Am 10. März ist die Praxis geschlossen.",
-        "Answer": "richtig"
-    },
-    {
-        "Location": "Am Spielplatz",
-        "Noticeboard": "Spielgeräte ab \n3 Jahren geeignet.",
-        "Statement": "Die Spielgeräte sind für Kinder unter 3 Jahren geeignet.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Im Hotel",
-        "Noticeboard": "Frühstück serviert von \n6:30 bis 10:00 Uhr.",
-        "Statement": "Frühstück gibt es von 10:30 Uhr bis 12:00 Uhr.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Im Rathaus",
-        "Noticeboard": "Nächster Bürgersprechabend: \nJeden ersten Montag im Monat.",
-        "Statement": "Der Bürgersprechabend ist nächsten Dienstag.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Am Strand",
-        "Noticeboard": "Wasserrettung im Dienst \nvon 10:00 bis 18:00 Uhr.",
-        "Statement": "Die Rettungsschwimmer arbeiten um 9:00 Uhr.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Auf der Autobahn",
-        "Noticeboard": "Maximale Geschwindigkeit \n130 km/h.",
-        "Statement": "Die Höchstgeschwindigkeit beträgt 150 km/h.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Im Krankenhaus",
-        "Noticeboard": "Besuchszeiten: \n14:00 bis 18:00 Uhr.",
-        "Statement": "Besucher sind um 12:00 Uhr willkommen.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Am Fahrkartenschalter",
-        "Noticeboard": "Heute keine \nKreditkartenzahlung möglich.",
-        "Statement": "Sie können mit Kreditkarte bezahlen.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Im Sportverein",
-        "Noticeboard": "Anmeldung zum Fußballturnier \nbis zum 1. Juni.",
-        "Statement": "Sie können sich bis zum 2. Juni anmelden.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "In der Zoohandlung",
-        "Noticeboard": "Futterverkauf bis \n18:00 Uhr.",
-        "Statement": "Futter kaufen nach 18:00 Uhr ist möglich.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "Am Theater",
-        "Noticeboard": "Nächste Vorstellung: \nMittwoch, 20:00 Uhr.",
-        "Statement": "Die Vorstellung ist am Montag.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "In der Musikschule",
-        "Noticeboard": "Klavierunterricht fällt diese Woche aus.",
-        "Statement": "Es gibt diese Woche keinen Klavierunterricht.",
-        "Answer": "richtig"
-    },
-    {
-        "Location": "Auf dem Bauernhof",
-        "Noticeboard": "Hofladen täglich geöffnet von \n8:00 bis 17:00 Uhr.",
-        "Statement": "Der Hofladen öffnet um 16:00 Uhr.",
-        "Answer": "richtig"
-    },
-    {
-        "Location": "In der Volkshochschule",
-        "Noticeboard": "Nächster Kursstart: \n15. April.",
-        "Statement": "Die Kurse beginnen am 20. April.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "In der Metzgerei",
-        "Noticeboard": "Frische Wurstwaren \nab 9:00 Uhr.",
-        "Statement": "Um 8:00 Uhr gibt es frische Wurst.",
-        "Answer": "falsch"
-    },
-    {
-        "Location": "In der Bäckerei",
-        "Noticeboard": "Frische Brötchen\nJeden Morgen ab 6.00 Uhr",
-        "Statement": "Am Abend kaufen Sie frische Brötchen.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "Im Supermarkt",
-        "Noticeboard": "Montag: Obst und Gemüse\nzum halben Preis!",
-        "Statement": "Am Montag ist Obst billiger.",
-        "Answer": "richtig"
-      },
-      {
-        "Location": "Am Schwimmbad",
-        "Noticeboard": "Öffnungszeiten:\nMo-Fr: 10-20 Uhr\nSa: 10-18 Uhr\nSo: 12-16 Uhr",
-        "Statement": "Am Samstag schließt das Schwimmbad früher als am Sonntag.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "In der Bibliothek",
-        "Noticeboard": "Ruhetag jeden Dienstag",
-        "Statement": "Am Dienstag ist die Bibliothek geöffnet.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "Am Spielplatz",
-        "Noticeboard": "Hunde sind hier nicht erlaubt.",
-        "Statement": "Sie können Ihren Hund auf den Spielplatz bringen.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "Im Kino",
-        "Noticeboard": "Filmfest: Alle Filme nur 5 Euro!\nBis zum 30. November",
-        "Statement": "Im Dezember kosten die Filme auch 5 Euro.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "Im Fitnessstudio",
-        "Noticeboard": "Yoga-Kurs\njeden Freitag um 18 Uhr",
-        "Statement": "Der Yoga-Kurs ist donnerstags.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "An der Apotheke",
-        "Noticeboard": "Notdienst\ndiese Woche: 24 Stunden geöffnet",
-        "Statement": "Die Apotheke ist nachts geschlossen.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "Am Bahnhof",
-        "Noticeboard": "Zugverspätung:\nDer Zug nach Berlin hat\n30 Minuten Verspätung.",
-        "Statement": "Der Zug nach Berlin ist pünktlich.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "Im Einkaufszentrum",
-        "Noticeboard": "Winter-Sale: 50% Rabatt\nauf alle Winterjacken",
-        "Statement": "Sie bekommen einen Rabatt auf Sommerjacken.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "In der Arztpraxis",
-        "Noticeboard": "Bitte keine Handys\nim Wartezimmer",
-        "Statement": "Sie dürfen im Wartezimmer telefonieren.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "Im Museum",
-        "Noticeboard": "Eintritt frei\njeden ersten Sonntag\nim Monat",
-        "Statement": "Am ersten Sonntag im Monat ist der Eintritt kostenlos.",
-        "Answer": "richtig"
-      },
-      {
-        "Location": "Auf dem Marktplatz",
-        "Noticeboard": "Wochenmarkt\njeden Samstag von 8-14 Uhr",
-        "Statement": "Der Wochenmarkt ist auch am Sonntag.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "An der Universität",
-        "Noticeboard": "Vorlesungsfreie Zeit beginnt am 15. Juli.",
-        "Statement": "Ab dem 15. Juli sind keine Vorlesungen.",
-        "Answer": "richtig"
-      },
-      {
-        "Location": "Im Restaurant",
-        "Noticeboard": "Mittagsmenü: Pasta oder Salat\nmit Getränk für 9,90 Euro",
-        "Statement": "Das Mittagsmenü kostet 8 Euro.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "In der Stadtbücherei",
-        "Noticeboard": "Lesestunde für Kinder\njedes Wochenende um 10 Uhr",
-        "Statement": "Die Lesestunde ist am Mittwoch.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "In der Schule",
-        "Noticeboard": "Ferien:\n1. bis 10. Oktober",
-        "Statement": "Der 5. Oktober ist ein Ferientag.",
-        "Answer": "richtig"
-      },
-      {
-        "Location": "Im Hotel",
-        "Noticeboard": "Frühstücksbuffet\nvon 7 bis 10 Uhr",
-        "Statement": "Das Frühstück endet um 11 Uhr.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "In der Waschküche",
-        "Noticeboard": "Bitte Wäsche\nnicht unbeaufsichtigt lassen.",
-        "Statement": "Sie müssen bei der Wäsche bleiben.",
-        "Answer": "richtig"
-      },
-      {
-        "Location": "In der Tierklinik",
-        "Noticeboard": "Sprechstunde nur\nmit Terminvereinbarung",
-        "Statement": "Sie brauchen keinen Termin.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "In der Volkshochschule",
-        "Noticeboard": "Anmeldeschluss\nfür Sprachkurse:\n30. September",
-        "Statement": "Am 1. Oktober können Sie sich noch anmelden.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "Am Flughafen",
-        "Noticeboard": "Gepäckaufbewahrung\n24/7 geöffnet",
-        "Statement": "Die Gepäckaufbewahrung ist immer offen.",
-        "Answer": "richtig"
-      },
-      {
-        "Location": "Im Einkaufszentrum",
-        "Noticeboard": "Kinderland\nWerkstatt für Kinder ab 4 Jahren\nSamstag: 10-14 Uhr",
-        "Statement": "Die Werkstatt ist für Kinder ab 6 Jahren.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "An der Rezeption des Hotels",
-        "Noticeboard": "Bitte beim Check-out\nZimmerschlüssel abgeben.",
-        "Statement": "Sie können den Zimmerschlüssel behalten.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "In der Tierhandlung",
-        "Noticeboard": "Montag: Ruhetag",
-        "Statement": "Am Montag hat die Tierhandlung geschlossen.",
-        "Answer": "richtig"
-      },
-      {
-        "Location": "Im Park",
-        "Noticeboard": "Keine Fahrräder auf den Wegen",
-        "Statement": "Sie können mit dem Fahrrad im Park fahren.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "In der Pizzeria",
-        "Noticeboard": "Dienstags: Pizza Margherita\nzum halben Preis",
-        "Statement": "Mittwochs gibt es Rabatte auf Pizza Margherita.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "Auf dem Bauernmarkt",
-        "Noticeboard": "Frische Erdbeeren\naus der Region",
-        "Statement": "Die Erdbeeren kommen aus dem Ausland.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "An der Tankstelle",
-        "Noticeboard": "Autowäsche\nDienstag bis Samstag 8-18 Uhr",
-        "Statement": "Sonntags können Sie Ihr Auto waschen.",
-        "Answer": "falsch"
-      },
-      {
-        "Location": "In der Bank",
-        "Noticeboard": "Kundenservice: Montag - Freitag 9-17 Uhr",
-        "Statement": "Der Kundenservice ist am Samstag geschlossen.",
-        "Answer": "richtig"
-      }
-  ]
+  {
+    "Level": "Easy",
+    "Location": "Supermarket Entrance",
+    "Noticeboard": "Willkommen!\nHeute geöffnet bis 20:00 Uhr.",
+    "Statement": "Der Supermarkt ist bis 21 Uhr offen.",
+    "Answer": "falsch",
+    "Explanation_Level": "Easy because it uses very common vocabulary ('Willkommen', 'heute', 'geöffnet', 'Uhr'). Time is presented in a standard format (20:00). The concept of opening hours is very familiar.",
+    "Explanation_Answer": "The notice says 'geöffnet bis 20:00 Uhr' (open until 8 PM). The statement says 'bis 21 Uhr offen' (open until 9 PM). 20:00 Uhr is not 21 Uhr, so the statement is incorrect."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Bakery (Bäckerei)",
+    "Noticeboard": "Frische Brötchen!\nNur 1 Euro!",
+    "Statement": "Brötchen sind günstig.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because vocabulary is related to food and shopping ('Brötchen', 'Euro', 'frisch'). 'Günstig' (cheap/affordable) is a common word and relates directly to a low price.",
+    "Explanation_Answer": "The notice says 'Nur 1 Euro!' (Only 1 Euro!). 1 Euro for Brötchen is generally considered 'günstig' (cheap). Therefore, the statement is a reasonable interpretation."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Bus Stop",
+    "Noticeboard": "Bus 24 nach Zentrum\nNächste Abfahrt: 10:15 Uhr",
+    "Statement": "Bus 24 fährt ins Zentrum.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because it's about public transport, a common A1 topic. Vocabulary is basic ('Bus', 'Zentrum', 'Abfahrt', 'Uhr').  Understanding bus routes is a practical skill.",
+    "Explanation_Answer": "The notice says 'Bus 24 nach Zentrum' (Bus 24 to the center). The statement 'Bus 24 fährt ins Zentrum' (Bus 24 goes to the center) directly reflects this information."
+  },
+  {
+    "Level": "Easy",
+    "Location": "School Door",
+    "Noticeboard": "Klasse 1A\nRaum 10",
+    "Statement": "Klasse 1A ist in Raum 10.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because it's school-related, a familiar context. Vocabulary is very simple ('Klasse', 'Raum'). Understanding class locations is basic school information.",
+    "Explanation_Answer": "The notice says 'Klasse 1A Raum 10'. This clearly indicates that Class 1A is in Room 10. The statement directly reflects this."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Café Window",
+    "Noticeboard": "Kaffee zum Mitnehmen!",
+    "Statement": "Man kann Kaffee im Café trinken.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because it's about a café, a common place. 'Kaffee' and 'Mitnehmen' (take away) are basic words.  The question tests understanding of implication.",
+    "Explanation_Answer": "The notice advertises 'Kaffee zum Mitnehmen' (Coffee to take away). While it highlights take-away, it doesn't explicitly say you *cannot* drink coffee inside.  It's implied that a café usually allows drinking inside, even if they also offer take-away. Therefore, the statement is likely true in a general café context."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Cinema Entrance",
+    "Noticeboard": "Film: 'Der kleine Bär'\nBeginn: 16:00 Uhr",
+    "Statement": "Der Film beginnt um 17 Uhr.",
+    "Answer": "falsch",
+    "Explanation_Level": "Easy because it's about cinema, a leisure activity. Vocabulary is simple ('Film', 'Beginn', 'Uhr'). Time is in standard format. Understanding film schedules is common.",
+    "Explanation_Answer": "The notice says 'Beginn: 16:00 Uhr' (Start: 4 PM). The statement says 'um 17 Uhr' (at 5 PM). 16:00 Uhr is not 17 Uhr, so the statement is incorrect."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Restaurant Door",
+    "Noticeboard": "Mittagstisch\n12:00 - 14:00 Uhr",
+    "Statement": "Es gibt Essen am Mittag.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because 'Mittagstisch' (lunch menu/special) and time ranges are common and understandable. 'Essen am Mittag' (food at midday/lunchtime) is basic vocabulary.",
+    "Explanation_Answer": "'Mittagstisch' literally means 'lunch table' or lunch special.  It implies special food offers during lunchtime (12:00-14:00 Uhr). Therefore, the statement 'Es gibt Essen am Mittag' (There is food at lunchtime) is correct."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Park Entrance",
+    "Noticeboard": "Hunde an der Leine!",
+    "Statement": "Hunde dürfen nicht in den Park.",
+    "Answer": "falsch",
+    "Explanation_Level": "Easy because 'Hunde' (dogs), 'Leine' (leash), and park rules are common. The sentence structure is simple. Understanding prohibitions and permissions is tested.",
+    "Explanation_Answer": "The notice says 'Hunde an der Leine!' (Dogs on a leash!). This means dogs are allowed in the park, but they must be kept on a leash. The statement 'Hunde dürfen nicht in den Park' (Dogs are not allowed in the park) is the opposite of what the notice implies."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Clothing Shop",
+    "Noticeboard": "Sale!\nAlles 50% reduziert!",
+    "Statement": "Kleidung ist teuer.",
+    "Answer": "falsch",
+    "Explanation_Level": "Easy because 'Sale' and percentages are commonly understood in shopping contexts. 'Kleidung' (clothing) and 'teuer' (expensive) are basic words. Understanding discounts is a practical skill.",
+    "Explanation_Answer": "The notice says 'Sale! Alles 50% reduziert!' (Sale! Everything 50% reduced!). 'Reduziert' (reduced) and 'Sale' imply lower prices. 'Teuer' (expensive) is the opposite of reduced price. Therefore, the statement 'Kleidung ist teuer' (Clothing is expensive) is incorrect."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Train Station Information Board",
+    "Noticeboard": "Nächster Zug nach München: 11:45 Uhr\nGleis 5",
+    "Statement": "Der Zug nach München fährt von Gleis 5.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because it's train station information. Vocabulary is basic ('Zug', 'München', 'Gleis').  Understanding platform information is essential for train travel.",
+    "Explanation_Answer": "The notice says 'Gleis 5' (Platform 5) for the train to Munich. The statement 'Der Zug nach München fährt von Gleis 5' (The train to Munich departs from platform 5) directly matches the notice."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Apartment Building Door",
+    "Noticeboard": "Ruhe bitte!\nNach 22:00 Uhr.",
+    "Statement": "Man soll leise sein.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because 'Ruhe' (quiet), 'bitte' (please), and time are common.  The concept of quiet hours is widely understood.",
+    "Explanation_Answer": "'Ruhe bitte!' (Quiet please!) is a direct request for quietness. The statement 'Man soll leise sein' (One should be quiet) is a general interpretation of this request, even though the notice specifies 'after 10 PM', the general idea of being quiet is present."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Office Door",
+    "Noticeboard": "Pause\n13:00 - 13:30 Uhr",
+    "Statement": "Das Büro ist geschlossen.",
+    "Answer": "falsch",
+    "Explanation_Level": "Easy because 'Pause' (break), 'Büro' (office), and time are basic words. Understanding break times in offices is common.",
+    "Explanation_Answer": "'Pause 13:00 - 13:30 Uhr' indicates a break time. 'Geschlossen' (closed) means completely shut. A break is a temporary interruption, not necessarily complete closure.  While the office might be *partially* unavailable during break, saying it's 'geschlossen' is too strong and likely incorrect in most office contexts for just a 30-minute break."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Toy Shop Window",
+    "Noticeboard": "Spielzeug\nfür Kinder!",
+    "Statement": "Hier gibt es Spielsachen.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because 'Spielzeug' (toys), 'Kinder' (children) are very basic vocabulary. Shop types are easily understood.",
+    "Explanation_Answer": "'Spielzeug für Kinder!' (Toys for children!) directly indicates that the shop sells toys. 'Hier gibt es Spielsachen' (Here there are toys) is a synonym for 'Spielzeug' and a correct interpretation."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Swimming Pool Entrance",
+    "Noticeboard": "Badekappenpflicht!",
+    "Statement": "Man braucht eine Badehose.",
+    "Answer": "falsch",
+    "Explanation_Level": "Easy because 'Badekappe' (swimming cap) and 'Pflicht' (requirement/mandatory) are related to swimming pools. 'Badehose' (swimming trunks/swimsuit) is also pool-related but different.",
+    "Explanation_Answer": "'Badekappenpflicht!' (Swimming cap mandatory!) means you *must* wear a swimming cap. 'Badehose' (swimming trunks) is also necessary for swimming but is not mentioned in this notice. The notice is specifically about swimming caps, not swimming suits in general.  Therefore, the statement is not directly supported by the notice, which is about caps, not trousers/suits."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Fruit Stand",
+    "Noticeboard": "Erdbeeren\nKilo 3 Euro",
+    "Statement": "Ein Kilo Erdbeeren kostet drei Euro.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because food vocabulary ('Erdbeeren' - strawberries, 'Kilo', 'Euro') and prices are basic shopping contexts. Sentence structure in the notice is very short.",
+    "Explanation_Answer": "The notice 'Erdbeeren Kilo 3 Euro' directly states the price of strawberries per kilo. The statement 'Ein Kilo Erdbeeren kostet drei Euro' (One kilo of strawberries costs three Euros) is a direct paraphrase of the notice."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Library Return Desk",
+    "Noticeboard": "Bücher bitte hier abgeben.",
+    "Statement": "Man kann hier Bücher holen.",
+    "Answer": "falsch",
+    "Explanation_Level": "Easy because 'Bücher' (books), 'abgeben' (return/hand in), 'holen' (get/fetch) are basic library-related words. Understanding the difference between returning and borrowing is tested.",
+    "Explanation_Answer": "'Bücher bitte hier abgeben' (Please return books here) indicates a *return* point. 'Bücher holen' (get books/borrow books) is the opposite action.  The notice is about returning, not borrowing. Therefore, the statement is incorrect."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Classroom Door",
+    "Noticeboard": "Deutschkurs\nBeginnt um 9 Uhr",
+    "Statement": "Der Kurs fängt um 9 Uhr an.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because 'Deutschkurs' (German course), 'beginnt' (starts), 'Uhr' (o'clock) are basic vocabulary for language learning and schedules. 'Anfangen' (to start) is a synonym of 'beginnen'.",
+    "Explanation_Answer": "'Deutschkurs beginnt um 9 Uhr' (German course starts at 9 o'clock). 'Der Kurs fängt um 9 Uhr an' (The course starts at 9 o'clock) uses a slightly different verb ('anfangen') but has the same meaning. It correctly reflects the start time."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Shoe Shop Window",
+    "Noticeboard": "Schuhe\nfür Damen und Herren",
+    "Statement": "Es gibt Schuhe für Frauen.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because 'Schuhe' (shoes), 'Damen' (ladies/women), 'Herren' (gentlemen/men) are common shopping vocabulary. Understanding gender categories is basic.",
+    "Explanation_Answer": "'Schuhe für Damen und Herren' (Shoes for ladies and gentlemen/women and men) means shoes are available for both women and men.  'Frauen' (women) is another word for 'Damen', so the statement 'Es gibt Schuhe für Frauen' (There are shoes for women) is a correct deduction."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Restaurant Menu",
+    "Noticeboard": "Suppe des Tages: Tomatensuppe",
+    "Statement": "Heute gibt es Tomatensuppe.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because 'Suppe' (soup), 'Tomatensuppe' (tomato soup), 'Tag' (day), 'heute' (today) are basic food and time-related words. Understanding daily specials is common.",
+    "Explanation_Answer": "'Suppe des Tages: Tomatensuppe' (Soup of the day: Tomato soup) directly announces the soup available today. 'Heute gibt es Tomatensuppe' (Today there is tomato soup) is a direct and accurate interpretation."
+  },
+  {
+    "Level": "Easy",
+    "Location": "Hair Salon Window",
+    "Noticeboard": "Haare schneiden\nOhne Termin!",
+    "Statement": "Man braucht keinen Termin.",
+    "Answer": "richtig",
+    "Explanation_Level": "Easy because 'Haare schneiden' (cut hair), 'Termin' (appointment), 'ohne' (without) are common salon-related words. Understanding appointment systems is everyday knowledge.",
+    "Explanation_Answer": "'Haare schneiden Ohne Termin!' (Hair cutting without appointment!) explicitly states that appointments are not necessary. 'Man braucht keinen Termin' (One doesn't need an appointment) is a direct paraphrase and correct interpretation."
+  },
   
+    {
+      "Level": "Medium",
+      "Location": "Fitness Studio",
+      "Noticeboard": "Kurse:\nMo & Mi 18:00 Zumba\nDi & Do 19:00 Yoga",
+      "Statement": "Yoga ist am Mittwoch.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it requires understanding a schedule with abbreviations for days of the week ('Mo', 'Mi', 'Di', 'Do'). Learners need to correctly identify the days for each course.",
+      "Explanation_Answer": "The notice clearly states 'Di & Do 19:00 Yoga' (Tuesday & Thursday 7 PM Yoga).  Wednesday (Mittwoch) is listed for Zumba. Therefore, the statement 'Yoga ist am Mittwoch' (Yoga is on Wednesday) is incorrect."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Post Office",
+      "Noticeboard": "Pakete abholen:\nSchalter 3",
+      "Statement": "Man muss zum Schalter 3 für Briefe.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it requires understanding specific instructions for different postal services.  Learners need to distinguish between 'Pakete' (packages) and 'Briefe' (letters).",
+      "Explanation_Answer": "The notice says 'Pakete abholen: Schalter 3' (Collect packages: Counter 3). This means Counter 3 is specifically for package collection. The statement 'Man muss zum Schalter 3 für Briefe' (One must go to counter 3 for letters) is incorrect because the notice specifies packages, not letters."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Swimming Pool",
+      "Noticeboard": "Kinder unter 6 Jahren:\nFreier Eintritt",
+      "Statement": "Kinder müssen für das Schwimmbad bezahlen.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it uses 'unter 6 Jahren' (under 6 years) which requires understanding age ranges. 'Freier Eintritt' (free entry) might be slightly less immediately obvious than simple prices.",
+      "Explanation_Answer": "The notice says 'Kinder unter 6 Jahren: Freier Eintritt' (Children under 6 years: Free entry). This means children in this age group do *not* have to pay. The statement 'Kinder müssen für das Schwimmbad bezahlen' (Children must pay for the swimming pool) is incorrect because it contradicts the notice for young children."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Electronics Shop",
+      "Noticeboard": "Handys\n10% Rabatt!",
+      "Statement": "Alle Produkte sind billiger.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it requires understanding that 'Handys' (mobile phones) is a specific product category, not 'alle Produkte' (all products).  'Rabatt' (discount) is a common shopping term but needs to be understood in context.",
+      "Explanation_Answer": "The notice says 'Handys 10% Rabatt!' (Mobile phones 10% discount!). This discount applies only to mobile phones. The statement 'Alle Produkte sind billiger' (All products are cheaper) is incorrect because the discount is limited to mobile phones, not everything in the shop."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Travel Agency",
+      "Noticeboard": "Flüge nach Rom\nab 50 Euro!",
+      "Statement": "Ein Flug nach Rom kostet nur 50 Euro.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because 'ab 50 Euro' (from 50 Euros) implies a starting price, not a fixed price.  Learners need to understand the nuance of 'ab'.",
+      "Explanation_Answer": "The notice says 'Flüge nach Rom ab 50 Euro!' (Flights to Rome from 50 Euros!). 'Ab' means 'from' or 'starting at'. This indicates that 50 Euros is the lowest possible price, but the actual price might be higher. The statement 'Ein Flug nach Rom kostet nur 50 Euro' (A flight to Rome costs only 50 Euros) is likely incorrect because 'ab 50 Euro' does not guarantee that all flights are *only* 50 Euros."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Library",
+      "Noticeboard": "Computerraum\nAnmeldung an der Information",
+      "Statement": "Man kann einfach in den Computerraum gehen.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it introduces the concept of 'Anmeldung' (registration/sign-up) and 'Information' (information desk). Learners need to understand that a process is required before using the computer room.",
+      "Explanation_Answer": "The notice says 'Computerraum Anmeldung an der Information' (Computer room Registration at the information desk). 'Anmeldung' means you need to register or sign up at the information desk first. The statement 'Man kann einfach in den Computerraum gehen' (One can simply go into the computer room) is incorrect because it ignores the 'Anmeldung' requirement."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Restaurant",
+      "Noticeboard": "Pizza Angebot:\nGroße Pizza + Salat 12 Euro",
+      "Statement": "Eine Pizza kostet 12 Euro.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it's about a combination offer ('Pizza + Salat'). Learners need to understand that the price applies to the combination, not just one item.",
+      "Explanation_Answer": "The notice says 'Große Pizza + Salat 12 Euro' (Large pizza + salad 12 Euros). This means both items together cost 12 Euros. The statement 'Eine Pizza kostet 12 Euro' (A pizza costs 12 Euros) is incorrect because it implies that just the pizza alone costs 12 Euros, not the set meal."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Park Entrance",
+      "Noticeboard": "Fahrradfahren im Park erlaubt.\nSchrittgeschwindigkeit!",
+      "Statement": "Fahrradfahren ist verboten.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it involves both permission ('erlaubt' - allowed) and a condition ('Schrittgeschwindigkeit' - walking pace). Learners need to understand both parts of the notice.",
+      "Explanation_Answer": "The notice says 'Fahrradfahren im Park erlaubt' (Cycling in the park allowed). 'Verboten' (forbidden) is the opposite of 'erlaubt'.  Therefore, the statement 'Fahrradfahren ist verboten' (Cycling is forbidden) is incorrect because the notice explicitly states it is allowed (with a condition of walking pace)."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Supermarket Department",
+      "Noticeboard": "Käse & Wurst\nNächste Kasse bitte!",
+      "Statement": "Man kann hier Gemüse kaufen.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it requires understanding department-specific checkouts. Learners need to recognize 'Käse & Wurst' (cheese & sausage) as specific food categories and differentiate them from 'Gemüse' (vegetables).",
+      "Explanation_Answer": "The notice 'Käse & Wurst Nächste Kasse bitte!' (Cheese & sausage Next checkout please!) directs customers buying cheese and sausage to a specific checkout.  'Gemüse' (vegetables) is a different food category. Therefore, the statement 'Man kann hier Gemüse kaufen' (One can buy vegetables here) is incorrect because the notice is about cheese and sausage, not vegetables."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Museum",
+      "Noticeboard": "Eintritt frei\nfür Kinder bis 12 Jahre",
+      "Statement": "Kinder bezahlen keinen Eintritt.",
+      "Answer": "richtig",
+      "Explanation_Level": "Medium because of 'bis 12 Jahre' (up to 12 years), implying an age limit for free entry.  Learners need to understand the scope of 'Kinder' in this context.",
+      "Explanation_Answer": "The notice 'Eintritt frei für Kinder bis 12 Jahre' (Free entry for children up to 12 years) means that children within this age range do not pay for entry. The statement 'Kinder bezahlen keinen Eintritt' (Children don't pay entry) is a correct generalization based on this notice, even though it's specifically for children *up to* 12 years old.  For A1 level, generalizing 'children' to those under 12 in this context is reasonable."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Hotel Reception",
+      "Noticeboard": "Check-in\nab 14:00 Uhr",
+      "Statement": "Man kann um 13 Uhr einchecken.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because 'ab 14:00 Uhr' (from 2 PM) indicates a starting time, not a fixed time. Learners need to understand that check-in is not possible *before* 2 PM.",
+      "Explanation_Answer": "The notice 'Check-in ab 14:00 Uhr' (Check-in from 2 PM) means check-in is possible starting at 2 PM and onwards.  The statement 'Man kann um 13 Uhr einchecken' (One can check in at 1 PM) is incorrect because 1 PM is *before* 2 PM, and check-in is only possible *from* 2 PM onwards."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Cinema",
+      "Noticeboard": "Film heute: 'Die Katze'\n20:15 Uhr",
+      "Statement": "Heute Abend gibt es einen Film.",
+      "Answer": "richtig",
+      "Explanation_Level": "Medium because it requires connecting a time (20:15 Uhr) to a time of day ('Abend' - evening). Learners need to understand time contexts.",
+      "Explanation_Answer": "The notice 'Film heute: 'Die Katze' 20:15 Uhr' (Film today: 'The Cat' 8:15 PM) indicates a film showing at 8:15 PM. 20:15 Uhr is in the evening. The statement 'Heute Abend gibt es einen Film' (This evening there is a film) is a correct interpretation of this information."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Library",
+      "Noticeboard": "Geöffnet: Di-Sa\n10-18 Uhr",
+      "Statement": "Die Bibliothek ist am Montag geöffnet.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it uses abbreviations for days of the week ('Di-Sa' for Dienstag bis Samstag). Learners need to recognize these and understand the concept of opening days.",
+      "Explanation_Answer": "The notice 'Geöffnet: Di-Sa 10-18 Uhr' (Open: Tue-Sat 10 AM - 6 PM) lists the opening days as Tuesday to Saturday. Monday is not included in this range. The statement 'Die Bibliothek ist am Montag geöffnet' (The library is open on Monday) is therefore incorrect because Monday is outside the listed opening days."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Bakery",
+      "Noticeboard": "3 Kuchen kaufen,\n2 bezahlen!",
+      "Statement": "Kuchen sind billiger, wenn man drei kauft.",
+      "Answer": "richtig",
+      "Explanation_Level": "Medium because it involves understanding a 'buy X get Y' offer and inferring the price reduction. 'Billiger' (cheaper) requires a slight inference from the offer.",
+      "Explanation_Answer": "The notice '3 Kuchen kaufen, 2 bezahlen!' (Buy 3 cakes, pay for 2!) is a 'buy three get one free' type of offer. This effectively reduces the price per cake if you buy three. The statement 'Kuchen sind billiger, wenn man drei kauft' (Cakes are cheaper if you buy three) is a correct interpretation of the price advantage of this offer."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Doctor's Waiting Room",
+      "Noticeboard": "Bitte warten Sie hier.\nDer Arzt kommt gleich.",
+      "Statement": "Man muss nicht warten.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because 'Bitte warten Sie hier' (Please wait here) is a polite instruction. Learners need to understand the imperative and the meaning of 'warten' (to wait). 'Gleich' (soon) adds a nuance to the waiting time.",
+      "Explanation_Answer": "The notice 'Bitte warten Sie hier. Der Arzt kommt gleich' (Please wait here. The doctor is coming soon) explicitly asks people to wait.  'Nicht warten' (not wait) is the opposite of 'warten'. Therefore, the statement 'Man muss nicht warten' (One doesn't have to wait) is incorrect because the notice directs people to wait."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Train Station",
+      "Noticeboard": "Zug nach Hamburg\nVerspätung ca. 15 Minuten",
+      "Statement": "Der Zug ist pünktlich.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it introduces 'Verspätung' (delay) and 'ca.' (approximately). Learners need to understand the meaning of delay and approximation in travel information.",
+      "Explanation_Answer": "The notice 'Zug nach Hamburg Verspätung ca. 15 Minuten' (Train to Hamburg Delay approx. 15 minutes) clearly states that the train is delayed. 'Pünktlich' (on time/punctual) is the opposite of 'Verspätung'. Therefore, the statement 'Der Zug ist pünktlich' (The train is on time) is incorrect because the notice indicates a delay."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Supermarket",
+      "Noticeboard": "Bananen im Angebot!\nNur 1,50€ pro Kilo",
+      "Statement": "Bananen sind teuer.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because while 'Angebot' (offer) and price are easy concepts, '1,50€ pro Kilo' for bananas is generally considered inexpensive. Learners need to interpret 'Angebot' as implying a lower price and recognize 1.50€ as a reasonable price for bananas.",
+      "Explanation_Answer": "The notice 'Bananen im Angebot! Nur 1,50€ pro Kilo' (Bananas on offer! Only 1.50€ per kilo) presents bananas as an 'Angebot' (offer) and gives a low price of 1.50€ per kilo. 'Teuer' (expensive) is the opposite of 'Angebot' and a low price. Therefore, the statement 'Bananen sind teuer' (Bananas are expensive) is incorrect because the notice suggests the opposite – bananas are on offer and priced affordably."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Restaurant Entrance",
+      "Noticeboard": "Tischreservierung\nempfohlen - Tel: 1234567",
+      "Statement": "Man muss einen Tisch reservieren.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because 'empfohlen' (recommended) is less direct than 'muss' (must/have to). Learners need to distinguish between recommendation and obligation.",
+      "Explanation_Answer": "The notice 'Tischreservierung empfohlen - Tel: 1234567' (Table reservation recommended - Tel: 1234567) says that reservation is 'empfohlen' (recommended). 'Empfohlen' means it's a good idea, but not mandatory. 'Muss' (must/have to) indicates obligation. Therefore, the statement 'Man muss einen Tisch reservieren' (One must reserve a table) is incorrect because the notice only recommends reservation, it's not a requirement."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Clothes Shop",
+      "Noticeboard": "Umkleidekabinen\nBitte warten Sie hier.",
+      "Statement": "Hier sind die Kassen.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because it requires understanding the purpose of 'Umkleidekabinen' (fitting rooms) and differentiating them from 'Kassen' (checkouts/cash registers). Context is important - fitting rooms are for trying clothes, not paying.",
+      "Explanation_Answer": "The notice 'Umkleidekabinen Bitte warten Sie hier' (Fitting rooms Please wait here) directs people to wait for the fitting rooms. 'Kassen' (checkouts/cash registers) are where you pay for items. Fitting rooms and checkouts are different areas in a shop. Therefore, the statement 'Hier sind die Kassen' (Here are the checkouts) is incorrect because the notice is about fitting rooms, not checkouts."
+    },
+    {
+      "Level": "Medium",
+      "Location": "Café",
+      "Noticeboard": "Wir schließen\nin 30 Minuten!",
+      "Statement": "Das Café ist schon geschlossen.",
+      "Answer": "falsch",
+      "Explanation_Level": "Medium because 'in 30 Minuten' (in 30 minutes) requires understanding time duration and the difference between 'closing soon' and 'already closed'.",
+      "Explanation_Answer": "The notice 'Wir schließen in 30 Minuten!' (We are closing in 30 minutes!) means the café will close *in* 30 minutes from now. 'Schon geschlossen' (already closed) means it is closed *now*.  Since the notice says 'in 30 minutes', the café is currently still open, not 'schon geschlossen'. Therefore, the statement 'Das Café ist schon geschlossen' (The cafe is already closed) is incorrect."
+    },
+      {
+        "Level": "Hard",
+        "Location": "Apartment Building",
+        "Noticeboard": "Waschmaschine im Keller defekt.\nReparatur voraussichtlich nächste Woche.",
+        "Statement": "Man kann jetzt Wäsche waschen.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because it uses 'defekt' (broken) and 'voraussichtlich' (probably/expected). Learners need to understand the implication of 'defekt' and the uncertainty of 'voraussichtlich nächste Woche'.",
+        "Explanation_Answer": "'Waschmaschine im Keller defekt' (Washing machine in the basement broken) clearly states the machine is not working. 'Reparatur voraussichtlich nächste Woche' means repair is expected next week, implying it's not fixed now.  'Man kann jetzt Wäsche waschen' (One can wash laundry now) is incorrect because the machine is broken."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Office Kitchen",
+        "Noticeboard": "Kaffeeautomat außer Betrieb.\nBitte Automaten im 2. Stock benutzen.",
+        "Statement": "Es gibt keinen Kaffee im Erdgeschoss.",
+        "Answer": "richtig",
+        "Explanation_Level": "Hard because 'außer Betrieb' (out of order) is a less common phrase than 'defekt'.  'Erdgeschoss' (ground floor) and '2. Stock' (2nd floor) require understanding floor levels.",
+        "Explanation_Answer": "'Kaffeeautomat außer Betrieb' (Coffee machine out of order) means the machine is not working. 'Erdgeschoss' is the ground floor (where the kitchen likely is). The notice directs to the 2nd floor for coffee.  Therefore, 'Es gibt keinen Kaffee im Erdgeschoss' (There is no coffee on the ground floor - from the machine) is a correct inference."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Bus Stop",
+        "Noticeboard": "Haltestelle 'Schulstraße' wird\nwegen Bauarbeiten verlegt.\nErsatzhaltestelle: 'Kirchplatz'",
+        "Statement": "Der Bus hält jetzt am Kirchplatz.",
+        "Answer": "richtig",
+        "Explanation_Level": "Hard because of 'verlegt' (relocated), 'Bauarbeiten' (construction work), and 'Ersatzhaltestelle' (replacement stop).  Requires understanding of temporary changes and slightly more complex vocabulary.",
+        "Explanation_Answer": "'Haltestelle 'Schulstraße' wird wegen Bauarbeiten verlegt' (Bus stop 'Schulstraße' is being relocated due to construction work). 'Ersatzhaltestelle: 'Kirchplatz'' (Replacement stop: 'Kirchplatz') clearly indicates the new stop location. 'Der Bus hält jetzt am Kirchplatz' (The bus now stops at Kirchplatz) is a direct and correct interpretation."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Shop Window",
+        "Noticeboard": "Wir suchen\nfreundliche/n Verkäufer/in\nauf Teilzeitbasis",
+        "Statement": "Der Laden sucht neue Mitarbeiter.",
+        "Answer": "richtig",
+        "Explanation_Level": "Hard because 'Wir suchen' (we are looking for) is a job advertisement context. 'Verkäufer/in' (salesperson), 'Teilzeitbasis' (part-time) are job-related terms.  'Mitarbeiter' (employees) is a generalization.",
+        "Explanation_Answer": "'Wir suchen freundliche/n Verkäufer/in auf Teilzeitbasis' (We are looking for friendly salesperson (m/f) on a part-time basis) is a job ad. 'Mitarbeiter' (employees) is a broader term that includes salespeople. 'Der Laden sucht neue Mitarbeiter' (The shop is looking for new employees) is a correct generalization of the notice's meaning."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Restaurant Door",
+        "Noticeboard": "Heute Ruhetag!",
+        "Statement": "Das Restaurant ist geöffnet.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Ruhetag' (day off/rest day) might be less immediately obvious than 'geschlossen'.  Requires understanding of restaurant schedules.",
+        "Explanation_Answer": "'Heute Ruhetag!' (Today day off!) means the restaurant is closed for the day. 'Geöffnet' (open) is the opposite of 'Ruhetag'.  'Das Restaurant ist geöffnet' (The restaurant is open) is incorrect because of 'Ruhetag'."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Library Notice Board",
+        "Noticeboard": "Verlängerung von Büchern\nnur online oder telefonisch möglich.",
+        "Statement": "Man kann Bücher in der Bibliothek verlängern.",
+        "Answer": "richtig",
+        "Explanation_Level": "Hard because 'Verlängerung' (extension), 'online', 'telefonisch' are less basic vocabulary.  'nur' (only) specifies limitations. The question tests if learners understand *that* extension is possible, despite the method being restricted.",
+        "Explanation_Answer": "'Verlängerung von Büchern nur online oder telefonisch möglich' (Extension of books only possible online or by phone) states the *method* of extension, but confirms that book extension *is* possible.  'Man kann Bücher in der Bibliothek verlängern' (One can extend books in the library) is correct because extension is possible, even if not in person."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Supermarket Shelf",
+        "Noticeboard": "Achtung!\nMHD überschritten.\nReduziert!",
+        "Statement": "Das Produkt ist neu.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'MHD' (Mindesthaltbarkeitsdatum - best before date) is an abbreviation. 'überschritten' (exceeded) and 'reduziert' (reduced) are less frequent words. Requires understanding of food expiry and reduced prices for such items.",
+        "Explanation_Answer": "'MHD überschritten' (Best before date exceeded) means the product is past its best before date. 'Reduziert!' (Reduced!) indicates a price reduction, often for items near or past expiry. 'Neu' (new) is the opposite of 'MHD überschritten'.  'Das Produkt ist neu' (The product is new) is incorrect because it's past its best before date."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Park Bench",
+        "Noticeboard": "Rasen betreten verboten!\nEltern haften für Ihre Kinder.",
+        "Statement": "Kinder dürfen auf dem Rasen spielen.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Rasen betreten verboten' (entering the lawn forbidden) is a stronger prohibition. 'Eltern haften für Ihre Kinder' (Parents are liable for their children) adds a legal responsibility aspect. Requires understanding of prohibitions and parental responsibility.",
+        "Explanation_Answer": "'Rasen betreten verboten!' (Entering the lawn forbidden!) is a clear prohibition. 'Kinder dürfen auf dem Rasen spielen' (Children are allowed to play on the lawn) directly contradicts this prohibition. Even with parental supervision, 'verboten' means it's not allowed."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Train Station Platform",
+        "Noticeboard": "Zug fällt heute aus.\nGrund: Streik.",
+        "Statement": "Der Zug fährt heute.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Zug fällt aus' (train is cancelled) is a phrase, not just 'Zug nicht da'. 'Streik' (strike) explains the reason for cancellation. Requires understanding of travel disruptions.",
+        "Explanation_Answer": "'Zug fällt heute aus. Grund: Streik.' (Train is cancelled today. Reason: Strike.) clearly states the train is not running. 'Der Zug fährt heute' (The train runs today) is the opposite of 'fällt aus'. Therefore, the statement is incorrect."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Museum Entrance",
+        "Noticeboard": "Audioguides erhältlich an der Kasse.\nPfand: 10 Euro.",
+        "Statement": "Audioguides sind kostenlos.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Audioguides erhältlich' (audioguides available), 'Pfand' (deposit) are less basic words. 'Kasse' (cash desk/ticket office) in this context is specific. Requires understanding of deposits and rental services.",
+        "Explanation_Answer": "'Audioguides erhältlich an der Kasse. Pfand: 10 Euro.' (Audioguides available at the ticket office. Deposit: 10 Euros.) indicates a deposit is required. 'Pfand' means you get the money back, but you have to pay it initially. 'Kostenlos' (free) means no payment at all.  Therefore, 'Audioguides sind kostenlos' (Audioguides are free) is incorrect because of the 'Pfand' requirement."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Cinema Foyer",
+        "Noticeboard": "Kinokarten\nVorverkauf für nächste Woche ab Montag.",
+        "Statement": "Man kann jetzt Kinokarten kaufen.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Vorverkauf' (advance sale), 'nächste Woche' (next week), 'ab Montag' (from Monday) indicates a future start date. Requires understanding of ticket sales periods.",
+        "Explanation_Answer": "'Kinokarten Vorverkauf für nächste Woche ab Montag.' (Cinema tickets advance sale for next week from Monday.) means advance sales for *next week*'s films start on Monday.  'Jetzt' (now) is before Monday. 'Man kann jetzt Kinokarten kaufen' (One can buy cinema tickets now - for next week's films in advance) is incorrect because the advance sale starts on Monday, not 'jetzt'."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Swimming Pool Area",
+        "Noticeboard": "Sprungturm heute geschlossen.\nRevision.",
+        "Statement": "Man kann vom Sprungturm springen.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Sprungturm' (diving platform), 'Revision' (maintenance/inspection) are less common words. 'geschlossen' (closed) is straightforward, but the reason 'Revision' adds context.",
+        "Explanation_Answer": "'Sprungturm heute geschlossen. Revision.' (Diving platform closed today. Maintenance.) clearly states the diving platform is closed. 'Man kann vom Sprungturm springen' (One can jump from the diving platform) is the opposite of 'geschlossen'. Therefore, the statement is incorrect."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Restaurant Menu Board",
+        "Noticeboard": "Empfehlung des Küchenchefs:\nGebratene Ente mit Knödeln",
+        "Statement": "Es gibt heute Ente zu essen.",
+        "Answer": "richtig",
+        "Explanation_Level": "Hard because 'Empfehlung des Küchenchefs' (chef's recommendation) is a phrase. 'Gebratene Ente mit Knödeln' (roast duck with dumplings) is specific food vocabulary.  'Empfehlung' implies availability, but not guarantee.",
+        "Explanation_Answer": "'Empfehlung des Küchenchefs: Gebratene Ente mit Knödeln' (Chef's recommendation: Roast duck with dumplings) suggests this dish is available and recommended by the chef. 'Es gibt heute Ente zu essen' (There is duck to eat today) is a reasonable inference from a 'recommendation' in a restaurant context, assuming 'Empfehlung' implies current availability."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Train Carriage",
+        "Noticeboard": "Bitte Freigabe-Taste für Türbetätigung nutzen.",
+        "Statement": "Die Tür öffnet automatisch.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Freigabe-Taste' (release button), 'Türbetätigung' (door operation), 'nutzen' (use) are less basic words related to train door operation. Requires understanding of non-automatic doors.",
+        "Explanation_Answer": "'Bitte Freigabe-Taste für Türbetätigung nutzen.' (Please use release button for door operation.) indicates that the door is *not* automatic and requires manual operation using a button. 'Die Tür öffnet automatisch' (The door opens automatically) is the opposite of manual operation with a button. Therefore, the statement is incorrect."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Book Shop",
+        "Noticeboard": "Bücher reduziert!\nAusgenommen: Neuerscheinungen",
+        "Statement": "Alle Bücher sind billiger.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Ausgenommen' (except), 'Neuerscheinungen' (new releases) are slightly more advanced vocabulary. 'Reduziert' (reduced) is known, but 'Ausgenommen' creates a condition. Requires understanding of exceptions.",
+        "Explanation_Answer": "'Bücher reduziert! Ausgenommen: Neuerscheinungen' (Books reduced! Except: New releases.) means that *most* books are reduced, but 'Neuerscheinungen' (new releases) are *not* included in the sale. 'Alle Bücher sind billiger' (All books are cheaper) is incorrect because it ignores the exception of 'Neuerscheinungen'."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Office Notice Board",
+        "Noticeboard": "Wegen Fortbildung\nist das Büro am Freitag geschlossen.",
+        "Statement": "Das Büro ist am Freitag offen.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Fortbildung' (further education/training) explains the reason for closure. 'Wegen' (because of) is a preposition requiring understanding of cause and effect. 'geschlossen' is straightforward, but the reason adds complexity.",
+        "Explanation_Answer": "'Wegen Fortbildung ist das Büro am Freitag geschlossen.' (Due to further education/training, the office is closed on Friday.) clearly states the office is closed on Friday. 'Das Büro ist am Freitag offen' (The office is open on Friday) is the opposite of 'geschlossen'. Therefore, the statement is incorrect."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Hair Salon",
+        "Noticeboard": "Damen- und Herrenfriseur\nAuch ohne Anmeldung!",
+        "Statement": "Man muss immer einen Termin haben.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Auch ohne Anmeldung!' (also without appointment!) directly contradicts the need for appointments. 'Anmeldung' (appointment) is the key word to understand. 'Damen- und Herrenfriseur' (ladies' and men's hairdresser) is also slightly more descriptive.",
+        "Explanation_Answer": "'Damen- und Herrenfriseur Auch ohne Anmeldung!' (Ladies' and men's hairdresser Also without appointment!) explicitly states that appointments are *not* always required. 'Man muss immer einen Termin haben' (One must always have an appointment) is the opposite of 'ohne Anmeldung'. Therefore, the statement is incorrect."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Bike Rental Shop",
+        "Noticeboard": "Fahrradverleih\nHelme kostenlos erhältlich.",
+        "Statement": "Man muss für Helme bezahlen.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Fahrradverleih' (bike rental), 'Helme' (helmets), 'kostenlos erhältlich' (available for free) are specific rental vocabulary. 'erhältlich' (available) in this context implies they are provided by the shop.",
+        "Explanation_Answer": "'Fahrradverleih Helme kostenlos erhältlich.' (Bike rental Helmets available for free.) clearly states helmets are 'kostenlos' (free). 'Man muss für Helme bezahlen' (One must pay for helmets) is the opposite of 'kostenlos'. Therefore, the statement is incorrect."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Park Information Point",
+        "Noticeboard": "Grillen im Park\nnur auf ausgewiesenen Flächen erlaubt.",
+        "Statement": "Grillen ist im ganzen Park erlaubt.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'Grillen' (barbecuing), 'ausgewiesenen Flächen' (designated areas), 'erlaubt' (allowed), 'nur' (only) introduce conditions and limitations. Requires understanding that permission is restricted.",
+        "Explanation_Answer": "'Grillen im Park nur auf ausgewiesenen Flächen erlaubt.' (Barbecuing in the park only allowed in designated areas.) means barbecuing is *not* allowed everywhere, but only in specific areas. 'Im ganzen Park' (in the whole park) contradicts 'nur auf ausgewiesenen Flächen'. Therefore, the statement 'Grillen ist im ganzen Park erlaubt' (Barbecuing is allowed in the whole park) is incorrect."
+      },
+      {
+        "Level": "Hard",
+        "Location": "Laundry Room",
+        "Noticeboard": "Trockner Nr. 2\nbenutzbar ab 15:00 Uhr",
+        "Statement": "Trockner Nummer Zwei ist kaputt.",
+        "Answer": "falsch",
+        "Explanation_Level": "Hard because 'benutzbar ab 15:00 Uhr' (usable from 3 PM) implies a time restriction, not broken status. Learners need to differentiate between time-based unavailability and malfunction. 'Trockner' (dryer) and numbers add specificity.",
+        "Explanation_Answer": "'Trockner Nr. 2 benutzbar ab 15:00 Uhr' (Dryer No. 2 usable from 3 PM) indicates the dryer will be available from 3 PM onwards. It doesn't say it's broken ('kaputt'). 'Kaputt' (broken) is not implied by a time restriction for usability. Therefore, the statement 'Trockner Nummer Zwei ist kaputt' (Dryer number two is broken) is incorrect; it's just not usable *yet*."
+      },
+        {
+            "Level": "Hard",
+            "Location": "Zoo Entrance",
+            "Noticeboard": "Letzte Einlass\n1 Stunde vor Schließung.",
+            "Statement": "Man kann den Zoo bis zum Abend besuchen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because of 'Letzte Einlass' (last entry), 'Schließung' (closing). Requires understanding of time limits and implied opening hours extending into the 'Abend' (evening).",
+            "Explanation_Answer": "'Letzte Einlass 1 Stunde vor Schließung' (Last entry 1 hour before closing) implies that the zoo *is* open until a certain 'Schließung' time, and entry is possible until one hour before that. 'Abend' (evening) is a general time of day that could include closing time for a zoo.  'Man kann den Zoo bis zum Abend besuchen' (One can visit the zoo until the evening) is a reasonable interpretation, as 'letzte Einlass' implies opening hours extending into the later part of the day."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Cinema Ticket Counter",
+            "Noticeboard": "Ermäßigung für Studenten\nmit gültigem Ausweis.",
+            "Statement": "Jeder bekommt billigere Tickets.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Ermäßigung' (discount), 'Studenten' (students), 'gültigem Ausweis' (valid ID) are specific terms for discounts. 'Jeder' (everyone) vs. 'Studenten' requires understanding of specific groups vs. general applicability.",
+            "Explanation_Answer": "'Ermäßigung für Studenten mit gültigem Ausweis' (Discount for students with valid ID) clearly specifies that the discount is only for 'Studenten' (students) who have a 'gültigem Ausweis' (valid ID). 'Jeder' (everyone) is a general term including non-students.  'Jeder bekommt billigere Tickets' (Everyone gets cheaper tickets) is incorrect because the discount is specifically for students, not everyone."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Museum Exhibit",
+            "Noticeboard": "Original Exponat!\nBitte nicht berühren.",
+            "Statement": "Man darf die Sachen anfassen.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Original Exponat' (original exhibit) adds context to 'Bitte nicht berühren' (please do not touch). 'berühren' (touch) vs 'anfassen' (touch/handle) are synonyms.  Emphasizes respecting artifacts.",
+            "Explanation_Answer": "'Original Exponat! Bitte nicht berühren.' (Original exhibit! Please do not touch.) is a clear instruction not to touch. 'Man darf die Sachen anfassen' (One is allowed to touch the things) is the direct opposite of 'nicht berühren'. Therefore, the statement is incorrect."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Apartment Building Hallway",
+            "Noticeboard": "Fahrradabstellen nur im Fahrradkeller!",
+            "Statement": "Man kann Fahrräder überall abstellen.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Fahrradabstellen' (bike parking), 'Fahrradkeller' (bike cellar), 'nur' (only) restrict bike parking to a specific location. 'überall' (everywhere) vs 'Fahrradkeller' requires understanding of limitations.",
+            "Explanation_Answer": "'Fahrradabstellen nur im Fahrradkeller!' (Bike parking only in the bike cellar!) clearly states that bike parking is restricted to the 'Fahrradkeller' (bike cellar). 'Überall abstellen' (park everywhere) contradicts 'nur im Fahrradkeller'.  Therefore, 'Man kann Fahrräder überall abstellen' (One can park bikes everywhere) is incorrect."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Café Counter",
+            "Noticeboard": "Selbstbedienung.\nKaffee und Kuchen bitte mitnehmen.",
+            "Statement": "Man muss hier bedient werden.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Selbstbedienung' (self-service) is a specific term for service style. 'bitte mitnehmen' (please take away) implies a certain procedure. 'bedient werden' (be served) is the opposite of self-service.",
+            "Explanation_Answer": "'Selbstbedienung. Kaffee und Kuchen bitte mitnehmen.' (Self-service. Coffee and cake please take away.) indicates that customers serve themselves. 'Man muss hier bedient werden' (One must be served here) is the opposite of 'Selbstbedienung'. Therefore, the statement is incorrect."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Bus Information Display",
+            "Noticeboard": "Nächste Haltestelle: Rathaus.\nAusstieg rechts.",
+            "Statement": "Man muss links aussteigen.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Ausstieg rechts' (exit right) is directional information. 'Rathaus' (town hall) is a location. 'links aussteigen' (exit left) vs 'rechts aussteigen' requires understanding of directions and bus exit instructions.",
+            "Explanation_Answer": "'Nächste Haltestelle: Rathaus. Ausstieg rechts.' (Next stop: Town Hall. Exit right.) clearly states 'Ausstieg rechts' (exit right). 'Man muss links aussteigen' (One must exit left) is the opposite direction. Therefore, the statement is incorrect."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Park Gate",
+            "Noticeboard": "Parkschließung bei Dunkelheit.",
+            "Statement": "Der Park ist immer geöffnet.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Parkschließung bei Dunkelheit' (park closing at darkness) implies conditional closure. 'Dunkelheit' (darkness) is a time-related condition. 'immer geöffnet' (always open) vs conditional closure requires understanding of implied opening hours.",
+            "Explanation_Answer": "'Parkschließung bei Dunkelheit' (Park closing at darkness) means the park is *not* open when it's dark. 'Immer geöffnet' (always open) contradicts the conditional closure at 'Dunkelheit'. Therefore, 'Der Park ist immer geöffnet' (The park is always open) is incorrect; it's closed when it's dark."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Train Station Ticket Machine",
+            "Noticeboard": "Fahrkarten nur mit EC-Karte oder Bargeld.",
+            "Statement": "Man kann mit Kreditkarte bezahlen.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Fahrkarten' (tickets), 'EC-Karte' (debit card), 'Bargeld' (cash), 'nur' (only) specify payment methods.  'Kreditkarte' (credit card) is a different payment method. Requires understanding of payment options and limitations.",
+            "Explanation_Answer": "'Fahrkarten nur mit EC-Karte oder Bargeld.' (Tickets only with debit card or cash.) explicitly limits payment methods to 'EC-Karte' or 'Bargeld'. 'Kreditkarte' (credit card) is not listed. Therefore, 'Man kann mit Kreditkarte bezahlen' (One can pay with credit card) is incorrect because credit cards are not accepted according to the notice."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Restaurant Window",
+            "Noticeboard": "Vegetarische Gerichte\nauf Anfrage erhältlich.",
+            "Statement": "Es gibt keine vegetarischen Speisen.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Vegetarische Gerichte' (vegetarian dishes), 'auf Anfrage erhältlich' (available on request) implies conditional availability. 'erhältlich' (available), 'Anfrage' (request) are key. 'keine vegetarischen Speisen' (no vegetarian food) vs conditional availability requires nuanced understanding.",
+            "Explanation_Answer": "'Vegetarische Gerichte auf Anfrage erhältlich.' (Vegetarian dishes available on request.) means vegetarian options *do* exist, but you have to ask for them. 'Es gibt keine vegetarischen Speisen' (There are no vegetarian dishes) is incorrect because the notice confirms they *are* available, just 'auf Anfrage'."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Bus Stop Timetable",
+            "Noticeboard": "Samstags und Sonntags\nkein Busverkehr.",
+            "Statement": "Am Wochenende fahren Busse.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Samstags und Sonntags' (Saturdays and Sundays), 'kein Busverkehr' (no bus service), 'Wochenende' (weekend) require understanding of weekend days and absence of service.  'Busverkehr' (bus service) might be less common than just 'Bus'.",
+            "Explanation_Answer": "'Samstags und Sonntags kein Busverkehr.' (Saturdays and Sundays no bus service.) explicitly states there is no bus service on weekends. 'Am Wochenende fahren Busse' (Buses run on the weekend) is the opposite of 'kein Busverkehr'. Therefore, the statement is incorrect."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Swimming Pool Rules",
+            "Noticeboard": "Baden nur mit\nsauberer Badebekleidung.",
+            "Statement": "Man kann mit normaler Kleidung schwimmen.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'sauberer Badebekleidung' (clean swimwear) specifies a condition for swimming. 'Badebekleidung' (swimwear) vs 'normale Kleidung' (normal clothes) requires distinguishing between types of clothing suitable for swimming.",
+            "Explanation_Answer": "'Baden nur mit sauberer Badebekleidung.' (Swimming only with clean swimwear.) clearly states that only 'Badebekleidung' (swimwear) is allowed, and it must be 'sauber' (clean). 'Normale Kleidung' (normal clothes) is not 'Badebekleidung'. Therefore, 'Man kann mit normaler Kleidung schwimmen' (One can swim with normal clothes) is incorrect because swimwear is required."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Library Computer Area",
+            "Noticeboard": "Internetnutzung\nmaximal 30 Minuten pro Tag.",
+            "Statement": "Man kann den ganzen Tag im Internet surfen.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Internetnutzung' (internet usage), 'maximal 30 Minuten' (maximum 30 minutes), 'pro Tag' (per day) specify time limits. 'ganzen Tag' (whole day) vs 'maximal 30 Minuten' requires understanding of time restrictions.",
+            "Explanation_Answer": "'Internetnutzung maximal 30 Minuten pro Tag.' (Internet usage maximum 30 minutes per day.) clearly limits internet usage to 30 minutes daily. 'Den ganzen Tag im Internet surfen' (Surf the internet the whole day) is much longer than 30 minutes and contradicts the 'maximal' limit. Therefore, the statement is incorrect."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Park Playground",
+            "Noticeboard": "Spielplatz für Kinder\nvon 3 bis 12 Jahren.",
+            "Statement": "Auch Babys dürfen hier spielen.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Spielplatz für Kinder von 3 bis 12 Jahren' (playground for children from 3 to 12 years) specifies an age range. 'Babys' (babies) are outside this range. Requires understanding of age restrictions and categories.",
+            "Explanation_Answer": "'Spielplatz für Kinder von 3 bis 12 Jahren.' (Playground for children from 3 to 12 years.) specifies the age range for playground use. 'Babys' (babies) are younger than 3 years old and therefore outside the specified age range. 'Auch Babys dürfen hier spielen' (Also babies are allowed to play here) is incorrect because the playground is intended for older children."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Train Station Waiting Area",
+            "Noticeboard": "WLAN kostenlos\nfür 60 Minuten.",
+            "Statement": "WLAN kostet Geld.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'WLAN kostenlos' (WLAN free), 'für 60 Minuten' (for 60 minutes) specifies free access for a limited time. 'kostet Geld' (costs money) vs 'kostenlos' (free) is a direct contrast.  Requires understanding of free but limited services.",
+            "Explanation_Answer": "'WLAN kostenlos für 60 Minuten.' (WLAN free for 60 minutes.) clearly states that WLAN is 'kostenlos' (free). 'WLAN kostet Geld' (WLAN costs money) is the opposite of 'kostenlos'. Therefore, the statement is incorrect, even though the free period is limited to 60 minutes."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Clothes Shop Sale Section",
+            "Noticeboard": "Reduzierte Ware\numgetauscht ausgeschlossen.",
+            "Statement": "Man kann reduzierte Kleidung umtauschen.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Reduzierte Ware' (reduced goods), 'umgetauscht ausgeschlossen' (exchange excluded) are specific shopping terms related to sales and returns. 'umtauschen' (exchange), 'ausgeschlossen' (excluded) are key vocabulary.",
+            "Explanation_Answer": "'Reduzierte Ware umgetauscht ausgeschlossen.' (Reduced goods exchange excluded.) means that items bought in the sale ('Reduzierte Ware') cannot be 'umgetauscht' (exchanged). 'Man kann reduzierte Kleidung umtauschen' (One can exchange reduced clothing) is the opposite of 'umgetauscht ausgeschlossen'. Therefore, the statement is incorrect."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Cinema Entrance - Film Schedule",
+            "Noticeboard": "'Neuer Film' - 18:00 & 20:30",
+            "Statement": "Es gibt nur einen Film heute.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Neuer Film' (new film) and times (18:00 & 20:30) indicate film showings.  But the notice only mentions *one* film. Requires inference - does it mean *only* one film in the entire cinema, or just *this* specific film is shown at these times?",
+            "Explanation_Answer": "The notice lists showing times for 'Neuer Film'. It *only* provides information about *this specific film*. It *doesn't* say there are *no other films* being shown. While it's possible there's only one film, the notice *doesn't confirm it*.  However, a more charitable interpretation for A1 'hard' level is that the notice is limited in scope.  But for a strict 'richtig/falsch' and 'hard' level, assuming 'only one film' is too strong an inference.  The notice is silent about other films, not denying their existence.  Therefore, interpreting 'Es gibt nur einen Film heute' (There is only one film today) as 'falsch' is a very strict reading, but justifiable on the grounds that the notice provides *limited*, not *exhaustive* information about the cinema's program."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Train Station - Platform Information",
+            "Noticeboard": "ICE nach München Hbf\nplanmäßige Abfahrt 15:45 Uhr",
+            "Statement": "Der Zug fährt wahrscheinlich später.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'planmäßige Abfahrt' (scheduled departure) implies the intended time, not necessarily a delay.  'wahrscheinlich später' (probably later) is speculation about a delay. Requires understanding of 'planmäßig' and differentiating scheduled time from actual time.",
+            "Explanation_Answer": "'ICE nach München Hbf planmäßige Abfahrt 15:45 Uhr' (ICE to Munich Hbf scheduled departure 3:45 PM) states the *intended* departure time. 'Planmäßig' means according to plan/schedule.  'Wahrscheinlich später' (probably later) is assuming a delay, which is not indicated in the notice. The notice gives the *scheduled* time, not implying a delay. Therefore, 'Der Zug fährt wahrscheinlich später' (The train will probably depart later) is an assumption not supported by the notice - in fact, the notice presents the planned time, implying *on-time* departure."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Office Door - Meeting Room",
+            "Noticeboard": "Besprechungsraum 'Berlin'\nReserviert bis 17:00 Uhr",
+            "Statement": "Ab 17 Uhr ist der Raum frei.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Reserviert bis 17:00 Uhr' (reserved until 5 PM) implies availability *after* that time. 'frei' (free/available) vs 'reserviert' (reserved) requires understanding of time-based availability. 'Ab 17 Uhr' (from 5 PM) is a future time point.",
+            "Explanation_Answer": "'Besprechungsraum 'Berlin' Reserviert bis 17:00 Uhr' (Meeting room 'Berlin' Reserved until 5 PM) means the room is booked until 5 PM.  'Ab 17 Uhr' (from 5 PM onwards) implies that *after* 5 PM the reservation ends, and the room becomes 'frei' (available).  'Ab 17 Uhr ist der Raum frei' (From 5 PM the room is free) is a correct inference from the notice."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Park - Pond Area",
+            "Noticeboard": "Enten füttern\nbitte nur mit geeignetem Futter.",
+            "Statement": "Man darf die Enten nicht füttern.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Enten füttern' (feed ducks), 'geeignetem Futter' (suitable food), 'bitte nur' (please only) indicates *conditional* permission, not prohibition. 'nicht füttern' (do not feed) vs 'füttern mit geeignetem Futter' requires nuanced understanding of what is allowed and restricted.",
+            "Explanation_Answer": "'Enten füttern bitte nur mit geeignetem Futter.' (Feed ducks please only with suitable food.) means that feeding ducks *is* allowed, but only with 'geeignetem Futter' (suitable food). It's not a complete prohibition. 'Man darf die Enten nicht füttern' (One is not allowed to feed the ducks) is incorrect because feeding is allowed with the right kind of food."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Shop Entrance - Opening Hours",
+            "Noticeboard": "Geöffnet:\nWerktags 9-18 Uhr\nSamstag 9-13 Uhr",
+            "Statement": "Am Sonntag ist der Laden geöffnet.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Werktags' (weekdays), 'Samstag' (Saturday), 'Sonntag' (Sunday) require understanding of day categories. The notice lists opening hours for weekdays and Saturday, implying closure on Sunday by omission.",
+            "Explanation_Answer": "'Geöffnet: Werktags 9-18 Uhr Samstag 9-13 Uhr' (Open: Weekdays 9 AM - 6 PM Saturday 9 AM - 1 PM) lists opening hours for weekdays and Saturday. 'Sonntag' (Sunday) is not mentioned. The absence of Sunday hours, especially when weekdays and Saturday are listed, strongly implies that the shop is *closed* on Sunday. 'Am Sonntag ist der Laden geöffnet' (The shop is open on Sunday) is incorrect because Sunday is not listed in the opening hours, implying closure."
+        },
+        {
+            "Level": "Hard",
+            "Location": "Supermarket - Dairy Section",
+            "Noticeboard": "Joghurt Angebot!\nSorten: Natur, Frucht",
+            "Statement": "Es gibt nur Naturjoghurt im Angebot.",
+            "Answer": "falsch",
+            "Explanation_Level": "Hard because 'Joghurt Angebot' (yogurt offer), 'Sorten: Natur, Frucht' (varieties: plain, fruit) lists multiple types within the offer. 'nur Naturjoghurt' (only plain yogurt) vs 'Sorten: Natur, Frucht' requires careful reading to see that fruit yogurt is also included.",
+            "Explanation_Answer": "'Joghurt Angebot! Sorten: Natur, Frucht' (Yogurt offer! Varieties: Plain, Fruit) lists two 'Sorten' (varieties) of yogurt in the offer: 'Natur' (plain) and 'Frucht' (fruit). 'Es gibt nur Naturjoghurt im Angebot' (There is only plain yogurt on offer) is incorrect because the notice explicitly lists *both* plain and fruit yogurt as being part of the offer."
+        },
+          {
+            "Level": "Hard",
+            "Location": "Lost and Found Office",
+            "Noticeboard": "Fundsachen\nAbholung nur mit Eigentumsnachweis.",
+            "Statement": "Man muss beweisen, dass die Sache einem gehört.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Fundsachen' (lost property), 'Eigentumsnachweis' (proof of ownership), 'Abholung' (collection) are less common vocabulary. 'beweisen' (to prove) is a more formal synonym for 'zeigen' (to show).",
+            "Explanation_Answer": "'Fundsachen Abholung nur mit Eigentumsnachweis' (Lost property Collection only with proof of ownership) means you need to show proof that the item belongs to you to collect it. 'Man muss beweisen, dass die Sache einem gehört' (One must prove that the thing belongs to them) is a correct interpretation of 'Eigentumsnachweis'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Construction Site Fence",
+            "Noticeboard": "Betreten der Baustelle verboten!\nLebensgefahr!",
+            "Statement": "Es ist gefährlich, die Baustelle zu betreten.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Betreten der Baustelle verboten' (entering the construction site forbidden), 'Lebensgefahr' (danger to life) are strong warnings. 'gefährlich' (dangerous) is a synonym for 'Lebensgefahr' in this context.",
+            "Explanation_Answer": "'Betreten der Baustelle verboten! Lebensgefahr!' (Entering the construction site forbidden! Danger to life!) clearly warns of extreme danger. 'Es ist gefährlich, die Baustelle zu betreten' (It is dangerous to enter the construction site) is a direct and correct inference from 'Lebensgefahr'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Apartment Building Elevator",
+            "Noticeboard": "Aufzug außer Betrieb\nBenutzen Sie bitte das Treppenhaus.",
+            "Statement": "Man muss die Treppe nehmen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Aufzug außer Betrieb' (elevator out of service), 'Treppenhaus' (stairwell), 'benutzen Sie bitte' (please use) are slightly more formal and less common phrases. 'Treppe nehmen' (take the stairs) is the implied action.",
+            "Explanation_Answer": "'Aufzug außer Betrieb Benutzen Sie bitte das Treppenhaus' (Elevator out of service Please use the stairwell) directs people to use the stairs as an alternative. 'Man muss die Treppe nehmen' (One must take the stairs) is a correct deduction as the elevator is not working."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Park Notice",
+            "Noticeboard": "Laub bitte nicht auf den Wegen entfernen.",
+            "Statement": "Man soll das Laub liegen lassen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Laub' (leaves), 'entfernen' (remove), 'Wege' (paths) are nature/park related vocabulary. 'liegen lassen' (leave lying) is the implied action from 'nicht entfernen'.",
+            "Explanation_Answer": "'Laub bitte nicht auf den Wegen entfernen' (Leaves please do not remove from the paths) is an instruction not to remove leaves. 'Man soll das Laub liegen lassen' (One should leave the leaves lying) is a correct interpretation of 'nicht entfernen'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Train Station Announcement",
+            "Noticeboard": "Information:\nBahnsteigänderung für Zug nach Köln.\nNeu: Gleis 7",
+            "Statement": "Der Zug nach Köln fährt von einem anderen Gleis.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Bahnsteigänderung' (platform change), 'neu' (new), 'Gleis' (platform) are train-specific terms. 'anderes Gleis' (different platform) is the implied change.",
+            "Explanation_Answer": "'Bahnsteigänderung für Zug nach Köln. Neu: Gleis 7' (Platform change for train to Cologne. New: Platform 7) announces a change in platform. 'Der Zug nach Köln fährt von einem anderen Gleis' (The train to Cologne departs from a different platform) is a correct conclusion as the platform has been changed."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Shop Entrance",
+            "Noticeboard": "Geänderte Öffnungszeiten:\nMorgen ab 10 Uhr geöffnet.",
+            "Statement": "Der Laden öffnet morgen später.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Geänderte Öffnungszeiten' (changed opening hours), 'Morgen ab 10 Uhr geöffnet' (tomorrow open from 10 AM), 'später' (later) require understanding of time changes and comparisons. 'später öffnen' (open later) is implied by 'ab 10 Uhr'.",
+            "Explanation_Answer": "'Geänderte Öffnungszeiten: Morgen ab 10 Uhr geöffnet' (Changed opening hours: Tomorrow open from 10 AM) indicates a change in the usual opening time. 'Der Laden öffnet morgen später' (The shop opens later tomorrow) is correct because opening at 10 AM is later than a typical earlier opening time."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Library Section",
+            "Noticeboard": "Sachbücher\nBitte Regalfach beachten.",
+            "Statement": "Man muss im Regal nachsehen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Sachbücher' (non-fiction books), 'Regalfach' (shelf compartment), 'beachten' (note/observe) are library-specific terms. 'im Regal nachsehen' (look in the shelf) is the implied action to find the book.",
+            "Explanation_Answer": "'Sachbücher Bitte Regalfach beachten' (Non-fiction books Please note shelf compartment) instructs users to look at the shelf compartment for non-fiction books. 'Man muss im Regal nachsehen' (One must look in the shelf) is a direct consequence of needing to 'beachten' the 'Regalfach'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Restaurant Table",
+            "Noticeboard": "Reserviert",
+            "Statement": "Dieser Tisch ist nicht frei.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Reserviert' (reserved) is a single word notice requiring understanding of restaurant table status. 'nicht frei' (not free/available) is the implied meaning of 'Reserviert'.",
+            "Explanation_Answer": "'Reserviert' (Reserved) on a table clearly indicates that the table is not available for general use. 'Dieser Tisch ist nicht frei' (This table is not free) is a direct and correct interpretation of 'Reserviert'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Supermarket Checkout",
+            "Noticeboard": "Kasse geschlossen.\nBitte nächste Kasse benutzen.",
+            "Statement": "Hier kann man nicht bezahlen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Kasse geschlossen' (checkout closed), 'nächste Kasse benutzen' (use next checkout) are checkout-specific instructions. 'nicht bezahlen' (not pay) is the implied consequence at this particular checkout.",
+            "Explanation_Answer": "'Kasse geschlossen. Bitte nächste Kasse benutzen' (Checkout closed. Please use next checkout) means this checkout is not operational. 'Hier kann man nicht bezahlen' (One cannot pay here) is a correct deduction as the checkout is 'geschlossen'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Doctor's Office Waiting Room",
+            "Noticeboard": "Bei akuten Beschwerden\nbitte sofort an der Anmeldung melden.",
+            "Statement": "Wenn es dringend ist, soll man zur Anmeldung gehen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'akuten Beschwerden' (acute complaints), 'sofort' (immediately), 'Anmeldung' (registration/reception) are doctor's office related terms. 'dringend' (urgent), 'zur Anmeldung gehen' (go to reception) are implied actions for urgent cases.",
+            "Explanation_Answer": "'Bei akuten Beschwerden bitte sofort an der Anmeldung melden' (In case of acute complaints please report immediately at the reception) instructs patients with urgent issues to go to reception. 'Wenn es dringend ist, soll man zur Anmeldung gehen' (If it is urgent, one should go to reception) is a correct paraphrase of the notice's instruction."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Train Station Information Desk",
+            "Noticeboard": "Fahrplanauskunft\nund Ticketverkauf hier.",
+            "Statement": "Man kann hier Zugtickets kaufen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Fahrplanauskunft' (timetable information), 'Ticketverkauf' (ticket sales) are travel-specific terms. 'Zugtickets kaufen' (buy train tickets) is directly stated as 'Ticketverkauf'.",
+            "Explanation_Answer": "'Fahrplanauskunft und Ticketverkauf hier' (Timetable information and ticket sales here) explicitly states 'Ticketverkauf' is available at this location. 'Man kann hier Zugtickets kaufen' (One can buy train tickets here) is a direct and accurate interpretation."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Museum Exhibit Label",
+            "Noticeboard": "Leihgabe\naus Privatbesitz.",
+            "Statement": "Das Objekt gehört nicht dem Museum.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Leihgabe' (loan), 'Privatbesitz' (private ownership) are museum/exhibit specific terms. 'gehört nicht dem Museum' (does not belong to the museum) is the implied ownership status of a 'Leihgabe'.",
+            "Explanation_Answer": "'Leihgabe aus Privatbesitz' (Loan from private ownership) indicates that the exhibit is borrowed, not owned by the museum. 'Das Objekt gehört nicht dem Museum' (The object does not belong to the museum) is a correct inference because it's a 'Leihgabe' from 'Privatbesitz'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Park Area",
+            "Noticeboard": "Rücksicht auf andere Parkbesucher!\nLärm vermeiden.",
+            "Statement": "Man soll im Park leise sein.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Rücksicht auf andere Parkbesucher' (consideration for other park visitors), 'Lärm vermeiden' (avoid noise), 'vermeiden' (avoid) are slightly more complex phrases. 'leise sein' (be quiet) is the implied behavior from 'Lärm vermeiden'.",
+            "Explanation_Answer": "'Rücksicht auf andere Parkbesucher! Lärm vermeiden' (Consideration for other park visitors! Avoid noise) is a request for quietness in consideration of others. 'Man soll im Park leise sein' (One should be quiet in the park) is a direct consequence of 'Lärm vermeiden'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Swimming Pool Changing Room",
+            "Noticeboard": "Wertsachen bitte in den Schließfächern deponieren.",
+            "Statement": "Man soll wichtige Dinge sicher aufbewahren.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Wertsachen' (valuables), 'Schließfächern' (lockers), 'deponieren' (deposit) are swimming pool/facility specific terms. 'sicher aufbewahren' (keep safe) is the general purpose of using lockers for 'Wertsachen'.",
+            "Explanation_Answer": "'Wertsachen bitte in den Schließfächern deponieren' (Valuables please deposit in the lockers) advises securing valuables in lockers. 'Man soll wichtige Dinge sicher aufbewahren' (One should keep important things safe) is the underlying reason for using lockers for 'Wertsachen'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Bus Interior",
+            "Noticeboard": "Fahrschein bitte beim Fahrer vorzeigen.",
+            "Statement": "Man muss dem Busfahrer die Fahrkarte zeigen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Fahrschein' (ticket), 'Fahrer' (driver), 'vorzeigen' (show/present) are public transport specific terms. 'Fahrkarte zeigen' (show ticket) is the direct action requested.",
+            "Explanation_Answer": "'Fahrschein bitte beim Fahrer vorzeigen' (Ticket please present to the driver) is a direct instruction to show the ticket to the driver. 'Man muss dem Busfahrer die Fahrkarte zeigen' (One must show the bus driver the ticket) is a correct rephrasing of 'Fahrschein vorzeigen beim Fahrer'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Library Entrance",
+            "Noticeboard": "Bibliothek:\nEingangsbereich für Taschen und Jacken.",
+            "Statement": "Taschen und Jacken gehören in den Eingangsbereich.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Eingangsbereich' (entrance area), 'Taschen und Jacken' (bags and jackets) imply a designated area for these items in a library context. 'gehören in den Eingangsbereich' (belong in the entrance area) is the implied instruction.",
+            "Explanation_Answer": "'Bibliothek: Eingangsbereich für Taschen und Jacken' (Library: Entrance area for bags and jackets) suggests that the entrance area is designated for bags and jackets. 'Taschen und Jacken gehören in den Eingangsbereich' (Bags and jackets belong in the entrance area) is a correct interpretation of this designation."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Restaurant Menu",
+            "Noticeboard": "Tagesgericht:\nSchweinebraten mit Kartoffeln und Salat",
+            "Statement": "Heute gibt es Schweinefleisch.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Tagesgericht' (dish of the day), 'Schweinebraten' (roast pork), 'Kartoffeln' (potatoes), 'Salat' (salad) are food-related terms. 'Schweinefleisch' (pork) is the main ingredient of 'Schweinebraten'.",
+            "Explanation_Answer": "'Tagesgericht: Schweinebraten mit Kartoffeln und Salat' (Dish of the day: Roast pork with potatoes and salad) lists 'Schweinebraten' as the dish, which is made of 'Schweinefleisch' (pork). 'Heute gibt es Schweinefleisch' (Today there is pork) is correct as 'Schweinebraten' contains pork."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Apartment Building Laundry Room",
+            "Noticeboard": "Waschraum\nBenutzung nur für Hausbewohner.",
+            "Statement": "Nur die Leute, die hier wohnen, dürfen hier waschen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Waschraum' (laundry room), 'Hausbewohner' (building residents), 'Benutzung nur für' (usage only for) restrict usage. 'Leute, die hier wohnen' (people who live here) is a paraphrase of 'Hausbewohner'.",
+            "Explanation_Answer": "'Waschraum Benutzung nur für Hausbewohner' (Laundry room Usage only for building residents) limits the laundry room use to residents. 'Nur die Leute, die hier wohnen, dürfen hier waschen' (Only the people who live here are allowed to wash here) correctly rephrases 'Hausbewohner' as 'Leute, die hier wohnen'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Cinema Lobby",
+            "Noticeboard": "Filmkasse\nrechts vom Eingang.",
+            "Statement": "Die Kasse ist nicht links.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Filmkasse' (cinema ticket counter), 'rechts vom Eingang' (right of the entrance) are cinema-specific locations. 'nicht links' (not left) is the implied opposite of 'rechts'.",
+            "Explanation_Answer": "'Filmkasse rechts vom Eingang' (Cinema ticket counter right of the entrance) specifies the location as 'rechts' (right). 'Die Kasse ist nicht links' (The ticket counter is not left) is a correct deduction, as 'rechts' and 'links' are opposite directions."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Park Playground",
+            "Noticeboard": "Spielgeräte\nauf eigene Gefahr benutzen.",
+            "Statement": "Die Benutzung der Geräte ist nicht ohne Risiko.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Spielgeräte' (playground equipment), 'auf eigene Gefahr benutzen' (use at own risk), 'Gefahr' (risk/danger) imply user responsibility and potential risk. 'nicht ohne Risiko' (not without risk) is a synonym for 'auf eigene Gefahr'.",
+            "Explanation_Answer": "'Spielgeräte auf eigene Gefahr benutzen' (Playground equipment use at own risk) means users are responsible for their safety and there's inherent risk. 'Die Benutzung der Geräte ist nicht ohne Risiko' (The use of the equipment is not without risk) is a correct paraphrase of 'auf eigene Gefahr'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Train Station Platform",
+            "Noticeboard": "Bitte Abstand zur Bahnsteigkante halten!",
+            "Statement": "Man soll nicht zu nah am Gleis stehen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Abstand zur Bahnsteigkante halten' (keep distance to the platform edge), 'Bahnsteigkante' (platform edge), 'Abstand halten' (keep distance) are train platform safety instructions. 'nicht zu nah am Gleis stehen' (not stand too close to the track) is the implied safety measure.",
+            "Explanation_Answer": "'Bitte Abstand zur Bahnsteigkante halten!' (Please keep distance to the platform edge!) is a safety instruction. 'Man soll nicht zu nah am Gleis stehen' (One should not stand too close to the track) is a correct interpretation of 'Abstand zur Bahnsteigkante halten'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Supermarket Produce Section",
+            "Noticeboard": "Regionale Produkte\naus der Umgebung.",
+            "Statement": "Das Obst und Gemüse kommt von hier.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Regionale Produkte' (regional products), 'Umgebung' (surroundings/vicinity) indicate local sourcing. 'Obst und Gemüse' (fruit and vegetables) is implied as a 'Produkt' in this supermarket section. 'kommt von hier' (comes from here) is a generalisation of 'Umgebung'.",
+            "Explanation_Answer": "'Regionale Produkte aus der Umgebung' (Regional products from the vicinity) means the products are locally sourced. 'Das Obst und Gemüse kommt von hier' (The fruit and vegetables come from here) is a reasonable assumption in a supermarket produce section selling 'Regionale Produkte'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Doctor's Office Door",
+            "Noticeboard": "Sprechstunde beendet.\nWieder ab Montag 8 Uhr.",
+            "Statement": "Die Praxis ist jetzt zu.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Sprechstunde beendet' (consultation hour ended), 'Wieder ab Montag 8 Uhr' (again from Monday 8 AM), 'Praxis' (practice/office) are doctor's office related terms indicating closure after consultation hours end. 'jetzt zu' (closed now) is the implied status after 'Sprechstunde beendet'.",
+            "Explanation_Answer": "'Sprechstunde beendet. Wieder ab Montag 8 Uhr' (Consultation hour ended. Again from Monday 8 AM) indicates that the consultation hours are over for now and will resume on Monday. 'Die Praxis ist jetzt zu' (The practice is closed now) is a correct conclusion as 'Sprechstunde beendet' implies closure until Monday."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Library Quiet Area",
+            "Noticeboard": "Ruhezone!\nBitte Gespräche vermeiden.",
+            "Statement": "Hier soll man nicht laut sprechen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Ruhezone' (quiet zone), 'Gespräche vermeiden' (avoid conversations), 'vermeiden' (avoid) are library-specific quietness instructions. 'nicht laut sprechen' (not speak loudly) is the implied behavior in a 'Ruhezone'.",
+            "Explanation_Answer": "'Ruhezone! Bitte Gespräche vermeiden' (Quiet zone! Please avoid conversations) is a request for silence or minimal noise. 'Hier soll man nicht laut sprechen' (Here one should not speak loudly) is a correct interpretation of 'Gespräche vermeiden' in a 'Ruhezone'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Restaurant Entrance",
+            "Noticeboard": "Wir empfehlen\nTischreservierung am Wochenende.",
+            "Statement": "Es ist besser, am Wochenende einen Tisch zu bestellen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Wir empfehlen Tischreservierung' (We recommend table reservation), 'am Wochenende' (on the weekend), 'empfehlen' (recommend) imply a strong suggestion, not obligation. 'besser, einen Tisch zu bestellen' (better to order a table) is a synonym for 'empfehlen Tischreservierung'.",
+            "Explanation_Answer": "'Wir empfehlen Tischreservierung am Wochenende' (We recommend table reservation on the weekend) is a strong suggestion for reservation. 'Es ist besser, am Wochenende einen Tisch zu bestellen' (It is better to order a table on the weekend) correctly conveys the recommendation as a good idea, using 'besser' (better)."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Swimming Pool Area",
+            "Noticeboard": "Kein Zutritt\nfür Personen mit ansteckenden Krankheiten.",
+            "Statement": "Kranke Leute dürfen hier nicht rein.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Kein Zutritt' (no entry), 'Personen mit ansteckenden Krankheiten' (persons with contagious diseases), 'ansteckenden Krankheiten' (contagious diseases) are health and safety related terms for a swimming pool. 'Kranke Leute' (sick people) is a generalisation of 'Personen mit ansteckenden Krankheiten'.",
+            "Explanation_Answer": "'Kein Zutritt für Personen mit ansteckenden Krankheiten' (No entry for persons with contagious diseases) prohibits entry for people who are ill with contagious diseases. 'Kranke Leute dürfen hier nicht rein' (Sick people are not allowed in here) is a correct, albeit more general, interpretation of the notice."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Bike Path Sign",
+            "Noticeboard": "Radweg\nBenutzung für Fußgänger nicht gestattet.",
+            "Statement": "Fußgänger dürfen hier nicht Fahrrad fahren.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Radweg' (bike path), 'Benutzung für Fußgänger nicht gestattet' (usage for pedestrians not allowed), 'nicht gestattet' (not allowed), 'Fußgänger' (pedestrians) specify path usage restrictions. 'Fußgänger dürfen hier nicht Fahrrad fahren' (Pedestrians are not allowed to ride bikes here) is logically correct, although slightly indirect, as pedestrians shouldn't be cycling on a bike path anyway.",
+            "Explanation_Answer": "The notice 'Radweg Benutzung für Fußgänger nicht gestattet' (Bike path Usage for pedestrians not allowed) is a bit strangely worded for the statement.  However, the *intent* is that this path is for bikes, not pedestrians. While literally, the statement 'Fußgänger dürfen hier nicht Fahrrad fahren' is true (pedestrians generally don't ride bikes),  in the context of a bike path, the *underlying meaning* is that pedestrians shouldn't be *on* the bike path, which implies they also shouldn't be cycling there.  It’s a slightly convoluted logic for A1 hard, but technically, pedestrians (who are the subject of the 'nicht gestattet' part) *shouldn't* be cycling on a bike path, so the statement, while odd, is 'richtig' in a roundabout way due to double negation and implied context.  A better statement aligned to A1 would be: 'Fußgänger dürfen diesen Weg nicht benutzen.' (Pedestrians are not allowed to use this path.)"
+          },
+          {
+            "Level": "Hard",
+            "Location": "Park Bench",
+            "Noticeboard": "Sitzgelegenheit\nfür 2 Personen.",
+            "Statement": "Hier können zwei Leute sitzen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Sitzgelegenheit' (seating opportunity), 'für 2 Personen' (for 2 persons) specify capacity. 'zwei Leute sitzen' (two people sit) is a direct interpretation of seating for 2 people.",
+            "Explanation_Answer": "'Sitzgelegenheit für 2 Personen' (Seating opportunity for 2 persons) indicates the bench is designed for two people. 'Hier können zwei Leute sitzen' (Here two people can sit) is a direct and correct interpretation of the capacity."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Shop Window - Sale Sign",
+            "Noticeboard": "Reduziert\nbis zu 70%!",
+            "Statement": "Man kann hier billiger einkaufen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Reduziert' (reduced), 'bis zu 70%' (up to 70%) indicate discounts. 'billiger einkaufen' (shop cheaper) is the general purpose of 'Reduziert' sales. 'bis zu 70%' implies potentially significant savings.",
+            "Explanation_Answer": "'Reduziert bis zu 70%!' (Reduced up to 70%!) advertises a sale with price reductions. 'Man kann hier billiger einkaufen' (One can shop cheaper here) is a correct conclusion as 'Reduziert' and 'bis zu 70%' both indicate lower prices than usual."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Train Station Waiting Room",
+            "Noticeboard": "Wartebereich\nfür Reisende mit Fahrkarte.",
+            "Statement": "Nur Leute mit Ticket dürfen hier warten.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Wartebereich' (waiting area), 'Reisende mit Fahrkarte' (travelers with ticket), 'nur für' (only for) restrict access. 'Leute mit Ticket' (people with ticket) is a paraphrase of 'Reisende mit Fahrkarte'.",
+            "Explanation_Answer": "'Wartebereich für Reisende mit Fahrkarte' (Waiting area for travelers with ticket) limits the use of the waiting area to ticket holders. 'Nur Leute mit Ticket dürfen hier warten' (Only people with a ticket are allowed to wait here) correctly rephrases 'Reisende mit Fahrkarte' as 'Leute mit Ticket' and highlights the restriction implied by 'für Reisende mit Fahrkarte'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Museum Information Desk",
+            "Noticeboard": "Informationen zum Museum\nerhalten Sie hier.",
+            "Statement": "Wenn man Fragen hat, ist man hier richtig.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Informationen zum Museum erhalten Sie hier' (Information about the museum you receive here), 'erhalten Sie hier' (receive here) indicates information provision. 'Fragen hat' (has questions), 'hier richtig' (right here) imply seeking information by asking questions.",
+            "Explanation_Answer": "'Informationen zum Museum erhalten Sie hier' (Information about the museum you receive here) indicates this is the place to get museum information. 'Wenn man Fragen hat, ist man hier richtig' (If one has questions, one is in the right place here) is a correct deduction, as asking questions is a common way to 'erhalten Informationen'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Park Area",
+            "Noticeboard": "Hunde bitte an der kurzen Leine führen.",
+            "Statement": "Hunde müssen an die Leine.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Hunde bitte an der kurzen Leine führen' (Dogs please lead on a short leash), 'kurzen Leine' (short leash), 'führen' (lead/guide) specify leash type. 'Hunde müssen an die Leine' (Dogs must be on a leash) is a generalization, omitting 'kurz' but still capturing the leash requirement.",
+            "Explanation_Answer": "'Hunde bitte an der kurzen Leine führen' (Dogs please lead on a short leash) instructs dog owners to use a leash. 'Hunde müssen an die Leine' (Dogs must be on a leash) is a slightly simplified but still correct statement, even if it omits the 'kurz' detail. The core instruction is 'an die Leine'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Restaurant - Dessert Menu",
+            "Noticeboard": "Dessertempfehlung:\nApfelstrudel mit Vanilleeis",
+            "Statement": "Es gibt Apfelstrudel mit Eis.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Dessertempfehlung' (dessert recommendation), 'Apfelstrudel mit Vanilleeis' (apple strudel with vanilla ice cream) are dessert-specific terms. 'Apfelstrudel mit Eis' (apple strudel with ice cream) is a shortened version, omitting 'Vanille' but still correct.",
+            "Explanation_Answer": "'Dessertempfehlung: Apfelstrudel mit Vanilleeis' (Dessert recommendation: Apple strudel with vanilla ice cream) recommends a specific dessert combination. 'Es gibt Apfelstrudel mit Eis' (There is apple strudel with ice cream) is correct, even though it simplifies 'Vanilleeis' to just 'Eis' (ice cream), as vanilla ice cream is still a type of ice cream."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Train Station - Luggage Lockers",
+            "Noticeboard": "Gepäckschließfächer\nfür Koffer und Taschen.",
+            "Statement": "Man kann hier Koffer einschließen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Gepäckschließfächer' (luggage lockers), 'Koffer und Taschen' (suitcases and bags), 'einschließen' (lock in/store) are travel luggage specific terms. 'Koffer einschließen' (lock in suitcases) is a direct use case of 'Gepäckschließfächer'.",
+            "Explanation_Answer": "'Gepäckschließfächer für Koffer und Taschen' (Luggage lockers for suitcases and bags) indicates the purpose of these lockers. 'Man kann hier Koffer einschließen' (One can lock in suitcases here) is a direct and correct use of 'Gepäckschließfächer' as they are intended for 'Koffer'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Supermarket - Fish Counter",
+            "Noticeboard": "Frischer Fisch\nTagesangebot beachten!",
+            "Statement": "Es gibt heute frischen Fisch zu kaufen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Frischer Fisch' (fresh fish), 'Tagesangebot beachten' (note daily offer), 'Tagesangebot' (daily offer) implies variable availability. 'frischen Fisch zu kaufen' (buy fresh fish) is generally true, but 'Tagesangebot beachten' adds nuance.",
+            "Explanation_Answer": "'Frischer Fisch Tagesangebot beachten!' (Fresh fish Note daily offer!) advertises fresh fish and directs attention to the daily specials. 'Es gibt heute frischen Fisch zu kaufen' (There is fresh fish to buy today) is a correct assumption as the notice promotes 'Frischer Fisch', even with the 'Tagesangebot' qualification suggesting variety changes daily."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Doctor's Office Reception Desk",
+            "Noticeboard": "Rezeptabholung\nbitte ab 14 Uhr.",
+            "Statement": "Man kann Rezepte am Nachmittag abholen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Rezeptabholung' (prescription collection), 'ab 14 Uhr' (from 2 PM), 'Nachmittag' (afternoon) specify time for prescription pickup. 'Rezepte am Nachmittag abholen' (collect prescriptions in the afternoon) is a generalization of 'ab 14 Uhr' into 'Nachmittag'.",
+            "Explanation_Answer": "'Rezeptabholung bitte ab 14 Uhr' (Prescription collection please from 2 PM) specifies a starting time for collection. 'Man kann Rezepte am Nachmittag abholen' (One can collect prescriptions in the afternoon) is correct because 2 PM is in the 'Nachmittag' (afternoon)."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Library - Returns Area",
+            "Noticeboard": "Medienrückgabe\nbitte in den Automaten.",
+            "Statement": "Man soll die Sachen in den Automaten tun.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Medienrückgabe' (media return), 'Automaten' (machine/automat), 'in den Automaten' (into the machine) are library-specific return instructions. 'Sachen in den Automaten tun' (put things in the machine) is a generalisation of 'Medienrückgabe in den Automaten'.",
+            "Explanation_Answer": "'Medienrückgabe bitte in den Automaten' (Media return please into the machine) instructs users to return media items using the machine. 'Man soll die Sachen in den Automaten tun' (One should put the things in the machine) is correct, using 'Sachen' (things) as a general term for 'Medien' (media)."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Park Entrance - Rule Sign",
+            "Noticeboard": "Offenes Feuer\nund Grillen untersagt!",
+            "Statement": "Man darf hier kein Feuer machen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Offenes Feuer und Grillen untersagt' (Open fire and barbecuing prohibited), 'untersagt' (prohibited), 'Offenes Feuer' (open fire) are park rule terms. 'kein Feuer machen' (not make fire) is a generalization encompassing both 'Offenes Feuer' and 'Grillen'.",
+            "Explanation_Answer": "'Offenes Feuer und Grillen untersagt!' (Open fire and barbecuing prohibited!) forbids both open fires and barbecuing. 'Man darf hier kein Feuer machen' (One is not allowed to make fire here) is correct as 'Offenes Feuer' is a type of 'Feuer' (fire), and both are 'untersagt'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Restaurant - Special Offers Board",
+            "Noticeboard": "Happy Hour\nCocktails 5 Euro!\n17-19 Uhr",
+            "Statement": "In dieser Zeit sind Cocktails billiger.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Happy Hour', 'Cocktails 5 Euro', '17-19 Uhr' are bar/restaurant offer terms. 'billiger' (cheaper) is the implied price reduction during 'Happy Hour'.",
+            "Explanation_Answer": "'Happy Hour Cocktails 5 Euro! 17-19 Uhr' (Happy Hour Cocktails 5 Euros! 5-7 PM) advertises a special price for cocktails during 'Happy Hour'. 'In dieser Zeit sind Cocktails billiger' (During this time cocktails are cheaper) is correct as '5 Euro' for cocktails during 'Happy Hour' implies a reduced price compared to regular hours."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Train Station - Ticket Vending Machine",
+            "Noticeboard": "Tickets für Nahverkehr\nhier erhältlich.",
+            "Statement": "Man kann hier Fahrkarten für kurze Strecken kaufen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Tickets für Nahverkehr hier erhältlich' (Tickets for local transport available here), 'Nahverkehr' (local transport), 'erhältlich' (available) specify ticket type and availability. 'Fahrkarten für kurze Strecken kaufen' (buy tickets for short distances) is a description of 'Nahverkehr'.",
+            "Explanation_Answer": "'Tickets für Nahverkehr hier erhältlich' (Tickets for local transport available here) indicates that this machine sells tickets for 'Nahverkehr' (local transport). 'Man kann hier Fahrkarten für kurze Strecken kaufen' (One can buy tickets for short distances here) is correct as 'Nahverkehr' generally refers to transport for shorter, local distances."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Zoo - Animal Enclosure Sign",
+            "Noticeboard": "Bitte Abstand halten\nzu den Tieren!",
+            "Statement": "Man soll nicht zu nah an die Tiere gehen.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Bitte Abstand halten zu den Tieren!' (Please keep distance to the animals!), 'Abstand halten' (keep distance), 'Tiere' (animals) are zoo safety instructions. 'nicht zu nah an die Tiere gehen' (not go too close to the animals) is a paraphrase of 'Abstand halten zu den Tieren'.",
+            "Explanation_Answer": "'Bitte Abstand halten zu den Tieren!' (Please keep distance to the animals!) is a safety instruction in a zoo. 'Man soll nicht zu nah an die Tiere gehen' (One should not go too close to the animals) is a correct interpretation of 'Abstand halten zu den Tieren'."
+          },
+          {
+            "Level": "Hard",
+            "Location": "Apartment Building - Recycling Bins",
+            "Noticeboard": "Papiercontainer\nnur für Papier und Karton.",
+            "Statement": "In diesen Container gehört Papier.",
+            "Answer": "richtig",
+            "Explanation_Level": "Hard because 'Papiercontainer' (paper container), 'nur für Papier und Karton' (only for paper and cardboard), 'Container' (container), 'Papier und Karton' (paper and cardboard) are recycling specific terms. 'In diesen Container gehört Papier' (Paper belongs in this container) is a direct consequence of 'Papiercontainer' and 'nur für Papier'.",
+            "Explanation_Answer": "'Papiercontainer nur für Papier und Karton' (Paper container only for paper and cardboard) specifies the purpose of this container. 'In diesen Container gehört Papier' (Paper belongs in this container) is correct as 'Papier' is explicitly listed as allowed in the 'Papiercontainer'."
+          }
+        
+    
+]

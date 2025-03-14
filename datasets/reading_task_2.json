@@ -1,302 +1,1027 @@
 [
   {
-    "scenario": "Sie möchten Pizza essen. Wo finden Sie eine Speisekarte?",
-    "answer": "www.pizzeria-bella-italia.de\nPizza Pasta Salate Getränke Online bestellen Öffnungszeiten",
-    "interferer": "www.hotel-zur-post.de\nZimmer Frühstück Mittagessen Abendessen Restaurant Bar Preise"
+    "level": "hard",
+    "scenario": "Sie möchten am Samstag mit Freunden grillen und brauchen Fleisch.",
+    "answer": "www.fleischerei-meistergrill.de\nFrisches Fleisch Grillfleisch Wurst Spezialitäten Angebote Samstag geöffnet",
+    "interferer": "www.supermarkt-wochenende.de\nLebensmittel Angebote Wochenende Obst Gemüse Getränke Fleisch Kühlregal",
+    "explanation": "The scenario is about needing meat for grilling on Saturday. 'Fleischerei-meistergrill.de' specializes in 'Grillfleisch' (grill meat) and is 'Samstag geöffnet' (open Saturday). 'Supermarkt-wochenende.de' also offers 'Fleisch' (meat) but in a general supermarket setting ('Kühlregal' - refrigerated section), less specialized for grilling, although plausible."
   },
   {
-    "scenario": "Sie suchen ein Geschenk für einen Freund zum Geburtstag.",
-    "answer": "www.geschenkidee-online.de\nOriginelle Geschenke für jeden Anlass Geburtstag Weihnachten Hochzeit",
-    "interferer": "www.blumen-sonnenschein.de\nBlumensträuße Rosen Gestecke Trauerfloristik Lieferung"
+    "level": "hard",
+    "scenario": "Ihr Auto macht komische Geräusche. Sie suchen eine Werkstatt für eine schnelle Kontrolle.",
+    "answer": "www.kfz-schnellservice-check.de\nKFZ Schnellservice Auto Check Inspektion Ölwechsel Bremsen Sofort Hilfe",
+    "interferer": "www.auto-ersatzteile-shop.de\nAuto Ersatzteile Online Shop Autoteile Zubehör Werkzeug Marken Teile Versand",
+    "explanation": "The scenario is about a car making noises and needing a quick check at a workshop. 'KFZ-schnellservice-check.de' offers 'KFZ Schnellservice' (car quick service) and 'Auto Check' (car check) and 'Sofort Hilfe' (immediate help). 'Auto-ersatzteile-shop.de' sells 'Auto Ersatzteile' (car spare parts), useful for repairs, but not a quick check service."
   },
   {
-    "scenario": "Sie wollen wissen, wann der Bus zum Bahnhof fährt.",
-    "interferer": "www.fahrrad-reparatur.de\nFahrradreparatur Werkstatt Zubehör Ersatzteile Service",
-    "answer": "www.bus-fahrplan-online.de\nFahrpläne Abfahrtszeiten Ankunftszeiten Haltestellen Informationen"
+    "level": "hard",
+    "scenario": "Sie möchten am Sonntag frische Brötchen zum Frühstück holen.",
+    "answer": "www.baeckerei-sonntagsbroetchen.de\nSonntagsbrötchen Frische Brötchen Brot Kuchen Gebäck Sonntag geöffnet",
+    "interferer": "www.cafe-fruehstueck-haus.de\nFrühstücksbuffet Kaffee Kuchen Brötchen Mittagstisch Warme Speisen Sonntag Brunch",
+    "explanation": "The scenario is about getting fresh bread rolls for Sunday breakfast. 'Baeckerei-sonntagsbroetchen.de' specializes in 'Sonntagsbrötchen' (Sunday bread rolls) and is 'Sonntag geöffnet' (open Sunday). 'Cafe-fruehstueck-haus.de' offers 'Brötchen' (bread rolls) as part of a 'Frühstücksbuffet' (breakfast buffet), but it is a cafe and might be for eating there, not necessarily taking away fresh rolls."
   },
   {
-    "scenario": "Sie möchten ein Buch für Kinder kaufen.",
-    "answer": "www.kinderbuch-paradies.de\nBücher für Kinder und Jugendliche Vorlesebücher Lernbücher Bilderbücher",
-    "interferer": "www.spielzeug-traum.de\nSpielzeug Puppen Autos Spiele Eisenbahnen Modelleisenbahnen"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob es in Hamburg besondere Veranstaltungen für Kinder gibt.",
+    "answer": "www.kinderveranstaltungen-hamburg.de\nKinderveranstaltungen Hamburg Events Kinderprogramm Theater Musik Feste Termine",
+    "interferer": "www.familienausfluege-hamburg.de\nFamilienausflüge Hamburg Freizeitparks Spielplätze Zoo Museen Aktivitäten Kinder",
+    "explanation": "The scenario is about finding out about special events for children in Hamburg. 'Kinderveranstaltungen-hamburg.de' lists 'Kinderveranstaltungen Hamburg' (children's events Hamburg) and 'Kinderprogramm' (children's program). 'Familienausfluege-hamburg.de' suggests 'Familienausflüge' (family outings) like 'Freizeitparks' (theme parks) and 'Spielplätze' (playgrounds), which are activities for children, but not necessarily special events."
   },
   {
-    "scenario": "Sie brauchen neue Schuhe für den Winter.",
-    "interferer": "www.modehaus-schick.de\nDamenmode Herrenmode Kleider Röcke Hosen Jacken Mäntel",
-    "answer": "www.schuhhaus-winterfest.de\nWinterschuhe Stiefel Stiefeletten Warme Schuhe für Damen Herren Kinder"
+    "level": "hard",
+    "scenario": "Ihr Handy ist sehr langsam. Sie suchen Hilfe, um es schneller zu machen.",
+    "answer": "www.handy-optimierung-service.de\nHandy Optimierung Schneller machen Performance verbessern Software Update Beratung",
+    "interferer": "www.handy-reparatur-software.de\nHandy Reparatur Software Fehler Datenrettung Display Reparatur Akku Wechsel",
+    "explanation": "The scenario is about a slow phone and needing help to speed it up. 'Handy-optimierung-service.de' offers 'Handy Optimierung' (phone optimization) and 'Schneller machen' (make faster). 'Handy-reparatur-software.de' offers 'Handy Reparatur Software' (phone software repair) and 'Datenrettung' (data recovery), which is repair-focused, not specifically optimization for speed."
   },
   {
-    "scenario": "Sie möchten einen Kaffee trinken gehen.",
-    "answer": "www.cafe-sonnenschein.de\nKaffee Kuchen Eis Getränke Frühstück Mittagstisch Terrasse",
-    "interferer": "www.restaurant-goldener-loewe.de\nRegionale Küche Mittag Abendessen Spezialitäten Weinkarte Reservierung"
+    "level": "hard",
+    "scenario": "Sie möchten ein Buch für einen gemütlichen Abend zu Hause finden, vielleicht etwas Spannendes.",
+    "answer": "www.spannende-buecher-krimi.de\nSpannende Bücher Krimis Thriller Psychothriller Bestseller Neuerscheinungen",
+    "interferer": "www.buchhandlung-abendstunden.de\nBücher Romane Sachbücher Hörbücher Geschenkbücher Abendveranstaltungen Lesungen",
+    "explanation": "The scenario is about finding a book for a cozy evening, maybe something exciting. 'Spannende-buecher-krimi.de' offers 'Spannende Bücher Krimis' (exciting books crime novels) and 'Thriller'. 'Buchhandlung-abendstunden.de' is a bookshop with 'Abendveranstaltungen Lesungen' (evening events readings), suggesting a place for evening book activities, but less focused on the 'spannend' (exciting) aspect of the book itself."
   },
   {
-    "scenario": "Sie suchen eine Wohnung in Berlin.",
-    "answer": "www.berlin-wohnungen.de\nWohnungen zur Miete und zum Kauf in Berlin Stadtteile Angebote",
-    "interferer": "www.ferienwohnung-deutschland.de\nFerienwohnungen in Deutschland Urlaub Unterkunft Ferienhaus"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein bestimmter Arzt in der Nähe am Mittwoch Sprechstunde hat.",
+    "answer": "www.arztpraxis-mittwoch-offen.de\nArztpraxis Sprechstunde Mittwoch Geöffnet Termine Vereinbarung Facharzt Allgemeinmedizin",
+    "interferer": "www.arzttermine-online-buchen.de\nArzttermine Online Buchen Facharzt Terminauswahl Sprechstunden Kalender Ärzteverzeichnis",
+    "explanation": "The scenario is about checking if a specific doctor nearby has consultation hours on Wednesday. 'Arztpraxis-mittwoch-offen.de' indicates 'Arztpraxis Sprechstunde Mittwoch Geöffnet' (doctor's office consultation hours Wednesday open). 'Arzttermine-online-buchen.de' is for 'Arzttermine Online Buchen' (book doctor's appointments online) and 'Terminauswahl Sprechstunden' (appointment selection consultation hours), which allows booking but doesn't directly confirm if *a specific* doctor is open on Wednesday."
   },
   {
-    "scenario": "Sie möchten ein Auto mieten für ein Wochenende.",
-    "answer": "www.mietwagen-express.de\nMietwagen PKW Transporter Wochenendtarife Sonderangebote",
-    "interferer": "www.fahrradverleih-berlin.de\nFahrradverleih Mountainbikes E-Bikes Touren Reparatur Service"
+    "level": "hard",
+    "scenario": "Sie möchten für eine Party viele Getränke kaufen, am besten günstigere Angebote.",
+    "answer": "www.getraenke-grosshandel-party.de\nGetränke Großhandel Party Getränke Angebote Mengenrabatt Lieferung Bier Wein Limonade",
+    "interferer": "www.supermarkt-partybedarf.de\nSupermarkt Partybedarf Getränke Knabbereien Deko Einweggeschirr Angebote Prospekt",
+    "explanation": "The scenario is about buying many drinks for a party, preferably with cheaper offers. 'Getraenke-grosshandel-party.de' is a 'Getränke Großhandel' (drinks wholesaler) offering 'Party Getränke' (party drinks) and 'Mengenrabatt' (quantity discount). 'Supermarkt-partybedarf.de' is a supermarket with 'Partybedarf' (party supplies) including 'Getränke' (drinks), but might not offer the same bulk discounts as a wholesaler."
   },
   {
-    "scenario": "Sie wollen wissen, wie das Wetter morgen wird.",
-    "answer": "www.wettervorhersage-online.de\nWetter morgen Übermorgen 7 Tage Wetterbericht Regenradar",
-    "interferer": "www.nachrichten-heute.de\nNachrichten Politik Wirtschaft Sport Kultur Regional International"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob es in einem bestimmten Schwimmbad Kurse für Babys gibt.",
+    "answer": "www.schwimmbad-babykurse.de\nSchwimmbad Babykurse Schwimmkurse Kinderkurse Wassergewöhnung Anfänger Kurse",
+    "interferer": "www.familienbad-spassbad.de\nFamilienbad Spassbad Rutschen Kinderbecken Babybereich Spielgeräte Schwimmkurse",
+    "explanation": "The scenario is about checking if a specific swimming pool offers baby courses. 'Schwimmbad-babykurse.de' directly mentions 'Schwimmbad Babykurse' (swimming pool baby courses). 'Familienbad-spassbad.de' is a 'Familienbad Spassbad' (family fun pool) with a 'Babybereich' (baby area) and 'Schwimmkurse' (swimming courses), suggesting baby facilities and courses might be available, but less directly confirming baby-specific courses."
   },
   {
-    "scenario": "Sie möchten einen Deutschkurs besuchen.",
-    "answer": "www.sprachschule-international.de\nDeutschkurse für Anfänger Fortgeschrittene Intensivkurse Abendkurse",
-    "interferer": "www.sportverein-eintracht.de\nSportkurse Fitness Yoga Fußball Schwimmen Tennis Mitgliedschaft"
+    "level": "hard",
+    "scenario": "Sie suchen ein Geschenk für einen Teenager-Jungen, der sich für Technik interessiert.",
+    "answer": "www.technikgeschenke-teenager-jungen.de\nTechnik Geschenke Teenager Jungen Gadgets Elektronik Spiele Konsolen Geburtstag",
+    "interferer": "www.spielzeugladen-moderne-kids.de\nSpielzeug Kinder Jugendliche Modern Trend Spielzeug Elektronisches Spielzeug Roboter",
+    "explanation": "The scenario is about a gift for a teenage boy interested in technology. 'Technikgeschenke-teenager-jungen.de' directly targets 'Technik Geschenke Teenager Jungen' (tech gifts teenage boys). 'Spielzeugladen-moderne-kids.de' is a 'Spielzeugladen' (toy shop) for 'Kinder Jugendliche' (children and teenagers) with 'Elektronisches Spielzeug' (electronic toys), which might include tech gifts, but is broader and less specific to teenage boys' tech interests."
   },
   {
-    "scenario": "Sie suchen ein Rezept für einen Kuchen.",
-    "answer": "www.kuchen-rezepte-welt.de\nRezepte für Kuchen Torten Kekse Backen einfach schnell lecker",
-    "interferer": "www.kochbuch-online.de\nRezepte für Suppen Hauptspeisen Desserts Salate Vorspeisen"
+    "level": "hard",
+    "scenario": "Sie möchten ein Hotel in der Nähe des Zentrums finden, aber es sollte nicht zu teuer sein.",
+    "answer": "www.hotel-zentrum-guenstig.de\nHotel Zentrum Günstig Preiswert Innenstadt Nähe Zentrale Lage Angebote",
+    "interferer": "www.stadthotel-komfort-zentrum.de\nStadthotel Komfort Zentrum Zentrale Lage Bequeme Zimmer Frühstücksbuffet Restaurant",
+    "explanation": "The scenario is about a hotel near the center that isn't too expensive. 'Hotel-zentrum-guenstig.de' offers 'Hotel Zentrum Günstig' (hotel center cheap) and 'Preiswert' (value for money). 'Stadthotel-komfort-zentrum.de' is a 'Stadthotel Komfort Zentrum' (city hotel comfort center) emphasizing 'Komfort' (comfort) and 'Bequeme Zimmer' (comfortable rooms), suggesting quality but potentially higher price, even if centrally located."
   },
   {
-    "scenario": "Sie möchten ein Ticket für ein Fußballspiel kaufen.",
-    "answer": "www.fussball-tickets-online.de\nTickets für Bundesliga Champions League DFB-Pokal Spiele Termine",
-    "interferer": "www.kino-programm-heute.de\nKinoprogramm Filme heute Abend Vorstellungen Tickets online kaufen"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein Museum auch am Sonntagabend geöffnet ist.",
+    "answer": "www.museum-sonntagabend-offen.de\nMuseum Sonntagabend Geöffnet Lange Öffnungszeiten Abendöffnung Kunstausstellung",
+    "interferer": "www.wochenend-museum-guide.de\nWochenend Museum Guide Samstag Sonntag Museen Ausstellungen Tipps Empfehlungen",
+    "explanation": "The scenario is about checking if a museum is open on Sunday evening. 'Museum-sonntagabend-offen.de' states 'Museum Sonntagabend Geöffnet' (museum Sunday evening open) and 'Abendöffnung' (evening opening). 'Wochenend-museum-guide.de' is a 'Wochenend Museum Guide' (weekend museum guide) for 'Samstag Sonntag' (Saturday Sunday), covering weekend opening, but not specifically Sunday evening opening."
   },
   {
-    "scenario": "Sie wollen ein neues Handy kaufen.",
-    "answer": "www.handy-shop-online.de\nHandys Smartphones Tablets Zubehör Verträge Angebote Marken",
-    "interferer": "www.moebel-discount.de\nMöbel Sofas Betten Schränke Tische Stühle Lampen Wohnaccessoires"
+    "level": "hard",
+    "scenario": "Sie brauchen neue Batterien für eine Fernbedienung, am besten wiederaufladbare.",
+    "answer": "www.batterien-wiederaufladbar-shop.de\nWiederaufladbare Batterien Akkus Ladegeräte AA AAA Mignon Micro Umweltfreundlich",
+    "interferer": "www.elektronikmarkt-batterien.de\nElektronik Markt Batterien Alkaline Lithium Knopfzellen Spezialbatterien Marken",
+    "explanation": "The scenario is about needing rechargeable batteries for a remote control. 'Batterien-wiederaufladbar-shop.de' specializes in 'Wiederaufladbare Batterien' (rechargeable batteries) and 'Akkus' (rechargeable batteries). 'Elektronikmarkt-batterien.de' is an 'Elektronik Markt' (electronics market) with 'Batterien' (batteries) including 'Alkaline' and 'Lithium', which are types of batteries, but not explicitly rechargeable."
   },
   {
-    "scenario": "Sie möchten einen Arzttermin machen.",
-    "answer": "www.arztpraxis-zentrum.de\nÄrzte Allgemeinmedizin Innere Medizin Termine online buchen Sprechzeiten",
-    "interferer": "www.apotheke-gesundheit.de\nApotheke Medikamente Beratung Notdienst Öffnungszeiten"
+    "level": "hard",
+    "scenario": "Sie möchten ein Geschenk für eine ältere Dame finden, die gerne liest und klassische Musik hört.",
+    "answer": "www.geschenke-leseratte-musikfreundin.de\nGeschenke Leseratte Musikfreundin Bücher Klassische Musik CDs Hörbücher Geschenksets",
+    "interferer": "www.kulturgeschenke-online.de\nKultur Geschenke Theater Konzert Oper Museum Eintrittskarten Gutscheine Erlebnisgeschenke",
+    "explanation": "The scenario is about a gift for an elderly lady who likes reading and classical music. 'Geschenke-leseratte-musikfreundin.de' targets 'Geschenke Leseratte Musikfreundin' (gifts bookworm music friend) and mentions 'Bücher Klassische Musik CDs'. 'Kulturgeschenke-online.de' offers 'Kultur Geschenke' (culture gifts) like 'Theater Konzert Oper', which are cultural but broader than just books and classical music and might not suit an elderly person's specific preferences as well."
   },
   {
-    "scenario": "Sie suchen ein Hotel in München.",
-    "answer": "www.hotel-muenchen-zentrum.de\nHotels in München Zentrum Stadtmitte Übernachtung Zimmer Preise",
-    "interferer": "www.jugendherberge-bayern.de\nJugendherbergen in Bayern Übernachtung für junge Leute Gruppen Familien"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein Kino in der Nähe Filme in Originalsprache (nicht synchronisiert) zeigt.",
+    "answer": "www.kino-originalsprache-filme.de\nKino Originalsprache Filme OV Englisch Französisch Untertitel Programm",
+    "interferer": "www.multiplexkino-filmprogramm.de\nMultiplex Kino Filmprogramm Aktuelle Filme Popcorn Getränke 3D Kino Komfortsitze",
+    "explanation": "The scenario is about finding a cinema nearby showing films in original language. 'Kino-originalsprache-filme.de' specifically shows 'Kino Originalsprache Filme' (cinema original language films) and 'OV' (original version). 'Multiplexkino-filmprogramm.de' is a general 'Multiplex Kino Filmprogramm' (multiplex cinema film program), showing current films, but doesn't specify original language screenings."
   },
   {
-    "scenario": "Sie möchten wissen, was in der Stadt los ist.",
-    "answer": "www.stadt-veranstaltungen.de\nVeranstaltungen Konzerte Theater Ausstellungen Feste Termine",
-    "interferer": "www.stadt-information.de\nStadtplan Sehenswürdigkeiten Geschichte Informationen Tourismus"
+    "level": "hard",
+    "scenario": "Sie möchten ein Rezept für einen Kuchen ohne Zucker finden, da ein Freund Diabetiker ist.",
+    "answer": "www.zuckerfreie-kuchen-rezepte.de\nZuckerfreie Kuchen Rezepte Ohne Zucker Diabetiker Geeignet Süßstoffe Gesund Backen",
+    "interferer": "www.gesunde-kuchen-backen.de\nGesunde Kuchen Backen Vollkorn Obst Weniger Zucker Kalorienarm Fit Genießen",
+    "explanation": "The scenario is about a sugar-free cake recipe for a diabetic friend. 'Zuckerfreie-kuchen-rezepte.de' offers 'Zuckerfreie Kuchen Rezepte' (sugar-free cake recipes) and 'Ohne Zucker Diabetiker Geeignet' (sugar-free suitable for diabetics). 'Gesunde-kuchen-backen.de' offers 'Gesunde Kuchen Backen' (healthy cake baking) with 'Weniger Zucker' (less sugar), which is healthier, but not necessarily completely sugar-free for diabetics."
   },
   {
-    "scenario": "Sie wollen ein Geschenk zum Muttertag finden.",
-    "answer": "www.muttertagsgeschenke-online.de\nGeschenke zum Muttertag Blumen Schmuck Pralinen Ideen Tipps",
-    "interferer": "www.vatertagsgeschenke.de\nGeschenke zum Vatertag Grillen Bier Werkzeug Technik Gadgets"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein bestimmtes Restaurant auch einen Lieferservice anbietet.",
+    "answer": "www.restaurant-lieferservice-direkt.de\nRestaurant Lieferservice Online Bestellung Direkt Lieferung Speisekarte Abholung",
+    "interferer": "www.restaurant-bewertungen-empfehlungen.de\nRestaurant Bewertungen Empfehlungen Küche Ambiente Service Preise Speisekarte Fotos",
+    "explanation": "The scenario is about checking if a specific restaurant offers delivery. 'Restaurant-lieferservice-direkt.de' offers 'Restaurant Lieferservice' (restaurant delivery service) and 'Online Bestellung' (online ordering). 'Restaurant-bewertungen-empfehlungen.de' offers 'Restaurant Bewertungen Empfehlungen' (restaurant reviews and recommendations) and 'Speisekarte' (menu), helpful for choosing a restaurant, but not about delivery service."
   },
   {
-    "scenario": "Sie möchten ein Fahrrad kaufen.",
-    "answer": "www.fahrradladen-online.de\nFahrräder Mountainbikes Citybikes E-Bikes Kinderfahrräder Zubehör",
-    "interferer": "www.autohaus-meier.de\nAutos Neuwagen Gebrauchtwagen Werkstatt Service Reparatur Finanzierung"
+    "level": "hard",
+    "scenario": "Sie suchen einen Kurs, um besser mit Stress im Alltag umzugehen.",
+    "answer": "www.stressbewaeltigung-kurse.de\nStressbewältigung Kurse Entspannungstechniken Meditation Yoga Achtsamkeit Alltag Stressfrei",
+    "interferer": "www.fitness-wellness-angebote.de\nFitness Wellness Angebote Sport Kurse Sauna Massage Entspannung Gesundheit",
+    "explanation": "The scenario is about finding a course to better manage daily stress. 'Stressbewaeltigung-kurse.de' offers 'Stressbewältigung Kurse' (stress management courses) and 'Entspannungstechniken' (relaxation techniques). 'Fitness-wellness-angebote.de' offers 'Fitness Wellness Angebote' (fitness wellness offers) including 'Entspannung' (relaxation), but is broader and less specifically focused on stress management courses as the primary goal."
   },
   {
-    "scenario": "Sie suchen Informationen über Museen in Hamburg.",
-    "answer": "www.museen-hamburg.de\nMuseen in Hamburg Ausstellungen Öffnungszeiten Eintrittspreise Informationen",
-    "interferer": "www.theater-hamburg.de\nTheater in Hamburg Spielplan Vorstellungen Tickets Preise"
+    "level": "hard",
+    "scenario": "Sie möchten ein Geschenk für ein Mädchen zum Geburtstag kaufen, das gerne bastelt und kreativ ist.",
+    "answer": "www.bastelgeschenke-maedchen-geburtstag.de\nBastelgeschenke Mädchen Geburtstag Kreativ Basteln Malen Zeichen Perlen Sets",
+    "interferer": "www.spielzeug-kreativ-kinder.de\nSpielzeug Kreativ Kinder Malen Basteln Knete Farben Stifte Lernspielzeug",
+    "explanation": "The scenario is about a birthday gift for a girl who likes crafting and being creative. 'Bastelgeschenke-maedchen-geburtstag.de' targets 'Bastelgeschenke Mädchen Geburtstag' (craft gifts girls birthday) and 'Kreativ Basteln' (creative crafting). 'Spielzeug-kreativ-kinder.de' is 'Spielzeug Kreativ Kinder' (toys creative children) with 'Malen Basteln Knete' (painting crafting playdough), which is creative toys, but 'Bastelgeschenke-maedchen-geburtstag.de' is more specifically focused on crafting gifts for girls' birthdays."
   },
   {
-    "scenario": "Sie möchten einen Tisch in einem Restaurant reservieren.",
-    "answer": "www.restaurant-reservierung-online.de\nTischreservierung Restaurants finden Tisch online reservieren kostenlos",
-    "interferer": "www.kochkurse-online.de\nKochkurse Online-Kochkurse Rezepte Kochen lernen Tipps Tricks"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein bestimmtes Kleidungsgeschäft auch online Kleidung verkauft.",
+    "answer": "www.modehaus-online-shop.de\nModehaus Online Shop Damenmode Herrenmode Kinderkleidung Versand Lieferung",
+    "interferer": "www.mode-boutique-stadtmitte.de\nMode Boutique Stadtmitte Aktuelle Mode Damen Herren Accessoires Beratung Persönlich",
+    "explanation": "The scenario is about checking if a specific clothing store also sells clothes online. 'Modehaus-online-shop.de' is a 'Modehaus Online Shop' (fashion house online shop) with 'Online Shop' and 'Versand' (shipping). 'Mode-boutique-stadtmitte.de' is a 'Mode Boutique Stadtmitte' (fashion boutique city center), emphasizing a physical store location 'Stadtmitte' (city center) and 'Beratung Persönlich' (personal advice), suggesting in-store shopping, not necessarily online."
   },
   {
-    "scenario": "Sie wollen wissen, wie spät es ist.",
-    "answer": "www.die-uhrzeit.de\nAktuelle Uhrzeit Atomuhr Weltzeit Zeitzonen Zeitumrechnung",
-    "interferer": "www.wetter-deutschland.de\nWetter Deutschland Vorhersage Temperaturen Regen Wind Sonne"
+    "level": "hard",
+    "scenario": "Sie möchten ein Rezept für ein schnelles Mittagessen finden, das man mit wenigen Zutaten kochen kann.",
+    "answer": "www.schnelle-mittagessen-wenige-zutaten.de\nSchnelle Mittagessen Rezepte Wenige Zutaten Einfach Schnell Kochen Alltagstauglich",
+    "interferer": "www.mittagstisch-restaurants-stadt.de\nMittagstisch Restaurants Stadt Angebote Menü Günstig Schnell Mittagspause",
+    "explanation": "The scenario is about finding a recipe for a quick lunch with few ingredients. 'Schnelle-mittagessen-wenige-zutaten.de' offers 'Schnelle Mittagessen Rezepte Wenige Zutaten' (quick lunch recipes few ingredients). 'Mittagstisch-restaurants-stadt.de' lists 'Mittagstisch Restaurants Stadt' (lunch restaurants city) offering 'Mittagstisch' (lunch menu), which is for eating lunch out, not cooking a quick meal at home with few ingredients."
   },
   {
-    "scenario": "Sie suchen einen Parkplatz in der Innenstadt.",
-    "answer": "www.parkhaus-finder.de\nParkhäuser Parkplätze Innenstadt Parkgebühren Öffnungszeiten Navigation",
-    "interferer": "www.tankstellen-suche.de\nTankstellen Benzinpreise Dieselpreise Autowäsche Shop Angebote"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein bestimmtes Fitnessstudio auch spezielle Kurse für Senioren anbietet.",
+    "answer": "www.fitnessstudio-seniorenkurse.de\nFitnessstudio Seniorenkurse Fitness für Ältere Gesundheitskurse Bewegung Kraft Ausdauer",
+    "interferer": "www.fitnessstudio-breites-kursangebot.de\nFitnessstudio Breites Kursangebot Yoga Pilates Zumba Spinning Geräte Training Wellness",
+    "explanation": "The scenario is about checking if a specific fitness studio offers special courses for seniors. 'Fitnessstudio-seniorenkurse.de' directly offers 'Fitnessstudio Seniorenkurse' (fitness studio senior courses) and 'Fitness für Ältere' (fitness for seniors). 'Fitnessstudio-breites-kursangebot.de' offers a 'Breites Kursangebot' (wide range of courses) including 'Yoga Pilates Zumba', suggesting many courses, but not specifically mentioning senior-focused courses."
   },
   {
-    "scenario": "Sie möchten einen Brief verschicken.",
-    "answer": "www.post-online.de\nPostfilialen Briefmarken Pakete Briefe Porto Preise Services",
-    "interferer": "www.bank-online.de\nOnline-Banking Konten Kredite Geldanlagen Überweisungen Daueraufträge"
+    "level": "hard",
+    "scenario": "Sie möchten ein Geschenk für einen Mann zum Geburtstag finden, der gerne Wein trinkt und etwas Besonderes sucht.",
+    "answer": "www.wein-geschenke-maenner-geburtstag.de\nWein Geschenke Männer Geburtstag Edle Weine Weinpakete Wein Zubehör Gourmet Geschenke",
+    "interferer": "www.spirituosen-geschenke-exklusiv.de\nSpirituosen Geschenke Exklusiv Whisky Rum Gin Premium Auswahl Geschenkideen",
+    "explanation": "The scenario is about a birthday gift for a man who likes wine and is looking for something special. 'Wein-geschenke-maenner-geburtstag.de' specifically targets 'Wein Geschenke Männer Geburtstag' (wine gifts men birthday) and 'Edle Weine' (fine wines). 'Spirituosen-geschenke-exklusiv.de' offers 'Spirituosen Geschenke Exklusiv' (exclusive spirits gifts) like 'Whisky Rum Gin', which are alcoholic gifts, but not specifically wine."
   },
   {
-    "scenario": "Sie wollen ein Eis essen gehen.",
-    "answer": "www.eisdiele-sonnenschein.de\nEis Eisbecher Eissorten Kaffee Kuchen Getränke Terrasse Öffnungszeiten",
-    "interferer": "www.baeckerei-lecker.de\nBäckerei Brot Brötchen Kuchen Gebäck Torten Frühstück Mittagstisch"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein bestimmter Parkplatz in der Stadt auch überdacht ist.",
+    "answer": "www.parkhaus-ueberdacht-stadt.de\nParkhaus Überdacht Stadt Zentrum Parken Garage Tiefgarage Stellplätze Sicher",
+    "interferer": "www.parkplatz-suche-stadtmitte.de\nParkplatz Suche Stadtmitte Parkplätze Finden Navigation Parken Innenstadt Zentrum",
+    "explanation": "The scenario is about checking if a specific car park in the city is covered. 'Parkhaus-ueberdacht-stadt.de' is a 'Parkhaus Überdacht Stadt' (covered car park city) and mentions 'Überdacht' (covered) and 'Parkhaus' (parking garage). 'Parkplatz-suche-stadtmitte.de' is a 'Parkplatz Suche Stadtmitte' (parking space search city center), helping to find parking spaces, but doesn't specify if they are covered or not."
   },
   {
-    "scenario": "Sie suchen eine Apotheke in Ihrer Nähe.",
-    "answer": "www.apotheken-notdienst.de\nApotheken Notdienst Apothekenfinder Suche Öffnungszeiten Medikamente",
-    "interferer": "www.krankenhaus-info.de\nKrankenhäuser Kliniken Ärzte Notaufnahme Informationen Behandlung"
+    "level": "hard",
+    "scenario": "Sie möchten ein Rezept für einen Kuchen finden, der schnell und ohne Backen zubereitet wird.",
+    "answer": "www.kuchen-ohne-backen-schnell.de\nKuchen Ohne Backen Schnell Einfache Rezepte Kühlschrank Kuchen Kalt Lecker",
+    "interferer": "www.kuchen-rezepte-einfach-und-schnell.de\nKuchen Rezepte Einfach und Schnell Backen Alltagstauglich Familienkuchen Geburtstagskuchen",
+    "explanation": "The scenario is about a recipe for a cake that is quick and made without baking. 'Kuchen-ohne-backen-schnell.de' offers 'Kuchen Ohne Backen Schnell' (cake without baking quick) and 'Kühlschrank Kuchen' (refrigerator cake). 'Kuchen-rezepte-einfach-und-schnell.de' offers 'Kuchen Rezepte Einfach und Schnell' (cake recipes easy and quick), but still implies 'Backen' (baking), not no-bake."
   },
   {
-    "scenario": "Sie möchten einen Film im Kino sehen.",
-    "answer": "www.kino-programm-online.de\nKinoprogramm Filme heute Abend Vorstellungen Tickets online kaufen",
-    "interferer": "www.fernsehprogramm-heute.de\nFernsehprogramm Heute Abend Sender Sendungen Filme Serien Dokumentationen"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein bestimmter Bus auch nachts fährt.",
+    "answer": "www.nachtbus-fahrplan-stadt.de\nNachtbus Fahrplan Stadt Nachtlinien Busse Fahrzeiten Haltestellen Nachts Unterwegs",
+    "interferer": "www.buslinien-fahrplan-online.de\nBuslinien Fahrplan Online Abfahrtszeiten Ankunftszeiten Liniennetz Haltestellen",
+    "explanation": "The scenario is about checking if a specific bus runs at night. 'Nachtbus-fahrplan-stadt.de' is a 'Nachtbus Fahrplan Stadt' (night bus timetable city) and mentions 'Nachtlinien Busse' (night bus lines). 'Buslinien-fahrplan-online.de' is a general 'Buslinien Fahrplan Online' (bus lines timetable online), providing bus timetables, but not specifically night buses."
   },
   {
-    "scenario": "Sie wollen wissen, wie man öffentliche Verkehrsmittel benutzt.",
-    "answer": "www.oepnv-info.de\nÖffentlicher Nahverkehr Bus Bahn Straßenbahn Fahrpläne Tickets Informationen",
-    "interferer": "www.taxi-zentrale.de\nTaxis Taxi bestellen Taxi rufen Fahrpreise Service Informationen"
+    "level": "hard",
+    "scenario": "Sie suchen ein Geschenk für ein Paar zur Hochzeit, das modern und nicht traditionell sein soll.",
+    "answer": "www.hochzeitsgeschenke-modern-paar.de\nHochzeitsgeschenke Modern Paar Ausgefallen Individuell Erlebnisgeschenke Wohndeko",
+    "interferer": "www.hochzeitsgeschenke-klassisch-traditionell.de\nHochzeitsgeschenke Klassisch Traditionell Geschirr Besteck Gläser Tischwäsche Haushalt",
+    "explanation": "The scenario is about a wedding gift for a couple that should be modern and not traditional. 'Hochzeitsgeschenke-modern-paar.de' targets 'Hochzeitsgeschenke Modern Paar' (modern wedding gifts couple) and 'Ausgefallen Individuell' (unusual individual). 'Hochzeitsgeschenke-klassisch-traditionell.de' offers 'Hochzeitsgeschenke Klassisch Traditionell' (classic traditional wedding gifts) like 'Geschirr Besteck Gläser' (dishes cutlery glasses), which is explicitly traditional and the opposite of what's desired."
   },
   {
-    "scenario": "Sie suchen eine günstige Unterkunft für eine Nacht.",
-    "answer": "www.hostel-buchung-online.de\nHostels Jugendherbergen Günstige Übernachtung Zimmer Preise Bewertungen",
-    "interferer": "www.luxushotel-angebote.de\nLuxushotels 5 Sterne Hotels Wellness Spa Angebote Suiten Zimmer"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein bestimmter Supermarkt auch Bio-Produkte im Angebot hat.",
+    "answer": "www.supermarkt-bio-produkte.de\nSupermarkt Bio Produkte Ökologisch Nachhaltig Gemüse Obst Milchprodukte Fleisch Eier",
+    "interferer": "www.lebensmittel-angebote-supermarkt.de\nLebensmittel Angebote Supermarkt Günstig Prospekt Rabatte Frische Produkte Qualität",
+    "explanation": "The scenario is about checking if a specific supermarket offers organic products. 'Supermarkt-bio-produkte.de' directly offers 'Supermarkt Bio Produkte' (supermarket organic products) and 'Ökologisch Nachhaltig' (ecological sustainable). 'Lebensmittel-angebote-supermarkt.de' offers 'Lebensmittel Angebote Supermarkt' (supermarket food offers) and 'Frische Produkte Qualität' (fresh products quality), focusing on offers and general quality, not specifically organic products."
   },
   {
-    "scenario": "Sie möchten etwas über deutsche Geschichte lernen.",
-    "answer": "www.deutsche-geschichte-online.de\nDeutsche Geschichte Epochen Ereignisse Personen Informationen Lernen",
-    "interferer": "www.deutsche-kueche-rezepte.de\nDeutsche Küche Rezepte Regionale Küche Spezialitäten Kochen Essen"
+    "level": "hard",
+    "scenario": "Sie möchten ein Rezept für eine Suppe finden, die schnell geht und gesund ist, vielleicht mit viel Gemüse.",
+    "answer": "www.schnelle-gemuese-suppen-gesund.de\nSchnelle Gemüsesuppen Gesund Einfach Schnell Kochen Vitamine Ballaststoffe Leicht",
+    "interferer": "www.suppen-eintopf-rezepte-klassisch.de\nSuppen Eintopf Rezepte Klassisch Traditionell Hausmannskost Herzhaft Deftig Reichhaltig",
+    "explanation": "The scenario is about a recipe for a quick and healthy soup, possibly with lots of vegetables. 'Schnelle-gemuese-suppen-gesund.de' offers 'Schnelle Gemüsesuppen Gesund' (quick vegetable soups healthy) and 'Einfach Schnell Kochen' (easy quick cooking). 'Suppen-eintopf-rezepte-klassisch.de' offers 'Suppen Eintopf Rezepte Klassisch' (classic soup and stew recipes) and 'Hausmannskost Herzhaft Deftig' (homestyle cooking hearty savory), which might be good, but not specifically quick and necessarily vegetable-heavy or focused on health."
   },
   {
-    "scenario": "Sie wollen wissen, ob ein Geschäft heute geöffnet ist.",
-    "answer": "www.oeffnungszeiten-heute.de\nÖffnungszeiten Geschäfte Supermärkte Banken Apotheken heute Sonntag",
-    "interferer": "www.feiertage-deutschland.de\nFeiertage Deutschland Kalender Gesetzliche Feiertage Termine Informationen"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein bestimmtes Theater auch Stücke für Kinder aufführt.",
+    "answer": "www.theater-kinderstuecke-programm.de\nTheater Kinderstücke Programm Familienvorstellungen Märchen Theaterstücke Jugendtheater",
+    "interferer": "www.theater-spielplan-aktuell.de\nTheater Spielplan Aktuell Programm Vorstellungen Tickets Schauspieler Inszenierungen",
+    "explanation": "The scenario is about checking if a specific theater performs plays for children. 'Theater-kinderstuecke-programm.de' offers 'Theater Kinderstücke Programm' (theater children's plays program) and 'Familienvorstellungen' (family performances). 'Theater-spielplan-aktuell.de' is a general 'Theater Spielplan Aktuell' (theater program current), showing the current program and 'Vorstellungen' (performances), but not specifically highlighting children's plays."
   },
   {
-    "scenario": "Sie möchten ein Busticket nach München kaufen.",
-    "interferer": "www.bahn-online.de\nZugtickets online buchen Sparpreise Fahrplanauskunft Reiseinformationen",
-    "answer": "www.bus-tickets-muenchen.de\nBustickets nach München Fernbusse Direktverbindungen Preise Fahrpläne"
+    "level": "hard",
+    "scenario": "Sie suchen ein Geschenk für einen jungen Mann, der gerade seine erste Wohnung eingerichtet.",
+    "answer": "www.wohnungseinrichtung-geschenke-maenner.de\nWohnungseinrichtung Geschenke Männer Erste Wohnung Einzug Praktisch Nützlich Deko",
+    "interferer": "www.wohnen-accessoires-modern-design.de\nWohnen Accessoires Modern Design Dekoration Vasen Schalen Bilderrahmen Kissen",
+    "explanation": "The scenario is about a gift for a young man furnishing his first apartment. 'Wohnungseinrichtung-geschenke-maenner.de' targets 'Wohnungseinrichtung Geschenke Männer' (apartment furnishing gifts men) and 'Erste Wohnung Einzug' (first apartment moving in) and 'Praktisch Nützlich' (practical useful). 'Wohnen-accessoires-modern-design.de' offers 'Wohnen Accessoires Modern Design' (living accessories modern design) and 'Dekoration' (decoration), which are home-related but more general decor and less focused on practical first apartment necessities for a young man."
   },
   {
-    "scenario": "Sie suchen ein günstiges Hotel in Berlin für Studenten.",
-    "interferer": "www.studentenwohnheim-berlin.de\nStudentenwohnheime Zimmer Apartments WG-Zimmer Berlin Anmeldung",
-    "answer": "www.billige-hotels-berlin.de\nGünstige Hotels Berlin Budget Hotels Jugendherbergen Pensionen Angebote"
+    "level": "hard",
+    "scenario": "Sie möchten wissen, ob ein bestimmter See in der Nähe zum Baden geeignet ist und eine gute Wasserqualität hat.",
+    "answer": "www.badesee-wasserqualitaet-info.de\nBadesee Wasserqualität Baden Schwimmen Seeufer Strand Liegewiese Aktuell Geprüft",
+    "interferer": "www.seen-in-der-umgebung-freizeit.de\nSeen Umgebung Freizeit Wandern Radfahren Bootfahren Angeln Natur Erholung",
+    "explanation": "The scenario is about checking if a specific lake nearby is suitable for swimming and has good water quality. 'Badesee-wasserqualitaet-info.de' directly mentions 'Badesee Wasserqualität' (bathing lake water quality) and 'Baden Schwimmen' (bathing swimming) and 'Aktuell Geprüft' (currently tested). 'Seen-in-der-umgebung-freizeit.de' lists 'Seen Umgebung Freizeit' (lakes surroundings leisure) and activities like 'Wandern Radfahren Bootfahren' (hiking cycling boating), suggesting leisure activities around lakes, but not specifically about swimming suitability and water quality."
   },
   {
-    "scenario": "Sie wollen wissen, ob das Schwimmbad heute geöffnet ist.",
-    "interferer": "www.freizeitpark-spass.de\nFreizeitpark Achterbahnen Karussells Shows Attraktionen Öffnungszeiten",
-    "answer": "www.schwimmbad-info.de\nSchwimmbäder Öffnungszeiten Eintrittspreise Kurse Angebote Informationen"
+    "level": "hard",
+    "scenario": "Sie möchten ein Rezept für ein veganes Gericht finden, das man gut vorbereiten und mitnehmen kann, z.B. zur Arbeit.",
+    "answer": "www.vegane-rezepte-zum-mitnehmen.de\nVegane Rezepte Zum Mitnehmen Lunchbox Büro Arbeit Vorbereiten Gesund Schnell",
+    "interferer": "www.vegane-hauptgerichte-rezepte.de\nVegane Hauptgerichte Rezepte Abendessen Mittagessen Warm Kalt Abwechslungsreich Einfach",
+    "explanation": "The scenario is about a vegan recipe that is easy to prepare in advance and take away, e.g., to work. 'Vegane-rezepte-zum-mitnehmen.de' offers 'Vegane Rezepte Zum Mitnehmen' (vegan recipes to take away) and 'Lunchbox Büro Arbeit' (lunchbox office work) and 'Vorbereiten' (prepare in advance). 'Vegane-hauptgerichte-rezepte.de' offers 'Vegane Hauptgerichte Rezepte' (vegan main course recipes) for 'Abendessen Mittagessen' (dinner lunch), which are vegan recipes, but not specifically focused on take-away and advance preparation."
   },
-  {
-    "scenario": "Sie möchten ein Geschenk für Weihnachten bestellen.",
-    "answer": "www.weihnachtsgeschenke-online.de\nWeihnachtsgeschenke Geschenkideen für Familie Freunde Kinder Kollegen",
-    "interferer": "www.ostergeschenke-shop.de\nOstergeschenke Schokolade Ostereier Osterhasen Dekoration Bastelideen"
-  },
-  {
-    "scenario": "Sie brauchen eine neue Lampe für Ihr Wohnzimmer.",
-    "answer": "www.moebelhaus-online.de\nMöbel für Wohnzimmer Schlafzimmer Küche Bad Lampen Teppiche",
-    "interferer": "www.baumarkt-online.de\nBaumarkt Werkzeug Farben Gartenartikel Holz Eisenwaren Lampen"
-  },
-  {
-    "scenario": "Sie möchten einen Friseurtermin vereinbaren.",
-    "answer": "www.friseur-salon-schoen.de\nFriseur Damen Herren Kinder Haarschnitte Frisuren Farbe Termine",
-    "interferer": "www.kosmetikstudio-beauty.de\nKosmetik Nagelstudio Fußpflege Massage Gesichtsbehandlung Wellness"
-  },
-  {
-    "scenario": "Sie suchen ein Rezept für Nudelsalat.",
-    "answer": "www.salat-rezepte-welt.de\nSalatrezepte Grüner Salat Nudelsalat Kartoffelsalat Reissalat einfach",
-    "interferer": "www.suppen-rezepte-online.de\nSuppen Rezepte Gemüsesuppe Hühnersuppe Tomatensuppe schnell kochen"
-  },
-  {
-    "scenario": "Sie möchten ein Konzertticket für ein Rockkonzert kaufen.",
-    "answer": "www.konzert-tickets-online.de\nKonzerttickets Rock Pop Klassik Jazz Festivals Termine Künstler",
-    "interferer": "www.theater-tickets-berlin.de\nTheatertickets Oper Ballett Musical Schauspiel Berlin Vorstellungen"
-  },
-  {
-    "scenario": "Sie wollen wissen, wo man gut frühstücken kann.",
-    "answer": "www.cafe-fruehstueck-berlin.de\nCafés Frühstück Brunch Berlin lecker gemütlich Auswahl Empfehlungen",
-    "interferer": "www.restaurant-berlin-mitte.de\nRestaurants Berlin Mitte Mittagessen Abendessen Spezialitäten Reservierung"
-  },
-  {
-    "scenario": "Sie suchen eine Bank in der Nähe.",
-    "answer": "www.bank-filialen-finder.de\nBank Filialen Geldautomaten Öffnungszeiten Standorte Suche in der Nähe",
-    "interferer": "www.supermarkt-angebote.de\nSupermarkt Angebote Lebensmittel Getränke Prospekte Aktionen Rabatte"
-  },
-  {
-    "scenario": "Sie möchten ein Geschenk zum Valentinstag finden.",
-    "answer": "www.valentinstagsgeschenke-shop.de\nValentinstagsgeschenke Blumen Pralinen Schmuck Romantische Geschenke",
-    "interferer": "www.osterdekoration-online.de\nOsterdekoration Ostereier Osterhasen Frühlingsdeko Bastelmaterialien"
-  },
-  {
-    "scenario": "Sie brauchen Hilfe beim Computer.",
-    "answer": "www.computer-hilfe-online.de\nComputerhilfe PC-Service Reparatur Installation Software Probleme lösen",
-    "interferer": "www.handy-reparatur-service.de\nHandy Reparatur Display Akku Wasserschaden Schnellservice Günstig"
-  },
-  {
-    "scenario": "Sie wollen wissen, wie lange ein Museum geöffnet hat.",
-    "answer": "www.museum-oeffnungszeiten.de\nMuseum Öffnungszeiten Eintrittspreise Adresse Anfahrt Informationen",
-    "interferer": "www.stadtfuehrung-berlin.de\nStadtführung Berlin Touristenattraktionen Sehenswürdigkeiten Geschichte Kultur"
-  },
-  {
-    "scenario": "Sie suchen eine günstige Flugverbindung nach Spanien.",
-    "answer": "www.billig-fluege-spanien.de\nBilligflüge Spanien Flugangebote Direktflüge Fluggesellschaften Preise",
-    "interferer": "www.ferienhaus-spanien-meer.de\nFerienhäuser Spanien Meer Urlaub Unterkunft Ferienwohnung Strand Nähe"
-  },
-  {
-    "scenario": "Sie möchten einen Kuchen zum Geburtstag backen.",
-    "answer": "www.backzutaten-online.de\nBackzutaten Mehl Zucker Eier Butter Schokolade Nüsse Dekoration",
-    "interferer": "www.kochbuecher-shop.de\nKochbücher Backbücher Rezeptbücher Internationale Küche Vegetarische Küche"
-  },
-  {
-    "scenario": "Sie wollen wissen, was im Fernsehen kommt.",
-    "answer": "www.tv-programm-heute-abend.de\nTV Programm Heute Abend Sender Sendungen Filme Serien Übersicht",
-    "interferer": "www.radio-sender-online.de\nRadiosender Online Radio Musik Nachrichten Sport Kultur Senderliste"
-  },
-  {
-    "scenario": "Sie suchen ein Sportgeschäft für Sportschuhe.",
-    "answer": "www.sportgeschaeft-online.de\nSportgeschäft Sportschuhe Sportbekleidung Sportartikel Marken Angebote",
-    "interferer": "www.mode-boutique-damen.de\nMode Boutique Damenmode Kleider Röcke Blusen Hosen Accessoires Schuhe"
-  },
-  {
-    "scenario": "Sie möchten einen Sprachkurs in Englisch finden.",
-    "answer": "www.sprachkurse-englisch-online.de\nEnglischkurse Online Englisch lernen Anfänger Fortgeschrittene Kurse",
-    "interferer": "www.fitnessstudio-mitgliedschaft.de\nFitnessstudio Mitgliedschaft Kurse Geräte Training Wellness Angebote"
-  },
-  {
-    "scenario": "Sie wollen wissen, ob es in Berlin schneit.",
-    "answer": "www.wetter-berlin-aktuell.de\nWetter Berlin Aktuell Temperatur Regen Schnee Vorhersage Wetterbericht",
-    "interferer": "www.verkehr-berlin-live.de\nVerkehr Berlin Live Stau Baustellen Verkehrsmeldungen Aktuelle Lage"
-  },
-  {
-    "scenario": "Sie suchen ein Restaurant mit italienischer Küche.",
-    "answer": "www.italienisches-restaurant-berlin.de\nItalienisches Restaurant Berlin Pizza Pasta Fisch Fleisch Wein Ambiente",
-    "interferer": "www.deutsches-restaurant-berlin.de\nDeutsches Restaurant Berlin Regionale Küche Spezialitäten Biergarten Mittagstisch"
-  },
-  {
-    "scenario": "Sie möchten ein Taxi bestellen.",
-    "answer": "www.taxi-zentrale-berlin.de\nTaxi Zentrale Berlin Taxi bestellen Telefonnummer Online Bestellung App",
-    "interferer": "www.fahrrad-verleih-berlin.de\nFahrrad Verleih Berlin Fahrräder Mieten Citybikes Mountainbikes E-Bikes"
-  },
-  {
-    "scenario": "Sie wollen wissen, wie man einen Brief richtig adressiert.",
-    "answer": "www.post-brief-adressieren.de\nPost Brief Adressieren Anleitung Format Vorlage Umschlag Beschriften",
-    "interferer": "www.email-schreiben-tipps.de\nEmail Schreiben Tipps Tricks Richtig formulieren Betreff Anrede Gruß"
-  },
-  {
-    "scenario": "Sie suchen ein Möbelgeschäft für ein neues Sofa.",
-    "answer": "www.moebel-sofas-online.de\nMöbel Sofas Couches Ecksofas Ledersofas Stoffsofas Auswahl Angebote",
-    "interferer": "www.elektro-geraete-shop.de\nElektro Geräte Kühlschränke Waschmaschinen Spülmaschinen Fernseher Angebote"
-  },
-  {
-    "scenario": "Sie möchten wissen, wann der Zug nach Hamburg abfährt.",
-    "answer": "www.fahrplan-zug-hamburg.de\nFahrplan Zug Hamburg Abfahrtszeiten Ankunftszeiten Gleisnummer Informationen",
-    "interferer": "www.stadtplan-hamburg-zentrum.de\nStadtplan Hamburg Zentrum Straßen Sehenswürdigkeiten Hotels Parkplätze"
-  },
-  {
-    "scenario": "Sie brauchen eine neue Brille.",
-    "answer": "www.optiker-online-brillen.de\nOptiker Brillen Sonnenbrillen Kontaktlinsen Sehtest Beratung Angebote",
-    "interferer": "www.hoergeraete-akustiker.de\nHörgeräte Akustiker Hörtest Beratung Anpassung Reparatur Batterien"
-  },
-  {
-    "scenario": "Sie wollen wissen, wie man einen Kuchen ohne Ei backt.",
-    "answer": "www.vegane-kuchen-rezepte.de\nVegane Kuchen Rezepte Ohne Ei Milch Butter Einfach Lecker Backen",
-    "interferer": "www.glutenfreie-rezepte-backen.de\nGlutenfreie Rezepte Backen Brot Kuchen Kekse Zöliakie Unverträglichkeit"
-  },
-  {
-    "scenario": "Sie suchen eine Werkstatt für Ihr Auto.",
-    "answer": "www.auto-werkstatt-suche.de\nAuto Werkstatt Reparatur Service Inspektion Ölwechsel Reifen Wechsel",
-    "interferer": "www.fahrrad-werkstatt-reparatur.de\nFahrrad Werkstatt Reparatur Inspektion Reifenwechsel Bremsen Service"
-  },
-  {
-    "scenario": "Sie möchten ein Geschenk zum Geburtstag für eine Frau finden.",
-    "answer": "www.geschenke-frauen-geburtstag.de\nGeschenke Frauen Geburtstag Ideen Persönlich Originell Schön Praktisch",
-    "interferer": "www.geschenke-maenner-geburtstag.de\nGeschenke Männer Geburtstag Technik Gadgets Erlebnis Gutscheine Bier"
-  },
-  {
-    "scenario": "Sie wollen wissen, ob heute ein Feiertag ist.",
-    "answer": "www.feiertage-heute-deutschland.de\nFeiertage Heute Deutschland Kalender Gesetzliche Feiertage Übersicht",
-    "interferer": "www.wochentag-heute-ermitteln.de\nWochentag Heute Datum Aktueller Wochentag Kalender Datum ermitteln"
-  },
-  {
-    "scenario": "Sie suchen ein Geschäft für Sportbekleidung.",
-    "answer": "www.sportbekleidung-online-shop.de\nSportbekleidung Trainingsanzüge T-Shirts Hosen Jacken Schuhe Marken",
-    "interferer": "www.mode-accessoires-online.de\nMode Accessoires Schmuck Uhren Taschen Gürtel Schals Tücher Angebote"
-  }
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Geschenk zum Geburtstag für einen Mann finden.",
+      "answer": "www.geschenke-fuer-ihn.de\nGeschenkideen Männer Geburtstag Vatertag Weihnachten Technik Outdoor Sport",
+      "interferer": "www.geschenkeparadies-kinder.de\nGeschenke Kinder Babyspielzeug Mädchen Jungen Geburtstag Weihnachten",
+      "explanation": "The scenario is about finding a birthday gift for a man. 'Geschenke-fuer-ihn.de' specifically targets gifts 'für ihn' (for him/men) and mentions 'Männer Geburtstag'. 'Geschenkeparadies-kinder.de' is for 'Kinder' (children), making it less suitable, although both are gift-related."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, wann der Bus zum Bahnhof fährt.",
+      "answer": "www.fahrplanauskunft-bus.de\nBusfahrpläne Abfahrtszeiten Ankunftszeiten Haltestellen Bahnhof Stadtzentrum",
+      "interferer": "www.zugauskunft-online.de\nZugfahrpläne Reiseverbindungen Bahntickets Angebote Verspätungen",
+      "explanation": "The scenario is about bus departure times to the train station. 'Fahrplanauskunft-bus.de' is specifically for 'Busfahrpläne' (bus timetables) and mentions 'Bahnhof' (train station). 'Zugauskunft-online.de' is for 'Zugfahrpläne' (train timetables), which is similar but not about buses."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten eine Jacke für den Winter kaufen.",
+      "answer": "www.winterjacken-shop.de\nWinterjacken Damen Herren Kinder Sale Angebote Warme Jacken",
+      "interferer": "www.sportjacken-outlet.de\nSportjacken Laufjacken Trainingsjacken Outdoor Fitness Marken reduziert",
+      "explanation": "The scenario is about buying a winter jacket. 'Winterjacken-shop.de' specifically sells 'Winterjacken' (winter jackets). 'Sportjacken-outlet.de' sells 'Sportjacken' (sports jackets), which are jackets but not specifically for winter warmth."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie suchen ein Rezept für einen einfachen Kuchen.",
+      "answer": "www.einfache-kuchen-rezepte.de\nKuchen Rezepte Backen Einfach Schnell Lecker Schokoladenkuchen Obstkuchen",
+      "interferer": "www.tortendeko-shop.de\nTorten Dekoration Zubehör Backformen Fondant Streusel Kerzen Geburtstagstorten",
+      "explanation": "The scenario is about finding a recipe for a simple cake. 'Einfache-kuchen-rezepte.de' offers 'einfache Kuchen Rezepte' (simple cake recipes). 'Tortendeko-shop.de' is about 'Tortendeko' (cake decoration), which is related to cakes, but not recipes."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten einen Tisch für ein Abendessen reservieren.",
+      "answer": "www.restaurant-abendrot.de\nTischreservierung Abendessen Mittagstisch Menü Spezialitäten Deutsche Küche",
+      "interferer": "www.lieferservice-city.de\nPizza Pasta Burger Lieferservice Online bestellen Schnell Lieferung",
+      "explanation": "The scenario is about reserving a table for dinner. 'Restaurant-abendrot.de' offers 'Tischreservierung' (table reservation) and 'Abendessen' (dinner). 'Lieferservice-city.de' is a delivery service ('Lieferservice'), not for dining in a restaurant, although it offers food for dinner."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, wie das Wetter morgen wird.",
+      "answer": "www.wettervorhersage-morgen.de\nWetter morgen Vorhersage Temperatur Regen Sonne Wind Deutschland",
+      "interferer": "www.urlaubs-wetter-info.de\nUrlaubswetter Reiseziele Wetter weltweit Temperaturen Sonne Strand",
+      "explanation": "The scenario is about tomorrow's weather forecast. 'Wettervorhersage-morgen.de' provides 'Wetter morgen' (weather tomorrow) forecast. 'Urlaubs-wetter-info.de' is about 'Urlaubswetter' (holiday weather), which is weather-related, but for holidays, not specifically tomorrow's local weather."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie brauchen Hilfe bei Ihrem Computer.",
+      "answer": "www.computer-reparatur-service.de\nComputerreparatur PC Service Notebook Laptop Hilfe schnell günstig",
+      "interferer": "www.computer-zubehör-online.de\nComputer Zubehör Mäuse Tastaturen Monitore Kabel Drucker Angebote",
+      "explanation": "The scenario is about needing computer help. 'Computer-reparatur-service.de' offers 'Computerreparatur' (computer repair) and 'Service'. 'Computer-zubehör-online.de' sells 'Computer Zubehör' (computer accessories), which is related to computers but not repair service."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Ticket für ein Fußballspiel kaufen.",
+      "answer": "www.fussballtickets-online.de\nFussball Tickets Bundesliga Spiele Eintrittskarten Stadion Sitzplätze",
+      "interferer": "www.sportartikel-fanartikel.de\nFanartikel Trikots Schals Mützen Fussball Basketball Formel 1",
+      "explanation": "The scenario is about buying a football game ticket. 'Fussballtickets-online.de' sells 'Fussball Tickets' (football tickets). 'Sportartikel-fanartikel.de' sells 'Fanartikel' (fan merchandise) like 'Trikots' (jerseys) and 'Schals' (scarves), related to football but not tickets."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Hotelzimmer für ein Wochenende buchen.",
+      "answer": "www.hotelbuchung-wochenende.de\nHotel buchen Wochenende Städtereisen Angebote Zimmer Reservierung",
+      "interferer": "www.ferienwohnungen-deutschland.de\nFerienwohnungen Urlaub Deutschland Ostsee Berge Seen Familienurlaub",
+      "explanation": "The scenario is about booking a hotel room for a weekend. 'Hotelbuchung-wochenende.de' is for 'Hotel buchen Wochenende' (book hotel weekend). 'Ferienwohnungen-deutschland.de' offers 'Ferienwohnungen' (holiday apartments) in Germany, which is accommodation but not hotels."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie suchen eine neue Lampe für das Wohnzimmer.",
+      "answer": "www.lampen-leuchten-shop.de\nLampen Leuchten Wohnzimmer Schlafzimmer Küche Deckenlampen Stehlampen",
+      "interferer": "www.moebel-discount-online.de\nMöbel Wohnzimmer Schlafzimmer Esszimmer Sofas Tische Stühle Regale",
+      "explanation": "The scenario is about finding a new lamp for the living room. 'Lampen-leuchten-shop.de' sells 'Lampen' (lamps) and 'Leuchten' (lights) and mentions 'Wohnzimmer' (living room). 'Moebel-discount-online.de' sells 'Möbel' (furniture) for the 'Wohnzimmer' (living room) but not specifically lamps."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Fahrrad mieten, um die Stadt zu erkunden.",
+      "answer": "www.fahrradverleih-city.de\nFahrradverleih Fahrräder Mieten Citybikes Mountainbikes E-Bikes Stadtrundfahrt",
+      "interferer": "www.fahrradladen-city.de\nFahrräder Verkauf Reparatur Werkstatt Zubehör E-Bikes Mountainbikes",
+      "explanation": "The scenario is about renting a bicycle to explore the city. 'Fahrradverleih-city.de' is a 'Fahrradverleih' (bicycle rental) and offers 'Fahrräder Mieten' (rent bicycles). 'Fahrradladen-city.de' is a 'Fahrradladen' (bicycle shop) for 'Verkauf' (sale) and 'Reparatur' (repair), not rental."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Geschenk für eine Frau zum Geburtstag kaufen.",
+      "answer": "www.geschenke-fuer-frauen.de\nGeschenkideen Frauen Geburtstag Muttertag Valentinstag Schmuck Mode Beauty",
+      "interferer": "www.parfuemerie-dufttraum.de\nParfüm Kosmetik Make-up Düfte Damen Herren Marken Angebote",
+      "explanation": "The scenario is about buying a birthday gift for a woman. 'Geschenke-fuer-frauen.de' is specifically for gifts 'für Frauen' (for women) and mentions 'Frauen Geburtstag'. 'Parfuemerie-dufttraum.de' is a perfumery ('Parfuemerie') selling 'Parfüm' (perfume) and 'Kosmetik' (cosmetics), which could be gifts, but less directly related to general birthday gifts than the answer."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Konto bei einer Bank eröffnen.",
+      "answer": "www.bank-konto-online.de\nKonto eröffnen Girokonto Sparkonto Kreditkarte Online Banking Beratung",
+      "interferer": "www.kreditvergleich-guenstig.de\nKredit Vergleich Zinsen Darlehen Autokredit Immobilienkredit Sofortkredit",
+      "explanation": "The scenario is about opening a bank account. 'Bank-konto-online.de' offers 'Konto eröffnen' (open an account) and mentions 'Girokonto' (checking account). 'Kreditvergleich-guenstig.de' is about 'Kredit Vergleich' (credit comparison), which is financial but not about opening an account."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten einen Film online zu Hause ansehen.",
+      "answer": "www.filme-streamen-online.de\nFilme online streamen Neuheiten Klassiker Serien Kino Filmeabend",
+      "interferer": "www.dvd-verleih-express.de\nDVD Verleih Filme ausleihen Neuheiten Action Komödie Thriller Lieferung",
+      "explanation": "The scenario is about watching a film online at home. 'Filme-streamen-online.de' offers 'Filme online streamen' (stream films online). 'DVD-verleih-express.de' is a 'DVD Verleih' (DVD rental), which is for watching films at home but via DVD rental, not streaming."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Geschenk für ein Kind (5 Jahre) zum Geburtstag finden.",
+      "answer": "www.spielzeug-geburtstag-5jahre.de\nSpielzeug Kinder 5 Jahre Geburtstag Geschenke Jungen Mädchen Holzspielzeug",
+      "interferer": "www.kinderkleidung-outlet.de\nKinderkleidung Babykleidung Mädchen Jungen Mode Sale Angebote Günstig",
+      "explanation": "The scenario is about a birthday gift for a 5-year-old child. 'Spielzeug-geburtstag-5jahre.de' specifically targets 'Spielzeug Kinder 5 Jahre Geburtstag' (toys children 5 years birthday). 'Kinderkleidung-outlet.de' sells 'Kinderkleidung' (children's clothes), which is for children but not specifically toys or gifts."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, ob ein Restaurant heute Abend geöffnet ist.",
+      "answer": "www.restaurant-oeffnungszeiten.de\nRestaurant Öffnungszeiten Heute Abend Geöffnet Mittagstisch Speisekarte Reservierung",
+      "interferer": "www.restaurant-bewertungen-online.de\nRestaurant Bewertungen Empfehlungen Top Restaurants Küche Ambiente Service Preise",
+      "explanation": "The scenario is about checking if a restaurant is open tonight. 'Restaurant-oeffnungszeiten.de' provides 'Restaurant Öffnungszeiten' (restaurant opening hours) and mentions 'Heute Abend Geöffnet' (open tonight). 'Restaurant-bewertungen-online.de' is about 'Restaurant Bewertungen' (restaurant reviews), which is helpful for choosing a restaurant, but not for checking opening hours."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten einen Friseurtermin für nächste Woche vereinbaren.",
+      "answer": "www.friseur-termin-online.de\nFriseur Termin buchen Online Terminvereinbarung Haarschnitt Waschen Legen",
+      "interferer": "www.kosmetikstudio-wellness.de\nKosmetik Wellness Massage Gesichtsbehandlung Maniküre Pediküre Entspannung",
+      "explanation": "The scenario is about making a hairdresser appointment for next week. 'Friseur-termin-online.de' is for 'Friseur Termin buchen' (book hairdresser appointment) and 'Online Terminvereinbarung' (online appointment booking). 'Kosmetikstudio-wellness.de' is a 'Kosmetikstudio' (cosmetics studio) offering 'Kosmetik' and 'Wellness', related to personal care but not hairdressing."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Ticket für ein Konzert kaufen.",
+      "answer": "www.konzerttickets-online.de\nKonzert Tickets Karten Vorverkauf Live Musik Pop Rock Klassik",
+      "interferer": "www.musikinstrumente-shop.de\nMusikinstrumente Gitarren Klaviere Schlagzeuge Noten Zubehör Online Shop",
+      "explanation": "The scenario is about buying a concert ticket. 'Konzerttickets-online.de' sells 'Konzert Tickets' (concert tickets). 'Musikinstrumente-shop.de' sells 'Musikinstrumente' (musical instruments), related to music but not concert tickets."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Buch über das Kochen lernen.",
+      "answer": "www.kochbuecher-online-shop.de\nKochbücher Rezepte Backen Kochen Vegetarisch Vegan Internationale Küche",
+      "interferer": "www.haushaltsgeraete-kueche.de\nKüchengeräte Mixer Kühlschränke Herde Spülmaschinen Küchenhelfer",
+      "explanation": "The scenario is about buying a book about learning to cook. 'Kochbuecher-online-shop.de' sells 'Kochbücher' (cookbooks) and mentions 'Rezepte' (recipes) and 'Kochen' (cooking). 'Haushaltsgeraete-kueche.de' sells 'Küchengeräte' (kitchen appliances), related to cooking but not cookbooks."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie suchen eine Wohnung zur Miete in der Stadt.",
+      "answer": "www.wohnungen-mieten-stadt.de\nWohnungen Mieten Stadt Mietwohnungen Immobilien Wohnungssuche",
+      "interferer": "www.immobilien-kaufen-land.de\nImmobilien Kaufen Haus Wohnung Grundstück Landhaus Bauernhaus",
+      "explanation": "The scenario is about finding an apartment for rent in the city. 'Wohnungen-mieten-stadt.de' offers 'Wohnungen Mieten Stadt' (apartments for rent city). 'Immobilien-kaufen-land.de' is about 'Immobilien Kaufen Land' (buy properties countryside), which is real estate, but for buying, not renting, and in the countryside, not the city."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, welche Museen es in der Nähe gibt.",
+      "answer": "www.museen-in-meiner-naehe.de\nMuseen Ausstellung Kunst Geschichte Kultur Museumssuche Standort",
+      "interferer": "www.sehenswuerdigkeiten-stadtplan.de\nSehenswürdigkeiten Stadtplan Attraktionen Touristeninformation Stadtführung",
+      "explanation": "The scenario is about finding museums nearby. 'Museen-in-meiner-naehe.de' lists 'Museen' (museums) 'in meiner Nähe' (nearby) and offers 'Museumssuche' (museum search). 'Sehenswuerdigkeiten-stadtplan.de' lists 'Sehenswürdigkeiten' (sights) which includes museums, but also other attractions, making 'Museen-in-meiner-naehe.de' more specific."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten einen Sprachkurs in Englisch buchen.",
+      "answer": "www.englischkurse-online.de\nEnglischkurse Sprachkurse Online Lernen Anfänger Fortgeschrittene Zertifikate",
+      "interferer": "www.auslandsreisen-sprachreisen.de\nSprachreisen Englisch Spanisch Französisch Ausland Sprachschule Urlaub",
+      "explanation": "The scenario is about booking an English language course. 'Englischkurse-online.de' offers 'Englischkurse' (English courses) and 'Online Lernen' (online learning). 'Auslandsreisen-sprachreisen.de' offers 'Sprachreisen' (language travel) for English and other languages abroad, which is related to language learning, but involves travel, not just a course."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Geschenk für ein Baby zur Geburt finden.",
+      "answer": "www.babygeschenke-zur-geburt.de\nBabygeschenke Geburt Babysachen Kleidung Spielzeug Geschenkideen Mädchen Jungen",
+      "interferer": "www.kinderwagen-online-shop.de\nKinderwagen Buggys Autositze Babytragen Zubehör Marken Angebote",
+      "explanation": "The scenario is about finding a baby gift for a birth. 'Babygeschenke-zur-geburt.de' specifically targets 'Babygeschenke Geburt' (baby gifts birth) and 'Babysachen' (baby things). 'Kinderwagen-online-shop.de' sells 'Kinderwagen' (strollers) and 'Autositze' (car seats), which are baby items but more specific and less general gifts."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, wie Sie am besten zum Flughafen kommen.",
+      "answer": "www.flughafen-anfahrt-planer.de\nFlughafen Anfahrt Routenplaner Auto Bahn Bus Parken Navigation",
+      "interferer": "www.fluginformationen-aktuell.de\nFluginformationen Flugzeiten Ankunft Abflug Flugnummer Gate Verspätungen",
+      "explanation": "The scenario is about finding the best way to get to the airport. 'Flughafen-anfahrt-planer.de' offers 'Flughafen Anfahrt' (airport travel) and 'Routenplaner' (route planner) for getting there. 'Fluginformationen-aktuell.de' provides 'Fluginformationen' (flight information) like 'Flugzeiten' (flight times) and 'Ankunft' (arrival), which is airport-related but not about how to get there."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein neues Sofa für das Wohnzimmer kaufen.",
+      "answer": "www.sofas-online-kaufen.de\nSofas Wohnzimmer Ecksofas Ledersofas Stoffsofas Couchgarnituren Möbel",
+      "interferer": "www.wohnaccessoires-deko.de\nWohnaccessoires Dekoration Kissen Decken Vasen Kerzen Bilderrahmen",
+      "explanation": "The scenario is about buying a new sofa for the living room. 'Sofas-online-kaufen.de' sells 'Sofas' and mentions 'Wohnzimmer' (living room) sofas. 'Wohnaccessoires-deko.de' sells 'Wohnaccessoires' (home accessories) and 'Dekoration' (decoration) like 'Kissen' (pillows) and 'Decken' (blankets), which are for the living room but not sofas themselves."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Auto für einen Tag mieten.",
+      "answer": "www.mietwagen-tagespreis.de\nMietwagen Auto mieten Tagesmiete Stundenmiete Leihwagen Kleinwagen",
+      "interferer": "www.autoversicherung-vergleich.de\nAutoversicherung Vergleich KFZ Versicherung Haftpflicht Teilkasko Vollkasko",
+      "explanation": "The scenario is about renting a car for a day. 'Mietwagen-tagespreis.de' offers 'Mietwagen' (rental cars) and 'Tagesmiete' (daily rental). 'Autoversicherung-vergleich.de' is about 'Autoversicherung' (car insurance), which is car-related but not car rental."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten einen Kurs in Yoga besuchen.",
+      "answer": "www.yoga-kurse-stadt.de\nYoga Kurse Anfänger Fortgeschrittene Yoga Studio Entspannung Fitness",
+      "interferer": "www.fitnessstudio-mitgliedschaft.de\nFitnessstudio Mitgliedschaft Geräte Training Kurse Sauna Wellness Angebote",
+      "explanation": "The scenario is about attending a yoga course. 'Yoga-kurse-stadt.de' offers 'Yoga Kurse' (yoga courses) and mentions 'Yoga Studio'. 'Fitnessstudio-mitgliedschaft.de' is about 'Fitnessstudio' (fitness studio) membership and offers 'Kurse' (courses) including fitness classes, but not specifically yoga."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, welche Veranstaltungen am Wochenende in der Stadt sind.",
+      "answer": "www.veranstaltungen-wochenende-stadt.de\nVeranstaltungen Wochenende Stadt Events Konzerte Theater Feste Märkte",
+      "interferer": "www.kinoprogramm-aktuelle-woche.de\nKinoprogramm Aktuelle Woche Filme Kinozeiten Tickets Online Reservierung",
+      "explanation": "The scenario is about finding weekend events in the city. 'Veranstaltungen-wochenende-stadt.de' lists 'Veranstaltungen Wochenende Stadt' (weekend events city). 'Kinoprogramm-aktuelle-woche.de' is 'Kinoprogramm' (cinema program) for the current week, which is an event, but specifically cinema programs, not all weekend events."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Geschenk für Weihnachten für die Familie kaufen.",
+      "answer": "www.weihnachtsgeschenke-familie.de\nWeihnachtsgeschenke Familie Kinder Eltern Großeltern Geschenkideen Weihnachten",
+      "interferer": "www.dekoration-weihnachten-shop.de\nWeihnachtsdekoration Baumschmuck Lichterketten Kerzen Adventskranz Festlich",
+      "explanation": "The scenario is about buying Christmas gifts for the family. 'Weihnachtsgeschenke-familie.de' specifically targets 'Weihnachtsgeschenke Familie' (Christmas gifts family) and 'Geschenkideen Weihnachten' (gift ideas Christmas). 'Dekoration-weihnachten-shop.de' sells 'Weihnachtsdekoration' (Christmas decorations), which is Christmas-related but not gifts."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, ob ein Geschäft in der Nähe geöffnet hat.",
+      "answer": "www.geschaefte-geoeffnet-heute.de\nGeschäfte Geöffnet Heute Öffnungszeiten Sonntagsverkauf Einkaufen Ladenlokale",
+      "interferer": "www.einkaufszentrum-stadtmitte.de\nEinkaufszentrum Geschäfte Marken Shops Angebote Parkplätze Öffnungszeiten",
+      "explanation": "The scenario is about checking if a shop nearby is open. 'Geschaefte-geoeffnet-heute.de' lists 'Geschäfte Geöffnet Heute' (shops open today) and 'Öffnungszeiten' (opening hours). 'Einkaufszentrum-stadtmitte.de' is an 'Einkaufszentrum' (shopping center) with 'Geschäfte' (shops) and 'Öffnungszeiten' (opening hours), but it's about a specific shopping center, not general shops nearby."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten eine Hose in Größe 38 bestellen.",
+      "answer": "www.hosen-online-shop.de\nHosen Damen Herren Jeans Stoffhosen Größe 38 40 42 Sale Angebote",
+      "interferer": "www.kleider-roecke-online.de\nKleider Röcke Blusen Damenmode Sommerkleider Abendkleider Große Auswahl",
+      "explanation": "The scenario is about ordering trousers in size 38. 'Hosen-online-shop.de' sells 'Hosen' (trousers) and mentions 'Größe 38' (size 38). 'Kleider-roecke-online.de' sells 'Kleider' (dresses) and 'Röcke' (skirts), which are clothes, but not trousers."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Rezept für eine vegetarische Suppe finden.",
+      "answer": "www.vegetarische-suppen-rezepte.de\nVegetarische Suppen Rezepte Gemüse Suppen Eintöpfe Gesund Lecker Einfach",
+      "interferer": "www.suppen-eintopf-lieferservice.de\nSuppen Eintöpfe Lieferservice Mittagstisch Abendessen Online bestellen Schnell",
+      "explanation": "The scenario is about finding a recipe for vegetarian soup. 'Vegetarische-suppen-rezepte.de' offers 'Vegetarische Suppen Rezepte' (vegetarian soup recipes). 'Suppen-eintopf-lieferservice.de' is a 'Suppen Eintopf Lieferservice' (soup and stew delivery service), offering prepared soup, not recipes."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, wie viel ein Kinoticket kostet.",
+      "answer": "www.kino-preise-tickets.de\nKino Preise Ticketpreise Eintrittskarten Ermäßigungen Online Tickets Vorverkauf",
+      "interferer": "www.kino-aktuelles-programm.de\nKino Aktuelles Programm Filme Kinozeiten Vorstellungen Trailer Filmbeschreibungen",
+      "explanation": "The scenario is about finding out the price of a cinema ticket. 'Kino-preise-tickets.de' provides 'Kino Preise' (cinema prices) and 'Ticketpreise' (ticket prices). 'Kino-aktuelles-programm.de' shows the 'Aktuelles Programm' (current program) and 'Filme' (films), which is related to cinema but not ticket prices."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Geschenk zum Valentinstag für Ihre Freundin suchen.",
+      "answer": "www.valentinstagsgeschenke-frauen.de\nValentinstagsgeschenke Frauen Liebe Romantik Blumen Schmuck Pralinen",
+      "interferer": "www.jahrestagsgeschenke-ideen.de\nJahrestagsgeschenke Ideen Partner Liebe Romantik Persönlich Individuell",
+      "explanation": "The scenario is about finding a Valentine's Day gift for a girlfriend. 'Valentinstagsgeschenke-frauen.de' specifically targets 'Valentinstagsgeschenke Frauen' (Valentine's Day gifts women). 'Jahrestagsgeschenke-ideen.de' offers 'Jahrestagsgeschenke Ideen' (anniversary gift ideas), which is romantic gifts for a partner, but more general than Valentine's Day specific."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Kinderbuch für ein Kind (3 Jahre) kaufen.",
+      "answer": "www.kinderbuecher-3-jahre.de\nKinderbücher 3 Jahre Vorlesen Bilderbücher Geschichten Lernen Malbücher",
+      "interferer": "www.buecher-abenteuer-romane.de\nBücher Abenteuer Romane Krimis Thriller Fantasy Spannung Bestseller",
+      "explanation": "The scenario is about buying a children's book for a 3-year-old. 'Kinderbuecher-3-jahre.de' is specifically for 'Kinderbücher 3 Jahre' (children's books 3 years) and 'Bilderbücher' (picture books). 'Buecher-abenteuer-romane.de' offers 'Bücher Abenteuer Romane' (books adventure novels), which are books, but for older readers, not young children."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, wie lange ein Museum geöffnet ist.",
+      "answer": "www.museum-oeffnungszeiten-info.de\nMuseum Öffnungszeiten Eintrittspreise Ausstellungen Führungen Besucherinformation",
+      "interferer": "www.museum-shop-online.de\nMuseum Shop Souvenirs Geschenke Bücher Kataloge Kunstpostkarten Online Bestellung",
+      "explanation": "The scenario is about finding out museum opening hours. 'Museum-oeffnungszeiten-info.de' provides 'Museum Öffnungszeiten' (museum opening hours). 'Museum-shop-online.de' is a 'Museum Shop' (museum shop) selling 'Souvenirs' (souvenirs) and 'Geschenke' (gifts), related to museums but not opening hours."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Fahrrad für eine Fahrradtour am Wochenende ausleihen.",
+      "answer": "www.fahrradverleih-wochenende.de\nFahrradverleih Wochenendtarif Tourenräder Mountainbikes E-Bikes Fahrradtouren",
+      "interferer": "www.fahrradreparatur-werkstatt.de\nFahrradreparatur Werkstatt Service Inspektion Ersatzteile Reifen Bremsen schnell",
+      "explanation": "The scenario is about renting a bicycle for a weekend bike tour. 'Fahrradverleih-wochenende.de' is a 'Fahrradverleih' (bicycle rental) with 'Wochenendtarif' (weekend rate) and 'Tourenräder' (touring bikes). 'Fahrradreparatur-werkstatt.de' is a 'Fahrradreparatur Werkstatt' (bicycle repair shop), offering 'Reparatur' (repair) and 'Service', not rental."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Geschenk zum Geburtstag für Ihre Mutter bestellen.",
+      "answer": "www.geburtstagsgeschenke-mutter.de\nGeburtstagsgeschenke Mutter Blumen Schmuck Wellness Persönliche Geschenke Online bestellen",
+      "interferer": "www.muttertagsgeschenke-online.de\nMuttertagsgeschenke Blumen Pralinen Schmuck Geschenkideen Muttertag Lieferung",
+      "explanation": "The scenario is about ordering a birthday gift for your mother. 'Geburtstagsgeschenke-mutter.de' specifically targets 'Geburtstagsgeschenke Mutter' (birthday gifts mother). 'Muttertagsgeschenke-online.de' offers 'Muttertagsgeschenke' (Mother's Day gifts), which are gifts for mothers, but for Mother's Day, not a birthday."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, wie man einen Brief richtig adressiert.",
+      "answer": "www.brief-adressieren-anleitung.de\nBrief Adressieren Anleitung Tipps Vorlage Adresse Empfänger Absender",
+      "interferer": "www.briefmarken-online-kaufen.de\nBriefmarken Online Kaufen Postwertzeichen Sammler Marken Angebote Versandkostenfrei",
+      "explanation": "The scenario is about finding out how to address a letter correctly. 'Brief-adressieren-anleitung.de' provides 'Brief Adressieren Anleitung' (letter addressing guide) and 'Vorlage' (template). 'Briefmarken-online-kaufen.de' is about 'Briefmarken online kaufen' (buy stamps online), related to letters, but not addressing instructions."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Rezept für einen Apfelkuchen finden.",
+      "answer": "www.apfelkuchen-rezepte-einfach.de\nApfelkuchen Rezepte Einfach Backen Kuchen Obstkuchen Klassisch Schnell",
+      "interferer": "www.backzubehör-online-shop.de\nBackzubehör Backformen Rührschüsseln Messbecher Teigschaber Ausstechformen",
+      "explanation": "The scenario is about finding a recipe for apple cake. 'Apfelkuchen-rezepte-einfach.de' offers 'Apfelkuchen Rezepte' (apple cake recipes) and 'Einfach Backen' (easy baking). 'Backzubehör-online-shop.de' sells 'Backzubehör' (baking accessories) like 'Backformen' (baking tins), related to baking cakes, but not recipes."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten wissen, wann der Zug nach München abfährt.",
+      "answer": "www.zugabfahrt-muenchen.de\nZug Abfahrt München Fahrplan Abfahrtszeiten Gleisnummer Verspätungen",
+      "interferer": "www.staedtereisen-muenchen-hotel.de\nStädtereisen München Hotel Unterkunft Sehenswürdigkeiten Stadtführung Angebote",
+      "explanation": "The scenario is about finding out the departure time of a train to Munich. 'Zugabfahrt-muenchen.de' provides 'Zug Abfahrt München' (train departure Munich) and 'Fahrplan' (timetable). 'Staedtereisen-muenchen-hotel.de' offers 'Städtereisen München Hotel' (city breaks Munich hotel) and 'Sehenswürdigkeiten' (sights), related to Munich travel, but not train departure times."
+    },
+    {
+      "level": "medium",
+      "scenario": "Sie möchten ein Geschenk für ein Schulkind zum Schulanfang kaufen.",
+      "answer": "www.schulanfangsgeschenke-kinder.de\nSchulanfangsgeschenke Kinder Schultüte Schulranzen Stifte Bücher Lernmaterialien",
+      "interferer": "www.kindergeburtstagsparty-deko.de\nKindergeburtstag Party Deko Luftballons Girlanden Tischdeko Einladungskarten",
+      "explanation": "The scenario is about buying a gift for a school child for the start of school. 'Schulanfangsgeschenke-kinder.de' specifically targets 'Schulanfangsgeschenke Kinder' (school start gifts children) and 'Schultüte' (school cone). 'Kindergeburtstagsparty-deko.de' is for 'Kindergeburtstag Party Deko' (children's birthday party decorations), which is for children, but for birthday parties, not school start."
+    },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten Pizza essen. Wo gibt es Pizza?",
+        "answer": "www.pizzeria-italia.de\nPizza Pasta Salate Getränke Italienisches Restaurant",
+        "interferer": "www.eiscafe-dolce.de\nEis Kaffee Kuchen Waffeln Eisbecher Terrasse",
+        "explanation": "The scenario asks for pizza. 'Pizzeria-italia.de' clearly mentions 'Pizza' and 'Italienisches Restaurant'. 'Eiscafe-dolce.de' is about ice cream and cake, not pizza."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie brauchen einen Stift für die Schule.",
+        "answer": "www.schreibwaren-meier.de\nStifte Hefte Blöcke Schulranzen Papier Bürobedarf",
+        "interferer": "www.spielzeugparadies.de\nSpielzeug Puppen Autos Spiele Kinderbücher Holzspielzeug",
+        "explanation": "The scenario is about needing a pen for school. 'Schreibwaren-meier.de' mentions 'Stifte', 'Hefte', and 'Schulranzen' (school supplies). 'Spielzeugparadies.de' is a toy shop, selling 'Spielzeug' (toys)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten Blumen für Ihre Mutter kaufen.",
+        "answer": "www.blumenladen-rosenrot.de\nBlumen Sträuße Rosen Pflanzen Geschenkideen Blumenservice",
+        "interferer": "www.buchhandlung-seitenweise.de\nBücher Romane Krimis Kinderbücher Geschenkbücher Kalender",
+        "explanation": "The scenario is about buying flowers. 'Blumenladen-rosenrot.de' is a flower shop ('Blumenladen') and mentions 'Blumen' and 'Rosen'. 'Buchhandlung-seitenweise.de' is a bookshop ('Buchhandlung'), selling 'Bücher' (books)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie haben Durst und möchten Wasser kaufen.",
+        "answer": "www.supermarkt-kaiser.de\nLebensmittel Getränke Obst Gemüse Brot Käse Angebote",
+        "interferer": "www.modehaus-schick.de\nKleidung Hosen Hemden Jacken Schuhe Accessoires",
+        "explanation": "The scenario is about buying water because of thirst. 'Supermarkt-kaiser.de' is a supermarket and mentions 'Getränke' (drinks) and 'Lebensmittel' (food). 'Modehaus-schick.de' is a clothing shop ('Modehaus'), selling 'Kleidung' (clothes)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten mit dem Zug nach Berlin fahren.",
+        "answer": "www.bahn-online-tickets.de\nZugtickets Fahrpläne Reiseinformationen Angebote Berlin Hamburg",
+        "interferer": "www.busreisen-günstig.de\nBusreisen Städtereisen Europa Rundreisen Gruppenreisen",
+        "explanation": "The scenario is about travelling to Berlin by train. 'Bahn-online-tickets.de' is about train tickets ('Zugtickets') and mentions 'Berlin'. 'Busreisen-günstig.de' is about bus travel ('Busreisen'), not trains."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie brauchen neue Schuhe für Sport.",
+        "answer": "www.sportshop-aktiv.de\nSportschuhe Sportbekleidung Fitness Laufen Fußball Outdoor",
+        "interferer": "www.moebelhaus-traum.de\nMöbel Betten Sofas Tische Stühle Lampen Dekoration",
+        "explanation": "The scenario is about needing shoes for sport. 'Sportshop-aktiv.de' is a sports shop ('Sportshop') and mentions 'Sportschuhe' and 'Sportbekleidung' (sportswear). 'Moebelhaus-traum.de' is a furniture shop ('Moebelhaus'), selling 'Möbel' (furniture)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten Deutsch lernen.",
+        "answer": "www.sprachschule-international.de\nDeutschkurse Sprachkurse Englisch Französisch Spanisch Zertifikate",
+        "interferer": "www.kochschule-lecker.de\nKochkurse Backkurse Vegetarisch Vegan Rezepte Kochen lernen",
+        "explanation": "The scenario is about learning German. 'Sprachschule-international.de' is a language school ('Sprachschule') and mentions 'Deutschkurse' (German courses) and 'Deutsch lernen' (learn German). 'Kochschule-lecker.de' is a cooking school ('Kochschule'), offering 'Kochkurse' (cooking courses)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten eine Postkarte an einen Freund schicken.",
+        "answer": "www.postfiliale-online.de\nPostkarten Briefmarken Pakete Briefe Versand Services",
+        "interferer": "www.reisebuero-sonnenziel.de\nReisen Flüge Hotels Urlaub Ferien Last Minute Angebote",
+        "explanation": "The scenario is about sending a postcard. 'Postfiliale-online.de' is an online post office ('Postfiliale') and mentions 'Postkarten' and 'Briefmarken' (stamps). 'Reisebuero-sonnenziel.de' is a travel agency ('Reisebuero'), offering 'Reisen' (travel)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten ein Buch ausleihen.",
+        "answer": "www.stadtbibliothek-lesezeit.de\nBücher Bibliothek Ausleihe Lesen Veranstaltungen Öffnungszeiten",
+        "interferer": "www.kinopalast-filmwelt.de\nFilme Kino Kinoprogramm Tickets Popcorn Getränke Aktuell",
+        "explanation": "The scenario is about borrowing a book. 'Stadtbibliothek-lesezeit.de' is a city library ('Stadtbibliothek') and mentions 'Bücher' (books) and 'Ausleihe' (borrowing). 'Kinopalast-filmwelt.de' is a cinema ('Kino'), showing 'Filme' (films)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie suchen ein Geschenk für ein Kind zum Geburtstag.",
+        "answer": "www.spielzeugladen-bunt.de\nSpielzeug Kindergeschenke Geburtstag Puppen Autos Spiele Online Shop",
+        "interferer": "www.elektro-discount.de\nComputer Handys Fernseher Haushaltsgeräte Technik Angebote",
+        "explanation": "The scenario is about a birthday gift for a child. 'Spielzeugladen-bunt.de' is a toy shop ('Spielzeugladen') and mentions 'Spielzeug' (toys) and 'Kindergeschenke' (children's gifts). 'Elektro-discount.de' is an electronics shop ('Elektro'), selling 'Computer' and 'Handys' (mobile phones)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten im Park Eis essen.",
+        "answer": "www.eisdiele-am-park.de\nEis Eisbecher Waffeln Kaffee Kuchen Park Terrasse Sommer",
+        "interferer": "www.baeckerei-goldkorn.de\nBrot Brötchen Kuchen Gebäck Torten Frühstück Kaffee",
+        "explanation": "The scenario is about eating ice cream in the park. 'Eisdiele-am-park.de' is an ice cream shop ('Eisdiele') 'am Park' (at the park) and mentions 'Eis' (ice cream). 'Baeckerei-goldkorn.de' is a bakery ('Baeckerei'), selling 'Brot' (bread) and 'Kuchen' (cake)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie brauchen Medizin, weil Sie krank sind.",
+        "answer": "www.apotheke-gesundheit.de\nApotheke Medikamente Gesundheit Tabletten Hustensaft Beratung",
+        "interferer": "www.kosmetikstudio-schoen.de\nKosmetik Make-up Pflege Parfüm Schönheit Wellness Angebote",
+        "explanation": "The scenario is about needing medicine because of illness. 'Apotheke-gesundheit.de' is a pharmacy ('Apotheke') and mentions 'Medikamente' (medicine) and 'Gesundheit' (health). 'Kosmetikstudio-schoen.de' is a cosmetics studio ('Kosmetikstudio'), offering 'Kosmetik' (cosmetics) and 'Make-up'."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten ein T-Shirt kaufen.",
+        "answer": "www.modeboutique-trend.de\nT-Shirts Kleidung Hosen Röcke Jacken Accessoires Mode",
+        "interferer": "www.baumarkt-heimwerker.de\nWerkzeug Hammer Nägel Schrauben Farben Garten Grillen",
+        "explanation": "The scenario is about buying a T-shirt. 'Modeboutique-trend.de' is a fashion boutique ('Modeboutique') and mentions 'T-Shirts' and 'Kleidung' (clothes). 'Baumarkt-heimwerker.de' is a hardware store ('Baumarkt'), selling 'Werkzeug' (tools) and 'Hammer' (hammer)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten Musik hören.",
+        "answer": "www.musikstream-online.de\nMusik Streaming Songs Lieder Alben Playlists Künstler",
+        "interferer": "www.nachrichtenportal-aktuell.de\nNachrichten Politik Wirtschaft Sport Kultur Wetter Eilmeldungen",
+        "explanation": "The scenario is about listening to music. 'Musikstream-online.de' is a music streaming service ('Musik Streaming') and mentions 'Musik' (music) and 'Songs' (songs). 'Nachrichtenportal-aktuell.de' is a news portal ('Nachrichtenportal'), providing 'Nachrichten' (news)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie suchen Informationen über die Stadt.",
+        "answer": "www.stadtinfo-zentrum.de\nStadtinformationen Stadtplan Sehenswürdigkeiten Veranstaltungen Tourismus Hotels",
+        "interferer": "www.restaurant-deluxe.de\nRestaurant Essen Trinken Menü Mittagstisch Abendessen Reservierung",
+        "explanation": "The scenario is about finding information about the city. 'Stadtinfo-zentrum.de' is a city information center ('Stadtinfo-zentrum') and mentions 'Stadtinformationen' and 'Stadtplan' (city map). 'Restaurant-deluxe.de' is a restaurant ('Restaurant'), offering 'Essen' (food) and 'Trinken' (drinks)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten Gitarre spielen lernen.",
+        "answer": "www.musikschule-klangwelt.de\nMusikschule Gitarrenunterricht Musikinstrumente Kurse Workshops",
+        "interferer": "www.tanzschule-schwungvoll.de\nTanzschule Tanzkurse Ballett HipHop Salsa Standard Latein",
+        "explanation": "The scenario is about learning to play the guitar. 'Musikschule-klangwelt.de' is a music school ('Musikschule') and mentions 'Gitarrenunterricht' (guitar lessons) and 'Musikinstrumente' (musical instruments). 'Tanzschule-schwungvoll.de' is a dance school ('Tanzschule'), offering 'Tanzkurse' (dance courses)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie sind hungrig und möchten ein Sandwich kaufen.",
+        "answer": "www.snackbar-leckerbiss.de\nSnacks Sandwiches Salate Getränke Imbiss Mittagspause",
+        "interferer": "www.moebelhaus-modern.de\nMöbel Sofas Schränke Regale Tische Betten Wohnaccessoires",
+        "explanation": "The scenario is about buying a sandwich because of hunger. 'Snackbar-leckerbiss.de' is a snack bar ('Snackbar') and mentions 'Sandwiches' and 'Snacks'. 'Moebelhaus-modern.de' is a furniture store ('Moebelhaus'), selling 'Möbel' (furniture) and 'Sofas' (sofas)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie müssen ein Dokument ausdrucken.",
+        "answer": "www.copyshop-express.de\nKopien Drucken Scannen Dokumente Flyer Plakate Visitenkarten",
+        "interferer": "www.schuhgeschaeft-schoene-schritte.de\nSchuhe Stiefel Sandalen Sneaker Sportschuhe Kinderschuhe",
+        "explanation": "The scenario is about printing a document. 'Copyshop-express.de' is a copy shop ('Copyshop') and mentions 'Drucken' (printing) and 'Dokumente' (documents). 'Schuhgeschaeft-schoene-schritte.de' is a shoe shop ('Schuhgeschaeft'), selling 'Schuhe' (shoes) and 'Stiefel' (boots)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten ein neues Handy kaufen.",
+        "answer": "www.handyshop-topdeal.de\nHandys Smartphones Telefone Zubehör Verträge Angebote Online Shop",
+        "interferer": "www.buchladen-lesewelt.de\nBücher Romane Krimis Thriller Sachbücher Kinderbücher Hörbücher",
+        "explanation": "The scenario is about buying a new mobile phone (Handy). 'Handyshop-topdeal.de' is a mobile phone shop ('Handyshop') and mentions 'Handys' and 'Smartphones'. 'Buchladen-lesewelt.de' is a book shop ('Buchladen'), selling 'Bücher' (books) and 'Romane' (novels)."
+      },
+      {
+        "level": "easy",
+        "scenario": "Sie möchten Ihrer Freundin zum Geburtstag Blumen schicken.",
+        "answer": "www.blumenversand-online.de\nBlumen online bestellen Blumenversand Geburtstag Lieferung Blumensträuße",
+        "interferer": "www.supermarkt-online-frisch.de\nLebensmittel online bestellen Obst Gemüse Getränke Käse Brot Lieferung",
+        "explanation": "The scenario is about sending flowers for a friend's birthday. 'Blumenversand-online.de' is an online flower delivery service ('Blumenversand') and mentions 'Blumen online' (flowers online) and 'Geburtstag' (birthday). 'Supermarkt-online-frisch.de' is an online supermarket ('Supermarkt-online'), selling 'Lebensmittel online' (food online) and 'Obst' (fruit)."
+      },
+      
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten ein günstiges Hotel in der Nähe des Bahnhofs, aber es soll trotzdem ruhig sein.",
+          "answer": "www.stadthotel-bahnhof-ruhig.de\nGünstige Zimmer Ruhige Lage Nähe Bahnhof Frühstück inklusive Kostenloses WLAN",
+          "interferer": "www.hotel-bahnhof-zentrumsnah.de\nZentrale Lage Nähe Bahnhof Modern Komfortabel Frühstücksbuffet Bar",
+          "explanation": "The scenario wants a cheap AND quiet hotel near the station. 'stadthotel-bahnhof-ruhig.de' highlights 'Günstige Zimmer' (cheap rooms) and 'Ruhige Lage' (quiet location). 'hotel-bahnhof-zentrumsnah.de' emphasizes 'Zentrale Lage' (central location) and 'Komfortabel' (comfortable), suggesting a focus on convenience and comfort over quiet and cheapness, although both are near the station."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie suchen ein Geschenk für Ihre Schwester zum Geburtstag, sie mag moderne Kunst, aber es soll nicht zu teuer sein.",
+          "answer": "www.kunstgeschenke-modern-guenstig.de\nModerne Kunst Geschenke Drucke Poster Kunstdrucke Limitierte Editionen Affordable Art",
+          "interferer": "www.kunstgalerie-online-shop.de\nKunst Galerie Online Shop Gemälde Skulpturen Originale Moderne Kunst Zeitgenössische Kunst",
+          "explanation": "The scenario is for a modern art gift for a sister that's not too expensive. 'kunstgeschenke-modern-guenstig.de' offers 'Moderne Kunst Geschenke' (modern art gifts) and 'Affordable Art' (affordable art). 'kunstgalerie-online-shop.de' is an 'Kunst Galerie Online Shop' (art gallery online shop) with 'Originale Moderne Kunst' (original modern art) and 'Gemälde Skulpturen' (paintings sculptures), which is modern art, but originals and gallery items likely to be more expensive."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten ein Restaurant finden, das italienisches Essen hat und einen Garten, weil Sie draußen sitzen möchten.",
+          "answer": "www.italiener-gartenrestaurant.de\nItalienisches Restaurant Garten Terrasse Draußen sitzen Pizza Pasta Fisch Fleisch Sommergarten",
+          "interferer": "www.ristorante-italiano-city.de\nItalienisches Ristorante City Zentrum Mittagstisch Abendessen Klimaanlage Terrasse",
+          "explanation": "The scenario wants an Italian restaurant with a garden for outdoor seating. 'italiener-gartenrestaurant.de' explicitly states 'Garten Terrasse Draußen sitzen' (garden terrace sit outside). 'ristorante-italiano-city.de' mentions 'Terrasse' but emphasizes 'City Zentrum' (city center) and 'Klimaanlage' (air conditioning), suggesting a city restaurant with a terrace, but not specifically highlighting a garden, which is a quieter, greener outdoor space."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie brauchen ein schnelles Rezept für ein Abendessen mit Fisch, aber ohne viel Aufwand, da Sie wenig Zeit haben.",
+          "answer": "www.schnelle-fisch-rezepte-abendessen.de\nSchnelle Fisch Rezepte Abendessen Einfach Wenig Zutaten 30 Minuten Fertig Alltagsküche",
+          "interferer": "www.fischgerichte-rezepte-gourmet.de\nFischgerichte Rezepte Gourmet Küche Ausgefallen Festlich Besondere Anlässe Fischspezialitäten",
+          "explanation": "The scenario needs a quick and easy fish dinner recipe. 'schnelle-fisch-rezepte-abendessen.de' offers 'Schnelle Fisch Rezepte Abendessen' (quick fish recipes dinner) and 'Einfach Wenig Zutaten 30 Minuten Fertig' (easy few ingredients 30 minutes ready). 'fischgerichte-rezepte-gourmet.de' offers 'Fischgerichte Rezepte Gourmet Küche' (fish dishes recipes gourmet cuisine) and 'Ausgefallen Festlich Besondere Anlässe' (unusual festive special occasions), which are fish recipes, but gourmet and for special occasions, implying more effort and time."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten wissen, ob ein bestimmtes Fitnessstudio auch am Wochenende geöffnet ist und Kinderbetreuung anbietet.",
+          "answer": "www.fitnessstudio-wochenende-kinderbetreuung.de\nFitnessstudio Wochenende Geöffnet Kinderbetreuung Samstag Sonntag Kurse Geräte Wellness",
+          "interferer": "www.familienfreundliches-fitnessstudio.de\nFamilienfreundliches Fitnessstudio Kurse Kinderprogramm Spielbereich Betreuung Eltern Kind Angebote",
+          "explanation": "The scenario asks about weekend opening and childcare at a specific gym. 'fitnessstudio-wochenende-kinderbetreuung.de' explicitly mentions 'Wochenende Geöffnet Kinderbetreuung Samstag Sonntag' (weekend open childcare Saturday Sunday). 'familienfreundliches-fitnessstudio.de' is 'Familienfreundliches Fitnessstudio' (family-friendly gym) with 'Kinderprogramm Spielbereich Betreuung Eltern Kind Angebote' (children's program play area care parent child offers), suggesting childcare and family-friendliness, but doesn't directly confirm weekend hours, which is also a key requirement."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie suchen eine Regenjacke, die leicht ist und man gut in einer Tasche verstauen kann, falls es nicht regnet.",
+          "answer": "www.leichte-regenjacken-faltbar.de\nLeichte Regenjacken Faltbar Packbar Wasserdicht Atmungsaktiv Reise Outdoor",
+          "interferer": "www.outdoorjacken-wasserabweisend.de\nOutdoor Jacken Wasserabweisend Robust Winddicht Funktionell Sport Wandern Camping",
+          "explanation": "The scenario needs a light and packable raincoat. 'leichte-regenjacken-faltbar.de' highlights 'Leichte Regenjacken Faltbar Packbar' (light rain jackets foldable packable). 'outdoorjacken-wasserabweisend.de' offers 'Outdoor Jacken Wasserabweisend' (outdoor jackets water-repellent), which are water-resistant, but 'wasserabweisend' is less waterproof than a dedicated 'Regenjacke' (rain jacket), and doesn't emphasize packability as strongly."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten ein Geschenk für einen Kollegen zum Abschied finden, es soll etwas Persönliches sein, aber nicht zu privat.",
+          "answer": "www.abschiedsgeschenke-kollegen-persoenlich.de\nAbschiedsgeschenke Kollegen Persönlich Individuell Gravur Büro Geschenkideen Team Abschied",
+          "interferer": "www.geschenke-buero-arbeitsplatz.de\nGeschenke Büro Arbeitsplatz Praktisch Nützlich Schreibtisch Organisation Kollegen Team Bürobedarf",
+          "explanation": "The scenario is for a personal but not too private farewell gift for a colleague. 'abschiedsgeschenke-kollegen-persoenlich.de' offers 'Abschiedsgeschenke Kollegen Persönlich Individuell' (farewell gifts colleagues personal individual) and 'Gravur' (engraving) suggesting personalization. 'geschenke-buero-arbeitsplatz.de' offers 'Geschenke Büro Arbeitsplatz Praktisch Nützlich' (gifts office workplace practical useful), which are office gifts for colleagues, but emphasizes practicality over personal touch for a farewell."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten wissen, ob es in einem bestimmten Ort ein Museum gibt, das sich speziell mit der Geschichte der Region beschäftigt.",
+          "answer": "www.heimatmuseum-regionalgeschichte.de\nHeimatmuseum Regionalgeschichte Lokale Geschichte Ausstellung Sammlung Ort Region Kultur",
+          "interferer": "www.stadtmuseum-geschichte-ausstellungen.de\nStadtmuseum Geschichte Ausstellungen Stadtgeschichte Kulturgeschichte Dauerausstellung Sonderausstellung",
+          "explanation": "The scenario is about a museum focused on regional history in a specific place. 'heimatmuseum-regionalgeschichte.de' is a 'Heimatmuseum Regionalgeschichte' (local history museum regional history) and emphasizes 'Regionale Geschichte' (regional history) and 'Ort Region' (place region). 'stadtmuseum-geschichte-ausstellungen.de' is a 'Stadtmuseum Geschichte Ausstellungen' (city museum history exhibitions) focusing on 'Stadtgeschichte' (city history) and 'Kulturgeschichte' (cultural history), which is history-related, but the 'Heimatmuseum' more directly implies regional/local focus."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie suchen einen Kurs, um entspannter zu werden, aber es sollte kein Yoga sein, sondern etwas anderes.",
+          "answer": "www.entspannungskurse-ohne-yoga.de\nEntspannungskurse Ohne Yoga Meditation Autogenes Training Progressive Muskelentspannung Stressabbau",
+          "interferer": "www.wellness-entspannung-angebote.de\nWellness Entspannung Angebote Massage Sauna Thermalbad Ruhebereich Entspannungskurse",
+          "explanation": "The scenario needs a relaxation course that is *not* yoga. 'entspannungskurse-ohne-yoga.de' explicitly offers 'Entspannungskurse Ohne Yoga' (relaxation courses without yoga) and lists alternatives like 'Meditation Autogenes Training'. 'wellness-entspannung-angebote.de' offers 'Wellness Entspannung Angebote' (wellness relaxation offers) including 'Entspannungskurse' (relaxation courses), but doesn't exclude yoga, and wellness centers often include yoga, making it less specific to the 'no yoga' requirement."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten ein Geschenk für ein Paar zum Einzug in eine neue Wohnung, es soll etwas Praktisches für die Küche sein, aber kein Geschirr.",
+          "answer": "www.kuechenhelfer-einzugsgeschenk.de\nKüchenhelfer Einzugsgeschenk Praktisch Nützlich Kochutensilien Küchengeräte Aufbewahrung",
+          "interferer": "www.haushaltswaren-geschenkideen.de\nHaushaltswaren Geschenkideen Küche Wohnen Bad Praktisch Schön Nützlich Dekoration",
+          "explanation": "The scenario is for a practical kitchen housewarming gift, but *not* dishes. 'kuechenhelfer-einzugsgeschenk.de' offers 'Küchenhelfer Einzugsgeschenk Praktisch Nützlich' (kitchen helper housewarming gift practical useful) and lists 'Kochutensilien Küchengeräte Aufbewahrung' (cooking utensils kitchen appliances storage), which are kitchen items excluding dishes. 'haushaltswaren-geschenkideen.de' offers 'Haushaltswaren Geschenkideen' (household goods gift ideas) for 'Küche Wohnen Bad' (kitchen living bathroom) and 'Praktisch Schön Nützlich Dekoration' (practical beautiful useful decoration), which is broader household items and could include dishes, making it less specific to the 'no dishes' requirement."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten wissen, ob ein bestimmtes Kino auch Filme für Senioren mit reduzierter Lautstärke zeigt.",
+          "answer": "www.seniorenkino-leise-filme.de\nSeniorenkino Leise Filme Reduzierte Lautstärke Nachmittagsvorstellungen Bequeme Sitze Barrierefrei",
+          "interferer": "www.kino-komfort-programm.de\nKino Komfort Programm Bequeme Sitze Größerer Reihenabstand Bessere Sicht Weniger Werbung",
+          "explanation": "The scenario is about a cinema showing films for seniors with reduced volume. 'seniorenkino-leise-filme.de' explicitly states 'Seniorenkino Leise Filme Reduzierte Lautstärke' (senior cinema quiet films reduced volume). 'kino-komfort-programm.de' offers 'Kino Komfort Programm' (cinema comfort program) with 'Bequeme Sitze Größerer Reihenabstand' (comfortable seats wider row spacing) and 'Weniger Werbung' (less advertising), focusing on general comfort and better viewing experience, but not specifically reduced volume for seniors."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie suchen ein Rezept für einen Geburtstagskuchen für Kinder, der einfach zu backen ist und bunt aussieht, aber ohne viel künstliche Farbe.",
+          "answer": "www.kindergeburtstagskuchen-bunt-natuerlich.de\nKindergeburtstagskuchen Bunt Natürlich Einfach Backen Obst Deko Natürliche Farben Wenig Zucker",
+          "interferer": "www.geburtstagskuchen-kinder-dekorieren.de\nGeburtstagskuchen Kinder Dekorieren Bunt Smarties Streusel Figuren Fondant Kreativ Backen",
+          "explanation": "The scenario needs a simple and colorful birthday cake recipe for kids, but with *natural* colors. 'kindergeburtstagskuchen-bunt-natuerlich.de' offers 'Kindergeburtstagskuchen Bunt Natürlich' (kids birthday cake colorful natural) and 'Natürliche Farben' (natural colors). 'geburtstagskuchen-kinder-dekorieren.de' offers 'Geburtstagskuchen Kinder Dekorieren Bunt' (birthday cake kids decorate colorful) with 'Smarties Streusel Figuren Fondant', which are common cake decorations, but often contain artificial colors, contradicting the 'natural colors' requirement."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten wissen, ob ein bestimmter Arzt in der Nähe auch Hausbesuche macht, da Sie nicht gut laufen können.",
+          "answer": "www.arztpraxis-hausbesuche-mobil.de\nArztpraxis Hausbesuche Mobil Patientenbetreuung Hausbesuchsservice Nähe Termine Vereinbarung",
+          "interferer": "www.barrierefreie-arztpraxis-stadt.de\nBarrierefreie Arztpraxis Stadt Rollstuhl Zugang Aufzug Behinderten WC Ebenerdig Parkplatz",
+          "explanation": "The scenario is about a doctor who makes house calls because of mobility issues. 'arztpraxis-hausbesuche-mobil.de' explicitly offers 'Arztpraxis Hausbesuche Mobil Patientenbetreuung Hausbesuchsservice' (doctor's office house calls mobile patient care house call service). 'barrierefreie-arztpraxis-stadt.de' is a 'Barrierefreie Arztpraxis Stadt' (barrier-free doctor's office city) with 'Rollstuhl Zugang Aufzug Behinderten WC' (wheelchair access elevator disabled toilet), which is accessible for people with mobility issues *at the practice*, but doesn't confirm house visits for those unable to travel."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten ein Geschenk für einen Teenager finden, der sich für Computerspiele interessiert, aber es soll kein reines Computerspiel sein, sondern etwas Anderes.",
+          "answer": "www.gaming-geschenke-nicht-spiele.de\nGaming Geschenke Nicht Spiele Zubehör Merchandise Fanartikel Gaming Gadgets Technik",
+          "interferer": "www.computerspiele-zubehoer-online.de\nComputerspiele Zubehör Online Shop Gaming Headsets Mäuse Tastaturen Controller Gaming Stühle",
+          "explanation": "The scenario is for a gift for a gamer, but *not* a computer game itself. 'gaming-geschenke-nicht-spiele.de' explicitly says 'Gaming Geschenke Nicht Spiele' (gaming gifts not games) and offers 'Zubehör Merchandise Fanartikel Gaming Gadgets Technik' (accessories merchandise fan items gaming gadgets tech). 'computerspiele-zubehoer-online.de' offers 'Computerspiele Zubehör Online Shop' (computer games accessories online shop) including 'Gaming Headsets Mäuse Tastaturen Controller Gaming Stühle' (gaming headsets mice keyboards controllers gaming chairs), which are gaming-related, but primarily *accessories* for computer games, not explicitly *excluding* games as the first option does."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten wissen, ob ein bestimmtes Schwimmbad auch ein Außenbecken hat, das im Winter geöffnet ist.",
+          "answer": "www.schwimmbad-aussenbecken-winter.de\nSchwimmbad Außenbecken Winter Geöffnet Beheizt Warm Freibad Winterbaden Schwimmen",
+          "interferer": "www.hallenbad-freibad-kombination.de\nHallenbad Freibad Kombination Innenbecken Außenbecken Schwimmkurse Rutschen Familienbad",
+          "explanation": "The scenario is about a swimming pool with an *outdoor pool open in winter*. 'schwimmbad-aussenbecken-winter.de' explicitly states 'Schwimmbad Außenbecken Winter Geöffnet' (swimming pool outdoor pool winter open) and 'Beheizt Warm Freibad Winterbaden' (heated warm outdoor pool winter swimming). 'hallenbad-freibad-kombination.de' is a 'Hallenbad Freibad Kombination' (indoor pool outdoor pool combination) with 'Innenbecken Außenbecken' (indoor pool outdoor pool), confirming an outdoor pool exists, but not specifically that it's open or heated in winter."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie suchen ein Rezept für ein vegetarisches Gericht, das man kalt essen kann und gut für ein Picknick geeignet ist.",
+          "answer": "www.vegetarische-picknick-rezepte-kalt.de\nVegetarische Picknick Rezepte Kalt Zum Mitnehmen Salate Wraps Fingerfood Sommer",
+          "interferer": "www.vegetarische-sommergerichte-leicht.de\nVegetarische Sommergerichte Leicht Frisch Salate Gemüse Grillen Saisonale Zutaten",
+          "explanation": "The scenario needs a cold vegetarian recipe suitable for a picnic. 'vegetarische-picknick-rezepte-kalt.de' offers 'Vegetarische Picknick Rezepte Kalt' (vegetarian picnic recipes cold) and 'Zum Mitnehmen Salate Wraps Fingerfood' (to take away salads wraps finger food). 'vegetarische-sommergerichte-leicht.de' offers 'Vegetarische Sommergerichte Leicht Frisch' (vegetarian summer dishes light fresh) and 'Salate Gemüse Grillen', which are summer and vegetarian, but grilling implies cooking and warmth, and doesn't explicitly highlight 'cold' and 'takeaway' picnic suitability."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten ein Geschenk für eine Frau finden, die gerne kocht, aber sie hat schon sehr viele Kochbücher, daher suchen Sie etwas Anderes.",
+          "answer": "www.kochgeschenke-nicht-kochbuecher.de\nKochgeschenke Nicht Kochbücher Küchengeräte Kochutensilien Gourmet Lebensmittel Gewürze",
+          "interferer": "www.kochbuch-neuheiten-empfehlungen.de\nKochbuch Neuheiten Empfehlungen Bestseller Aktuelle Kochbücher Saisonale Küche Internationale Rezepte",
+          "explanation": "The scenario is for a cooking gift for a woman who already has many cookbooks, so *not* a cookbook. 'kochgeschenke-nicht-kochbuecher.de' explicitly states 'Kochgeschenke Nicht Kochbücher' (cooking gifts not cookbooks) and offers 'Küchengeräte Kochutensilien Gourmet Lebensmittel Gewürze' (kitchen appliances cooking utensils gourmet food spices). 'kochbuch-neuheiten-empfehlungen.de' offers 'Kochbuch Neuheiten Empfehlungen' (cookbook new releases recommendations) and 'Aktuelle Kochbücher' (current cookbooks), which are cookbooks, directly contradicting the 'no cookbooks' requirement."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten wissen, ob ein bestimmtes Theater auch Vorstellungen am Vormittag für Familien mit kleinen Kindern anbietet.",
+          "answer": "www.kindertheater-vormittagsvorstellung.de\nKindertheater Vormittagsvorstellung Familien Mit Kleinkindern Kurze Stücke Geeignet Alter 3-6",
+          "interferer": "www.familientheater-wochenendprogramm.de\nFamilientheater Wochenendprogramm Samstag Sonntag Nachmittagsvorstellungen Kinderstücke Jugendstücke",
+          "explanation": "The scenario is about morning performances for families with young children at a specific theater. 'kindertheater-vormittagsvorstellung.de' explicitly offers 'Kindertheater Vormittagsvorstellung' (children's theater morning performance) and 'Familien Mit Kleinkindern Kurze Stücke Geeignet Alter 3-6' (families with toddlers short plays suitable age 3-6). 'familientheater-wochenendprogramm.de' offers 'Familientheater Wochenendprogramm' (family theater weekend program) and 'Nachmittagsvorstellungen Kinderstücke' (afternoon performances children's plays), suggesting weekend family theater, but afternoon performances, not specifically morning."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie suchen eine Wohnung zur Miete mit Balkon oder Terrasse, aber im Erdgeschoss, weil Sie nicht gut Treppen steigen können.",
+          "answer": "www.erdgeschosswohnung-balkon-barrierefrei.de\nErdgeschosswohnung Balkon Terrasse Barrierefrei Keine Treppen Gartenmitbenutzung Rollstuhlgerecht",
+          "interferer": "www.wohnungen-terrasse-garten-stadt.de\nWohnungen Terrasse Garten Stadt Mietwohnungen Grünruhelage Ruhig Familienfreundlich",
+          "explanation": "The scenario needs a ground floor apartment with a balcony or terrace, due to difficulty climbing stairs. 'erdgeschosswohnung-balkon-barrierefrei.de' offers 'Erdgeschosswohnung Balkon Terrasse Barrierefrei Keine Treppen' (ground floor apartment balcony terrace barrier-free no stairs) and 'Rollstuhlgerecht' (wheelchair accessible), explicitly addressing the no-stairs need. 'wohnungen-terrasse-garten-stadt.de' offers 'Wohnungen Terrasse Garten Stadt' (apartments terrace garden city) and 'Grünruhelage Ruhig Familienfreundlich' (green quiet family-friendly), confirming terrace/garden, but not specifically ground floor or no stairs access."
+        },
+        {
+          "level": "very hard",
+          "scenario": "Sie möchten ein Geschenk für einen Mann finden, der gerne Whisky trinkt, aber er bevorzugt milden Whisky, keinen starken.",
+          "answer": "www.whisky-geschenke-mild-aromatisch.de\nWhisky Geschenke Mild Aromatisch Sanft Weich Fruchtig Einsteiger Whisky Sets",
+          "interferer": "www.whisky-premium-geschenke-set.de\nWhisky Premium Geschenke Set Exklusiv Selten Single Malt Limited Edition Tasting Gläser",
+          "explanation": "The scenario is for a whisky gift for a man who prefers *mild* whisky. 'whisky-geschenke-mild-aromatisch.de' offers 'Whisky Geschenke Mild Aromatisch' (whisky gifts mild aromatic) and 'Sanft Weich Fruchtig Einsteiger Whisky Sets' (gentle soft fruity beginner whisky sets), explicitly focusing on mildness. 'whisky-premium-geschenke-set.de' offers 'Whisky Premium Geschenke Set Exklusiv Selten Single Malt Limited Edition' (whisky premium gifts set exclusive rare single malt limited edition) and 'Tasting Gläser' (tasting glasses), emphasizing premium quality, exclusivity and tasting experience, suggesting stronger, more complex whiskies rather than mild ones."
+        },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten ein günstiges Hotel in der Nähe des Bahnhofs, aber es soll trotzdem ruhig sein.",
+            "answer": "www.stadthotel-bahnhof-ruhig.de\nGünstige Zimmer Ruhige Lage Nähe Bahnhof Frühstück inklusive Kostenloses WLAN",
+            "interferer": "www.hotel-bahnhof-zentrumsnah.de\nZentrale Lage Nähe Bahnhof Modern Komfortabel Frühstücksbuffet Bar",
+            "explanation": "Distinction is between 'ruhig' (quiet) and 'zentral' (central). Both are near the station, but one emphasizes quietness, the other central location and comfort, potentially at the cost of quiet and price."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen ein Geschenk für Ihre Schwester zum Geburtstag, sie mag moderne Kunst, aber es soll nicht zu teuer sein.",
+            "answer": "www.kunstgeschenke-modern-guenstig.de\nModerne Kunst Geschenke Drucke Poster Kunstdrucke Limitierte Editionen Affordable Art",
+            "interferer": "www.kunstgalerie-online-shop.de\nKunst Galerie Online Shop Gemälde Skulpturen Originale Moderne Kunst Zeitgenössische Kunst",
+            "explanation": "Distinction is 'günstig' (cheap/affordable) vs. 'Originale' (originals). Both are modern art, but one focuses on affordable prints, the other on potentially expensive originals from a gallery."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten ein Restaurant finden, das italienisches Essen hat und einen Garten, weil Sie draußen sitzen möchten.",
+            "answer": "www.italiener-gartenrestaurant.de\nItalienisches Restaurant Garten Terrasse Draußen sitzen Pizza Pasta Fisch Fleisch Sommergarten",
+            "interferer": "www.ristorante-italiano-city.de\nItalienisches Ristorante City Zentrum Mittagstisch Abendessen Klimaanlage Terrasse",
+            "explanation": "Distinction is 'Garten' (garden) vs. 'Terrasse' (terrace). Both offer outdoor seating ('Draußen sitzen', 'Terrasse'), but 'Garten' implies a greener, possibly quieter outdoor space compared to a potentially more urban 'Terrasse'."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie brauchen ein schnelles Rezept für ein Abendessen mit Fisch, aber ohne viel Aufwand, da Sie wenig Zeit haben.",
+            "answer": "www.schnelle-fisch-rezepte-abendessen.de\nSchnelle Fisch Rezepte Abendessen Einfach Wenig Zutaten 30 Minuten Fertig Alltagsküche",
+            "interferer": "www.fischgerichte-rezepte-gourmet.de\nFischgerichte Rezepte Gourmet Küche Ausgefallen Festlich Besondere Anlässe Fischspezialitäten",
+            "explanation": "Distinction is 'schnell und einfach' (quick and easy) vs. 'Gourmet und ausgefallen' (gourmet and unusual). Both are fish recipes, but one emphasizes speed and simplicity, the other gourmet quality and special occasions, implying more time and effort."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmtes Fitnessstudio auch am Wochenende geöffnet ist und Kinderbetreuung anbietet.",
+            "answer": "www.fitnessstudio-wochenende-kinderbetreuung.de\nFitnessstudio Wochenende Geöffnet Kinderbetreuung Samstag Sonntag Kurse Geräte Wellness",
+            "interferer": "www.familienfreundliches-fitnessstudio.de\nFamilienfreundliches Fitnessstudio Kurse Kinderprogramm Spielbereich Betreuung Eltern Kind Angebote",
+            "explanation": "Distinction is 'Wochenende geöffnet' (weekend open) AND 'Kinderbetreuung' (childcare) vs. 'Familienfreundlich' (family-friendly). Both are family-related, but one explicitly confirms weekend hours and childcare, the other only implies family-friendliness which might include childcare, but not necessarily weekend opening."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen eine Regenjacke, die leicht ist und man gut in einer Tasche verstauen kann, falls es nicht regnet.",
+            "answer": "www.leichte-regenjacken-faltbar.de\nLeichte Regenjacken Faltbar Packbar Wasserdicht Atmungsaktiv Reise Outdoor",
+            "interferer": "www.outdoorjacken-wasserabweisend.de\nOutdoor Jacken Wasserabweisend Robust Winddicht Funktionell Sport Wandern Camping",
+            "explanation": "Distinction is 'leicht und faltbar' (light and foldable) vs. 'wasserabweisend und robust' (water-repellent and robust). Both are jackets for outdoor use and weather protection, but one prioritizes lightness and packability, the other water resistance and durability, implying different needs."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten ein Geschenk für einen Kollegen zum Abschied finden, es soll etwas Persönliches sein, aber nicht zu privat.",
+            "answer": "www.abschiedsgeschenke-kollegen-persoenlich.de\nAbschiedsgeschenke Kollegen Persönlich Individuell Gravur Büro Geschenkideen Team Abschied",
+            "interferer": "www.geschenke-buero-arbeitsplatz.de\nGeschenke Büro Arbeitsplatz Praktisch Nützlich Schreibtisch Organisation Kollegen Team Bürobedarf",
+            "explanation": "Distinction is 'persönlich und individuell' (personal and individual) vs. 'praktisch und nützlich' (practical and useful). Both are for colleagues at work, but one emphasizes a personal touch (gravur - engraving), the other practicality and office utility, less emotional for a farewell."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob es in einem bestimmten Ort ein Museum gibt, das sich speziell mit der Geschichte der Region beschäftigt.",
+            "answer": "www.heimatmuseum-regionalgeschichte.de\nHeimatmuseum Regionalgeschichte Lokale Geschichte Ausstellung Sammlung Ort Region Kultur",
+            "interferer": "www.stadtmuseum-geschichte-ausstellungen.de\nStadtmuseum Geschichte Ausstellungen Stadtgeschichte Kulturgeschichte Dauerausstellung Sonderausstellung",
+            "explanation": "Distinction is 'Regionalgeschichte' (regional history) vs. 'Stadtgeschichte' (city history). Both are history museums, but one focuses on regional history ('Heimatmuseum'), the other city history ('Stadtmuseum'), requiring the learner to differentiate between region and city context."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen einen Kurs, um entspannter zu werden, aber es sollte kein Yoga sein, sondern etwas anderes.",
+            "answer": "www.entspannungskurse-ohne-yoga.de\nEntspannungskurse Ohne Yoga Meditation Autogenes Training Progressive Muskelentspannung Stressabbau",
+            "interferer": "www.wellness-entspannung-angebote.de\nWellness Entspannung Angebote Massage Sauna Thermalbad Ruhebereich Entspannungskurse",
+            "explanation": "Distinction is 'ohne Yoga' (without Yoga) vs. general 'Entspannungskurse' (relaxation courses). Both offer relaxation, but one explicitly excludes Yoga and lists alternatives, the other is broader wellness and might include Yoga, violating the 'no yoga' condition."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten ein Geschenk für ein Paar zum Einzug in eine neue Wohnung, es soll etwas Praktisches für die Küche sein, aber kein Geschirr.",
+            "answer": "www.kuechenhelfer-einzugsgeschenk.de\nKüchenhelfer Einzugsgeschenk Praktisch Nützlich Kochutensilien Küchengeräte Aufbewahrung",
+            "interferer": "www.haushaltswaren-geschenkideen.de\nHaushaltswaren Geschenkideen Küche Wohnen Bad Praktisch Schön Nützlich Dekoration",
+            "explanation": "Distinction is 'Küchenhelfer' (kitchen helpers) *excluding* 'Geschirr' (dishes) vs. general 'Haushaltswaren' (household goods). Both are housewarming gifts and practical, but one specifies kitchen *tools and appliances* (excluding dishes), the other is broader household items and could include dishes, which are explicitly excluded."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmtes Kino auch Filme für Senioren mit reduzierter Lautstärke zeigt.",
+            "answer": "www.seniorenkino-leise-filme.de\nSeniorenkino Leise Filme Reduzierte Lautstärke Nachmittagsvorstellungen Bequeme Sitze Barrierefrei",
+            "interferer": "www.kino-komfort-programm.de\nKino Komfort Programm Bequeme Sitze Größerer Reihenabstand Bessere Sicht Weniger Werbung",
+            "explanation": "Distinction is 'leise Filme für Senioren' (quiet films for seniors) vs. general 'Komfort Programm' (comfort program). Both offer comfort features ('Bequeme Sitze'), but one specifically addresses reduced volume for seniors, the other general comfort for all, not necessarily addressing the specific need of seniors with hearing sensitivity."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen ein Rezept für einen Geburtstagskuchen für Kinder, der einfach zu backen ist und bunt aussieht, aber ohne viel künstliche Farbe.",
+            "answer": "www.kindergeburtstagskuchen-bunt-natuerlich.de\nKindergeburtstagskuchen Bunt Natürlich Einfach Backen Obst Deko Natürliche Farben Wenig Zucker",
+            "interferer": "www.geburtstagskuchen-kinder-dekorieren.de\nGeburtstagskuchen Kinder Dekorieren Bunt Smarties Streusel Figuren Fondant Kreativ Backen",
+            "explanation": "Distinction is 'bunt und natürlich' (colorful and natural) vs. 'bunt dekorieren' (decorate colorfully) with potentially artificial decorations. Both are colorful birthday cakes for children, but one emphasizes natural colors and decorations (Obst - fruit), the other common *artificial* decorations (Smarties, Streusel, Fondant), contradicting the 'no artificial color' requirement."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmter Arzt in der Nähe auch Hausbesuche macht, da Sie nicht gut laufen können.",
+            "answer": "www.arztpraxis-hausbesuche-mobil.de\nArztpraxis Hausbesuche Mobil Patientenbetreuung Hausbesuchsservice Nähe Termine Vereinbarung",
+            "interferer": "www.barrierefreie-arztpraxis-stadt.de\nBarrierefreie Arztpraxis Stadt Rollstuhl Zugang Aufzug Behinderten WC Ebenerdig Parkplatz",
+            "explanation": "Distinction is 'Hausbesuche' (house calls) vs. 'Barrierefrei' (barrier-free) practice. Both address mobility issues, but one offers doctors coming to the patient's home ('Hausbesuche'), the other accessibility *at the practice itself* ('Barrierefrei'), which is helpful if the patient *can* get to the practice, but not if they are housebound."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten ein Geschenk für einen Teenager finden, der sich für Computerspiele interessiert, aber es soll kein reines Computerspiel sein, sondern etwas Anderes.",
+            "answer": "www.gaming-geschenke-nicht-spiele.de\nGaming Geschenke Nicht Spiele Zubehör Merchandise Fanartikel Gaming Gadgets Technik",
+            "interferer": "www.computerspiele-zubehoer-online.de\nComputerspiele Zubehör Online Shop Gaming Headsets Mäuse Tastaturen Controller Gaming Stühle",
+            "explanation": "Distinction is 'Gaming Geschenke nicht Spiele' (gaming gifts not games) vs. 'Computerspiele Zubehör' (computer game accessories). Both are gaming-related, but one explicitly excludes games and focuses on accessories and merchandise *instead*, the other offers accessories, which are related, but doesn't exclude games themselves as a potential gift."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmtes Schwimmbad auch ein Außenbecken hat, das im Winter geöffnet ist.",
+            "answer": "www.schwimmbad-aussenbecken-winter.de\nSchwimmbad Außenbecken Winter Geöffnet Beheizt Warm Freibad Winterbaden Schwimmen",
+            "interferer": "www.hallenbad-freibad-kombination.de\nHallenbad Freibad Kombination Innenbecken Außenbecken Schwimmkurse Rutschen Familienbad",
+            "explanation": "Distinction is 'Außenbecken im Winter geöffnet' (outdoor pool open in winter) vs. 'Hallenbad-Freibad Kombination' (indoor-outdoor pool combination). Both have outdoor pools, but one confirms winter opening and heating ('Winter Geöffnet Beheizt'), the other only confirms the existence of an outdoor pool in general, not specifically winter usability."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen ein Rezept für ein vegetarisches Gericht, das man kalt essen kann und gut für ein Picknick geeignet ist.",
+            "answer": "www.vegetarische-picknick-rezepte-kalt.de\nVegetarische Picknick Rezepte Kalt Zum Mitnehmen Salate Wraps Fingerfood Sommer",
+            "interferer": "www.vegetarische-sommergerichte-leicht.de\nVegetarische Sommergerichte Leicht Frisch Salate Gemüse Grillen Saisonale Zutaten",
+            "explanation": "Distinction is 'Picknick Rezepte kalt' (picnic recipes cold) vs. 'Sommergerichte leicht' (summer dishes light). Both are vegetarian and suitable for summer and light meals, but one specifically targets 'Picknick' and 'kalt' (cold), making it directly fit the picnic requirement, the other is more general summer dishes and includes 'Grillen' (grilling), implying cooking and warm food."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten ein Geschenk für eine Frau finden, die gerne kocht, aber sie hat schon sehr viele Kochbücher, daher suchen Sie etwas Anderes.",
+            "answer": "www.kochgeschenke-nicht-kochbuecher.de\nKochgeschenke Nicht Kochbücher Küchengeräte Kochutensilien Gourmet Lebensmittel Gewürze",
+            "interferer": "www.kochbuch-neuheiten-empfehlungen.de\nKochbuch Neuheiten Empfehlungen Bestseller Aktuelle Kochbücher Saisonale Küche Internationale Rezepte",
+            "explanation": "Distinction is 'Kochgeschenke nicht Kochbücher' (cooking gifts not cookbooks) vs. 'Kochbuch Neuheiten' (cookbook new releases). One explicitly avoids cookbooks and suggests kitchen tools and ingredients, the other directly promotes *new* cookbooks, directly contradicting the 'no cookbooks' requirement."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmtes Theater auch Vorstellungen am Vormittag für Familien mit kleinen Kindern anbietet.",
+            "answer": "www.kindertheater-vormittagsvorstellung.de\nKindertheater Vormittagsvorstellung Familien Mit Kleinkindern Kurze Stücke Geeignet Alter 3-6",
+            "interferer": "www.familientheater-wochenendprogramm.de\nFamilientheater Wochenendprogramm Samstag Sonntag Nachmittagsvorstellungen Kinderstücke Jugendstücke",
+            "explanation": "Distinction is 'Vormittagsvorstellung' (morning performance) vs. 'Wochenendprogramm Nachmittagsvorstellungen' (weekend program afternoon performances). Both are family/children's theater, but one specifically offers morning shows ('Vormittagsvorstellung') suitable for toddlers, the other weekend afternoon shows ('Nachmittagsvorstellungen'), less convenient for very young children's schedules."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen eine Wohnung zur Miete mit Balkon oder Terrasse, aber im Erdgeschoss, weil Sie nicht gut Treppen steigen können.",
+            "answer": "www.erdgeschosswohnung-balkon-barrierefrei.de\nErdgeschosswohnung Balkon Terrasse Barrierefrei Keine Treppen Gartenmitbenutzung Rollstuhlgerecht",
+            "interferer": "www.wohnungen-terrasse-garten-stadt.de\nWohnungen Terrasse Garten Stadt Mietwohnungen Grünruhelage Ruhig Familienfreundlich",
+            "explanation": "Distinction is 'Erdgeschosswohnung' (ground floor apartment) and 'barrierefrei' (barrier-free) vs. general 'Wohnungen mit Terrasse/Garten' (apartments with terrace/garden). Both offer terrace/garden, but one explicitly confirms ground floor and no stairs ('Erdgeschosswohnung Keine Treppen'), addressing the mobility issue directly, the other just offers terrace/garden in the city, without specifying floor level."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten ein Geschenk für einen Mann finden, der gerne Whisky trinkt, aber er bevorzugt milden Whisky, keinen starken.",
+            "answer": "www.whisky-geschenke-mild-aromatisch.de\nWhisky Geschenke Mild Aromatisch Sanft Weich Fruchtig Einsteiger Whisky Sets",
+            "interferer": "www.whisky-premium-geschenke-set.de\nWhisky Premium Geschenke Set Exklusiv Selten Single Malt Limited Edition Tasting Gläser",
+            "explanation": "Distinction is 'mild und aromatisch' (mild and aromatic) vs. 'Premium und Exklusiv' (premium and exclusive). Both are whisky gifts, but one emphasizes mildness and beginner sets ('Mild Aromatisch Einsteiger'), the other premium quality and exclusivity ('Premium Exklusiv Single Malt'), suggesting stronger, more complex whiskies for connoisseurs, not mild for beginners."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmtes Hotel in der Nähe vom See auch einen privaten Strandabschnitt hat, nur für Hotelgäste.",
+            "answer": "www.hotel-see-privatstrand.de\nHotel See Privatstrand Direkter Seezugang Eigener Strand Liegestühle Sonnenschirme Nur für Gäste",
+            "interferer": "www.seehotel-strandnaehe.de\nSeehotel Strandnähe Kurzer Weg zum Strand Öffentlicher Strand Badestrand Wassersport Angebote",
+            "explanation": "Distinction is 'Privatstrand' (private beach) vs. 'Strandnähe' (near the beach) with 'öffentlicher Strand' (public beach). Both are near a lake beach, but one offers a private beach *exclusively for hotel guests* ('Privatstrand Nur für Gäste'), the other is near a *public* beach ('öffentlicher Strand'), accessible to everyone, not private."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen ein Rezept für einen Kuchen, der schnell geht und vegan ist, aber trotzdem festlich aussieht, z.B. für Besuch.",
+            "answer": "www.vegane-kuchen-festlich-schnell.de\nVegane Kuchen Festlich Schnell Einfach Backen Dekoration Obst Schokolade Gäste Kuchen",
+            "interferer": "www.vegane-alltagskuchen-einfach.de\nVegane Alltagskuchen Einfach Schnell Unkompliziert Zutaten Wenig Aufwand Familienkuchen",
+            "explanation": "Distinction is 'festlich' (festive) vs. 'Alltagskuchen' (everyday cake). Both are vegan and quick/easy, but one emphasizes festive appearance ('Festlich Dekoration Obst Schokolade Gäste Kuchen') suitable for guests, the other is for everyday use ('Alltagskuchen Unkompliziert Familienkuchen'), implying less elaborate decoration and presentation."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmter Kursraum für einen Malkurs gut geeignet ist, weil man dort viel Tageslicht hat.",
+            "answer": "www.malkurs-tageslicht-atelier.de\nMalkurs Tageslicht Atelier Helle Räume Viel Licht Große Fenster Künstler Atelier Kreativ Kurse",
+            "interferer": "www.kunstatelier-kursraeume-mieten.de\nKunstatelier Kursräume Mieten Künstlerbedarf Ausstattung Flexible Räume Kreative Atmosphäre",
+            "explanation": "Distinction is 'Tageslicht' (daylight) specifically for a painting course vs. general 'Kursräume' (course rooms) in an 'Atelier' (studio). Both are art-related studios/course rooms, but one emphasizes 'Tageslicht' and 'Helle Räume' (bright rooms) specifically for painting, the other is general art studio rental ('Kursräume Mieten'), focusing on equipment and atmosphere, but not specifically daylight."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen ein Geschenk für einen Mann, der gerne wandert, aber er hat schon Wanderschuhe und Rucksack, daher etwas Anderes.",
+            "answer": "www.wandergeschenke-nicht-schuhe-rucksack.de\nWandergeschenke Nicht Schuhe Rucksack Wanderkarten Kompass Fernglas Outdoor Gadgets",
+            "interferer": "www.wanderzubehoer-outdoor-shop.de\nWanderzubehör Outdoor Shop Wanderschuhe Rucksäcke Wanderbekleidung Ausrüstung Camping",
+            "explanation": "Distinction is 'Wandergeschenke nicht Schuhe/Rucksack' (hiking gifts not shoes/backpack) vs. general 'Wanderzubehör' (hiking accessories). Both are hiking-related, but one explicitly excludes shoes and backpacks and suggests alternatives like maps and compasses, the other includes shoes and backpacks as common hiking accessories, contradicting the 'not shoes/backpack' requirement."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmtes Museum auch Führungen für Kinder in einfacher Sprache anbietet.",
+            "answer": "www.museum-kinderfuehrungen-einfache-sprache.de\nMuseum Kinderführungen Einfache Sprache Verständlich Kindgerecht Museumspädagogik Interaktiv",
+            "interferer": "www.museum-fuehrungen-familien-kinder.de\nMuseum Führungen Familien Kinder Familienführungen Kinderführungen Themenführungen Sonntagsführungen",
+            "explanation": "Distinction is 'Kinderführungen in einfacher Sprache' (children's tours in simple language) vs. general 'Kinderführungen/Familienführungen' (children's tours/family tours). Both offer children's tours, but one emphasizes 'einfache Sprache' (simple language) and 'Verständlich Kindgerecht' (understandable child-friendly), specifically for younger children's comprehension, the other just confirms family and children's tours in general, without specifying language simplification."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen ein Rezept für ein schnelles Mittagessen, das vegetarisch und glutenfrei ist, da ein Freund Zöliakie hat.",
+            "answer": "www.vegetarisch-glutenfrei-mittagessen-schnell.de\nVegetarisch Glutenfrei Mittagessen Schnell Einfach Rezepte Zöliakie Geeignet Ohne Gluten",
+            "interferer": "www.glutenfreie-vegetarische-rezepte.de\nGlutenfreie Vegetarische Rezepte Vielfalt Abwechslungsreich Gesund Ohne Weizen Glutenfrei Kochen",
+            "explanation": "Distinction is 'schnelles Mittagessen' (quick lunch) AND 'glutenfrei und vegetarisch' (gluten-free and vegetarian) vs. general 'glutenfreie vegetarische Rezepte' (gluten-free vegetarian recipes). Both are gluten-free and vegetarian, but one emphasizes 'schnell' (quick) lunch recipes specifically, the other offers a variety of gluten-free vegetarian recipes in general, which might include longer preparation times and not be specifically for lunch."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmtes Restaurant auch einen separaten Raum für eine kleine Familienfeier hat.",
+            "answer": "www.restaurant-separier-raum-familienfeier.de\nRestaurant Separierter Raum Familienfeier Private Räumlichkeiten Gesellschaftsraum Festsaal Geburtstag Hochzeit",
+            "interferer": "www.restaurant-festlichkeiten-veranstaltungen.de\nRestaurant Festlichkeiten Veranstaltungen Feiern Bankettsaal Catering Partyservice Hochzeit Geburtstag Jubiläum",
+            "explanation": "Distinction is 'separierter Raum für Familienfeier' (separate room for family celebration) vs. general 'Festlichkeiten und Veranstaltungen' (festivities and events). Both cater to events, but one specifically highlights a 'separierter Raum' (separate room) for a *family* celebration, implying privacy and smaller scale, the other is more general 'Festlichkeiten' and 'Bankettsaal' (banquet hall), suggesting larger, more formal events."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen ein Geschenk für eine Frau, die gerne gärtnert, aber sie hat schon viele Gartengeräte, daher etwas Anderes, vielleicht Dekoration.",
+            "answer": "www.gartendeko-geschenke-nicht-geraete.de\nGartendeko Geschenke Nicht Geräte Gartenfiguren Pflanzgefäße Windspiele Lichterketten Dekorative Elemente",
+            "interferer": "www.gartenbedarf-online-shop.de\nGartenbedarf Online Shop Gartengeräte Werkzeug Pflanzen Samen Dünger Erde Gartenmöbel",
+            "explanation": "Distinction is 'Gartendeko nicht Geräte' (garden decoration not tools) vs. general 'Gartenbedarf' (garden supplies). Both are garden-related gifts, but one explicitly excludes tools and offers 'Gartendeko' (garden decoration), the other includes 'Gartengeräte Werkzeug' (garden tools), contradicting the 'not tools' requirement and focusing more on practical garden supplies than purely decorative items."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmtes Café auch vegane Kuchen und Torten zum Mitnehmen anbietet.",
+            "answer": "www.cafe-vegane-kuchen-torten-to-go.de\nCafe Vegane Kuchen Torten To Go Mitnehmen Außer Haus Bestellung Lieferung Abholung",
+            "interferer": "www.cafe-konditorei-hausgemacht.de\nCafe Konditorei Hausgemacht Kuchen Torten Gebäck Kaffee Spezialitäten Eiscreme Terrasse",
+            "explanation": "Distinction is 'vegane Kuchen und Torten zum Mitnehmen' (vegan cakes and pastries to go) vs. general 'hausgemachte Kuchen und Torten' (homemade cakes and pastries). Both are cafes with cakes and pastries, but one specifically confirms 'vegane Kuchen Torten To Go' (vegan cakes pastries to go), addressing both dietary preference and takeaway, the other is a general 'Konditorei' (confectionery) and might offer vegan options, but doesn't explicitly confirm it or takeaway."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie suchen ein Rezept für ein Abendessen, das man im Ofen zubereitet und das nicht viel kostet, da Sie Student sind.",
+            "answer": "www.ofen-rezepte-guenstig-studenten.de\nOfen Rezepte Günstig Studenten Budget Freundlich Einfach Backofen Gerichte Aufläufe",
+            "interferer": "www.ofen-rezepte-abendessen-familie.de\nOfen Rezepte Abendessen Familie Aufläufe Braten Gemüse Fleisch Fisch Vielfalt",
+            "explanation": "Distinction is 'günstig für Studenten' (cheap for students) vs. general 'Abendessen für Familie' (dinner for family). Both are oven recipes for dinner, but one emphasizes 'günstig Studenten Budget Freundlich' (cheap student budget friendly), addressing the cost concern, the other is family dinners, implying potentially larger portions and varied ingredients, not necessarily budget-conscious."
+          },
+          {
+            "level": "very hard",
+            "scenario": "Sie möchten wissen, ob ein bestimmtes Sportgeschäft auch einen Verleih für Mountainbikes hat, und nicht nur Verkauf.",
+            "answer": "www.sportgeschaeft-mountainbike-verleih.de\nSportgeschäft Mountainbike Verleih Mieten Testbikes Touren Beratung Service Werkstatt",
+            "interferer": "www.sportartikel-mountainbike-experte.de\nSportartikel Mountainbike Experte Verkauf Beratung Top Marken Neuheiten Zubehör Bekleidung",
+            "explanation": "Distinction is 'Mountainbike Verleih' (mountain bike rental) vs. 'Mountainbike Verkauf' (mountain bike sales). Both are mountain bike-related sports shops, but one explicitly offers 'Verleih Mieten' (rental), addressing the rental need, the other focuses on 'Verkauf Beratung' (sales advice), implying purchase, not rental."
+          }
+        
+      
 ]
