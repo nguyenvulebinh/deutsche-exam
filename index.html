@@ -21,6 +21,10 @@
                     <h2>Lesen, Teil 2</h2>
                     <p>Lesen Sie die Texte und wählen Sie die richtige Antwort.</p>
                 </button>
+                <button class="task-btn" data-task="absatzweise">
+                    <h2>Absatzweise lesen</h2>
+                    <p>Lesen Sie den Text laut vor und vergleichen Sie Ihre Aussprache.</p>
+                </button>
                 <button class="task-btn" data-task="lesen3">
                     <h2>Lesen, Teil 3</h2>
                     <p>Lesen Sie die Anzeigen und entscheiden Sie, ob die Aussagen richtig oder falsch sind.</p>
@@ -276,6 +280,48 @@
             </main>
         </div>
 
+        <!-- Absatzweise lesen -->
+        <div id="absatzweise-container" class="task-container" style="display: none;">
+            <header>
+                <button class="back-btn" onclick="showTaskSelection()">← Zurück</button>
+                <h1>Absatzweise lesen</h1>
+                <div class="instruction">
+                    <p>Lesen Sie den Text laut vor und vergleichen Sie Ihre Aussprache.</p>
+                </div>
+            </header>
+
+            <main>
+                <div class="question-container">
+                    <div class="text-box">
+                        <div id="paragraph-text" class="german-text"></div>
+                    </div>
+                    
+                    <div class="recording-controls">
+                        <button id="record-btn" class="btn">
+                            <span class="record-icon">●</span> Aufnehmen
+                        </button>
+                        <button id="play-btn" class="btn" style="display: none;">
+                            Aufnahme abspielen
+                        </button>
+                        <button id="submit-recording" class="btn" style="display: none;">
+                            Aussprache prüfen
+                        </button>
+                    </div>
+
+                    <div id="transcription-result" class="result-box" style="display: none;">
+                        <h3>Ihre Aussprache:</h3>
+                        <div id="user-transcription" class="transcription-text"></div>
+                        <div id="comparison-result" class="comparison-text"></div>
+                    </div>
+
+                    <div class="controls">
+                        <button id="next-btn-absatzweise" class="btn" style="display: none;">Nächster Text</button>
+                        <button id="skip-btn-absatzweise" class="btn btn-skip">Überspringen</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
         <!-- Lesen Test Container -->
         <div id="lesen-test-container" class="task-container" style="display: none;">
             <header>
@@ -382,5 +428,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="./script.js"></script>
+    <script src="./absatzweise.js"></script>
 </body>
 </html> 

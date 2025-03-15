@@ -81,6 +81,7 @@ function showTaskSelection() {
     document.getElementById('schreiben2-container').style.display = 'none';
     document.getElementById('wortubung-container').style.display = 'none';
     document.getElementById('lesen-test-container').style.display = 'none';
+    document.getElementById('absatzweise-container').style.display = 'none';
     currentTask = null;
     currentQuestionIndex = 0;
     
@@ -124,6 +125,7 @@ function showTask(taskId) {
     document.getElementById('schreiben2-container').style.display = taskId === 'schreiben2' ? 'block' : 'none';
     document.getElementById('wortubung-container').style.display = taskId === 'wortubung' ? 'block' : 'none';
     document.getElementById('lesen-test-container').style.display = taskId === 'lesen-test' ? 'block' : 'none';
+    document.getElementById('absatzweise-container').style.display = taskId === 'absatzweise' ? 'block' : 'none';
     currentTask = taskId;
     currentQuestionIndex = 0;
     
@@ -154,11 +156,13 @@ function showTask(taskId) {
             displayWordPractice();
             break;
         case 'lesen-test':
-            // Reset test state and initialize new test
             currentTestQuestion = 0;
             userAnswers = [];
             testStarted = false;
             initializeLesenTest();
+            break;
+        case 'absatzweise':
+            displayParagraph();
             break;
     }
 }

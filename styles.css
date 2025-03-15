@@ -1250,4 +1250,74 @@ h1 {
     .review-header {
         padding: 12px;
     }
+}
+
+/* Absatzweise lesen Styles */
+.german-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.recording-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.record-icon {
+    color: #e74c3c;
+    font-size: 1.2em;
+    margin-right: 0.5rem;
+}
+
+.record-btn.recording .record-icon {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.result-box {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.transcription-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: white;
+    border-radius: 4px;
+}
+
+.comparison-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+
+@media screen and (max-width: 768px) {
+    .recording-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recording-controls .btn {
+        width: 100%;
+        max-width: 300px;
+    }
 } 
