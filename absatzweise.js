@@ -158,13 +158,23 @@ function debugLog(message, error = null) {
 }
 
 function displayParagraph() {
-    if (!currentParagraph) {
+    if (!allParagraphs.length) {
+        // First time loading or empty array
         loadParagraphs().then(paragraphs => {
-            currentIndex = 0;
+            // Get a random paragraph
+            currentIndex = Math.floor(Math.random() * paragraphs.length);
             currentParagraph = paragraphs[currentIndex];
             updateParagraphDisplay();
         });
     } else {
+        // Get a different random paragraph
+        let newIndex;
+        do {
+            newIndex = Math.floor(Math.random() * allParagraphs.length);
+        } while (newIndex === currentIndex && allParagraphs.length > 1);
+        
+        currentIndex = newIndex;
+        currentParagraph = allParagraphs[currentIndex];
         updateParagraphDisplay();
     }
     
@@ -288,7 +298,12 @@ function setupInitialUI() {
     `;
     skipButton.textContent = 'Überspringen';
     skipButton.onclick = () => {
-        currentIndex = (currentIndex + 1) % allParagraphs.length;
+        let newIndex;
+        do {
+            newIndex = Math.floor(Math.random() * allParagraphs.length);
+        } while (newIndex === currentIndex && allParagraphs.length > 1);
+        
+        currentIndex = newIndex;
         currentParagraph = allParagraphs[currentIndex];
         displayParagraph();
     };
@@ -475,7 +490,12 @@ async function stopRecording() {
                 `;
                 nextButton.textContent = 'Nächster Text';
                 nextButton.onclick = () => {
-                    currentIndex = (currentIndex + 1) % allParagraphs.length;
+                    let newIndex;
+                    do {
+                        newIndex = Math.floor(Math.random() * allParagraphs.length);
+                    } while (newIndex === currentIndex && allParagraphs.length > 1);
+                    
+                    currentIndex = newIndex;
                     currentParagraph = allParagraphs[currentIndex];
                     displayParagraph();
                 };
