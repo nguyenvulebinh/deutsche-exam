@@ -38,11 +38,20 @@ async function startRecording() {
         mediaRecorder.onstop = () => {
             audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
             const audioUrl = URL.createObjectURL(audioBlob);
-            document.getElementById('play-btn').onclick = () => {
-                const audio = new Audio(audioUrl);
-                audio.play();
-            };
-            document.getElementById('play-btn').style.display = 'block';
+            
+            // Create or update audio player
+            let audioPlayer = document.getElementById('audio-player');
+            if (!audioPlayer) {
+                audioPlayer = document.createElement('audio');
+                audioPlayer.id = 'audio-player';
+                audioPlayer.controls = true;
+                audioPlayer.style.width = '100%';
+                audioPlayer.style.marginTop = '10px';
+                document.querySelector('.recording-controls').appendChild(audioPlayer);
+            }
+            audioPlayer.src = audioUrl;
+            audioPlayer.style.display = 'block';
+            
             document.getElementById('submit-recording').style.display = 'block';
         };
 
@@ -82,11 +91,6 @@ async function submitRecording() {
 
         const response = await fetch('https://isl.nguyenbinh.dev/asr/asr/inference', {
             method: 'POST',
-            mode: 'cors',
-            credentials: 'omit',
-            headers: {
-                'Accept': 'application/json',
-            },
             body: formData
         });
 
@@ -108,18 +112,7 @@ async function submitRecording() {
         document.getElementById('next-btn-absatzweise').style.display = 'block';
     } catch (error) {
         console.error('Error submitting recording:', error);
-        
-        // More descriptive error message for users
-        let errorMessage = 'Ein Fehler ist aufgetreten. ';
-        if (error.message.includes('Failed to fetch')) {
-            errorMessage += 'Keine Verbindung zum Server möglich. Bitte überprüfen Sie Ihre Internetverbindung.';
-        } else if (error.message.includes('HTTP error')) {
-            errorMessage += 'Der Server konnte die Anfrage nicht verarbeiten. Bitte versuchen Sie es später erneut.';
-        } else if (error.name === 'TypeError') {
-            errorMessage += 'Es gab ein Problem mit der Audioverarbeitung. Bitte versuchen Sie es erneut.';
-        }
-        
-        alert(errorMessage);
+        alert('Fehler beim Senden der Aufnahme. Bitte versuchen Sie es erneut.');
     } finally {
         document.getElementById('submit-recording').disabled = false;
         document.getElementById('submit-recording').textContent = 'Aussprache prüfen';
@@ -158,7 +151,11 @@ function nextParagraph() {
     // Reset state
     audioChunks = [];
     audioBlob = null;
-    document.getElementById('play-btn').style.display = 'none';
+    const audioPlayer = document.getElementById('audio-player');
+    if (audioPlayer) {
+        audioPlayer.style.display = 'none';
+        audioPlayer.src = '';
+    }
     document.getElementById('submit-recording').style.display = 'none';
     document.getElementById('transcription-result').style.display = 'none';
     document.getElementById('next-btn-absatzweise').style.display = 'none';
