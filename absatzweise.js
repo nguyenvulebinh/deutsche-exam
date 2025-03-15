@@ -344,7 +344,8 @@ async function submitRecording() {
         debugLog('Preparing WAV file for submission');
         const formData = new FormData();
         formData.append('audio', window.recordedBlob, 'recording.wav');
-        formData.append('input_language', 'de');
+        formData.append('input_language', new Blob(['de'], { type: 'text/plain' }));
+        formData.append('output_language', new Blob(['de'], { type: 'text/plain' }));
 
         debugLog('Sending WAV audio to server');
         const response = await fetch('https://isl.nguyenbinh.dev/asr/asr/inference', {
@@ -357,6 +358,7 @@ async function submitRecording() {
         }
 
         const result = await response.json();
+        console.log(result);
         const transcription = result.segments.map(seg => seg.text).join(' ').trim();
         
         document.getElementById('transcription-result').style.display = 'block';
