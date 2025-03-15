@@ -145,6 +145,9 @@ function displayParagraph() {
 async function startRecording() {
     debugLog('Starting recording process');
     try {
+        // Clean up previous recording state
+        cleanupPreviousRecording();
+        
         debugLog('Checking MediaRecorder support');
         if (!window.MediaRecorder) {
             throw new Error('MediaRecorder is not supported in this browser');
@@ -215,72 +218,76 @@ async function startRecording() {
         mediaRecorder.onstop = async () => {
             debugLog('Recording stopped, processing audio chunks');
             try {
-                // Try to detect the actual MIME type used
                 const actualMimeType = mediaRecorder.mimeType || 'audio/mp4';
-                debugLog(`Actual MIME type used: ${actualMimeType}`);
+                debugLog(`Original MIME type: ${actualMimeType}`);
                 
-                const audioBlob = new Blob(audioChunks, { type: actualMimeType });
-                debugLog(`Audio blob created, size: ${audioBlob.size} bytes, type: ${audioBlob.type}`);
+                const originalBlob = new Blob(audioChunks, { type: actualMimeType });
+                debugLog(`Original blob created, size: ${originalBlob.size} bytes`);
+
+                // Convert to WAV immediately
+                debugLog('Converting to WAV format');
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const arrayBuffer = await originalBlob.arrayBuffer();
+                const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+                const wavBlob = await audioBufferToWav(audioBuffer);
+                debugLog(`WAV conversion complete. Size: ${wavBlob.size} bytes`);
+
+                // Store WAV blob for later submission
+                window.recordedBlob = wavBlob;
                 
-                let audioPlayer = document.getElementById('audio-player');
-                if (!audioPlayer) {
-                    debugLog('Creating new audio player');
-                    audioPlayer = document.createElement('audio');
-                    audioPlayer.id = 'audio-player';
-                    audioPlayer.controls = true;
-                    audioPlayer.style.width = '100%';
-                    audioPlayer.style.marginTop = '10px';
-                    audioPlayer.playsinline = true; // Important for iOS
-                    audioPlayer.setAttribute('webkit-playsinline', 'true'); // For older iOS versions
-                    document.querySelector('.recording-controls').appendChild(audioPlayer);
-                }
+                // Create new audio player
+                const audioPlayer = document.createElement('audio');
+                audioPlayer.id = 'audio-player';
+                audioPlayer.controls = true;
+                audioPlayer.style.width = '100%';
+                audioPlayer.style.marginTop = '10px';
+                audioPlayer.playsinline = true;
+                audioPlayer.setAttribute('webkit-playsinline', 'true');
+                audioPlayer.preload = 'metadata';
+                document.querySelector('.recording-controls').appendChild(audioPlayer);
 
                 // Create a debug message for the audio format
                 const debugAudioInfo = document.createElement('div');
+                debugAudioInfo.className = 'debug-audio-info';
                 debugAudioInfo.style.fontSize = '12px';
                 debugAudioInfo.style.color = '#666';
-                debugAudioInfo.textContent = `Audio format: ${actualMimeType}`;
+                debugAudioInfo.textContent = `Audio format: audio/wav (converted from ${actualMimeType})`;
                 audioPlayer.parentNode.insertBefore(debugAudioInfo, audioPlayer.nextSibling);
                 
-                const audioUrl = URL.createObjectURL(audioBlob);
-                debugLog('Audio URL created');
+                // Create object URL from WAV blob
+                const audioUrl = URL.createObjectURL(wavBlob);
+                debugLog('WAV audio URL created');
                 
-                // Add event listeners before setting src
+                // Set up event listeners
                 audioPlayer.onloadedmetadata = () => {
-                    debugLog('Audio metadata loaded');
+                    debugLog('WAV audio metadata loaded');
                 };
                 
                 audioPlayer.oncanplay = () => {
-                    debugLog('Audio can be played');
-                    // Try to play a short segment to test audio
-                    audioPlayer.currentTime = 0;
-                    const playPromise = audioPlayer.play();
-                    if (playPromise) {
-                        playPromise.then(() => {
-                            debugLog('Audio playback started successfully');
-                            setTimeout(() => {
-                                audioPlayer.pause();
-                                audioPlayer.currentTime = 0;
-                            }, 100);
-                        }).catch(error => {
-                            debugLog('Audio playback test failed', error);
-                        });
-                    }
+                    debugLog('WAV audio can be played');
+                };
+                
+                audioPlayer.onplay = () => {
+                    debugLog('WAV audio playback started');
+                };
+                
+                audioPlayer.onpause = () => {
+                    debugLog('WAV audio playback paused');
                 };
                 
                 audioPlayer.onerror = (e) => {
+                    const error = e.target.error;
                     debugLog('Audio player error', {
-                        error: e.target.error,
-                        code: e.target.error.code,
-                        message: e.target.error.message
+                        error: {
+                            code: error ? error.code : 'unknown',
+                            message: error ? error.message : 'Unknown error'
+                        }
                     });
                 };
 
                 // Set the source and display
                 audioPlayer.src = audioUrl;
                 audioPlayer.style.display = 'block';
-                
-                window.recordedBlob = audioBlob;
                 document.getElementById('submit-recording').style.display = 'block';
                 
             } catch (error) {
@@ -330,14 +337,16 @@ async function submitRecording() {
         return;
     }
 
-    const formData = new FormData();
-    formData.append('audio', window.recordedBlob, 'recording.webm');
-    formData.append('input_language', 'de');
-
     try {
         document.getElementById('submit-recording').disabled = true;
         document.getElementById('submit-recording').textContent = 'Wird verarbeitet...';
 
+        debugLog('Preparing WAV file for submission');
+        const formData = new FormData();
+        formData.append('audio', window.recordedBlob, 'recording.wav');
+        formData.append('input_language', 'de');
+
+        debugLog('Sending WAV audio to server');
         const response = await fetch('https://isl.nguyenbinh.dev/asr/asr/inference', {
             method: 'POST',
             body: formData
@@ -360,6 +369,7 @@ async function submitRecording() {
         // Show next button
         document.getElementById('next-btn-absatzweise').style.display = 'block';
     } catch (error) {
+        debugLog('Error in submitRecording', error);
         console.error('Error submitting recording:', error);
         alert('Fehler beim Senden der Aufnahme. Bitte versuchen Sie es erneut.');
     } finally {
@@ -397,17 +407,8 @@ function compareTexts(original, transcribed) {
 }
 
 function nextParagraph() {
-    // Reset state
-    audioChunks = [];
-    window.recordedBlob = null;
-    const audioPlayer = document.getElementById('audio-player');
-    if (audioPlayer) {
-        audioPlayer.style.display = 'none';
-        audioPlayer.src = '';
-    }
-    document.getElementById('submit-recording').style.display = 'none';
-    document.getElementById('transcription-result').style.display = 'none';
-    document.getElementById('next-btn-absatzweise').style.display = 'none';
+    // Clean up current recording state
+    cleanupPreviousRecording();
     
     // Get new random paragraph different from current
     let newParagraph;
@@ -417,6 +418,109 @@ function nextParagraph() {
     
     currentParagraph = newParagraph;
     displayParagraph();
+}
+
+// Function to convert AudioBuffer to WAV format
+function audioBufferToWav(buffer) {
+    const numberOfChannels = buffer.numberOfChannels;
+    const sampleRate = buffer.sampleRate;
+    const format = 1; // PCM
+    const bitDepth = 16;
+    
+    let result;
+    if (numberOfChannels === 2) {
+        result = interleave(buffer.getChannelData(0), buffer.getChannelData(1));
+    } else {
+        result = buffer.getChannelData(0);
+    }
+
+    return encodeWAV(result, format, sampleRate, numberOfChannels, bitDepth);
+}
+
+function interleave(leftChannel, rightChannel) {
+    const length = leftChannel.length + rightChannel.length;
+    const result = new Float32Array(length);
+
+    let inputIndex = 0;
+    for (let index = 0; index < length; ) {
+        result[index++] = leftChannel[inputIndex];
+        result[index++] = rightChannel[inputIndex];
+        inputIndex++;
+    }
+    return result;
+}
+
+function encodeWAV(samples, format, sampleRate, numChannels, bitDepth) {
+    const bytesPerSample = bitDepth / 8;
+    const blockAlign = numChannels * bytesPerSample;
+
+    const buffer = new ArrayBuffer(44 + samples.length * bytesPerSample);
+    const view = new DataView(buffer);
+
+    // WAV header
+    writeString(view, 0, 'RIFF');
+    view.setUint32(4, 36 + samples.length * bytesPerSample, true);
+    writeString(view, 8, 'WAVE');
+    writeString(view, 12, 'fmt ');
+    view.setUint32(16, 16, true);
+    view.setUint16(20, format, true);
+    view.setUint16(22, numChannels, true);
+    view.setUint32(24, sampleRate, true);
+    view.setUint32(28, sampleRate * blockAlign, true);
+    view.setUint16(32, blockAlign, true);
+    view.setUint16(34, bitDepth, true);
+    writeString(view, 36, 'data');
+    view.setUint32(40, samples.length * bytesPerSample, true);
+
+    floatTo16BitPCM(view, 44, samples);
+
+    return new Blob([buffer], { type: 'audio/wav' });
+}
+
+function writeString(view, offset, string) {
+    for (let i = 0; i < string.length; i++) {
+        view.setUint8(offset + i, string.charCodeAt(i));
+    }
+}
+
+function floatTo16BitPCM(view, offset, input) {
+    for (let i = 0; i < input.length; i++, offset += 2) {
+        const s = Math.max(-1, Math.min(1, input[i]));
+        view.setInt16(offset, s < 0 ? s * 0x8000 : s * 0x7FFF, true);
+    }
+}
+
+function cleanupPreviousRecording() {
+    debugLog('Cleaning up previous recording state');
+    
+    // Reset audio chunks
+    audioChunks = [];
+    window.recordedBlob = null;
+    
+    // Clean up audio player
+    const audioPlayer = document.getElementById('audio-player');
+    if (audioPlayer) {
+        const audioUrl = audioPlayer.src;
+        if (audioUrl) {
+            URL.revokeObjectURL(audioUrl);
+        }
+        audioPlayer.remove();
+    }
+    
+    // Clean up debug audio info
+    const debugInfoElements = document.querySelectorAll('.debug-audio-info');
+    debugInfoElements.forEach(el => el.remove());
+    
+    // Reset UI elements
+    document.getElementById('submit-recording').style.display = 'none';
+    document.getElementById('transcription-result').style.display = 'none';
+    document.getElementById('next-btn-absatzweise').style.display = 'none';
+    
+    // Reset recording button
+    const recordBtn = document.getElementById('record-btn');
+    recordBtn.classList.remove('recording');
+    recordBtn.innerHTML = '<span class="record-icon">●</span> Neu aufnehmen';
+    recordBtn.onclick = startRecording;
 }
 
 // Initialize when the page loads
