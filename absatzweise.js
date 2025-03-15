@@ -8,7 +8,7 @@ let currentIndex = 0; // Track current paragraph index
 // Load paragraphs from JSON file
 async function loadParagraphs() {
     try {
-        const response = await fetch('/datasets/speaking_practice.json');
+        const response = await fetch('./datasets/speaking_practice.json');
         if (!response.ok) {
             throw new Error('Failed to load paragraphs');
         }
