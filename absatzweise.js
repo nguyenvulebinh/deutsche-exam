@@ -13,12 +13,15 @@ async function loadParagraphs() {
             throw new Error('Failed to load paragraphs');
         }
         const data = await response.json();
+        // Shuffle once when loading
         allParagraphs = shuffleArray(data.paragraphs);
+        console.log(allParagraphs);
+        currentIndex = 0;
         return allParagraphs;
     } catch (error) {
         console.error('Error loading paragraphs:', error);
         // Fallback paragraphs in case of error
-        return shuffleArray([
+        allParagraphs = shuffleArray([
             {
                 german: "Hallo, ich heiße Anna. Ich lerne Deutsch, weil ich in Deutschland leben möchte.",
                 english: "Hello, my name is Anna. I am learning German because I want to live in Germany."
@@ -28,6 +31,8 @@ async function loadParagraphs() {
                 english: "I live in Berlin. My apartment is small but cozy."
             }
         ]);
+        currentIndex = 0;
+        return allParagraphs;
     }
 }
 
@@ -159,21 +164,13 @@ function debugLog(message, error = null) {
 
 function displayParagraph() {
     if (!allParagraphs.length) {
-        // First time loading or empty array
+        // First time loading
         loadParagraphs().then(paragraphs => {
-            // Get a random paragraph
-            currentIndex = Math.floor(Math.random() * paragraphs.length);
             currentParagraph = paragraphs[currentIndex];
             updateParagraphDisplay();
         });
     } else {
-        // Get a different random paragraph
-        let newIndex;
-        do {
-            newIndex = Math.floor(Math.random() * allParagraphs.length);
-        } while (newIndex === currentIndex && allParagraphs.length > 1);
-        
-        currentIndex = newIndex;
+        // Just move to next paragraph in the shuffled list
         currentParagraph = allParagraphs[currentIndex];
         updateParagraphDisplay();
     }
@@ -298,12 +295,8 @@ function setupInitialUI() {
     `;
     skipButton.textContent = 'Überspringen';
     skipButton.onclick = () => {
-        let newIndex;
-        do {
-            newIndex = Math.floor(Math.random() * allParagraphs.length);
-        } while (newIndex === currentIndex && allParagraphs.length > 1);
-        
-        currentIndex = newIndex;
+        // Move to next paragraph, loop back to start if at end
+        currentIndex = (currentIndex + 1) % allParagraphs.length;
         currentParagraph = allParagraphs[currentIndex];
         displayParagraph();
     };
@@ -490,12 +483,8 @@ async function stopRecording() {
                 `;
                 nextButton.textContent = 'Nächster Text';
                 nextButton.onclick = () => {
-                    let newIndex;
-                    do {
-                        newIndex = Math.floor(Math.random() * allParagraphs.length);
-                    } while (newIndex === currentIndex && allParagraphs.length > 1);
-                    
-                    currentIndex = newIndex;
+                    // Move to next paragraph, loop back to start if at end
+                    currentIndex = (currentIndex + 1) % allParagraphs.length;
                     currentParagraph = allParagraphs[currentIndex];
                     displayParagraph();
                 };
