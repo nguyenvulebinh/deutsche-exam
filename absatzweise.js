@@ -27,35 +27,70 @@ function displayParagraph() {
 
 async function startRecording() {
     try {
-        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-        mediaRecorder = new MediaRecorder(stream);
+        // iOS specific audio constraints
+        const constraints = {
+            audio: {
+                echoCancellation: true,
+                noiseSuppression: true,
+                autoGainControl: true,
+                sampleRate: 44100,
+                channelCount: 1
+            }
+        };
+
+        const stream = await navigator.mediaDevices.getUserMedia(constraints);
+        // Use specific MIME type for better iOS compatibility
+        const options = {
+            mimeType: 'audio/webm;codecs=opus',
+            audioBitsPerSecond: 128000
+        };
+
+        try {
+            mediaRecorder = new MediaRecorder(stream, options);
+        } catch (e) {
+            // Fallback for iOS Safari
+            mediaRecorder = new MediaRecorder(stream);
+        }
+        
         audioChunks = [];
 
         mediaRecorder.ondataavailable = (event) => {
             audioChunks.push(event.data);
         };
 
-        mediaRecorder.onstop = () => {
-            audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
-            const audioUrl = URL.createObjectURL(audioBlob);
+        mediaRecorder.onstop = async () => {
+            // Convert to proper format for iOS
+            const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
             
-            // Create or update audio player
-            let audioPlayer = document.getElementById('audio-player');
-            if (!audioPlayer) {
-                audioPlayer = document.createElement('audio');
-                audioPlayer.id = 'audio-player';
-                audioPlayer.controls = true;
-                audioPlayer.style.width = '100%';
-                audioPlayer.style.marginTop = '10px';
-                document.querySelector('.recording-controls').appendChild(audioPlayer);
+            try {
+                // Create or update audio player
+                let audioPlayer = document.getElementById('audio-player');
+                if (!audioPlayer) {
+                    audioPlayer = document.createElement('audio');
+                    audioPlayer.id = 'audio-player';
+                    audioPlayer.controls = true;
+                    audioPlayer.style.width = '100%';
+                    audioPlayer.style.marginTop = '10px';
+                    document.querySelector('.recording-controls').appendChild(audioPlayer);
+                }
+                
+                // Create object URL after ensuring blob is ready
+                const audioUrl = URL.createObjectURL(audioBlob);
+                audioPlayer.src = audioUrl;
+                audioPlayer.style.display = 'block';
+                
+                // Store the blob for later submission
+                window.recordedBlob = audioBlob;
+                
+                document.getElementById('submit-recording').style.display = 'block';
+            } catch (error) {
+                console.error('Error setting up audio playback:', error);
+                alert('Es gab ein Problem bei der Aufnahme. Bitte versuchen Sie es erneut.');
             }
-            audioPlayer.src = audioUrl;
-            audioPlayer.style.display = 'block';
-            
-            document.getElementById('submit-recording').style.display = 'block';
         };
 
-        mediaRecorder.start();
+        // Start recording with a timeslice to ensure regular ondataavailable events
+        mediaRecorder.start(100);
         document.getElementById('record-btn').classList.add('recording');
         document.getElementById('record-btn').innerHTML = '<span class="record-icon">●</span> Aufnahme stoppen';
         document.getElementById('record-btn').onclick = stopRecording;
@@ -76,13 +111,13 @@ function stopRecording() {
 }
 
 async function submitRecording() {
-    if (!audioBlob) {
+    if (!window.recordedBlob) {
         alert('Bitte nehmen Sie zuerst Ihre Stimme auf.');
         return;
     }
 
     const formData = new FormData();
-    formData.append('audio', audioBlob, 'recording.wav');
+    formData.append('audio', window.recordedBlob, 'recording.webm');
     formData.append('input_language', 'de');
 
     try {
@@ -150,7 +185,7 @@ function compareTexts(original, transcribed) {
 function nextParagraph() {
     // Reset state
     audioChunks = [];
-    audioBlob = null;
+    window.recordedBlob = null;
     const audioPlayer = document.getElementById('audio-player');
     if (audioPlayer) {
         audioPlayer.style.display = 'none';
