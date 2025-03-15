@@ -18,7 +18,76 @@ const paragraphs = [
     }
 ];
 
-// Debug logging function
+// Create debug panel
+function createDebugPanel() {
+    const debugPanel = document.createElement('div');
+    debugPanel.id = 'debug-panel';
+    debugPanel.style.cssText = `
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-height: 200px;
+        overflow-y: auto;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-family: monospace;
+        font-size: 12px;
+        padding: 10px;
+        z-index: 9999;
+        display: none;
+    `;
+
+    const debugHeader = document.createElement('div');
+    debugHeader.style.cssText = `
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    `;
+
+    const debugTitle = document.createElement('span');
+    debugTitle.textContent = 'Debug Log';
+
+    const toggleButton = document.createElement('button');
+    toggleButton.textContent = 'Clear';
+    toggleButton.onclick = () => {
+        const logContainer = document.getElementById('debug-log-container');
+        if (logContainer) {
+            logContainer.innerHTML = '';
+        }
+    };
+    toggleButton.style.cssText = `
+        background: #666;
+        border: none;
+        color: white;
+        padding: 2px 8px;
+        cursor: pointer;
+        border-radius: 3px;
+    `;
+
+    debugHeader.appendChild(debugTitle);
+    debugHeader.appendChild(toggleButton);
+
+    const logContainer = document.createElement('div');
+    logContainer.id = 'debug-log-container';
+    logContainer.style.cssText = `
+        font-size: 11px;
+        line-height: 1.4;
+    `;
+
+    debugPanel.appendChild(debugHeader);
+    debugPanel.appendChild(logContainer);
+    document.body.appendChild(debugPanel);
+
+    // Add keyboard shortcut to toggle debug panel
+    document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey && e.shiftKey && e.key === 'D') {
+            debugPanel.style.display = debugPanel.style.display === 'none' ? 'block' : 'none';
+        }
+    });
+}
+
+// Enhanced debug logging function
 function debugLog(message, error = null) {
     const debugInfo = {
         timestamp: new Date().toISOString(),
@@ -30,7 +99,40 @@ function debugLog(message, error = null) {
             stack: error.stack
         } : null
     };
+
+    // Console logging
     console.log('DEBUG:', debugInfo);
+
+    // Visual logging
+    const logContainer = document.getElementById('debug-log-container');
+    if (logContainer) {
+        const logEntry = document.createElement('div');
+        logEntry.style.borderBottom = '1px solid #444';
+        logEntry.style.padding = '4px 0';
+
+        const timestamp = document.createElement('span');
+        timestamp.style.color = '#888';
+        timestamp.textContent = new Date().toLocaleTimeString();
+
+        const messageSpan = document.createElement('span');
+        messageSpan.style.marginLeft = '8px';
+        messageSpan.style.color = error ? '#ff6b6b' : '#a8ff60';
+        messageSpan.textContent = message;
+
+        logEntry.appendChild(timestamp);
+        logEntry.appendChild(messageSpan);
+
+        if (error) {
+            const errorDetails = document.createElement('div');
+            errorDetails.style.color = '#ff8080';
+            errorDetails.style.marginLeft = '20px';
+            errorDetails.textContent = `${error.name}: ${error.message}`;
+            logEntry.appendChild(errorDetails);
+        }
+
+        logContainer.appendChild(logEntry);
+        logContainer.scrollTop = logContainer.scrollHeight;
+    }
 }
 
 function displayParagraph() {
@@ -63,12 +165,14 @@ async function startRecording() {
         const stream = await navigator.mediaDevices.getUserMedia(constraints);
         debugLog('Microphone permission granted, stream obtained');
 
-        // Check available MIME types
+        // iOS-specific MIME types first
         const supportedTypes = [
+            'audio/mp4',
+            'audio/mp4;codecs=mp4a',
+            'audio/aac',
+            'audio/mpeg',
             'audio/webm',
             'audio/webm;codecs=opus',
-            'audio/mp4',
-            'audio/aac',
             'audio/ogg'
         ];
         
@@ -80,23 +184,25 @@ async function startRecording() {
         });
 
         if (availableMimeTypes.length === 0) {
-            debugLog('No supported MIME types found');
-            throw new Error('No supported MIME types for recording');
-        }
-
-        const options = {
-            mimeType: availableMimeTypes[0],
-            audioBitsPerSecond: 128000
-        };
-        debugLog(`Using MIME type: ${options.mimeType}`);
-
-        try {
-            mediaRecorder = new MediaRecorder(stream, options);
-            debugLog('MediaRecorder initialized successfully with options');
-        } catch (e) {
-            debugLog('Failed to initialize MediaRecorder with options, trying without options', e);
+            debugLog('No supported MIME types found, using default');
+            // On iOS, if no MIME type is specified, it might default to a compatible format
             mediaRecorder = new MediaRecorder(stream);
-            debugLog('MediaRecorder initialized without options');
+            debugLog('MediaRecorder initialized with default settings');
+        } else {
+            const options = {
+                mimeType: availableMimeTypes[0],
+                audioBitsPerSecond: 128000
+            };
+            debugLog(`Using MIME type: ${options.mimeType}`);
+            
+            try {
+                mediaRecorder = new MediaRecorder(stream, options);
+                debugLog('MediaRecorder initialized successfully with options');
+            } catch (e) {
+                debugLog('Failed to initialize MediaRecorder with options, trying without options', e);
+                mediaRecorder = new MediaRecorder(stream);
+                debugLog('MediaRecorder initialized without options');
+            }
         }
         
         audioChunks = [];
@@ -109,7 +215,11 @@ async function startRecording() {
         mediaRecorder.onstop = async () => {
             debugLog('Recording stopped, processing audio chunks');
             try {
-                const audioBlob = new Blob(audioChunks, { type: mediaRecorder.mimeType });
+                // Try to detect the actual MIME type used
+                const actualMimeType = mediaRecorder.mimeType || 'audio/mp4';
+                debugLog(`Actual MIME type used: ${actualMimeType}`);
+                
+                const audioBlob = new Blob(audioChunks, { type: actualMimeType });
                 debugLog(`Audio blob created, size: ${audioBlob.size} bytes, type: ${audioBlob.type}`);
                 
                 let audioPlayer = document.getElementById('audio-player');
@@ -120,26 +230,59 @@ async function startRecording() {
                     audioPlayer.controls = true;
                     audioPlayer.style.width = '100%';
                     audioPlayer.style.marginTop = '10px';
+                    audioPlayer.playsinline = true; // Important for iOS
+                    audioPlayer.setAttribute('webkit-playsinline', 'true'); // For older iOS versions
                     document.querySelector('.recording-controls').appendChild(audioPlayer);
                 }
+
+                // Create a debug message for the audio format
+                const debugAudioInfo = document.createElement('div');
+                debugAudioInfo.style.fontSize = '12px';
+                debugAudioInfo.style.color = '#666';
+                debugAudioInfo.textContent = `Audio format: ${actualMimeType}`;
+                audioPlayer.parentNode.insertBefore(debugAudioInfo, audioPlayer.nextSibling);
                 
                 const audioUrl = URL.createObjectURL(audioBlob);
                 debugLog('Audio URL created');
+                
+                // Add event listeners before setting src
+                audioPlayer.onloadedmetadata = () => {
+                    debugLog('Audio metadata loaded');
+                };
+                
+                audioPlayer.oncanplay = () => {
+                    debugLog('Audio can be played');
+                    // Try to play a short segment to test audio
+                    audioPlayer.currentTime = 0;
+                    const playPromise = audioPlayer.play();
+                    if (playPromise) {
+                        playPromise.then(() => {
+                            debugLog('Audio playback started successfully');
+                            setTimeout(() => {
+                                audioPlayer.pause();
+                                audioPlayer.currentTime = 0;
+                            }, 100);
+                        }).catch(error => {
+                            debugLog('Audio playback test failed', error);
+                        });
+                    }
+                };
+                
+                audioPlayer.onerror = (e) => {
+                    debugLog('Audio player error', {
+                        error: e.target.error,
+                        code: e.target.error.code,
+                        message: e.target.error.message
+                    });
+                };
+
+                // Set the source and display
                 audioPlayer.src = audioUrl;
                 audioPlayer.style.display = 'block';
                 
                 window.recordedBlob = audioBlob;
                 document.getElementById('submit-recording').style.display = 'block';
                 
-                // Add audio player error handling
-                audioPlayer.onerror = (e) => {
-                    debugLog('Audio player error', e);
-                };
-                
-                // Add audio player success handling
-                audioPlayer.oncanplay = () => {
-                    debugLog('Audio can be played');
-                };
             } catch (error) {
                 debugLog('Error in onstop handler', error);
                 console.error('Error setting up audio playback:', error);
@@ -278,6 +421,11 @@ function nextParagraph() {
 
 // Initialize when the page loads
 document.addEventListener('DOMContentLoaded', () => {
+    // Create debug panel
+    createDebugPanel();
+    debugLog('Debug panel initialized');
+    debugLog(`User Agent: ${navigator.userAgent}`);
+    
     // Add event listeners
     document.getElementById('record-btn').onclick = startRecording;
     document.getElementById('submit-recording').onclick = submitRecording;
