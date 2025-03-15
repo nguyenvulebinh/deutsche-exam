@@ -270,7 +270,7 @@ function setupInitialUI() {
         margin: 0;
         transition: background-color 0.2s;
     `;
-    recordBtn.innerHTML = '<span class="record-icon">●</span> Aufnehmen';
+    recordBtn.innerHTML = 'Aufnehmen';
     recordBtn.onclick = startRecording;
     controlsContainer.appendChild(recordBtn);
 
@@ -442,6 +442,10 @@ async function stopRecording() {
                         padding: 15px;
                         background: #f8f9fa;
                         border-radius: 4px;
+                        overflow-wrap: break-word;
+                        word-wrap: break-word;
+                        word-break: break-word;
+                        hyphens: auto;
                     `;
                     userTranscription.textContent = transcription;
                     comparisonResult.innerHTML = compareTexts(currentParagraph.german, transcription);
@@ -547,8 +551,48 @@ function compareTexts(original, transcribed) {
     const maxLength = Math.max(normalizedOriginal.length, normalizedTranscribed.length);
     const similarity = ((maxLength - distance) / maxLength * 100).toFixed(1);
 
-    let result = 'Vergleich:<br>';
+    // Split texts into words for comparison
+    const originalWords = original.split(' ');
+    const transcribedWords = transcribed.split(' ');
+    
+    // Create visual comparison of the texts
+    let visualComparison = '<div style="margin: 15px 0; padding: 15px; background: #f8f9fa; border-radius: 4px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto;">';
+    visualComparison += '<div style="margin-bottom: 10px;"><strong>Original:</strong><br>';
+    
+    // Highlight original text with word wrapping
+    originalWords.forEach((word, index) => {
+        const normalizedWord = normalizeText(word);
+        const transcribedWord = transcribedWords[index] ? normalizeText(transcribedWords[index]) : '';
+        
+        if (!transcribedWord || levenshteinDistance(normalizedWord, transcribedWord) > 1) {
+            visualComparison += `<span style="display: inline-block; background-color: #ffebee; padding: 2px 4px; margin: 2px; border-radius: 3px;">${word}</span>`;
+        } else {
+            visualComparison += `<span style="display: inline-block; padding: 2px 4px; margin: 2px;">${word}</span>`;
+        }
+    });
+    
+    visualComparison += '</div><div><strong>Ihre Aussprache:</strong><br>';
+    
+    // Highlight transcribed text with word wrapping
+    transcribedWords.forEach((word, index) => {
+        const normalizedWord = normalizeText(word);
+        const originalWord = originalWords[index] ? normalizeText(originalWords[index]) : '';
+        
+        if (!originalWord || levenshteinDistance(normalizedWord, originalWord) > 1) {
+            visualComparison += `<span style="display: inline-block; background-color: #fff3e0; padding: 2px 4px; margin: 2px; border-radius: 3px;">${word}</span>`;
+        } else {
+            visualComparison += `<span style="display: inline-block; padding: 2px 4px; margin: 2px;">${word}</span>`;
+        }
+    });
+    
+    visualComparison += '</div></div>';
+
+    let result = '<div style="overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto;">';
+    result += 'Vergleich:<br>';
     result += `Genauigkeit: ${similarity}%<br>`;
+
+    // Add the visual comparison
+    result += visualComparison;
 
     // Detailed feedback based on similarity
     if (similarity >= 90) {
@@ -563,26 +607,10 @@ function compareTexts(original, transcribed) {
 
     // Add detailed comparison if accuracy is low
     if (similarity < 75) {
-        result += '<br><br><span style="color: #7f8c8d">Tipp: Achten Sie besonders auf:';
-        
-        // Find words with significant differences
-        const originalWords = normalizedOriginal.split(' ');
-        const transcribedWords = normalizedTranscribed.split(' ');
-        
-        let problematicWords = [];
-        originalWords.forEach((word, index) => {
-            if (transcribedWords[index] && levenshteinDistance(word, transcribedWords[index]) > 2) {
-                problematicWords.push(word);
-            }
-        });
-        
-        if (problematicWords.length > 0) {
-            result += `<br>- ${problematicWords.join('<br>- ')}</span>`;
-        } else {
-            result += '<br>- Wortstellung und Vollständigkeit der Sätze</span>';
-        }
+        result += '<br><br><span style="color: #7f8c8d">Tipp: Achten Sie besonders auf die rot markierten Wörter.</span>';
     }
 
+    result += '</div>';
     return result;
 }
 
