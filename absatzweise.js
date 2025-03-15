@@ -140,21 +140,87 @@ function displayParagraph() {
         currentParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
     }
     document.getElementById('paragraph-text').textContent = currentParagraph.text;
+    
+    // Reset UI to initial state
+    setupInitialUI();
+}
+
+function setupInitialUI() {
+    // Clean up any existing UI elements
+    cleanupPreviousRecording();
+    
+    const controlsContainer = document.querySelector('.recording-controls');
+    if (!controlsContainer) {
+        console.error('Recording controls container not found');
+        return;
+    }
+
+    // Style the controls container
+    controlsContainer.style.cssText = `
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin: 20px 0;
+    `;
+    
+    // Create record button if it doesn't exist
+    let recordBtn = document.getElementById('record-btn');
+    if (!recordBtn) {
+        recordBtn = document.createElement('button');
+        recordBtn.id = 'record-btn';
+    }
+    recordBtn.style.cssText = `
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0;
+        transition: background-color 0.2s;
+    `;
+    recordBtn.innerHTML = '<span class="record-icon">●</span> Aufnehmen';
+    recordBtn.onclick = startRecording;
+    controlsContainer.appendChild(recordBtn);
+
+    // Create skip button if it doesn't exist
+    let skipButton = document.getElementById('skip-btn-absatzweise');
+    if (!skipButton) {
+        skipButton = document.createElement('button');
+        skipButton.id = 'skip-btn-absatzweise';
+    }
+    skipButton.style.cssText = `
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0;
+        transition: background-color 0.2s;
+    `;
+    skipButton.textContent = 'Überspringen';
+    skipButton.onclick = () => {
+        let newParagraph;
+        do {
+            newParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
+        } while (newParagraph.id === currentParagraph.id);
+        currentParagraph = newParagraph;
+        displayParagraph();
+    };
+    controlsContainer.appendChild(skipButton);
 }
 
 async function startRecording() {
-    debugLog('Starting recording process');
     try {
-        // Clean up previous recording state
-        cleanupPreviousRecording();
-        
-        debugLog('Checking MediaRecorder support');
-        if (!window.MediaRecorder) {
-            throw new Error('MediaRecorder is not supported in this browser');
-        }
-
-        debugLog('Setting up audio constraints for iOS');
-        const constraints = {
+        const stream = await navigator.mediaDevices.getUserMedia({
             audio: {
                 echoCancellation: true,
                 noiseSuppression: true,
@@ -162,221 +228,191 @@ async function startRecording() {
                 sampleRate: 44100,
                 channelCount: 1
             }
-        };
-
-        debugLog('Requesting microphone permission');
-        const stream = await navigator.mediaDevices.getUserMedia(constraints);
-        debugLog('Microphone permission granted, stream obtained');
-
-        // iOS-specific MIME types first
-        const supportedTypes = [
-            'audio/mp4',
-            'audio/mp4;codecs=mp4a',
-            'audio/aac',
-            'audio/mpeg',
-            'audio/webm',
-            'audio/webm;codecs=opus',
-            'audio/ogg'
-        ];
-        
-        debugLog('Checking supported MIME types');
-        const availableMimeTypes = supportedTypes.filter(type => {
-            const isSupported = MediaRecorder.isTypeSupported(type);
-            debugLog(`MIME type ${type} supported: ${isSupported}`);
-            return isSupported;
         });
 
-        if (availableMimeTypes.length === 0) {
-            debugLog('No supported MIME types found, using default');
-            // On iOS, if no MIME type is specified, it might default to a compatible format
-            mediaRecorder = new MediaRecorder(stream);
-            debugLog('MediaRecorder initialized with default settings');
-        } else {
-            const options = {
-                mimeType: availableMimeTypes[0],
-                audioBitsPerSecond: 128000
-            };
-            debugLog(`Using MIME type: ${options.mimeType}`);
-            
-            try {
-                mediaRecorder = new MediaRecorder(stream, options);
-                debugLog('MediaRecorder initialized successfully with options');
-            } catch (e) {
-                debugLog('Failed to initialize MediaRecorder with options, trying without options', e);
-                mediaRecorder = new MediaRecorder(stream);
-                debugLog('MediaRecorder initialized without options');
-            }
-        }
+        // Initialize MediaRecorder with best supported format
+        const mimeType = MediaRecorder.isTypeSupported('audio/webm;codecs=opus') 
+            ? 'audio/webm;codecs=opus' 
+            : 'audio/mp4';
+        
+        mediaRecorder = new MediaRecorder(stream, {
+            mimeType: mimeType,
+            audioBitsPerSecond: 128000
+        });
         
         audioChunks = [];
-
         mediaRecorder.ondataavailable = (event) => {
-            debugLog(`Data available event, chunk size: ${event.data.size} bytes`);
             audioChunks.push(event.data);
         };
 
-        mediaRecorder.onstop = async () => {
-            debugLog('Recording stopped, processing audio chunks');
-            try {
-                const actualMimeType = mediaRecorder.mimeType || 'audio/mp4';
-                debugLog(`Original MIME type: ${actualMimeType}`);
-                
-                const originalBlob = new Blob(audioChunks, { type: actualMimeType });
-                debugLog(`Original blob created, size: ${originalBlob.size} bytes`);
+        // Setup recording UI
+        const recordBtn = document.getElementById('record-btn');
+        recordBtn.innerHTML = '<span class="record-icon">●</span> Aufnahme stoppen';
+        recordBtn.onclick = stopRecording;
+        recordBtn.classList.add('recording');
+        
+        // Hide next button during recording
+        document.getElementById('next-btn-absatzweise').style.display = 'none';
 
-                // Convert to WAV immediately
-                debugLog('Converting to WAV format');
-                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                const arrayBuffer = await originalBlob.arrayBuffer();
-                const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
-                const wavBlob = await audioBufferToWav(audioBuffer);
-                debugLog(`WAV conversion complete. Size: ${wavBlob.size} bytes`);
-
-                // Store WAV blob for later submission
-                window.recordedBlob = wavBlob;
-                
-                // Create new audio player
-                const audioPlayer = document.createElement('audio');
-                audioPlayer.id = 'audio-player';
-                audioPlayer.controls = true;
-                audioPlayer.style.width = '100%';
-                audioPlayer.style.marginTop = '10px';
-                audioPlayer.playsinline = true;
-                audioPlayer.setAttribute('webkit-playsinline', 'true');
-                audioPlayer.preload = 'metadata';
-                document.querySelector('.recording-controls').appendChild(audioPlayer);
-
-                // Create a debug message for the audio format
-                const debugAudioInfo = document.createElement('div');
-                debugAudioInfo.className = 'debug-audio-info';
-                debugAudioInfo.style.fontSize = '12px';
-                debugAudioInfo.style.color = '#666';
-                debugAudioInfo.textContent = `Audio format: audio/wav (converted from ${actualMimeType})`;
-                audioPlayer.parentNode.insertBefore(debugAudioInfo, audioPlayer.nextSibling);
-                
-                // Create object URL from WAV blob
-                const audioUrl = URL.createObjectURL(wavBlob);
-                debugLog('WAV audio URL created');
-                
-                // Set up event listeners
-                audioPlayer.onloadedmetadata = () => {
-                    debugLog('WAV audio metadata loaded');
-                };
-                
-                audioPlayer.oncanplay = () => {
-                    debugLog('WAV audio can be played');
-                };
-                
-                audioPlayer.onplay = () => {
-                    debugLog('WAV audio playback started');
-                };
-                
-                audioPlayer.onpause = () => {
-                    debugLog('WAV audio playback paused');
-                };
-                
-                audioPlayer.onerror = (e) => {
-                    const error = e.target.error;
-                    debugLog('Audio player error', {
-                        error: {
-                            code: error ? error.code : 'unknown',
-                            message: error ? error.message : 'Unknown error'
-                        }
-                    });
-                };
-
-                // Set the source and display
-                audioPlayer.src = audioUrl;
-                audioPlayer.style.display = 'block';
-                document.getElementById('submit-recording').style.display = 'block';
-                
-            } catch (error) {
-                debugLog('Error in onstop handler', error);
-                console.error('Error setting up audio playback:', error);
-                alert('Es gab ein Problem bei der Aufnahme. Bitte versuchen Sie es erneut.');
-            }
-        };
-
-        mediaRecorder.onerror = (event) => {
-            debugLog('MediaRecorder error', event.error);
-        };
-
-        // Start recording with a timeslice to ensure regular ondataavailable events
-        debugLog('Starting MediaRecorder');
         mediaRecorder.start(100);
-        document.getElementById('record-btn').classList.add('recording');
-        document.getElementById('record-btn').innerHTML = '<span class="record-icon">●</span> Aufnahme stoppen';
-        document.getElementById('record-btn').onclick = stopRecording;
     } catch (err) {
-        debugLog('Error in startRecording', err);
         console.error('Error accessing microphone:', err);
         alert('Fehler beim Zugriff auf das Mikrofon. Bitte überprüfen Sie die Mikrofonberechtigung.');
     }
 }
 
-function stopRecording() {
-    debugLog('Stopping recording');
-    if (mediaRecorder && mediaRecorder.state === 'recording') {
-        debugLog(`Current MediaRecorder state: ${mediaRecorder.state}`);
+async function stopRecording() {
+    if (mediaRecorder?.state === 'recording') {
         mediaRecorder.stop();
-        mediaRecorder.stream.getTracks().forEach(track => {
-            track.stop();
-            debugLog(`Track ${track.kind} stopped`);
-        });
-        document.getElementById('record-btn').classList.remove('recording');
-        document.getElementById('record-btn').innerHTML = '<span class="record-icon">●</span> Neu aufnehmen';
-        document.getElementById('record-btn').onclick = startRecording;
-    } else {
-        debugLog(`MediaRecorder not recording. State: ${mediaRecorder ? mediaRecorder.state : 'undefined'}`);
-    }
-}
-
-async function submitRecording() {
-    if (!window.recordedBlob) {
-        alert('Bitte nehmen Sie zuerst Ihre Stimme auf.');
-        return;
-    }
-
-    try {
-        document.getElementById('submit-recording').disabled = true;
-        document.getElementById('submit-recording').textContent = 'Wird verarbeitet...';
-
-        debugLog('Preparing WAV file for submission');
-        const formData = new FormData();
-        formData.append('audio', window.recordedBlob, 'recording.wav');
-        formData.append('input_language', new Blob(['de'], { type: 'text/plain' }));
-        formData.append('output_language', new Blob(['de'], { type: 'text/plain' }));
-
-        debugLog('Sending WAV audio to server');
-        const response = await fetch('https://isl.nguyenbinh.dev/asr/asr/inference', {
-            method: 'POST',
-            body: formData
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const result = await response.json();
-        console.log(result);
-        const transcription = result.segments.map(seg => seg.text).join(' ').trim();
+        mediaRecorder.stream.getTracks().forEach(track => track.stop());
         
-        document.getElementById('transcription-result').style.display = 'block';
-        document.getElementById('user-transcription').textContent = transcription;
+        // Show processing UI
+        const recordBtn = document.getElementById('record-btn');
+        recordBtn.disabled = true;
+        recordBtn.textContent = 'Verarbeite Aufnahme...';
         
-        // Compare with original text
-        const comparison = compareTexts(currentParagraph.text, transcription);
-        document.getElementById('comparison-result').innerHTML = comparison;
-        
-        // Show next button
-        document.getElementById('next-btn-absatzweise').style.display = 'block';
-    } catch (error) {
-        debugLog('Error in submitRecording', error);
-        console.error('Error submitting recording:', error);
-        alert('Fehler beim Senden der Aufnahme. Bitte versuchen Sie es erneut.');
-    } finally {
-        document.getElementById('submit-recording').disabled = false;
-        document.getElementById('submit-recording').textContent = 'Aussprache prüfen';
+        // Handle the recorded audio
+        mediaRecorder.onstop = async () => {
+            try {
+                showProgressOverlay();
+
+                // Convert to WAV
+                const originalBlob = new Blob(audioChunks, { type: mediaRecorder.mimeType });
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const arrayBuffer = await originalBlob.arrayBuffer();
+                const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+                const wavBlob = await audioBufferToWav(audioBuffer);
+
+                // Send to API and get transcription
+                const formData = new FormData();
+                formData.append('audio', wavBlob, 'recording.wav');
+                formData.append('input_language', new Blob(['de'], { type: 'text/plain' }));
+                formData.append('output_language', new Blob(['de'], { type: 'text/plain' }));
+
+                debugLog('Sending audio to API...');
+                const response = await fetch('https://isl.nguyenbinh.dev/asr/asr/inference', {
+                    method: 'POST',
+                    headers: {
+                        'Origin': window.location.origin
+                    },
+                    credentials: 'include',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                debugLog('Received API response');
+                const transcription = result.segments.map(seg => seg.text).join(' ').trim();
+
+                // Hide progress overlay before showing results
+                hideProgressOverlay();
+
+                // Show results
+                const controlsContainer = document.querySelector('.recording-controls');
+                controlsContainer.innerHTML = ''; // Clear existing controls
+                
+                // Style the controls container for results
+                controlsContainer.style.cssText = `
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    width: 100%;
+                    margin: 20px 0;
+                `;
+
+                // Create audio player container
+                const audioContainer = document.createElement('div');
+                audioContainer.style.cssText = `
+                    width: 100%;
+                    padding: 15px;
+                    background: #f8f9fa;
+                    border-radius: 4px;
+                `;
+
+                // Create audio player
+                const audioPlayer = document.createElement('audio');
+                audioPlayer.id = 'audio-player';
+                audioPlayer.controls = true;
+                audioPlayer.style.cssText = `
+                    width: 100%;
+                    margin: 0;
+                `;
+                audioPlayer.src = URL.createObjectURL(wavBlob);
+                audioContainer.appendChild(audioPlayer);
+                controlsContainer.appendChild(audioContainer);
+                
+                // Show transcription in the transcription-result element
+                const transcriptionResult = document.getElementById('transcription-result');
+                const userTranscription = document.getElementById('user-transcription');
+                const comparisonResult = document.getElementById('comparison-result');
+                
+                if (transcriptionResult && userTranscription && comparisonResult) {
+                    transcriptionResult.style.cssText = `
+                        display: block;
+                        width: 100%;
+                        margin: 15px 0;
+                        padding: 15px;
+                        background: #f8f9fa;
+                        border-radius: 4px;
+                    `;
+                    userTranscription.textContent = transcription;
+                    comparisonResult.innerHTML = compareTexts(currentParagraph.text, transcription);
+                }
+                
+                // Add new recording button
+                const newRecordBtn = document.createElement('button');
+                newRecordBtn.style.cssText = `
+                    display: block;
+                    width: 100%;
+                    padding: 15px;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    margin: 0;
+                    transition: background-color 0.2s;
+                `;
+                newRecordBtn.textContent = 'Neu aufnehmen';
+                newRecordBtn.onclick = () => displayParagraph();
+                controlsContainer.appendChild(newRecordBtn);
+                
+                // Add next text button
+                const nextButton = document.createElement('button');
+                nextButton.style.cssText = `
+                    display: block;
+                    width: 100%;
+                    padding: 15px;
+                    background-color: #28a745;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    margin: 0;
+                    transition: background-color 0.2s;
+                `;
+                nextButton.textContent = 'Nächster Text';
+                nextButton.onclick = () => {
+                    let newParagraph;
+                    do {
+                        newParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
+                    } while (newParagraph.id === currentParagraph.id);
+                    currentParagraph = newParagraph;
+                    displayParagraph();
+                };
+                controlsContainer.appendChild(nextButton);
+
+            } catch (error) {
+                console.error('Error processing recording:', error);
+                alert('Fehler bei der Verarbeitung der Aufnahme. Bitte versuchen Sie es erneut.');
+                displayParagraph(); // Reset to initial state
+            }
+        };
     }
 }
 
@@ -408,18 +444,30 @@ function compareTexts(original, transcribed) {
     return result;
 }
 
-function nextParagraph() {
-    // Clean up current recording state
-    cleanupPreviousRecording();
+function cleanupPreviousRecording() {
+    // Reset audio state
+    audioChunks = [];
+    if (mediaRecorder?.stream) {
+        mediaRecorder.stream.getTracks().forEach(track => track.stop());
+    }
     
-    // Get new random paragraph different from current
-    let newParagraph;
-    do {
-        newParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
-    } while (newParagraph.id === currentParagraph.id);
+    // Clean up audio player
+    const audioPlayer = document.getElementById('audio-player');
+    if (audioPlayer?.src) {
+        URL.revokeObjectURL(audioPlayer.src);
+    }
     
-    currentParagraph = newParagraph;
-    displayParagraph();
+    // Clear controls container
+    const controlsContainer = document.querySelector('.recording-controls');
+    if (controlsContainer) {
+        controlsContainer.innerHTML = '';
+    }
+
+    // Hide transcription result
+    const transcriptionResult = document.getElementById('transcription-result');
+    if (transcriptionResult) {
+        transcriptionResult.style.display = 'none';
+    }
 }
 
 // Function to convert AudioBuffer to WAV format
@@ -492,49 +540,105 @@ function floatTo16BitPCM(view, offset, input) {
     }
 }
 
-function cleanupPreviousRecording() {
-    debugLog('Cleaning up previous recording state');
-    
-    // Reset audio chunks
-    audioChunks = [];
-    window.recordedBlob = null;
-    
-    // Clean up audio player
-    const audioPlayer = document.getElementById('audio-player');
-    if (audioPlayer) {
-        const audioUrl = audioPlayer.src;
-        if (audioUrl) {
-            URL.revokeObjectURL(audioUrl);
+// Add these functions after createDebugPanel but before displayParagraph
+
+function createProgressOverlay() {
+    const overlay = document.createElement('div');
+    overlay.id = 'progress-overlay';
+    overlay.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    `;
+
+    const progressContainer = document.createElement('div');
+    progressContainer.style.cssText = `
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        min-width: 300px;
+    `;
+
+    const progressText = document.createElement('div');
+    progressText.textContent = 'Verarbeite Aufnahme...';
+    progressText.style.cssText = `
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #333;
+    `;
+
+    const progressBar = document.createElement('div');
+    progressBar.style.cssText = `
+        width: 100%;
+        height: 4px;
+        background: #f0f0f0;
+        border-radius: 2px;
+        overflow: hidden;
+    `;
+
+    const progressIndicator = document.createElement('div');
+    progressIndicator.style.cssText = `
+        width: 30%;
+        height: 100%;
+        background: #007bff;
+        border-radius: 2px;
+        animation: progress 1s infinite linear;
+    `;
+
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes progress {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(400%);
+            }
         }
-        audioPlayer.remove();
+    `;
+    document.head.appendChild(style);
+
+    progressBar.appendChild(progressIndicator);
+    progressContainer.appendChild(progressText);
+    progressContainer.appendChild(progressBar);
+    overlay.appendChild(progressContainer);
+    document.body.appendChild(overlay);
+}
+
+function showProgressOverlay() {
+    const overlay = document.getElementById('progress-overlay');
+    if (overlay) {
+        overlay.style.display = 'flex';
     }
-    
-    // Clean up debug audio info
-    const debugInfoElements = document.querySelectorAll('.debug-audio-info');
-    debugInfoElements.forEach(el => el.remove());
-    
-    // Reset UI elements
-    document.getElementById('submit-recording').style.display = 'none';
-    document.getElementById('transcription-result').style.display = 'none';
-    document.getElementById('next-btn-absatzweise').style.display = 'none';
-    
-    // Reset recording button
-    const recordBtn = document.getElementById('record-btn');
-    recordBtn.classList.remove('recording');
-    recordBtn.innerHTML = '<span class="record-icon">●</span> Neu aufnehmen';
-    recordBtn.onclick = startRecording;
+}
+
+function hideProgressOverlay() {
+    const overlay = document.getElementById('progress-overlay');
+    if (overlay) {
+        overlay.style.display = 'none';
+    }
 }
 
 // Initialize when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    // Create debug panel
     createDebugPanel();
-    debugLog('Debug panel initialized');
-    debugLog(`User Agent: ${navigator.userAgent}`);
+    createProgressOverlay();
     
-    // Add event listeners
-    document.getElementById('record-btn').onclick = startRecording;
-    document.getElementById('submit-recording').onclick = submitRecording;
-    document.getElementById('next-btn-absatzweise').onclick = nextParagraph;
-    document.getElementById('skip-btn-absatzweise').onclick = nextParagraph;
+    // Ensure the recording controls container exists
+    let controlsContainer = document.querySelector('.recording-controls');
+    if (!controlsContainer) {
+        controlsContainer = document.createElement('div');
+        controlsContainer.className = 'recording-controls';
+        document.body.appendChild(controlsContainer);
+    }
+    
+    displayParagraph();
 }); 
