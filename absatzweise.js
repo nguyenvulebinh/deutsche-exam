@@ -2,21 +2,43 @@ let mediaRecorder;
 let audioChunks = [];
 let audioBlob;
 let currentParagraph;
+let allParagraphs = []; // Store all paragraphs
+let currentIndex = 0; // Track current paragraph index
 
-const paragraphs = [
-    {
-        text: "Der kleine Hund spielt im Park. Er läuft schnell und fröhlich herum. Andere Hunde kommen auch zum Spielen. Sie haben viel Spaß zusammen.",
-        id: 1
-    },
-    {
-        text: "Heute ist das Wetter sehr schön. Die Sonne scheint hell am Himmel. Die Menschen gehen spazieren und genießen den Tag.",
-        id: 2
-    },
-    {
-        text: "In der Bäckerei riecht es gut. Frische Brötchen und Brot liegen in den Regalen. Die Verkäuferin ist freundlich und hilfsbereit.",
-        id: 3
+// Load paragraphs from JSON file
+async function loadParagraphs() {
+    try {
+        const response = await fetch('/datasets/speaking_practice.json');
+        if (!response.ok) {
+            throw new Error('Failed to load paragraphs');
+        }
+        const data = await response.json();
+        allParagraphs = shuffleArray(data.paragraphs);
+        return allParagraphs;
+    } catch (error) {
+        console.error('Error loading paragraphs:', error);
+        // Fallback paragraphs in case of error
+        return shuffleArray([
+            {
+                german: "Hallo, ich heiße Anna. Ich lerne Deutsch, weil ich in Deutschland leben möchte.",
+                english: "Hello, my name is Anna. I am learning German because I want to live in Germany."
+            },
+            {
+                german: "Ich wohne in Berlin. Meine Wohnung ist klein, aber gemütlich.",
+                english: "I live in Berlin. My apartment is small but cozy."
+            }
+        ]);
     }
-];
+}
+
+// Fisher-Yates shuffle algorithm
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 
 // Create debug panel
 function createDebugPanel() {
@@ -137,12 +159,70 @@ function debugLog(message, error = null) {
 
 function displayParagraph() {
     if (!currentParagraph) {
-        currentParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
+        loadParagraphs().then(paragraphs => {
+            currentIndex = 0;
+            currentParagraph = paragraphs[currentIndex];
+            updateParagraphDisplay();
+        });
+    } else {
+        updateParagraphDisplay();
     }
-    document.getElementById('paragraph-text').textContent = currentParagraph.text;
     
     // Reset UI to initial state
     setupInitialUI();
+}
+
+function updateParagraphDisplay() {
+    const paragraphText = document.getElementById('paragraph-text');
+    const paragraphTextEnglish = document.getElementById('paragraph-text-english') || createEnglishTextElement();
+    
+    paragraphText.style.cssText = `
+        cursor: pointer;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    `;
+    paragraphText.title = 'Click to show/hide English translation';
+    
+    // Add hover effect
+    paragraphText.onmouseover = () => {
+        paragraphText.style.backgroundColor = '#f8f9fa';
+    };
+    paragraphText.onmouseout = () => {
+        paragraphText.style.backgroundColor = '#fff';
+    };
+    
+    // Add click handler to toggle English text
+    paragraphText.onclick = () => {
+        paragraphTextEnglish.style.display = paragraphTextEnglish.style.display === 'none' ? 'block' : 'none';
+    };
+    
+    paragraphText.textContent = currentParagraph.german;
+    paragraphTextEnglish.textContent = currentParagraph.english;
+}
+
+function createEnglishTextElement() {
+    const container = document.getElementById('paragraph-text').parentElement;
+    
+    // Create English text element
+    const englishText = document.createElement('div');
+    englishText.id = 'paragraph-text-english';
+    englishText.style.cssText = `
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        font-style: italic;
+        color: #6c757d;
+        display: none;
+        border-left: 3px solid #007bff;
+    `;
+    
+    // Insert element
+    container.appendChild(englishText);
+    
+    return englishText;
 }
 
 function setupInitialUI() {
@@ -208,11 +288,8 @@ function setupInitialUI() {
     `;
     skipButton.textContent = 'Überspringen';
     skipButton.onclick = () => {
-        let newParagraph;
-        do {
-            newParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
-        } while (newParagraph.id === currentParagraph.id);
-        currentParagraph = newParagraph;
+        currentIndex = (currentIndex + 1) % allParagraphs.length;
+        currentParagraph = allParagraphs[currentIndex];
         displayParagraph();
     };
     controlsContainer.appendChild(skipButton);
@@ -359,7 +436,7 @@ async function stopRecording() {
                         border-radius: 4px;
                     `;
                     userTranscription.textContent = transcription;
-                    comparisonResult.innerHTML = compareTexts(currentParagraph.text, transcription);
+                    comparisonResult.innerHTML = compareTexts(currentParagraph.german, transcription);
                 }
                 
                 // Add new recording button
@@ -398,11 +475,8 @@ async function stopRecording() {
                 `;
                 nextButton.textContent = 'Nächster Text';
                 nextButton.onclick = () => {
-                    let newParagraph;
-                    do {
-                        newParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
-                    } while (newParagraph.id === currentParagraph.id);
-                    currentParagraph = newParagraph;
+                    currentIndex = (currentIndex + 1) % allParagraphs.length;
+                    currentParagraph = allParagraphs[currentIndex];
                     displayParagraph();
                 };
                 controlsContainer.appendChild(nextButton);
@@ -416,31 +490,90 @@ async function stopRecording() {
     }
 }
 
-function compareTexts(original, transcribed) {
-    // Simple word-by-word comparison
-    const originalWords = original.toLowerCase().split(/\s+/);
-    const transcribedWords = transcribed.toLowerCase().split(/\s+/);
-    
-    let result = 'Vergleich:<br>';
-    let correctWords = 0;
-    
-    originalWords.forEach((word, index) => {
-        if (transcribedWords[index] === word) {
-            correctWords++;
-        }
-    });
-    
-    const accuracy = (correctWords / originalWords.length * 100).toFixed(1);
-    result += `Genauigkeit: ${accuracy}%<br>`;
-    
-    if (accuracy > 90) {
-        result += '<span style="color: #27ae60">Sehr gut! Ihre Aussprache ist ausgezeichnet.</span>';
-    } else if (accuracy > 75) {
-        result += '<span style="color: #f39c12">Gut! Weiter üben für noch bessere Ergebnisse.</span>';
-    } else {
-        result += '<span style="color: #c0392b">Versuchen Sie es noch einmal. Achten Sie auf die Aussprache jedes Wortes.</span>';
+// Levenshtein distance implementation
+function levenshteinDistance(str1, str2) {
+    const m = str1.length;
+    const n = str2.length;
+    const dp = Array(m + 1).fill(null).map(() => Array(n + 1).fill(0));
+
+    for (let i = 0; i <= m; i++) {
+        dp[i][0] = i;
     }
+    for (let j = 0; j <= n; j++) {
+        dp[0][j] = j;
+    }
+
+    for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+            if (str1[i - 1] === str2[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1];
+            } else {
+                dp[i][j] = Math.min(
+                    dp[i - 1][j - 1] + 1, // substitution
+                    dp[i - 1][j] + 1,     // deletion
+                    dp[i][j - 1] + 1      // insertion
+                );
+            }
+        }
+    }
+    return dp[m][n];
+}
+
+function compareTexts(original, transcribed) {
+    // Normalize both texts: lowercase and remove punctuation
+    const normalizeText = (text) => {
+        return text.toLowerCase()
+            .replace(/[.,!?]/g, '')  // Remove punctuation
+            .replace(/\s+/g, ' ')    // Normalize spaces
+            .trim();
+    };
+
+    const normalizedOriginal = normalizeText(original);
+    const normalizedTranscribed = normalizeText(transcribed);
+
+    // Calculate Levenshtein distance
+    const distance = levenshteinDistance(normalizedOriginal, normalizedTranscribed);
     
+    // Calculate similarity percentage (0-100)
+    const maxLength = Math.max(normalizedOriginal.length, normalizedTranscribed.length);
+    const similarity = ((maxLength - distance) / maxLength * 100).toFixed(1);
+
+    let result = 'Vergleich:<br>';
+    result += `Genauigkeit: ${similarity}%<br>`;
+
+    // Detailed feedback based on similarity
+    if (similarity >= 90) {
+        result += '<span style="color: #27ae60">Ausgezeichnet! Ihre Aussprache ist sehr präzise.</span>';
+    } else if (similarity >= 75) {
+        result += '<span style="color: #f39c12">Gut gemacht! Kleine Verbesserungen sind noch möglich.</span>';
+    } else if (similarity >= 60) {
+        result += '<span style="color: #e67e22">Verständlich, aber es gibt noch Raum für Verbesserungen.</span>';
+    } else {
+        result += '<span style="color: #c0392b">Versuchen Sie es noch einmal. Achten Sie auf die genaue Aussprache.</span>';
+    }
+
+    // Add detailed comparison if accuracy is low
+    if (similarity < 75) {
+        result += '<br><br><span style="color: #7f8c8d">Tipp: Achten Sie besonders auf:';
+        
+        // Find words with significant differences
+        const originalWords = normalizedOriginal.split(' ');
+        const transcribedWords = normalizedTranscribed.split(' ');
+        
+        let problematicWords = [];
+        originalWords.forEach((word, index) => {
+            if (transcribedWords[index] && levenshteinDistance(word, transcribedWords[index]) > 2) {
+                problematicWords.push(word);
+            }
+        });
+        
+        if (problematicWords.length > 0) {
+            result += `<br>- ${problematicWords.join('<br>- ')}</span>`;
+        } else {
+            result += '<br>- Wortstellung und Vollständigkeit der Sätze</span>';
+        }
+    }
+
     return result;
 }
 
