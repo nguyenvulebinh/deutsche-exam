@@ -1,483 +1,75 @@
+
 [
     {
-      "context": "Sie haben Geburtstag und möchten Ihre Freundin/Ihren Freund Anna/Max einladen.",
+      "context": "Ihre Schwester Maria möchte Sie morgen besuchen. Schreiben Sie an Ihre Schwester:",
       "requirements": [
+        "Sie können sie nicht vom Flughafen abholen.",
+        "Wie kommt Maria zu Ihrer Wohnung?",
+        "Maria soll warme Kleidung tragen."
+      ]
+    },
+    {
+      "context": "Sie möchten nächstes Jahr Deutsch in Berlin lernen und suchen einen Kurs. Schreiben Sie an die Sprachschule:",
+      "requirements": [
+        "Wann Deutsch lernen?",
+        "Welchen Kurs?",
+        "Preis?"
+      ]
+    },
+    {
+      "context": "Sie wollen am Wochenende mit einem Freund / einer Freundin einen Ausflug machen. Sie sind aber krank und können nicht. Schreiben Sie an Ihren Freund / Ihre Freundin:",
+      "requirements": [
+        "Warum schreiben Sie?",
+        "Wie geht es Ihnen?",
+        "Anderen Termin?"
+      ]
+    },
+    {
+      "context": "Ihr Chef, Herr Peter Mustermann, möchte seinem Sohn ein Geburtstagsgeschenk schenken. Aber er hat keine Ahnung was er verschenken soll. Sie möchten ihm helfen. Schreiben Sie an Herrn Peter Mustermann:",
+      "requirements": [
+        "Welches Geschenk?",
+        "Preis?",
+        "Wo kaufen?"
+      ]
+    },
+    {
+      "context": "Sie haben Ihre Freunde Maria und Tom lange nicht gesehen. Deshalb möchten Sie mit ihnen essen gehen. Schreiben Sie an Maria und Tom:",
+      "requirements": [
+        "Einladung",
+        "Wo essen?",
+        "Wann treffen?"
+      ]
+    },
+    {
+      "context": "Sie möchten mit Ihrem Freund Tom am Sonntag einen Ausflug mit dem Fahrrad machen. Schreiben Sie Tom eine E-Mail.",
+      "requirements": [
+        "Warum schreiben Sie?",
+        "Wohin fahren?",
+        "Wo wollen Sie sich treffen?"
+      ]
+    },
+    {
+      "context": "Sie wollen heute Abend mit einem Freund/ einer Freundin ins Kino gehen. Sie sind aber krank und können nicht. Schreiben Sie Ihrem Freund / Ihrer Freundin eine SMS.",
+      "requirements": [
+        "Warum schreiben Sie?",
+        "Wie geht es Ihnen?",
+        "Wann treffen?"
+      ]
+    },
+    {
+      "context": "Sie möchten im Sommer Deutsch in Deutschland lernen und suchen einen Kurs. Schreiben Sie an die Sprachschule.",
+      "requirements": [
+        "Warum schreiben Sie?",
+        "Wann Deutsch lernen?",
+        "Welcher Kurs?"
+      ]
+    },
+    {
+      "context": "Sie haben eine neue Wohnung und möchten das feiern. Schreiben Sie eine Einladung zu Ihrer Party.",
+      "requirements": [
+        "Warum schreiben Sie?",
         "Wann ist die Party?",
-        "Wo ist die Party?",
-        "Wer kommt noch?"
+        "Was mitbringen?"
       ]
-    },
-    {
-      "context": "Sie haben eine neue Wohnung gefunden. Schreiben Sie eine kurze Nachricht an Ihre/n Freund/in.",
-      "requirements": [
-        "Wo ist die neue Wohnung (Stadtteil/in der Nähe von...)?",
-        "Wie ist die Wohnung (groß/klein, Zimmer)?",
-        "Wann können Freunde Sie besuchen?"
-      ]
-    },
-    {
-      "context": "Sie sind krank und können nicht zur Arbeit/zum Deutschkurs kommen. Schreiben Sie eine kurze Nachricht an Ihren Chef/Ihre Lehrerin.",
-      "requirements": [
-        "Sagen Sie, dass Sie krank sind.",
-        "Sie können heute nicht kommen.",
-        "Sagen Sie, dass Sie zum Arzt gehen."
-      ]
-    },
-    {
-      "context": "Sie möchten am Wochenende einen Ausflug mit dem Zug machen. Schreiben Sie an Ihren Freund/Ihre Freundin.",
-      "requirements": [
-        "Wohin möchten Sie fahren?",
-        "Wann möchten Sie fahren (Tag, Uhrzeit)?",
-        "Fragen Sie, ob er/sie mitkommt."
-      ]
-    },
-    {
-      "context": "Sie suchen ein Zimmer. Schreiben Sie an das Studentenwohnheim.",
-      "requirements": [
-        "Sie suchen ein Zimmer ab September.",
-        "Wie viel kostet ein Zimmer?",
-        "Gibt es eine Küche?"
-      ]
-    },
-    {
-      "context": "Ihr Freund/Ihre Freundin hat Ihnen ein Buch geliehen. Schreiben Sie eine kurze Nachricht.",
-      "requirements": [
-        "Bedanken Sie sich für das Buch.",
-        "Sagen Sie, dass das Buch sehr interessant ist.",
-        "Fragen Sie, wann Sie das Buch zurückgeben sollen."
-      ]
-    },
-    {
-      "context": "Sie möchten einen Tisch im Restaurant reservieren. Schreiben Sie eine E-Mail an das Restaurant.",
-      "requirements": [
-        "Für wie viele Personen?",
-        "Wann (Datum und Uhrzeit)?",
-        "Möchten Sie drinnen oder draußen sitzen?"
-      ]
-    },
-    {
-      "context": "Sie haben Ihr Handy verloren. Schreiben Sie eine Nachricht an Ihren Freund/Ihre Freundin.",
-      "requirements": [
-        "Sagen Sie, dass Sie Ihr Handy verloren haben.",
-        "Bitten Sie Ihren Freund/Ihre Freundin, Sie anzurufen.",
-        "Sagen Sie, wo Sie gestern waren (z.B. im Café, im Park)."
-      ]
-    },
-    {
-      "context": "Sie möchten am Samstag einkaufen gehen. Schreiben Sie an Ihren Freund / Ihre Freundin.",
-      "requirements": [
-        "Fragen Sie, ob er/sie mitkommt.",
-        "Wann und wo treffen Sie sich?",
-        "Was möchten Sie kaufen (z.B. Kleidung, Lebensmittel)?"
-      ]
-    },
-    {
-      "context": "Sie möchten einen Termin beim Arzt vereinbaren. Schreiben Sie eine E-Mail an die Arztpraxis.",
-      "requirements": [
-        "Warum brauchen Sie einen Termin (z.B. Kopfschmerzen, Halsschmerzen)?",
-        "Wann möchten Sie kommen (Tag, vormittags/nachmittags)?",
-        "Fragen Sie nach Ihrer Versichertennummer (falls nötig)."
-      ]
-    },
-    {
-      "context": "Sie möchten Deutsch lernen und suchen einen Sprachkurs. Schreiben Sie eine E-Mail an eine Sprachschule.",
-      "requirements": [
-          "Sagen Sie, dass Sie Deutsch lernen möchten.",
-          "Fragen Sie nach Kursbeginn und Kurszeiten.",
-          "Fragen Sie nach den Kosten."
-        ]
-      },
-      {
-        "context": "Sie haben eine neue Telefonnummer. Schreiben Sie eine Nachricht an Ihren Freund/Ihre Freundin.",
-        "requirements": [
-          "Sagen Sie, dass Sie eine neue Nummer haben.",
-          "Schreiben Sie Ihre neue Nummer.",
-          "Bitten Sie ihn/sie, die Nummer zu speichern."
-        ]
-      },
-      {
-        "context": "Sie möchten ein Paket verschicken. Schreiben Sie eine Nachricht an den Postboten/die Postbotin (Paketzusteller/in).",
-        "requirements": [
-          "Sagen Sie, dass Sie ein Paket verschicken möchten.",
-          "Fragen Sie, wann er/sie das Paket abholen kann.",
-          "Geben Sie Ihre Adresse an."
-        ]
-      },
-      {
-        "context": "Sie möchten ein Fahrrad mieten. Schreiben Sie eine E-Mail an den Fahrradverleih.",
-        "requirements": [
-          "Für welchen Tag möchten Sie das Fahrrad mieten?",
-          "Für wie viele Stunden?",
-          "Fragen Sie nach dem Preis."
-        ]
-      },
-        {
-        "context": "Sie möchten am Wochenende grillen. Schreiben Sie eine Nachricht an Ihren Nachbarn / Ihre Nachbarin.",
-        "requirements": [
-          "Laden Sie ihn/sie zum Grillen ein.",
-          "Wann ist das Grillen (Tag, Uhrzeit)?",
-          "Was sollen die Nachbarn mitbringen (Getränke)?"
-        ]
-      },
-      {
-        "context": "Sie haben eine Kinokarte zu viel. Schreiben Sie eine Nachricht an Ihren Freund/Ihre Freundin.",
-        "requirements": [
-          "Welcher Film?",
-          "Wann ist der Film (Tag, Uhrzeit)?",
-          "Fragen Sie, ob er/sie mit ins Kino kommen möchte."
-        ]
-      },
-      {
-        "context": "Sie suchen eine Katze. Schreiben Sie eine Nachricht an das Tierheim.",
-        "requirements": [
-          "Sagen Sie, dass Sie eine Katze suchen.",
-          "Fragen Sie, ob sie Katzen haben.",
-          "Fragen Sie, wann Sie das Tierheim besuchen können."
-        ]
-      },
-      {
-        "context": "Sie möchten Ihre Deutschkenntnisse verbessern. Schreiben Sie eine Nachricht an einen/eine Tandempartner/in.",
-        "requirements": [
-          "Sagen Sie, dass Sie Ihr Deutsch verbessern möchten.",
-          "Fragen Sie, ob er/sie Zeit für ein Treffen hat.",
-          "Schlagen Sie einen Ort und eine Zeit vor."
-        ]
-      },
-      {
-        "context": "Sie haben online ein Buch bestellt, aber es ist das falsche Buch. Schreiben Sie an den Online-Shop.",
-        "requirements": [
-          "Sagen Sie, dass Sie das falsche Buch bekommen haben.",
-          "Sagen Sie, welches Buch Sie bestellt haben.",
-          "Fragen Sie, was Sie jetzt machen sollen."
-        ]
-      },
-      {
-        "context": "Ihr Freund/Ihre Freundin kommt Sie besuchen. Schreiben Sie, wie er/sie zu Ihrer Wohnung kommt.",
-        "requirements": [
-          "Mit welchem Verkehrsmittel soll er/sie fahren (Zug, Bus, U-Bahn)?",
-          "Welche Linie?",
-          "Wo soll er/sie aussteigen?"
-        ]
-      },
-      {
-        "context": "Sie möchten im Sommer einen Urlaub in den Bergen machen. Schreiben Sie an ein Hotel.",
-        "requirements": [
-          "Fragen Sie, ob Zimmer frei sind.",
-          "Für wie viele Personen?",
-          "Fragen Sie nach dem Preis pro Nacht."
-        ]
-      },
-      {
-        "context": "Sie möchten Ihre alte Waschmaschine verkaufen. Schreiben Sie eine kurze Anzeige für das Internet.",
-        "requirements": [
-          "Beschreiben Sie die Waschmaschine (alt/funktioniert gut).",
-          "Nennen Sie den Preis.",
-          "Geben Sie Ihre Telefonnummer an."
-        ]
-      },
-      {
-        "context": "Sie möchten ein Konzert besuchen. Schreiben Sie an die Konzertkasse.",
-        "requirements": [
-          "Für welches Konzert möchten Sie Karten?",
-          "Wie viele Karten?",
-          "Fragen Sie nach dem Preis."
-        ]
-      },
-      {
-        "context": "Sie haben ein Problem mit Ihrem Internetanschluss. Schreiben Sie an Ihren Internetanbieter.",
-        "requirements": [
-          "Sagen Sie, dass das Internet nicht funktioniert.",
-          "Seit wann funktioniert das Internet nicht?",
-          "Bitten Sie um Hilfe."
-        ]
-      },
-      {
-        "context": "Sie möchten einen Computerkurs besuchen. Schreiben Sie an die Volkshochschule.",
-        "requirements": [
-          "Sagen Sie, dass Sie einen Computerkurs suchen.",
-          "Fragen Sie nach dem Kursbeginn.",
-          "Fragen Sie nach dem Kurstag (Montag, Dienstag,...)."
-        ]
-      },
-        {
-        "context": "Ihr Zug hat Verspätung. Schreiben Sie eine Nachricht an Ihren Freund/Ihre Freundin, der/die Sie abholen soll.",
-        "requirements": [
-          "Sagen Sie, dass Ihr Zug Verspätung hat.",
-          "Sagen Sie die neue Ankunftszeit.",
-          "Bitten Sie ihn/sie, später zu kommen."
-        ]
-      },
-      {
-        "context": "Sie sind umgezogen und möchten eine Einweihungsparty machen. Schreiben Sie eine Einladung an Freunde.",
-        "requirements": [
-          "Wann ist die Party?",
-          "Wo ist die Party (Ihre neue Adresse)?",
-          "Bitten Sie um eine kurze Rückmeldung (Zu- oder Absage)."
-        ]
-      },
-      {
-        "context": "Sie haben einen neuen Job. Schreiben Sie eine Nachricht an einen/eine ehemalige/n Kollegin/Kollegen.",
-        "requirements": [
-            "Sagen sie, dass Sie einen Job haben.",
-            "Wo arbeiten Sie jetzt?",
-            "Sagen Sie was gefällt Ihnen."
-        ]
-      },
-      {
-        "context": "Sie möchten ein Haustier (z.B. einen Hund). Schreiben Sie an Ihre/n Vermieter/in.",
-        "requirements": [
-          "Sagen Sie, dass Sie ein Haustier möchten.",
-          "Welches Haustier?",
-          "Fragen Sie, ob Haustiere erlaubt sind."
-        ]
-      },
-      {
-        "context": "Sie haben Kopfschmerzen und können nicht schlafen. Schreiben Sie eine SMS an Apotheke.",
-        "requirements": [
-          "Fragen Sie, ob die Apotheke geöffnet ist.",
-          "Was hilft gegen Kopfschmerzen?",
-          "Wie viel kostet das Medikamente?"
-        ]
-      },
-      {
-        "context": "Sie möchten einen Tisch im Café reservieren. Schreiben Sie eine E-Mail.",
-        "requirements": [
-          "Für wie viele Personen?",
-          "Wann (Datum und Uhrzeit)?",
-          "Möchten Sie drinnen oder auf der Terrasse sitzen?"
-        ]
-      },
-      {
-        "context": "Sie möchten einen Termin beim Friseur vereinbaren. Schreiben Sie eine Nachricht.",
-        "requirements": [
-          "Was möchten Sie machen lassen (Haare schneiden, färben...)?",
-          "Wann möchten Sie kommen (Tag, vormittags/nachmittags)?",
-          "Fragen Sie nach einem Termin bei Frau Müller (falls möglich)."
-        ]
-      },
-      {
-        "context": "Sie möchten Ihre Wohnung renovieren. Schreiben Sie eine Nachricht an Ihren Nachbarn/Ihre Nachbarin.",
-        "requirements": [
-          "Sagen Sie, dass Sie renovieren.",
-          "Entschuldigen Sie sich für den Lärm.",
-          "Sagen Sie, wie lange die Renovierung dauert (z.B. ein paar Tage)."
-        ]
-      },
-      {
-        "context": "Sie möchten einen Yoga-Kurs besuchen. Schreiben Sie an das Fitnessstudio.",
-        "requirements": [
-          "Sagen Sie, dass Sie sich für Yoga interessieren.",
-          "Fragen Sie nach den Kurszeiten.",
-          "Fragen Sie, ob Sie eine Probestunde machen können."
-        ]
-      },
-      {
-        "context": "Sie haben etwas im Bus/Zug vergessen. Schreiben Sie an das Fundbüro.",
-        "requirements": [
-          "Was haben Sie verloren (z.B. Schirm, Tasche, Buch)?",
-          "Beschreiben Sie den Gegenstand (Farbe, Größe...).",
-          "Geben Sie Ihre Telefonnummer an."
-        ]
-      },
-      {
-        "context": "Sie möchten Ihre Freunde zum Essen einladen. Schreiben Sie eine Einladung.",
-        "requirements": [
-          "Wann ist das Essen (Tag, Uhrzeit)?",
-          "Was gibt es zu essen (z.B. Pizza, Pasta, Grillen)?",
-          "Sagen Sie, dass Ihre Freunde Getränke mitbringen sollen."
-        ]
-      },
-      {
-        "context": "Sie möchten ein Museum besuchen. Schreiben Sie an das Museum.",
-        "requirements": [
-          "Fragen Sie nach den Öffnungszeiten.",
-          "Fragen Sie nach dem Eintrittspreis.",
-          "Fragen Sie, ob es eine Führung gibt."
-        ]
-      },
-      {
-        "context": "Sie möchten ein Auto mieten. Schreiben Sie an die Autovermietung.",
-        "requirements": [
-          "Für welchen Zeitraum möchten Sie das Auto mieten?",
-          "Welche Art von Auto (klein, groß, Kombi...)?",
-          "Fragen Sie nach dem Preis."
-        ]
-      },
-      {
-        "context": "Sie möchten Kleidung spenden. Schreiben Sie an eine Organisation (z.B. Rotes Kreuz).",
-        "requirements": [
-          "Sagen Sie, dass Sie Kleidung spenden möchten.",
-          "Fragen Sie, wo Sie die Kleidung abgeben können.",
-          "Fragen Sie, ob die Kleidung sauber und in gutem Zustand sein muss."
-        ]
-      },
-      {
-        "context": "Sie haben ein Problem mit Ihrem Handy. Schreiben Sie an den Kundenservice.",
-        "requirements": [
-          "Beschreiben Sie das Problem (z.B. Bildschirm kaputt, Akku schnell leer).",
-          "Fragen Sie, was Sie tun können.",
-          "Fragen Sie nach den Reparaturkosten."
-        ]
-      },
-        {
-        "context": "Sie möchten einen Malkurs besuchen. Schreiben Sie an die Kunstschule.",
-        "requirements": [
-          "Sagen sie dass, Sie einen Malkurs suchen.",
-          "Fragen Sie, ob es einen Kurs für Anfänger gibt.",
-          "Fragen Sie, wann der nächste Kurs beginnt."
-        ]
-      },
-      {
-        "context": "Sie haben eine Verabredung, aber Sie kommen später. Schreiben Sie eine Nachricht.",
-        "requirements": [
-          "Sagen Sie, dass Sie später kommen.",
-          "Entschuldigen Sie sich.",
-          "Sagen Sie, wann Sie ungefähr kommen."
-        ]
-      },
-      {
-        "context": "Sie möchten einen Deutschkurs im Sommer besuchen. Schreiben Sie an die Sprachschule.",
-        "requirements": [
-          "Fragen Sie nach Intensivkursen im Sommer.",
-          "Fragen Sie, wie viele Stunden pro Woche der Kurs hat.",
-          "Fragen Sie nach den Terminen (Anfang und Ende)."
-        ]
-      },
-      {
-        "context": "Sie möchten eine Pizza bestellen. Schreiben Sie an die Pizzeria.",
-        "requirements": [
-          "Welche Pizza möchten Sie (z.B. Salami, Margherita, vegetarisch)?",
-          "Wie groß soll die Pizza sein (klein, mittel, groß)?",
-          "Geben Sie Ihre Adresse an."
-        ]
-      },
-        {
-        "context": "Sie möchten eine Stadtführung in Berlin machen. Schreiben Sie an die Touristeninformation.",
-        "requirements":[
-            "Fragen Sie, wann die nächste Stadtführung ist.",
-            "Fragen sie, Wie lange dauert die Stadtführung?",
-            "Fragen sie, Wo ist der Treffpunkt?"
-        ]
-        },
-      {
-        "context": "Sie möchten einen neuen Pass beantragen. Schreiben Sie an das Bürgeramt.",
-        "requirements": [
-          "Sagen Sie, dass Sie einen neuen Pass brauchen.",
-          "Fragen Sie, welche Dokumente Sie mitbringen müssen.",
-          "Fragen Sie, wann Sie einen Termin bekommen können."
-        ]
-      },
-      {
-        "context": "Sie möchten sich für einen Marathon anmelden. Schreiben Sie an die Organisation.",
-        "requirements": [
-          "Sagen Sie, dass Sie sich anmelden möchten.",
-          "Fragen Sie nach dem Anmeldeschluss.",
-          "Fragen Sie nach der Startgebühr."
-        ]
-      },
-      {
-        "context": "Sie möchten eine Wohnung mieten. Schreiben Sie an den Vermieter/die Vermieterin.",
-        "requirements": [
-          "Sagen Sie, dass Sie die Wohnung mieten möchten.",
-          "Fragen Sie, wann Sie die Wohnung besichtigen können.",
-          "Fragen Sie nach der Kaution."
-        ]
-      },
-      {
-        "context": "Sie suchen eine Putzhilfe für Ihre Wohnung. Schreiben Sie eine kurze Anzeige.",
-        "requirements": [
-          "Wie oft pro Woche brauchen Sie die Putzhilfe?",
-          "Was soll die Putzhilfe machen (z.B. putzen, bügeln, Fenster putzen)?",
-          "Geben Sie Ihre Telefonnummer oder E-Mail-Adresse an."
-        ]
-      },
-      {
-        "context": "Sie möchten Ihr Fahrrad reparieren lassen. Schreiben Sie an die Fahrradwerkstatt.",
-        "requirements": [
-          "Was ist kaputt (z.B. Reifen platt, Bremse funktioniert nicht)?",
-          "Fragen Sie, wann Sie das Fahrrad vorbeibringen können.",
-          "Fragen Sie, wie lange die Reparatur ungefähr dauert."
-        ]
-      },
-      {
-          "context": "Sie möchten eine Überweisung machen. Schreiben Sie an Ihre Bank.",
-          "requirements": [
-              "Sagen Sie, dass Sie Geld überweisen möchten.",
-              "Geben Sie den Namen und die IBAN des Empfängers an.",
-              "Geben Sie den Betrag an."
-          ]
-        },
-          {
-        "context": "Sie organisieren ein Picknick im Park. Schreiben Sie eine Einladung an Ihre Freunde.",
-        "requirements": [
-            "Wann findet das Picknick statt (Datum und Uhrzeit)?",
-            "Wo ist das Picknick (welcher Park, welcher Treffpunkt)?",
-            "Sagen Sie, was jeder mitbringen soll (z.B. Salat, Brot, Getränke, Decke)."
-          ]
-      },
-      {
-        "context": "Sie möchten einen Tanzkurs besuchen. Schreiben Sie an die Tanzschule.",
-        "requirements": [
-            "Welchen Tanz möchten Sie lernen (z.B. Salsa, Tango, Walzer)?",
-            "Fragen Sie nach Kursen für Anfänger.",
-            "Fragen Sie nach den Preisen."
-        ]
-        },
-     {
-        "context": "Sie haben etwas online bestellt und möchten es zurückschicken. Schreiben Sie eine E-Mail an den Kundenservice des Onlineshops.",
-        "requirements": [
-            "Sagen Sie, was Sie zurückschicken möchten.",
-            "Nennen Sie den Grund für die Rücksendung (z.B. falsche Größe, gefällt nicht).",
-            "Fragen Sie nach der Rücksendeadresse."
-        ]
-    },
-    {
-        "context": "Sie haben eine Frage zu Ihrer Stromrechnung. Schreiben Sie an Ihren Stromanbieter.",
-        "requirements": [
-          "Geben Sie Ihre Kundennummer an.",
-          "Beschreiben Sie Ihr Problem/Ihre Frage (z.B. Rechnung zu hoch, Zählerstand falsch).",
-          "Bitten Sie um eine Erklärung/Korrektur."
-        ]
-    },
-    {
-     "context": "Sie feiern bald Ihren Geburtstag und möchten Ihre Freunde zu einer kleinen Feier einladen. Schreiben Sie eine Einladung.",
-     "requirements": [
-     "Wann findet die Feier statt (Datum und Uhrzeit)?",
-     "Wo feiern Sie (z.B. zu Hause, in einem Restaurant)?",
-     "Bitten Sie um eine Zusage bis zu einem bestimmten Datum."
-     ]
-    },
-    {
-     "context": "Sie haben einen neuen Laptop gekauft und haben Probleme mit der Installation. Schreiben Sie an den technischen Support.",
-     "requirements": [
-     "Beschreiben Sie das Problem kurz.",
-     "Fragen Sie nach einer Lösung oder einem Termin für telefonische Hilfe.",
-     "Geben Sie Ihre Modellnummer und Ihr Betriebssystem an."
-     ]
-    },
-    {
-     "context": "Sie möchten ein Bankkonto eröffnen. Schreiben Sie an die Bank.",
-     "requirements": [
-     "Sagen Sie, dass Sie ein Konto eröffnen möchten.",
-     "Fragen Sie, welche Unterlagen Sie dafür benötigen.",
-     "Fragen Sie, ob es Gebühren für das Konto gibt."
-     ]
-    },
-    {
-     "context": "Sie suchen einen Babysitter für Ihr Kind. Schreiben Sie eine kurze Nachricht.",
-     "requirements": [
-      "Wie alt ist Ihr Kind?",
-      "An welchen Tagen und zu welchen Zeiten brauchen Sie den Babysitter?",
-      "Geben Sie Ihre Telefonnummer an."
-     ]
-    },
-    {
-     "context": "Sie möchten sich für einen Newsletter anmelden. Schreiben Sie an die Firma/Organisation.",
-     "requirements": [
-      "Sagen Sie, dass Sie den Newsletter abonnieren möchten.",
-      "Geben Sie Ihre E-Mail-Adresse an.",
-      "Zu welchem Thema möchten Sie Informationen erhalten (z.B. Mode, Reisen, Technik)?"
-     ]
     }
-]
-  
+  ]
