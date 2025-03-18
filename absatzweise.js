@@ -375,7 +375,7 @@ async function stopRecording() {
                 formData.append('output_language', new Blob(['de'], { type: 'text/plain' }));
 
                 debugLog('Sending audio to API...');
-                const response = await fetch('https://isl.nguyenbinh.dev/asr/asr/inference', {
+                const response = await fetch('https://mcorec.nguyenbinh.dev/asr/asr/inference', {
                     method: 'POST',
                     headers: {
                         'Origin': window.location.origin

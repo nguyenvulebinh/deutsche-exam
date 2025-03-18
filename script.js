@@ -586,7 +586,7 @@ async function submitWriting() {
             }
         };
 
-        const response = await fetch('https://isl.nguyenbinh.dev/agent/runs/wait', {
+        const response = await fetch('https://mcorec.nguyenbinh.dev/agent/runs/wait', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -647,7 +647,7 @@ async function getSuggestions() {
         };
 
         // Make the API call
-        const response = await fetch('https://isl.nguyenbinh.dev/agent/runs/wait', {
+        const response = await fetch('https://mcorec.nguyenbinh.dev/agent/runs/wait', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
