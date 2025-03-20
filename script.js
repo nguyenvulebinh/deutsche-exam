@@ -162,7 +162,11 @@ function showTask(taskId) {
             initializeLesenTest();
             break;
         case 'absatzweise':
-            displayParagraph();
+            if (window.absatzweiseModule) {
+                window.absatzweiseModule.displayParagraph();
+            } else {
+                console.error('AbsatzweiseModule not initialized');
+            }
             break;
     }
 }
@@ -1117,10 +1121,524 @@ function restartLesenTest() {
     document.getElementById('test-submit-btn').style.display = 'block';
 }
 
+// Absatzweise Module UI
+class AbsatzweiseModule {
+    constructor() {
+        this.audioRecorder = new AudioRecorder();
+        this.audioProcessor = new AudioProcessor();
+        this.currentParagraph = null;
+        this.allParagraphs = [];
+        this.currentIndex = 0;
+        this.progressOverlay = null;
+        this.createProgressOverlay();
+    }
+
+    createProgressOverlay() {
+        this.progressOverlay = document.createElement('div');
+        this.progressOverlay.id = 'progress-overlay';
+        this.progressOverlay.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        `;
+
+        const progressContainer = document.createElement('div');
+        progressContainer.style.cssText = `
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 300px;
+        `;
+
+        const progressText = document.createElement('div');
+        progressText.textContent = 'Verarbeite Aufnahme...';
+        progressText.style.cssText = `
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #333;
+        `;
+
+        const progressBar = document.createElement('div');
+        progressBar.style.cssText = `
+            width: 100%;
+            height: 4px;
+            background: #f0f0f0;
+            border-radius: 2px;
+            overflow: hidden;
+        `;
+
+        const progressIndicator = document.createElement('div');
+        progressIndicator.style.cssText = `
+            width: 30%;
+            height: 100%;
+            background: #007bff;
+            border-radius: 2px;
+            animation: progress 1s infinite linear;
+        `;
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes progress {
+                0% { transform: translateX(-100%); }
+                100% { transform: translateX(400%); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        progressBar.appendChild(progressIndicator);
+        progressContainer.appendChild(progressText);
+        progressContainer.appendChild(progressBar);
+        this.progressOverlay.appendChild(progressContainer);
+        document.body.appendChild(this.progressOverlay);
+    }
+
+    showProgress() {
+        if (this.progressOverlay) {
+            this.progressOverlay.style.display = 'flex';
+        }
+    }
+
+    hideProgress() {
+        if (this.progressOverlay) {
+            this.progressOverlay.style.display = 'none';
+        }
+    }
+
+    createAudioPlayer(audioBlob) {
+        const audioContainer = document.createElement('div');
+        audioContainer.style.cssText = `
+            width: 100%;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        `;
+
+        const audioPlayer = document.createElement('audio');
+        audioPlayer.controls = true;
+        audioPlayer.style.cssText = `
+            width: 100%;
+            margin: 0;
+        `;
+        audioPlayer.src = URL.createObjectURL(audioBlob);
+        audioContainer.appendChild(audioPlayer);
+
+        return audioContainer;
+    }
+
+    cleanupAudioPlayer(audioPlayer) {
+        if (audioPlayer?.src) {
+            URL.revokeObjectURL(audioPlayer.src);
+        }
+    }
+
+    async loadParagraphs() {
+        try {
+            const response = await fetch('./datasets/speaking_practice.json');
+            if (!response.ok) {
+                throw new Error('Failed to load paragraphs');
+            }
+            const data = await response.json();
+            this.allParagraphs = this.shuffleArray(data.paragraphs);
+            this.currentIndex = 0;
+            return this.allParagraphs;
+        } catch (error) {
+            console.error('Error loading paragraphs:', error);
+            this.allParagraphs = this.shuffleArray([
+                {
+                    german: "Hallo, ich heiße Anna. Ich lerne Deutsch, weil ich in Deutschland leben möchte.",
+                    english: "Hello, my name is Anna. I am learning German because I want to live in Germany."
+                },
+                {
+                    german: "Ich wohne in Berlin. Meine Wohnung ist klein, aber gemütlich.",
+                    english: "I live in Berlin. My apartment is small but cozy."
+                }
+            ]);
+            this.currentIndex = 0;
+            return this.allParagraphs;
+        }
+    }
+
+    shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    displayParagraph() {
+        if (!this.allParagraphs.length) {
+            this.loadParagraphs().then(paragraphs => {
+                this.currentParagraph = paragraphs[this.currentIndex];
+                this.updateParagraphDisplay();
+            });
+        } else {
+            this.currentParagraph = this.allParagraphs[this.currentIndex];
+            this.updateParagraphDisplay();
+        }
+        
+        this.setupInitialUI();
+    }
+
+    updateParagraphDisplay() {
+        const paragraphText = document.getElementById('paragraph-text');
+        const paragraphTextEnglish = document.getElementById('paragraph-text-english') || this.createEnglishTextElement();
+        
+        paragraphText.style.cssText = `
+            cursor: pointer;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        `;
+        paragraphText.title = 'Click to show/hide English translation';
+        
+        paragraphText.onmouseover = () => {
+            paragraphText.style.backgroundColor = '#f8f9fa';
+        };
+        paragraphText.onmouseout = () => {
+            paragraphText.style.backgroundColor = '#fff';
+        };
+        
+        paragraphText.onclick = () => {
+            paragraphTextEnglish.style.display = paragraphTextEnglish.style.display === 'none' ? 'block' : 'none';
+        };
+        
+        paragraphText.textContent = this.currentParagraph.german;
+        paragraphTextEnglish.textContent = this.currentParagraph.english;
+    }
+
+    createEnglishTextElement() {
+        const container = document.getElementById('paragraph-text').parentElement;
+        
+        const englishText = document.createElement('div');
+        englishText.id = 'paragraph-text-english';
+        englishText.style.cssText = `
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            font-style: italic;
+            color: #6c757d;
+            display: none;
+            border-left: 3px solid #007bff;
+        `;
+        
+        container.appendChild(englishText);
+        return englishText;
+    }
+
+    setupInitialUI() {
+        this.cleanupPreviousRecording();
+        
+        const controlsContainer = document.querySelector('.recording-controls');
+        if (!controlsContainer) {
+            console.error('Recording controls container not found');
+            return;
+        }
+
+        controlsContainer.style.cssText = `
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            margin: 20px 0;
+        `;
+        
+        let recordBtn = document.getElementById('record-btn');
+        if (!recordBtn) {
+            recordBtn = document.createElement('button');
+            recordBtn.id = 'record-btn';
+        }
+        recordBtn.style.cssText = `
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0;
+            transition: background-color 0.2s;
+        `;
+        recordBtn.innerHTML = 'Aufnehmen';
+        recordBtn.onclick = () => this.startRecording();
+        controlsContainer.appendChild(recordBtn);
+
+        let skipButton = document.getElementById('skip-btn-absatzweise');
+        if (!skipButton) {
+            skipButton = document.createElement('button');
+            skipButton.id = 'skip-btn-absatzweise';
+        }
+        skipButton.style.cssText = `
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0;
+            transition: background-color 0.2s;
+        `;
+        skipButton.textContent = 'Überspringen';
+        skipButton.onclick = () => {
+            this.currentIndex = (this.currentIndex + 1) % this.allParagraphs.length;
+            this.currentParagraph = this.allParagraphs[this.currentIndex];
+            this.displayParagraph();
+        };
+        controlsContainer.appendChild(skipButton);
+    }
+
+    async startRecording() {
+        try {
+            await this.audioRecorder.startRecording();
+            
+            const recordBtn = document.getElementById('record-btn');
+            recordBtn.innerHTML = '<span class="record-icon">●</span> Aufnahme stoppen';
+            recordBtn.onclick = () => this.stopRecording();
+            recordBtn.classList.add('recording');
+            
+            document.getElementById('next-btn-absatzweise').style.display = 'none';
+        } catch (err) {
+            console.error('Error starting recording:', err);
+            alert('Fehler beim Zugriff auf das Mikrofon. Bitte überprüfen Sie die Mikrofonberechtigung.');
+        }
+    }
+
+    async stopRecording() {
+        const audioBlob = await this.audioRecorder.stopRecording();
+        if (!audioBlob) return;
+
+        const recordBtn = document.getElementById('record-btn');
+        recordBtn.disabled = true;
+        recordBtn.textContent = 'Verarbeite Aufnahme...';
+
+        try {
+            this.showProgress();
+            const transcription = await this.audioProcessor.processAudio(audioBlob);
+            this.hideProgress();
+
+            this.showResults(audioBlob, transcription);
+        } catch (error) {
+            console.error('Error processing recording:', error);
+            alert('Fehler bei der Verarbeitung der Aufnahme. Bitte versuchen Sie es erneut.');
+            this.displayParagraph();
+        }
+    }
+
+    showResults(audioBlob, transcription) {
+        const controlsContainer = document.querySelector('.recording-controls');
+        controlsContainer.innerHTML = '';
+        
+        controlsContainer.style.cssText = `
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            margin: 20px 0;
+        `;
+
+        const audioContainer = this.createAudioPlayer(audioBlob);
+        controlsContainer.appendChild(audioContainer);
+        
+        const transcriptionResult = document.getElementById('transcription-result');
+        const userTranscription = document.getElementById('user-transcription');
+        const comparisonResult = document.getElementById('comparison-result');
+        
+        if (transcriptionResult && userTranscription && comparisonResult) {
+            transcriptionResult.style.cssText = `
+                display: block;
+                width: 100%;
+                margin: 15px 0;
+                padding: 15px;
+                background: #f8f9fa;
+                border-radius: 4px;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                word-break: break-word;
+                hyphens: auto;
+            `;
+            userTranscription.textContent = transcription;
+            comparisonResult.innerHTML = this.compareTexts(this.currentParagraph.german, transcription);
+        }
+        
+        const newRecordBtn = document.createElement('button');
+        newRecordBtn.style.cssText = `
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0;
+            transition: background-color 0.2s;
+        `;
+        newRecordBtn.textContent = 'Neu aufnehmen';
+        newRecordBtn.onclick = () => this.displayParagraph();
+        controlsContainer.appendChild(newRecordBtn);
+        
+        const nextButton = document.createElement('button');
+        nextButton.style.cssText = `
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0;
+            transition: background-color 0.2s;
+        `;
+        nextButton.textContent = 'Nächster Text';
+        nextButton.onclick = () => {
+            this.currentIndex = (this.currentIndex + 1) % this.allParagraphs.length;
+            this.currentParagraph = this.allParagraphs[this.currentIndex];
+            this.displayParagraph();
+        };
+        controlsContainer.appendChild(nextButton);
+    }
+
+    cleanupPreviousRecording() {
+        this.audioRecorder.cleanup();
+        
+        const audioPlayer = document.getElementById('audio-player');
+        this.cleanupAudioPlayer(audioPlayer);
+        
+        const controlsContainer = document.querySelector('.recording-controls');
+        if (controlsContainer) {
+            controlsContainer.innerHTML = '';
+        }
+
+        const transcriptionResult = document.getElementById('transcription-result');
+        if (transcriptionResult) {
+            transcriptionResult.style.display = 'none';
+        }
+    }
+
+    levenshteinDistance(str1, str2) {
+        const m = str1.length;
+        const n = str2.length;
+        const dp = Array(m + 1).fill(null).map(() => Array(n + 1).fill(0));
+
+        for (let i = 0; i <= m; i++) {
+            dp[i][0] = i;
+        }
+        for (let j = 0; j <= n; j++) {
+            dp[0][j] = j;
+        }
+
+        for (let i = 1; i <= m; i++) {
+            for (let j = 1; j <= n; j++) {
+                if (str1[i - 1] === str2[j - 1]) {
+                    dp[i][j] = dp[i - 1][j - 1];
+                } else {
+                    dp[i][j] = Math.min(
+                        dp[i - 1][j - 1] + 1,
+                        dp[i - 1][j] + 1,
+                        dp[i][j - 1] + 1
+                    );
+                }
+            }
+        }
+        return dp[m][n];
+    }
+
+    compareTexts(original, transcribed) {
+        const normalizeText = (text) => {
+            return text.toLowerCase()
+                .replace(/[.,!?]/g, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+        };
+
+        const normalizedOriginal = normalizeText(original);
+        const normalizedTranscribed = normalizeText(transcribed);
+
+        const distance = this.levenshteinDistance(normalizedOriginal, normalizedTranscribed);
+        const maxLength = Math.max(normalizedOriginal.length, normalizedTranscribed.length);
+        const similarity = ((maxLength - distance) / maxLength * 100).toFixed(1);
+
+        const originalWords = original.split(' ');
+        const transcribedWords = transcribed.split(' ');
+        
+        let visualComparison = '<div style="margin: 15px 0; padding: 15px; background: #f8f9fa; border-radius: 4px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto;">';
+        visualComparison += '<div style="margin-bottom: 10px;"><strong>Original:</strong><br>';
+        
+        originalWords.forEach((word, index) => {
+            const normalizedWord = normalizeText(word);
+            const transcribedWord = transcribedWords[index] ? normalizeText(transcribedWords[index]) : '';
+            
+            if (!transcribedWord || this.levenshteinDistance(normalizedWord, transcribedWord) > 1) {
+                visualComparison += `<span style="display: inline-block; background-color: #ffebee; padding: 2px 4px; margin: 2px; border-radius: 3px;">${word}</span>`;
+            } else {
+                visualComparison += `<span style="display: inline-block; padding: 2px 4px; margin: 2px;">${word}</span>`;
+            }
+        });
+        
+        visualComparison += '</div><div><strong>Ihre Aussprache:</strong><br>';
+        
+        transcribedWords.forEach((word, index) => {
+            const normalizedWord = normalizeText(word);
+            const originalWord = originalWords[index] ? normalizeText(originalWords[index]) : '';
+            
+            if (!originalWord || this.levenshteinDistance(normalizedWord, originalWord) > 1) {
+                visualComparison += `<span style="display: inline-block; background-color: #fff3e0; padding: 2px 4px; margin: 2px; border-radius: 3px;">${word}</span>`;
+            } else {
+                visualComparison += `<span style="display: inline-block; padding: 2px 4px; margin: 2px;">${word}</span>`;
+            }
+        });
+        
+        visualComparison += '</div></div>';
+
+        let result = '<div style="overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto;">';
+        result += 'Vergleich:<br>';
+        result += `Genauigkeit: ${similarity}%<br>`;
+        result += visualComparison;
+
+        if (similarity >= 90) {
+            result += '<span style="color: #27ae60">Ausgezeichnet! Ihre Aussprache ist sehr präzise.</span>';
+        } else if (similarity >= 75) {
+            result += '<span style="color: #f39c12">Gut gemacht! Kleine Verbesserungen sind noch möglich.</span>';
+        } else if (similarity >= 60) {
+            result += '<span style="color: #e67e22">Verständlich, aber es gibt noch Raum für Verbesserungen.</span>';
+        } else {
+            result += '<span style="color: #c0392b">Versuchen Sie es noch einmal. Achten Sie auf die genaue Aussprache.</span>';
+        }
+
+        if (similarity < 75) {
+            result += '<br><br><span style="color: #7f8c8d">Tipp: Achten Sie besonders auf die rot markierten Wörter.</span>';
+        }
+
+        result += '</div>';
+        return result;
+    }
+}
+
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
     loadAllQuestions();
     createProgressOverlay();
+    
+    // Create global instance of AbsatzweiseModule
+    window.absatzweiseModule = new AbsatzweiseModule();
     
     // Task selection buttons
     document.querySelectorAll('.task-btn').forEach(btn => {
