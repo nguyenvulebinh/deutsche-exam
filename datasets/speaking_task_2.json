@@ -1,0 +1,294 @@
+[
+    {
+      "thema": "Verkehrsmittel",
+      "keyword": "Auto"
+    },
+    {
+      "thema": "Verkehrsmittel",
+      "keyword": "Fahrrad"
+    },
+    {
+      "thema": "Verkehrsmittel",
+      "keyword": "Arbeit"
+    },
+    {
+      "thema": "Verkehrsmittel",
+      "keyword": "Reisen"
+    },
+    {
+      "thema": "Verkehrsmittel",
+      "keyword": "praktisch"
+    },
+    {
+      "thema": "Verkehrsmittel",
+      "keyword": "Bahn"
+    },
+    {
+      "thema": "Wohnen",
+      "keyword": "Miete"
+    },
+    {
+      "thema": "Wohnen",
+      "keyword": "Zimmer"
+    },
+    {
+      "thema": "Wohnen",
+      "keyword": "Balkon"
+    },
+    {
+      "thema": "Wohnen",
+      "keyword": "Nachbarn"
+    },
+    {
+      "thema": "Wohnen",
+      "keyword": "Garten"
+    },
+    {
+      "thema": "Wohnen",
+      "keyword": "Stadt"
+    },
+    {
+      "thema": "Urlaub",
+      "keyword": "Winter"
+    },
+    {
+      "thema": "Urlaub",
+      "keyword": "schlafen"
+    },
+    {
+      "thema": "Urlaub",
+      "keyword": "Meer"
+    },
+    {
+      "thema": "Urlaub",
+      "keyword": "Museum"
+    },
+    {
+      "thema": "Urlaub",
+      "keyword": "Sport"
+    },
+    {
+      "thema": "Urlaub",
+      "keyword": "Zug fahren"
+    },
+    {
+      "thema": "Freizeit",
+      "keyword": "Hobby"
+    },
+    {
+      "thema": "Freizeit",
+      "keyword": "Wochenende"
+    },
+    {
+      "thema": "Freizeit",
+      "keyword": "Wan?"
+    },
+    {
+      "thema": "Freizeit",
+      "keyword": "Fußball"
+    },
+    {
+      "thema": "Freizeit",
+      "keyword": "Lieblingssport"
+    },
+    {
+      "thema": "Freizeit",
+      "keyword": "Sonntag"
+    },
+    {
+      "thema": "Einkaufen",
+      "keyword": "Wo am liebsten?"
+    },
+    {
+      "thema": "Einkaufen",
+      "keyword": "Markt"
+    },
+    {
+      "thema": "Einkaufen",
+      "keyword": "Gemüse"
+    },
+    {
+      "thema": "Einkaufen",
+      "keyword": "Getränke"
+    },
+    {
+      "thema": "Einkaufen",
+      "keyword": "Schokolade"
+    },
+    {
+      "thema": "Einkaufen",
+      "keyword": "Wann?"
+    },
+    {
+      "thema": "Einkaufen",
+      "keyword": "Bier"
+    },
+    {
+      "thema": "Essen und Trinken",
+      "keyword": "Lieblingsessen"
+    },
+    {
+      "thema": "Essen und Trinken",
+      "keyword": "kochen"
+    },
+    {
+      "thema": "Essen und Trinken",
+      "keyword": "Frühstück"
+    },
+    {
+      "thema": "Essen und Trinken",
+      "keyword": "Lieblingsgetränk"
+    },
+    {
+      "thema": "Essen und Trinken",
+      "keyword": "Bier"
+    },
+    {
+      "thema": "Essen und Trinken",
+      "keyword": "Fleisch"
+    },
+    {
+      "thema": "Reisen",
+      "keyword": "Wohin?"
+    },
+    {
+      "thema": "Reisen",
+      "keyword": "Hotel"
+    },
+    {
+      "thema": "Reisen",
+      "keyword": "Urlab"
+    },
+    {
+      "thema": "Reisen",
+      "keyword": "Länder"
+    },
+    {
+      "thema": "Reisen",
+      "keyword": "Auto"
+    },
+    {
+      "thema": "Reisen",
+      "keyword": "Wann?"
+    },
+    {
+      "thema": "Sport",
+      "keyword": "Fußall"
+    },
+    {
+      "thema": "Sport",
+      "keyword": "Fahrrad fahren"
+    },
+    {
+      "thema": "Sport",
+      "keyword": "schwimmen"
+    },
+    {
+      "thema": "Sport",
+      "keyword": "wandern"
+    },
+    {
+      "thema": "Sport",
+      "keyword": "Verein"
+    },
+    {
+      "thema": "Sport",
+      "keyword": "Wochenende"
+    },
+    {
+      "thema": "Lernen",
+      "keyword": "Sprachen"
+    },
+    {
+      "thema": "Lernen",
+      "keyword": "Bücher"
+    },
+    {
+      "thema": "Lernen",
+      "keyword": "Schule"
+    },
+    {
+      "thema": "Lernen",
+      "keyword": "Internet"
+    },
+    {
+      "thema": "Lernen",
+      "keyword": "Lehren"
+    },
+    {
+      "thema": "Lernen",
+      "keyword": "zu Hause"
+    },
+    {
+      "thema": "Wochenende",
+      "keyword": "Ausflug"
+    },
+    {
+      "thema": "Wochenende",
+      "keyword": "Sport"
+    },
+    {
+      "thema": "Wochenende",
+      "keyword": "fernsehen"
+    },
+    {
+      "thema": "Wochenende",
+      "keyword": "Kino"
+    },
+    {
+      "thema": "Wochenende",
+      "keyword": "kochen"
+    },
+    {
+      "thema": "Wochenende",
+      "keyword": "shlafen"
+    },
+    {
+      "thema": "Arbeit und Beruf",
+      "keyword": "Arbeit"
+    },
+    {
+      "thema": "Arbeit und Beruf",
+      "keyword": "Kollegen"
+    },
+    {
+      "thema": "Arbeit und Beruf",
+      "keyword": "Arbeitsplatz"
+    },
+    {
+      "thema": "Arbeit und Beruf",
+      "keyword": "Chef"
+    },
+    {
+      "thema": "Arbeit und Beruf",
+      "keyword": "arbeitlos"
+    },
+    {
+      "thema": "Arbeit und Beruf",
+      "keyword": "Urlaub"
+    },
+    {
+      "thema": "Familie",
+      "keyword": "Eltern"
+    },
+    {
+      "thema": "Familie",
+      "keyword": "Geschwister"
+    },
+    {
+      "thema": "Familie",
+      "keyword": "Wohnort"
+    },
+    {
+      "thema": "Familie",
+      "keyword": "Einkaufen"
+    },
+    {
+      "thema": "Familie",
+      "keyword": "Hobby"
+    },
+    {
+      "thema": "Familie",
+      "keyword": "Wochenende"
+    }
+]

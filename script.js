@@ -1290,7 +1290,31 @@ class AbsatzweiseModule {
 
     updateParagraphDisplay() {
         const paragraphText = document.getElementById('paragraph-text');
-        const paragraphTextEnglish = document.getElementById('paragraph-text-english') || this.createEnglishTextElement();
+        const paragraphTextGerman = document.getElementById('paragraph-text-german') || this.createGermanTextElement();
+        
+        // Create or get the metadata container
+        let metadataContainer = document.getElementById('paragraph-metadata');
+        if (!metadataContainer) {
+            metadataContainer = document.createElement('div');
+            metadataContainer.id = 'paragraph-metadata';
+            metadataContainer.style.cssText = `
+                margin-bottom: 15px;
+                padding: 8px 10px;
+                background-color: #e9ecef;
+                border-radius: 4px;
+                font-size: 0.9em;
+                color: #495057;
+                display: flex;
+                gap: 15px;
+            `;
+            paragraphText.parentElement.insertBefore(metadataContainer, paragraphText);
+        }
+        
+        // Update metadata content
+        metadataContainer.innerHTML = `
+            <span><strong>Thema:</strong> ${this.currentParagraph.thema || 'Allgemein'}</span>
+            <span><strong>Stichwort:</strong> ${this.currentParagraph.keyword || '-'}</span>
+        `;
         
         paragraphText.style.cssText = `
             cursor: pointer;
@@ -1299,7 +1323,7 @@ class AbsatzweiseModule {
             border-radius: 4px;
             transition: background-color 0.2s;
         `;
-        paragraphText.title = 'Click to show/hide English translation';
+        paragraphText.title = 'Click to show/hide German translation';
         
         paragraphText.onmouseover = () => {
             paragraphText.style.backgroundColor = '#f8f9fa';
@@ -1309,19 +1333,19 @@ class AbsatzweiseModule {
         };
         
         paragraphText.onclick = () => {
-            paragraphTextEnglish.style.display = paragraphTextEnglish.style.display === 'none' ? 'block' : 'none';
+            paragraphTextGerman.style.display = paragraphTextGerman.style.display === 'none' ? 'block' : 'none';
         };
         
-        paragraphText.textContent = this.currentParagraph.german;
-        paragraphTextEnglish.textContent = this.currentParagraph.english;
+        paragraphText.textContent = this.currentParagraph.english;
+        paragraphTextGerman.textContent = this.currentParagraph.german;
     }
 
-    createEnglishTextElement() {
+    createGermanTextElement() {
         const container = document.getElementById('paragraph-text').parentElement;
         
-        const englishText = document.createElement('div');
-        englishText.id = 'paragraph-text-english';
-        englishText.style.cssText = `
+        const germanText = document.createElement('div');
+        germanText.id = 'paragraph-text-german';
+        germanText.style.cssText = `
             margin-top: 10px;
             padding: 10px;
             background-color: #f8f9fa;
@@ -1332,8 +1356,8 @@ class AbsatzweiseModule {
             border-left: 3px solid #007bff;
         `;
         
-        container.appendChild(englishText);
-        return englishText;
+        container.appendChild(germanText);
+        return germanText;
     }
 
     setupInitialUI() {

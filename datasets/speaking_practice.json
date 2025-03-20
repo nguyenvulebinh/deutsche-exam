@@ -1,1136 +1,2632 @@
 {
-    "paragraphs": [
+  "paragraphs": [
       {
-        "german": "Hallo, ich heiße Anna. Ich lerne Deutsch, weil ich in Deutschland leben möchte.",
-        "english": "Hello, my name is Anna. I am learning German because I want to live in Germany."
+        "thema": "Verkehrsmittel",
+        "keyword": "Auto",
+        "german": "Haben Sie ein Auto?",
+        "english": "Do you have a car?"
       },
       {
-        "german": "Ich wohne in Berlin. Meine Wohnung ist klein, aber gemütlich.",
-        "english": "I live in Berlin. My apartment is small but cozy."
+        "thema": "Verkehrsmittel",
+        "keyword": "Auto",
+        "german": "Ja, ich habe ein Auto.",
+        "english": "Yes, I have a car."
       },
       {
-        "german": "Ich habe eine große Familie. Wir treffen uns oft zum Essen.",
-        "english": "I have a big family. We often meet for meals."
+        "thema": "Verkehrsmittel",
+        "keyword": "Fahrrad",
+        "german": "Fahren Sie gern Fahrrad?",
+        "english": "Do you like to ride a bicycle?"
       },
       {
-        "german": "Ich arbeite in einem Büro. Mein Job ist interessant und abwechslungsreich.",
-        "english": "I work in an office. My job is interesting and varied."
+        "thema": "Verkehrsmittel",
+        "keyword": "Fahrrad",
+        "german": "Ja, ich fahre gern Fahrrad.",
+        "english": "Yes, I like to ride a bicycle."
       },
       {
-        "german": "Das Wetter ist heute schön. Die Sonne scheint und es ist warm.",
-        "english": "The weather is nice today. The sun is shining and it is warm."
+        "thema": "Verkehrsmittel",
+        "keyword": "Arbeit",
+        "german": "Fahren Sie mit dem Auto zur Arbeit?",
+        "english": "Do you drive to work by car?"
       },
       {
-        "german": "Ich trinke jeden Morgen Kaffee. Er hilft mir, wach zu werden.",
-        "english": "I drink coffee every morning. It helps me wake up."
+        "thema": "Verkehrsmittel",
+        "keyword": "Arbeit",
+        "german": "Nein, ich fahre nicht mit dem Auto zur Arbeit.",
+        "english": "No, I don't drive to work by car."
       },
       {
-        "german": "Ich lese ein spannendes Buch. Die Geschichte ist sehr interessant.",
-        "english": "I am reading an exciting book. The story is very interesting."
+        "thema": "Verkehrsmittel",
+        "keyword": "Reisen",
+        "german": "Reisen Sie gern mit dem Zug?",
+        "english": "Do you like to travel by train?"
       },
       {
-        "german": "Ich gehe jeden Abend spazieren. Die frische Luft tut mir gut.",
-        "english": "I go for a walk every evening. The fresh air is good for me."
+        "thema": "Verkehrsmittel",
+        "keyword": "Reisen",
+        "german": "Ja, ich reise gern mit dem Zug.",
+        "english": "Yes, I like to travel by train."
       },
       {
-        "german": "Ich höre gerne Musik. Klassische Musik entspannt mich.",
-        "english": "I enjoy listening to music. Classical music relaxes me."
+        "thema": "Verkehrsmittel",
+        "keyword": "praktisch",
+        "german": "Finden Sie das Fahrrad praktisch?",
+        "english": "Do you find the bicycle practical?"
       },
       {
-        "german": "Ich besuche einen Sprachkurs. Es macht mir Spaß, neue Wörter zu lernen.",
-        "english": "I attend a language course. I enjoy learning new words."
+        "thema": "Verkehrsmittel",
+        "keyword": "praktisch",
+        "german": "Ja, ich finde das Fahrrad sehr praktisch.",
+        "english": "Yes, I find the bicycle very practical."
       },
       {
-        "german": "Ich koche gern zu Hause. Meine Familie isst oft mit mir zusammen.",
-        "english": "I like cooking at home. My family often eats together with me."
+        "thema": "Verkehrsmittel",
+        "keyword": "Bahn",
+        "german": "Nehmen Sie oft die Bahn?",
+        "english": "Do you often take the train?"
       },
       {
-        "german": "Am Wochenende gehe ich ins Kino. Ich sehe gerne interessante Filme.",
-        "english": "On the weekend, I go to the cinema. I enjoy watching interesting movies."
+        "thema": "Verkehrsmittel",
+        "keyword": "Bahn",
+        "german": "Ja, ich nehme oft die Bahn.",
+        "english": "Yes, I often take the train."
       },
       {
-        "german": "Ich fahre mit dem Fahrrad zur Arbeit. Es ist umweltfreundlich und gesund.",
-        "english": "I ride my bicycle to work. It is environmentally friendly and healthy."
+        "thema": "Wohnen",
+        "keyword": "Miete",
+        "german": "Ist die Miete hoch?",
+        "english": "Is the rent high?"
       },
       {
-        "german": "Ich mache jeden Morgen Yoga. Es hilft mir, mich zu entspannen.",
-        "english": "I do yoga every morning. It helps me to relax."
+        "thema": "Wohnen",
+        "keyword": "Miete",
+        "german": "Ja, die Miete ist hoch.",
+        "english": "Yes, the rent is high."
       },
       {
-        "german": "Ich besuche oft meine Freunde. Wir unterhalten uns und lachen viel.",
-        "english": "I often visit my friends. We chat and laugh a lot."
+        "thema": "Wohnen",
+        "keyword": "Zimmer",
+        "german": "Haben Sie drei Zimmer in Ihrer Wohnung?",
+        "english": "Do you have three rooms in your apartment?"
       },
       {
-        "german": "Ich mag Tiere sehr. Mein Hund ist mein bester Freund.",
-        "english": "I love animals very much. My dog is my best friend."
+        "thema": "Wohnen",
+        "keyword": "Zimmer",
+        "german": "Ja, ich habe drei Zimmer in meiner Wohnung.",
+        "english": "Yes, I have three rooms in my apartment."
       },
       {
-        "german": "Ich kaufe frisches Obst und Gemüse. Die Märkte in meiner Stadt sind toll.",
-        "english": "I buy fresh fruits and vegetables. The markets in my city are great."
+        "thema": "Wohnen",
+        "keyword": "Balkon",
+        "german": "Haben Sie einen Balkon?",
+        "english": "Do you have a balcony?"
       },
       {
-        "german": "Ich spiele gern Fußball. Es macht mir Spaß, mit meinen Freunden zu spielen.",
-        "english": "I like playing soccer. It is fun to play with my friends."
+        "thema": "Wohnen",
+        "keyword": "Balkon",
+        "german": "Nein, ich habe keinen Balkon.",
+        "english": "No, I don't have a balcony."
       },
       {
-        "german": "Ich lerne Deutsch jeden Tag. Übung macht den Meister.",
-        "english": "I study German every day. Practice makes perfect."
+        "thema": "Wohnen",
+        "keyword": "Nachbarn",
+        "german": "Sind Ihre Nachbarn freundlich?",
+        "english": "Are your neighbors friendly?"
       },
       {
-        "german": "Ich besuche eine Bibliothek. Ich leihe viele interessante Bücher aus.",
-        "english": "I visit a library. I borrow many interesting books."
+        "thema": "Wohnen",
+        "keyword": "Nachbarn",
+        "german": "Ja, meine Nachbarn sind sehr freundlich.",
+        "english": "Yes, my neighbors are very friendly."
       },
       {
-        "german": "Ich liebe die Natur. Im Park fühle ich mich frei und glücklich.",
-        "english": "I love nature. In the park, I feel free and happy."
+        "thema": "Wohnen",
+        "keyword": "Garten",
+        "german": "Haben Sie einen Garten?",
+        "english": "Do you have a garden?"
       },
       {
-        "german": "Ich mache einen Spaziergang im Wald. Die frische Luft ist wunderbar.",
-        "english": "I take a walk in the forest. The fresh air is wonderful."
+        "thema": "Wohnen",
+        "keyword": "Garten",
+        "german": "Ja, ich habe einen kleinen Garten.",
+        "english": "Yes, I have a small garden."
       },
       {
-        "german": "Ich trinke gern Tee. Er beruhigt mich und wärmt mich.",
-        "english": "I like drinking tea. It calms and warms me."
+        "thema": "Wohnen",
+        "keyword": "Stadt",
+        "german": "Wohnen Sie in der Stadt?",
+        "english": "Do you live in the city?"
       },
       {
-        "german": "Ich backe am Wochenende Kuchen. Meine Freunde lieben meine Rezepte.",
-        "english": "I bake cakes on the weekend. My friends love my recipes."
+        "thema": "Wohnen",
+        "keyword": "Stadt",
+        "german": "Ja, ich wohne in der Stadt.",
+        "english": "Yes, I live in the city."
       },
       {
-        "german": "Ich besuche ein Museum. Die Kunstwerke sind beeindruckend und inspirierend.",
-        "english": "I visit a museum. The artworks are impressive and inspiring."
+        "thema": "Urlaub",
+        "keyword": "Winter",
+        "german": "Machen Sie im Winter Urlaub?",
+        "english": "Do you go on vacation in winter?"
       },
       {
-        "german": "Ich treffe mich mit Kollegen. Wir besprechen unsere Projekte im Café.",
-        "english": "I meet with colleagues. We discuss our projects at the café."
+        "thema": "Urlaub",
+        "keyword": "Winter",
+        "german": "Ja, ich mache im Winter Urlaub.",
+        "english": "Yes, I go on vacation in winter."
       },
       {
-        "german": "Ich mache jeden Abend einen kurzen Spaziergang. Es hilft mir, den Tag abzuschließen.",
-        "english": "I take a short walk every evening. It helps me to finish the day."
+        "thema": "Urlaub",
+        "keyword": "schlafen",
+        "german": "Schlafen Sie im Urlaub lange?",
+        "english": "Do you sleep long during your vacation?"
       },
       {
-        "german": "Ich genieße es, Musik zu spielen. Mein Klavier bringt mir viel Freude.",
-        "english": "I enjoy playing music. My piano brings me a lot of joy."
+        "thema": "Urlaub",
+        "keyword": "schlafen",
+        "german": "Ja, ich schlafe im Urlaub sehr lange.",
+        "english": "Yes, I sleep very long during your vacation."
       },
       {
-        "german": "Ich besuche einen Wochenmarkt. Dort kaufe ich frische Produkte und treffe Freunde.",
-        "english": "I visit a weekly market. There I buy fresh products and meet friends."
+        "thema": "Urlaub",
+        "keyword": "Meer",
+        "german": "Fahren Sie gern ans Meer?",
+        "english": "Do you like to go to the sea?"
       },
       {
-        "german": "Ich lerne jeden Tag neue Wörter. Das hilft mir, meinen Wortschatz zu erweitern.",
-        "english": "I learn new words every day. This helps me expand my vocabulary."
+        "thema": "Urlaub",
+        "keyword": "Meer",
+        "german": "Ja, ich fahre sehr gern ans Meer.",
+        "english": "Yes, I like to go to the sea very much."
       },
       {
-        "german": "Ich fahre gern in den Urlaub. Ich liebe es, neue Orte zu entdecken.",
-        "english": "I enjoy going on vacation. I love discovering new places."
+        "thema": "Urlaub",
+        "keyword": "Museum",
+        "german": "Besuchen Sie gern Museen im Urlaub?",
+        "english": "Do you like to visit museums during your vacation?"
       },
       {
-        "german": "Ich besuche oft meine Großeltern. Sie erzählen mir spannende Geschichten.",
-        "english": "I often visit my grandparents. They tell me fascinating stories."
+        "thema": "Urlaub",
+        "keyword": "Museum",
+        "german": "Ja, ich besuche gern Museen im Urlaub.",
+        "english": "Yes, I like to visit museums during my vacation."
       },
       {
-        "german": "Ich esse gern Pizza. Es ist mein Lieblingsessen an Wochenenden.",
-        "english": "I like eating pizza. It is my favorite food on weekends."
+        "thema": "Urlaub",
+        "keyword": "Sport",
+        "german": "Machen Sie im Urlaub Sport?",
+        "english": "Do you do sports during your vacation?"
       },
       {
-        "german": "Ich trinke gern Wasser. Es ist gesund und erfrischend.",
-        "english": "I like drinking water. It is healthy and refreshing."
+        "thema": "Urlaub",
+        "keyword": "Sport",
+        "german": "Ja, ich mache oft Sport im Urlaub.",
+        "english": "Yes, I often do sports during my vacation."
       },
       {
-        "german": "Ich mag es, im Garten zu arbeiten. Die Blumen blühen in vielen Farben.",
-        "english": "I enjoy working in the garden. The flowers bloom in many colors."
+        "thema": "Urlaub",
+        "keyword": "Zug fahren",
+        "german": "Sind Sie schon einmal mit dem Zug in den Urlaub gefahren?",
+        "english": "Have you ever traveled on vacation by train?"
       },
       {
-        "german": "Ich gehe regelmäßig joggen. Es hält mich fit und energiegeladen.",
-        "english": "I go jogging regularly. It keeps me fit and energetic."
+        "thema": "Urlaub",
+        "keyword": "Zug fahren",
+        "german": "Ja, ich bin schon einmal mit dem Zug in den Urlaub gefahren.",
+        "english": "Yes, I have traveled on vacation by train before."
       },
       {
-        "german": "Ich höre oft Podcasts. Sie informieren mich über aktuelle Themen.",
-        "english": "I often listen to podcasts. They inform me about current topics."
+        "thema": "Freizeit",
+        "keyword": "Hobby",
+        "german": "Haben Sie ein Hobby?",
+        "english": "Do you have a hobby?"
       },
       {
-        "german": "Ich besuche ein Café in der Stadt. Dort treffe ich nette Menschen.",
-        "english": "I visit a café in the city. I meet nice people there."
+        "thema": "Freizeit",
+        "keyword": "Hobby",
+        "german": "Ja, mein Hobby ist Lesen.",
+        "english": "Yes, my hobby is reading."
       },
       {
-        "german": "Ich male gern Bilder. Die Farben machen mich glücklich.",
-        "english": "I like painting pictures. The colors make me happy."
+        "thema": "Freizeit",
+        "keyword": "Wochenende",
+        "german": "Was machen Sie am Wochenende?",
+        "english": "What do you do on the weekend?"
       },
       {
-        "german": "Ich lerne jeden Tag etwas Neues. Das macht das Leben interessant.",
-        "english": "I learn something new every day. That makes life interesting."
+        "thema": "Freizeit",
+        "keyword": "Wochenende",
+        "german": "Am Wochenende gehe ich spazieren.",
+        "english": "On the weekend, I go for a walk."
       },
       {
-        "german": "Ich fahre mit dem Bus zur Arbeit. Es ist eine bequeme Art zu reisen.",
-        "english": "I take the bus to work. It is a comfortable way to travel."
+        "thema": "Freizeit",
+        "keyword": "Wan?",
+        "german": "Wann haben Sie Freizeit?",
+        "english": "When do you have free time?"
       },
       {
-        "german": "Ich gehe am Sonntag oft in die Kirche. Es ist ein ruhiger und besinnlicher Ort.",
-        "english": "I often go to church on Sundays. It is a calm and reflective place."
+        "thema": "Freizeit",
+        "keyword": "Wan?",
+        "german": "Ich habe am Abend Freizeit.",
+        "english": "I have free time in the evening."
       },
       {
-        "german": "Ich mache gern Fotos. Meine Kamera ist immer dabei.",
-        "english": "I enjoy taking photos. My camera is always with me."
+        "thema": "Freizeit",
+        "keyword": "Fußball",
+        "german": "Spielen Sie gern Fußball?",
+        "english": "Do you like to play soccer?"
       },
       {
-        "german": "Ich höre gerne Radio. Die Musik und Nachrichten sind interessant.",
-        "english": "I like listening to the radio. The music and news are interesting."
+        "thema": "Freizeit",
+        "keyword": "Fußball",
+        "german": "Nein, ich spiele nicht gern Fußball.",
+        "english": "No, I don't like to play soccer."
       },
       {
-        "german": "Ich besuche einen Tanzkurs. Es macht mir Spaß, neue Tanzschritte zu lernen.",
-        "english": "I attend a dance course. I enjoy learning new dance moves."
+        "thema": "Freizeit",
+        "keyword": "Lieblingssport",
+        "german": "Was ist Ihr Lieblingssport?",
+        "english": "What is your favorite sport?"
       },
       {
-        "german": "Ich lese die Zeitung jeden Morgen. So bleibe ich über das Weltgeschehen informiert.",
-        "english": "I read the newspaper every morning. This keeps me informed about world events."
+        "thema": "Freizeit",
+        "keyword": "Lieblingssport",
+        "german": "Mein Lieblingssport ist Schwimmen.",
+        "english": "My favorite sport is swimming."
       },
       {
-        "german": "Ich spiele gerne Karten mit meinen Freunden. Es ist ein lustiges und soziales Spiel.",
-        "english": "I like playing cards with my friends. It is a fun and social game."
+        "thema": "Freizeit",
+        "keyword": "Sonntag",
+        "german": "Was machen Sie am Sonntag?",
+        "english": "What do you do on Sunday?"
       },
       {
-        "german": "Ich besuche oft Sprachcafés. Dort kann ich Deutsch mit Muttersprachlern üben.",
-        "english": "I often visit language cafés. There, I can practice German with native speakers."
+        "thema": "Freizeit",
+        "keyword": "Sonntag",
+        "german": "Am Sonntag bleibe ich zu Hause.",
+        "english": "On Sunday, I stay at home."
       },
       {
-        "german": "Ich genieße meine Freizeit im Park. Die Natur und frische Luft entspannen mich.",
-        "english": "I enjoy my free time in the park. The nature and fresh air relax me."
+        "thema": "Einkaufen",
+        "keyword": "Wo am liebsten?",
+        "german": "Wo kaufen Sie am liebsten ein?",
+        "english": "Where do you like to shop the most?"
       },
       {
-        "german": "Ich treffe mich mit meiner Familie zum Abendessen. Wir reden über unseren Tag.",
-        "english": "I meet my family for dinner. We talk about our day."
+        "thema": "Einkaufen",
+        "keyword": "Wo am liebsten?",
+        "german": "Ich kaufe am liebsten im Supermarkt ein.",
+        "english": "I like to shop at the supermarket the most."
       },
       {
-        "german": "Ich mache jeden Morgen ein leichtes Frühstück. Es gibt mir Energie für den Tag.",
-        "english": "I have a light breakfast every morning. It gives me energy for the day."
+        "thema": "Einkaufen",
+        "keyword": "Markt",
+        "german": "Gehen Sie gern auf den Markt?",
+        "english": "Do you like to go to the market?"
       },
       {
-        "german": "Ich besuche einen Fitnesskurs. Die Übungen sind einfach und effektiv.",
-        "english": "I attend a fitness class. The exercises are simple and effective."
+        "thema": "Einkaufen",
+        "keyword": "Markt",
+        "german": "Ja, ich gehe sehr gern auf den Markt.",
+        "english": "Yes, I like to go to the market very much."
       },
       {
-        "german": "Ich mag es, neue Städte zu erkunden. Jede Stadt hat ihre eigene Atmosphäre.",
-        "english": "I enjoy exploring new cities. Each city has its own atmosphere."
+        "thema": "Einkaufen",
+        "keyword": "Gemüse",
+        "german": "Kaufen Sie oft Gemüse?",
+        "english": "Do you often buy vegetables?"
       },
       {
-        "german": "Ich fahre gerne mit dem Zug. Die Landschaften sind wunderschön.",
-        "english": "I enjoy taking the train. The landscapes are beautiful."
+        "thema": "Einkaufen",
+        "keyword": "Gemüse",
+        "german": "Ja, ich kaufe oft frisches Gemüse.",
+        "english": "Yes, I often buy fresh vegetables."
       },
       {
-        "german": "Ich lerne Deutsch, um neue Freunde zu finden. Kommunikation ist sehr wichtig.",
-        "english": "I study German to make new friends. Communication is very important."
+        "thema": "Einkaufen",
+        "keyword": "Getränke",
+        "german": "Welche Getränke kaufen Sie?",
+        "english": "Which drinks do you buy?"
       },
       {
-        "german": "Ich besuche regelmäßig Konzerte. Die Musik bringt mir viel Freude.",
-        "english": "I regularly attend concerts. The music brings me a lot of joy."
+        "thema": "Einkaufen",
+        "keyword": "Getränke",
+        "german": "Ich kaufe Wasser und Saft.",
+        "english": "I buy water and juice."
       },
       {
-        "german": "Ich koche gern traditionelle Gerichte. Es erinnert mich an meine Heimat.",
-        "english": "I enjoy cooking traditional dishes. It reminds me of my homeland."
+        "thema": "Einkaufen",
+        "keyword": "Schokolade",
+        "german": "Essen Sie gern Schokolade?",
+        "english": "Do you like to eat chocolate?"
       },
       {
-        "german": "Ich besuche einen Wochenendmarkt. Dort kaufe ich frische und gesunde Lebensmittel.",
-        "english": "I visit a weekend market. There, I buy fresh and healthy groceries."
+        "thema": "Einkaufen",
+        "keyword": "Schokolade",
+        "german": "Ja, ich esse sehr gern Schokolade.",
+        "english": "Yes, I like to eat chocolate very much."
       },
       {
-        "german": "Ich fahre mit dem Fahrrad im Park. Es ist eine gute Übung für den Körper.",
-        "english": "I ride my bicycle in the park. It is a good exercise for the body."
+        "thema": "Einkaufen",
+        "keyword": "Wann?",
+        "german": "Wann gehen Sie einkaufen?",
+        "english": "When do you go shopping?"
       },
       {
-        "german": "Ich höre oft Hörbücher. Sie sind interessant und unterhaltsam.",
-        "english": "I often listen to audiobooks. They are interesting and entertaining."
+        "thema": "Einkaufen",
+        "keyword": "Wann?",
+        "german": "Ich gehe am Samstag einkaufen.",
+        "english": "I go shopping on Saturday."
       },
       {
-        "german": "Ich spiele gern Brettspiele. Sie fördern mein Denken und meine Kreativität.",
-        "english": "I enjoy playing board games. They stimulate my thinking and creativity."
+        "thema": "Einkaufen",
+        "keyword": "Bier",
+        "german": "Kaufen Sie manchmal Bier?",
+        "english": "Do you sometimes buy beer?"
       },
       {
-        "german": "Ich lerne jeden Tag ein neues deutsches Wort. So verbessere ich meinen Wortschatz.",
-        "english": "I learn a new German word every day. This way, I improve my vocabulary."
+        "thema": "Einkaufen",
+        "keyword": "Bier",
+        "german": "Ja, ich kaufe manchmal Bier.",
+        "english": "Yes, I sometimes buy beer."
       },
       {
-        "german": "Ich treffe mich am Wochenende mit Freunden. Wir verbringen gemeinsam schöne Stunden.",
-        "english": "I meet my friends on the weekend. We spend pleasant hours together."
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsessen",
+        "german": "Was ist Ihr Lieblingsessen?",
+        "english": "What is your favorite food?"
       },
       {
-        "german": "Ich gehe gern in den Zoo. Die Tiere sind faszinierend und schön.",
-        "english": "I enjoy going to the zoo. The animals are fascinating and beautiful."
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsessen",
+        "german": "Mein Lieblingsessen ist Pizza.",
+        "english": "My favorite food is pizza."
       },
       {
-        "german": "Ich esse gern frische Brötchen zum Frühstück. Sie sind lecker und knusprig.",
-        "english": "I like eating fresh rolls for breakfast. They are tasty and crunchy."
+        "thema": "Essen und Trinken",
+        "keyword": "kochen",
+        "german": "Kochen Sie gern?",
+        "english": "Do you like to cook?"
       },
       {
-        "german": "Ich lese gern Kurzgeschichten. Jede Geschichte hat eine besondere Botschaft.",
-        "english": "I enjoy reading short stories. Each story has a special message."
+        "thema": "Essen und Trinken",
+        "keyword": "kochen",
+        "german": "Ja, ich koche sehr gern.",
+        "english": "Yes, I like to cook very much."
       },
       {
-        "german": "Ich besuche oft Sprachpartner-Treffen. Es hilft mir, mein Deutsch zu verbessern.",
-        "english": "I often attend language partner meetings. It helps me improve my German."
+        "thema": "Essen und Trinken",
+        "keyword": "Frühstück",
+        "german": "Was essen Sie zum Frühstück?",
+        "english": "What do you eat for breakfast?"
       },
       {
-        "german": "Ich mag es, im Park zu entspannen. Die Sonne und die Natur machen mich glücklich.",
-        "english": "I like relaxing in the park. The sun and nature make me happy."
+        "thema": "Essen und Trinken",
+        "keyword": "Frühstück",
+        "german": "Ich esse Brot und Marmelade zum Frühstück.",
+        "english": "I eat bread and jam for breakfast."
       },
       {
-        "german": "Ich treffe mich regelmäßig mit meinen Kollegen. Wir diskutieren über verschiedene Themen.",
-        "english": "I regularly meet with my colleagues. We discuss various topics."
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsgetränk",
+        "german": "Was ist Ihr Lieblingsgetränk?",
+        "english": "What is your favorite drink?"
       },
       {
-        "german": "Ich mache gern kleine Ausflüge am Wochenende. Es ist erfrischend, die Umgebung zu erkunden.",
-        "english": "I enjoy short trips on the weekend. It is refreshing to explore the surroundings."
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsgetränk",
+        "german": "Mein Lieblingsgetränk ist Kaffee.",
+        "english": "My favorite drink is coffee."
       },
       {
-        "german": "Ich liebe es, in der Stadt zu spazieren. Die Straßen sind lebendig und bunt.",
-        "english": "I love walking in the city. The streets are lively and colorful."
+        "thema": "Essen und Trinken",
+        "keyword": "Bier",
+        "german": "Trinken Sie gern Bier?",
+        "english": "Do you like to drink beer?"
       },
       {
-        "german": "Ich besuche einen Bauernmarkt. Dort finde ich regionale und frische Produkte.",
-        "english": "I visit a farmers' market. There I find local and fresh products."
+        "thema": "Essen und Trinken",
+        "keyword": "Bier",
+        "german": "Ja, ich trinke gern Bier.",
+        "english": "Yes, I like to drink beer."
       },
       {
-        "german": "Ich spiele gern Videospiele. Sie machen Spaß und fördern meine Reaktionsfähigkeit.",
-        "english": "I enjoy playing video games. They are fun and improve my reaction skills."
+        "thema": "Essen und Trinken",
+        "keyword": "Fleisch",
+        "german": "Essen Sie Fleisch?",
+        "english": "Do you eat meat?"
       },
       {
-        "german": "Ich lerne Deutsch, um mehr über die Kultur zu erfahren. Kultur ist sehr interessant für mich.",
-        "english": "I study German to learn more about the culture. Culture is very interesting to me."
+        "thema": "Essen und Trinken",
+        "keyword": "Fleisch",
+        "german": "Nein, ich esse kein Fleisch.",
+        "english": "No, I don't eat meat."
       },
       {
-        "german": "Ich gehe oft ins Restaurant. Dort probiere ich verschiedene leckere Gerichte.",
-        "english": "I often go to restaurants. There, I try various delicious dishes."
+        "thema": "Reisen",
+        "keyword": "Wohin?",
+        "german": "Wohin reisen Sie gern?",
+        "english": "Where do you like to travel?"
       },
       {
-        "german": "Ich genieße es, am Strand spazieren zu gehen. Das Meeresrauschen entspannt mich.",
-        "english": "I enjoy walking on the beach. The sound of the ocean relaxes me."
+        "thema": "Reisen",
+        "keyword": "Wohin?",
+        "german": "Ich reise gern nach Italien.",
+        "english": "I like to travel to Italy."
       },
       {
-        "german": "Ich besuche oft lokale Feste. Die Musik und Tänze sind sehr unterhaltsam.",
-        "english": "I often attend local festivals. The music and dances are very entertaining."
+        "thema": "Reisen",
+        "keyword": "Hotel",
+        "german": "Übernachten Sie im Hotel?",
+        "english": "Do you stay in a hotel?"
       },
       {
-        "german": "Ich mache jeden Morgen eine kurze Meditation. Sie hilft mir, den Tag positiv zu beginnen.",
-        "english": "I do a short meditation every morning. It helps me start the day positively."
+        "thema": "Reisen",
+        "keyword": "Hotel",
+        "german": "Ja, ich übernachte im Hotel.",
+        "english": "Yes, I stay in a hotel."
       },
       {
-        "german": "Ich treffe mich mit meinem Bruder. Wir reden über unsere Erlebnisse und Pläne.",
-        "english": "I meet with my brother. We talk about our experiences and plans."
+        "thema": "Reisen",
+        "keyword": "Urlab",
+        "german": "Haben Sie Urlaub gemacht?",
+        "english": "Have you been on vacation?"
       },
       {
-        "german": "Ich besuche einen Kunstkurs. Das Malen ist kreativ und entspannend.",
-        "english": "I attend an art course. Painting is creative and relaxing."
+        "thema": "Reisen",
+        "keyword": "Urlab",
+        "german": "Ja, ich habe Urlaub gemacht.",
+        "english": "Yes, I have been on vacation."
       },
       {
-        "german": "Ich lerne jeden Tag etwas über die deutsche Kultur. Das macht mich neugierig.",
-        "english": "I learn something about German culture every day. It makes me curious."
+        "thema": "Reisen",
+        "keyword": "Länder",
+        "german": "Welche Länder möchten Sie besuchen?",
+        "english": "Which countries would you like to visit?"
       },
       {
-        "german": "Ich mache gern Spaziergänge im Regen. Der Regen erfrischt die Natur.",
-        "english": "I enjoy walking in the rain. The rain refreshes nature."
+        "thema": "Reisen",
+        "keyword": "Länder",
+        "german": "Ich möchte Japan besuchen.",
+        "english": "I would like to visit Japan."
       },
       {
-        "german": "Ich besuche einen Kochkurs. Dort lerne ich, neue Rezepte zu kochen.",
-        "english": "I attend a cooking course. There, I learn how to cook new recipes."
+        "thema": "Reisen",
+        "keyword": "Auto",
+        "german": "Reisen Sie mit dem Auto?",
+        "english": "Do you travel by car?"
       },
       {
-        "german": "Ich genieße es, am Abend Tee zu trinken. Es entspannt mich und gibt mir Ruhe.",
-        "english": "I enjoy drinking tea in the evening. It relaxes me and gives me peace."
+        "thema": "Reisen",
+        "keyword": "Auto",
+        "german": "Ja, ich reise oft mit dem Auto.",
+        "english": "Yes, I often travel by car."
       },
       {
-        "german": "Ich fahre gern in den Bergen. Die Aussicht ist atemberaubend und friedlich.",
-        "english": "I enjoy going to the mountains. The view is breathtaking and peaceful."
+        "thema": "Reisen",
+        "keyword": "Wann?",
+        "german": "Wann reisen Sie?",
+        "english": "When do you travel?"
       },
       {
-        "german": "Ich mache einen Spaziergang im Park. Die frischen Blumen erfreuen mich.",
-        "english": "I take a walk in the park. The fresh flowers delight me."
+        "thema": "Reisen",
+        "keyword": "Wann?",
+        "german": "Ich reise im Sommer.",
+        "english": "I travel in the summer."
       },
       {
-        "german": "Ich besuche oft den Wochenmarkt. Dort treffe ich nette Verkäufer.",
-        "english": "I often visit the weekly market. There, I meet friendly vendors."
+        "thema": "Sport",
+        "keyword": "Fußall",
+        "german": "Spielen Sie gern Fußball?",
+        "english": "Do you like to play soccer?"
       },
       {
-        "german": "Ich koche gerne Pasta. Es ist einfach und sehr schmackhaft.",
-        "english": "I like cooking pasta. It is simple and very tasty."
+        "thema": "Sport",
+        "keyword": "Fußall",
+        "german": "Nein, ich spiele nicht gern Fußball.",
+        "english": "No, I don't like to play soccer."
       },
       {
-        "german": "Ich lerne Deutsch, um in Deutschland zu studieren. Bildung ist mir sehr wichtig.",
-        "english": "I study German to study in Germany. Education is very important to me."
+        "thema": "Sport",
+        "keyword": "Fahrrad fahren",
+        "german": "Fahren Sie oft Fahrrad?",
+        "english": "Do you often ride a bicycle?"
       },
       {
-        "german": "Ich treffe mich am Samstag mit Freunden. Wir spielen Brettspiele und lachen viel.",
-        "english": "I meet with friends on Saturday. We play board games and laugh a lot."
+        "thema": "Sport",
+        "keyword": "Fahrrad fahren",
+        "german": "Ja, ich fahre jeden Tag Fahrrad.",
+        "english": "Yes, I ride a bicycle every day."
       },
       {
-        "german": "Ich genieße lange Spaziergänge am Abend. Die frische Luft ist wunderbar.",
-        "english": "I enjoy long walks in the evening. The fresh air is wonderful."
+        "thema": "Sport",
+        "keyword": "schwimmen",
+        "german": "Gehen Sie gern schwimmen?",
+        "english": "Do you like to go swimming?"
       },
       {
-        "german": "Ich besuche oft kulturelle Veranstaltungen. Sie erweitern meinen Horizont.",
-        "english": "I often attend cultural events. They broaden my horizons."
+        "thema": "Sport",
+        "keyword": "schwimmen",
+        "german": "Ja, ich gehe sehr gern schwimmen.",
+        "english": "Yes, I like to go swimming very much."
       },
       {
-        "german": "Ich trinke gern einen heißen Kakao. Er schmeckt besonders im Winter gut.",
-        "english": "I like drinking hot cocoa. It tastes especially good in winter."
+        "thema": "Sport",
+        "keyword": "wandern",
+        "german": "Wandern Sie gern?",
+        "english": "Do you like to hike?"
       },
       {
-        "german": "Ich mache jeden Morgen Dehnübungen. Sie bereiten meinen Körper auf den Tag vor.",
-        "english": "I do stretching exercises every morning. They prepare my body for the day."
+        "thema": "Sport",
+        "keyword": "wandern",
+        "german": "Ja, ich wandere gern in den Bergen.",
+        "english": "Yes, I like to hike in the mountains."
       },
       {
-        "german": "Ich lerne neue deutsche Sätze. Jeder Satz hilft mir, besser zu sprechen.",
-        "english": "I learn new German sentences. Every sentence helps me speak better."
+        "thema": "Sport",
+        "keyword": "Verein",
+        "german": "Sind Sie in einem Sportverein?",
+        "english": "Are you in a sports club?"
       },
       {
-        "german": "Ich treffe mich oft im Park. Dort genieße ich die Natur und die Ruhe.",
-        "english": "I often meet in the park. There, I enjoy nature and peace."
+        "thema": "Sport",
+        "keyword": "Verein",
+        "german": "Ja, ich bin in einem Fußballverein.",
+        "english": "Yes, I am in a soccer club."
       },
       {
-        "german": "Ich besuche eine Sprachschule. Dort lerne ich viele nützliche Ausdrücke.",
-        "english": "I attend a language school. There, I learn many useful expressions."
+        "thema": "Sport",
+        "keyword": "Wochenende",
+        "german": "Machen Sie am Wochenende Sport?",
+        "english": "Do you do sports on the weekend?"
       },
       {
-        "german": "Ich mache gern Ausflüge ins Umland. Die Landschaft ist immer beeindruckend.",
-        "english": "I enjoy excursions to the countryside. The scenery is always impressive."
+        "thema": "Sport",
+        "keyword": "Wochenende",
+        "german": "Ja, ich mache am Wochenende Sport.",
+        "english": "Yes, I do sports on the weekend."
       },
       {
-        "german": "Ich liebe es, im Sommer draußen zu sein. Die Sonne und das warme Wetter sind toll.",
-        "english": "I love being outside in the summer. The sun and warm weather are great."
+        "thema": "Lernen",
+        "keyword": "Sprachen",
+        "german": "Sprechen Sie Fremdsprachen?",
+        "english": "Do you speak foreign languages?"
       },
       {
-        "german": "Ich verbringe gerne Zeit mit meinen Freunden. Wir unternehmen viele interessante Aktivitäten.",
-        "english": "I like spending time with my friends. We do many interesting activities together."
+        "thema": "Lernen",
+        "keyword": "Sprachen",
+        "german": "Ja, ich spreche Englisch.",
+        "english": "Yes, I speak English."
       },
       {
-        "german": "Ich besuche regelmäßig den Park. Die Natur und die Bäume beruhigen mich.",
-        "english": "I regularly visit the park. The nature and the trees calm me down."
+        "thema": "Lernen",
+        "keyword": "Bücher",
+        "german": "Lesen Sie gern Bücher?",
+        "english": "Do you like to read books?"
       },
       {
-        "german": "Ich genieße es, am Wochenende zu entspannen. Ein gutes Buch und Musik machen mich glücklich.",
-        "english": "I enjoy relaxing on the weekend. A good book and music make me happy."
+        "thema": "Lernen",
+        "keyword": "Bücher",
+        "german": "Ja, ich lese sehr gern Bücher.",
+        "english": "Yes, I like to read books very much."
       },
       {
-        "german": "Ich mache oft eine Pause, um frische Luft zu schnappen. Es hilft mir, mich zu konzentrieren.",
-        "english": "I often take a break to get some fresh air. It helps me concentrate."
+        "thema": "Lernen",
+        "keyword": "Schule",
+        "german": "Gehen Sie zur Schule?",
+        "english": "Do you go to school?"
       },
       {
-        "german": "Ich besuche einen kleinen Markt in meiner Nachbarschaft. Dort kaufe ich regionale Produkte.",
-        "english": "I visit a small market in my neighborhood. There, I buy local products."
+        "thema": "Lernen",
+        "keyword": "Schule",
+        "german": "Nein, ich gehe nicht mehr zur Schule.",
+        "english": "No, I don't go to school anymore."
       },
       {
-        "german": "Ich trinke gern frisch gepressten Orangensaft. Er ist gesund und lecker.",
-        "english": "I enjoy drinking freshly squeezed orange juice. It is healthy and delicious."
+        "thema": "Lernen",
+        "keyword": "Internet",
+        "german": "Lernen Sie Deutsch im Internet?",
+        "english": "Do you learn German on the internet?"
       },
       {
-        "german": "Ich lese jeden Abend vor dem Schlafengehen. Es hilft mir, mich zu entspannen.",
-        "english": "I read every evening before bed. It helps me relax."
+        "thema": "Lernen",
+        "keyword": "Internet",
+        "german": "Ja, ich lerne Deutsch im Internet.",
+        "english": "Yes, I learn German on the internet."
       },
       {
-        "german": "Ich höre gern entspannte Musik. Sie begleitet mich während meiner Arbeit.",
-        "english": "I enjoy listening to relaxing music. It accompanies me during my work."
+        "thema": "Lernen",
+        "keyword": "Lehren",
+        "german": "Möchten Sie Deutsch lehren?",
+        "english": "Would you like to teach German?"
       },
       {
-        "german": "Ich besuche oft einen Garten. Die Pflanzen und Blumen inspirieren mich.",
-        "english": "I often visit a garden. The plants and flowers inspire me."
+        "thema": "Lernen",
+        "keyword": "Lehren",
+        "german": "Nein, ich möchte nicht Deutsch lehren.",
+        "english": "No, I would not like to teach German."
       },
       {
-        "german": "Ich koche gerne einfache Gerichte. Die Rezepte sind leicht zu verstehen.",
-        "english": "I like cooking simple dishes. The recipes are easy to understand."
+        "thema": "Lernen",
+        "keyword": "zu Hause",
+        "german": "Lernen Sie lieber zu Hause?",
+        "english": "Do you prefer to learn at home?"
       },
       {
-        "german": "Ich lerne jeden Tag ein bisschen mehr Deutsch. Es verbessert sich stetig mein Sprachniveau.",
-        "english": "I learn a little more German every day. My language skills steadily improve."
+        "thema": "Lernen",
+        "keyword": "zu Hause",
+        "german": "Ja, ich lerne lieber zu Hause.",
+        "english": "Yes, I prefer to learn at home."
       },
       {
-        "german": "Ich besuche oft das Stadtzentrum. Die Geschäfte und Cafés sind interessant.",
-        "english": "I often visit the city center. The shops and cafés are interesting."
+        "thema": "Wochenende",
+        "keyword": "Ausflug",
+        "german": "Machen Sie am Wochenende einen Ausflug?",
+        "english": "Do you go on a trip on the weekend?"
       },
       {
-        "german": "Ich genieße ruhige Momente zu Hause. Ein warmes Licht und leise Musik machen den Abend perfekt.",
-        "english": "I enjoy quiet moments at home. Warm light and soft music make the evening perfect."
+        "thema": "Wochenende",
+        "keyword": "Ausflug",
+        "german": "Ja, ich mache oft einen Ausflug am Wochenende.",
+        "english": "Yes, I often go on a trip on the weekend."
       },
       {
-        "german": "Ich fahre gern mit dem Auto in die Natur. Die Straße und Landschaft sind entspannend.",
-        "english": "I like driving into nature by car. The road and scenery are relaxing."
+        "thema": "Wochenende",
+        "keyword": "Sport",
+        "german": "Treiben Sie am Wochenende Sport?",
+        "english": "Do you do sports on the weekend?"
       },
       {
-        "german": "Ich besuche ein kleines Café in meiner Stadt. Dort treffe ich oft nette Leute.",
-        "english": "I visit a small café in my city. There, I often meet friendly people."
+        "thema": "Wochenende",
+        "keyword": "Sport",
+        "german": "Ja, ich treibe am Wochenende Sport.",
+        "english": "Yes, I do sports on the weekend."
       },
       {
-        "german": "Ich mache jeden Tag kleine Notizen. Sie helfen mir, wichtige Gedanken festzuhalten.",
-        "english": "I take small notes every day. They help me remember important thoughts."
+        "thema": "Wochenende",
+        "keyword": "fernsehen",
+        "german": "Sehen Sie am Wochenende fern?",
+        "english": "Do you watch TV on the weekend?"
       },
       {
-        "german": "Ich treffe mich mit Freunden in der Stadt. Wir unterhalten uns über unser Leben.",
-        "english": "I meet with friends in the city. We talk about our lives."
+        "thema": "Wochenende",
+        "keyword": "fernsehen",
+        "german": "Ja, ich sehe gern fern am Wochenende.",
+        "english": "Yes, I like to watch TV on the weekend."
       },
       {
-        "german": "Ich gehe regelmäßig in den Park, um zu entspannen. Die Natur gibt mir neue Energie.",
-        "english": "I regularly go to the park to relax. Nature gives me new energy."
+        "thema": "Wochenende",
+        "keyword": "Kino",
+        "german": "Gehen Sie am Wochenende ins Kino?",
+        "english": "Do you go to the cinema on the weekend?"
       },
       {
-        "german": "Ich besuche eine Kunstausstellung. Die Bilder und Skulpturen sind sehr beeindruckend.",
-        "english": "I visit an art exhibition. The paintings and sculptures are very impressive."
+        "thema": "Wochenende",
+        "keyword": "Kino",
+        "german": "Nein, ich gehe nicht ins Kino am Wochenende.",
+        "english": "No, I don't go to the cinema on the weekend."
       },
       {
-        "german": "Ich trinke gern kalten Eistee. Er ist erfrischend an heißen Tagen.",
-        "english": "I enjoy drinking cold iced tea. It is refreshing on hot days."
+        "thema": "Wochenende",
+        "keyword": "kochen",
+        "german": "Kochen Sie am Wochenende?",
+        "english": "Do you cook on the weekend?"
       },
       {
-        "german": "Ich mache jeden Morgen einen kurzen Spaziergang. Die frische Luft weckt mich auf.",
-        "english": "I take a short walk every morning. The fresh air wakes me up."
+        "thema": "Wochenende",
+        "keyword": "kochen",
+        "german": "Ja, ich koche oft am Wochenende.",
+        "english": "Yes, I often cook on the weekend."
       },
       {
-        "german": "Ich besuche oft den See in der Nähe. Das Wasser ist ruhig und klar.",
-        "english": "I often visit the nearby lake. The water is calm and clear."
+        "thema": "Wochenende",
+        "keyword": "shlafen",
+        "german": "Schlafen Sie am Wochenende lange?",
+        "english": "Do you sleep long on the weekend?"
       },
       {
-        "german": "Ich genieße es, in der Natur zu sein. Die Bäume und Vögel sind schön anzusehen.",
-        "english": "I enjoy being in nature. The trees and birds are lovely to watch."
+        "thema": "Wochenende",
+        "keyword": "shlafen",
+        "german": "Ja, ich schlafe am Wochenende sehr lange.",
+        "english": "Yes, I sleep very long on the weekend."
       },
       {
-        "german": "Ich lerne Deutsch mit Freude. Jeder Tag bringt mir neue Erkenntnisse.",
-        "english": "I learn German with joy. Every day brings me new insights."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeit",
+        "german": "Gehen Sie zur Arbeit?",
+        "english": "Do you go to work?"
       },
       {
-        "german": "Ich treffe oft Menschen in meiner Stadt. Jeder hat eine interessante Geschichte zu erzählen.",
-        "english": "I often meet people in my city. Everyone has an interesting story to tell."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeit",
+        "german": "Ja, ich gehe jeden Tag zur Arbeit.",
+        "english": "Yes, I go to work every day."
       },
       {
-        "german": "Ich mache am Wochenende Ausflüge. Neue Orte zu entdecken, ist immer spannend.",
-        "english": "I go on trips on the weekend. Discovering new places is always exciting."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Kollegen",
+        "german": "Sind Ihre Kollegen nett?",
+        "english": "Are your colleagues nice?"
       },
       {
-        "german": "Ich besuche gerne Flohmärkte. Dort finde ich oft einzigartige Gegenstände.",
-        "english": "I enjoy visiting flea markets. I often find unique items there."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Kollegen",
+        "german": "Ja, meine Kollegen sind sehr nett.",
+        "english": "Yes, my colleagues are very nice."
       },
       {
-        "german": "Ich koche gerne Reisgerichte. Sie sind einfach und sättigend.",
-        "english": "I enjoy cooking rice dishes. They are simple and filling."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeitsplatz",
+        "german": "Gefällt Ihnen Ihr Arbeitsplatz?",
+        "english": "Do you like your workplace?"
       },
       {
-        "german": "Ich lerne Deutsch, um meine Karrierechancen zu verbessern. Es eröffnet mir viele Möglichkeiten.",
-        "english": "I study German to improve my career opportunities. It opens many possibilities for me."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeitsplatz",
+        "german": "Ja, mein Arbeitsplatz gefällt mir sehr gut.",
+        "english": "Yes, I like my workplace very much."
       },
       {
-        "german": "Ich besuche oft meinen Lieblingspark. Dort fühle ich mich frei und entspannt.",
-        "english": "I often visit my favorite park. There, I feel free and relaxed."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Chef",
+        "german": "Haben Sie einen Chef?",
+        "english": "Do you have a boss?"
       },
       {
-        "german": "Ich genieße lange Sommerabende. Das warme Licht und die Ruhe sind wunderbar.",
-        "english": "I enjoy long summer evenings. The warm light and calmness are wonderful."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Chef",
+        "german": "Ja, ich habe einen Chef.",
+        "english": "Yes, I have a boss."
       },
       {
-        "german": "Ich mache gern Sport im Freien. Bewegung tut meinem Körper gut.",
-        "english": "I enjoy outdoor sports. Exercise is good for my body."
+        "thema": "Arbeit und Beruf",
+        "keyword": "arbeitlos",
+        "german": "Sind Sie arbeitslos?",
+        "english": "Are you unemployed?"
       },
       {
-        "german": "Ich besuche einen Friseursalon. Ein frischer Haarschnitt macht mich glücklich.",
-        "english": "I visit a hair salon. A fresh haircut makes me happy."
+        "thema": "Arbeit und Beruf",
+        "keyword": "arbeitlos",
+        "german": "Nein, ich bin nicht arbeitslos.",
+        "english": "No, I am not unemployed."
       },
       {
-        "german": "Ich trinke gern frisch gebrühten Kaffee. Er duftet so verlockend.",
-        "english": "I enjoy freshly brewed coffee. It smells so enticing."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Urlaub",
+        "german": "Haben Sie Urlaub?",
+        "english": "Do you have vacation?"
       },
       {
-        "german": "Ich lerne jeden Tag neue Sätze. So verbessere ich mein Deutsch kontinuierlich.",
-        "english": "I learn new sentences every day. This way, I continuously improve my German."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Urlaub",
+        "german": "Ja, ich habe nächste Woche Urlaub.",
+        "english": "Yes, I have vacation next week."
       },
       {
-        "german": "Ich treffe oft alte Freunde. Wir erinnern uns an unsere gemeinsame Vergangenheit.",
-        "english": "I often meet old friends. We reminisce about our past together."
+        "thema": "Familie",
+        "keyword": "Eltern",
+        "german": "Leben Ihre Eltern noch?",
+        "english": "Are your parents still alive?"
       },
       {
-        "german": "Ich besuche regelmäßig Kunstausstellungen. Kunst inspiriert mich sehr.",
-        "english": "I regularly visit art exhibitions. Art inspires me a lot."
+        "thema": "Familie",
+        "keyword": "Eltern",
+        "german": "Ja, meine Eltern leben noch.",
+        "english": "Yes, my parents are still alive."
       },
       {
-        "german": "Ich mache jeden Morgen ein gesundes Frühstück. Es gibt mir Kraft für den Tag.",
-        "english": "I have a healthy breakfast every morning. It gives me strength for the day."
+        "thema": "Familie",
+        "keyword": "Geschwister",
+        "german": "Haben Sie Geschwister?",
+        "english": "Do you have siblings?"
       },
       {
-        "german": "Ich höre gern die Nachrichten. Sie halten mich über aktuelle Ereignisse auf dem Laufenden.",
-        "english": "I enjoy listening to the news. They keep me informed about current events."
+        "thema": "Familie",
+        "keyword": "Geschwister",
+        "german": "Ja, ich habe einen Bruder und eine Schwester.",
+        "english": "Yes, I have a brother and a sister."
       },
       {
-        "german": "Ich besuche einen Buchladen. Dort finde ich viele spannende Geschichten.",
-        "english": "I visit a bookstore. There I find many exciting stories."
+        "thema": "Familie",
+        "keyword": "Wohnort",
+        "german": "Wo ist Ihr Wohnort?",
+        "english": "Where is your place of residence?"
       },
       {
-        "german": "Ich lerne Deutsch, um in Europa zu reisen. Es macht das Reisen einfacher.",
-        "english": "I study German to travel in Europe. It makes traveling easier."
+        "thema": "Familie",
+        "keyword": "Wohnort",
+        "german": "Mein Wohnort ist Berlin.",
+        "english": "My place of residence is Berlin."
       },
       {
-        "german": "Ich mache oft einen Spaziergang in der Abenddämmerung. Die Farben des Himmels sind wunderschön.",
-        "english": "I often take a walk at dusk. The colors of the sky are beautiful."
+        "thema": "Familie",
+        "keyword": "Einkaufen",
+        "german": "Gehen Sie mit Ihrer Familie einkaufen?",
+        "english": "Do you go shopping with your family?"
       },
       {
-        "german": "Ich besuche einen botanischen Garten. Die Vielfalt der Pflanzen fasziniert mich.",
-        "english": "I visit a botanical garden. The variety of plants fascinates me."
+        "thema": "Familie",
+        "keyword": "Einkaufen",
+        "german": "Ja, ich gehe oft mit meiner Familie einkaufen.",
+        "english": "Yes, I often go shopping with my family."
       },
       {
-        "german": "Ich trinke gern grünen Tee. Er ist gesund und wohltuend.",
-        "english": "I enjoy drinking green tea. It is healthy and soothing."
+        "thema": "Familie",
+        "keyword": "Hobby",
+        "german": "Haben Sie ein gemeinsames Hobby mit Ihrer Familie?",
+        "english": "Do you have a common hobby with your family?"
       },
       {
-        "german": "Ich mache jeden Tag ein kleines Tagebuch. Es hilft mir, meine Gedanken zu ordnen.",
-        "english": "I write a small journal every day. It helps me organize my thoughts."
+        "thema": "Familie",
+        "keyword": "Hobby",
+        "german": "Ja, wir spielen gern zusammen Karten.",
+        "english": "Yes, we like to play cards together."
       },
       {
-        "german": "Ich besuche oft einen Yoga-Kurs. Die Übungen machen meinen Körper flexibel.",
-        "english": "I often attend a yoga class. The exercises make my body flexible."
+        "thema": "Familie",
+        "keyword": "Wochenende",
+        "german": "Was machen Sie am Wochenende mit Ihrer Familie?",
+        "english": "What do you do on the weekend with your family?"
       },
       {
-        "german": "Ich lerne Deutsch, um neue Kulturen zu verstehen. Es erweitert meinen Horizont.",
-        "english": "I study German to understand new cultures. It broadens my horizons."
+        "thema": "Familie",
+        "keyword": "Wochenende",
+        "german": "Wir machen am Wochenende oft einen Ausflug.",
+        "english": "We often go on a trip on the weekend."
+    },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Auto",
+        "german": "Benutzen Sie das Auto oft?",
+        "english": "Do you use the car often?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Auto",
+        "german": "Ja, ich benutze das Auto täglich.",
+        "english": "Yes, I use the car daily."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Auto",
+        "german": "Wo parken Sie Ihr Auto?",
+        "english": "Where do you park your car?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Auto",
+        "german": "Ich parke mein Auto in der Garage.",
+        "english": "I park my car in the garage."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Fahrrad",
+        "german": "Haben Sie ein Fahrrad?",
+        "english": "Do you have a bicycle?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Fahrrad",
+        "german": "Ja, ich habe ein neues Fahrrad.",
+        "english": "Yes, I have a new bicycle."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Fahrrad",
+        "german": "Fahren Sie mit dem Fahrrad zur Arbeit?",
+        "english": "Do you cycle to work?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Fahrrad",
+        "german": "Manchmal fahre ich mit dem Fahrrad zur Arbeit.",
+        "english": "Sometimes I cycle to work."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Arbeit",
+        "german": "Wie kommen Sie zur Arbeit?",
+        "english": "How do you get to work?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Arbeit",
+        "german": "Ich komme mit dem Bus zur Arbeit.",
+        "english": "I get to work by bus."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Arbeit",
+        "german": "Ist Ihre Arbeit weit von hier?",
+        "english": "Is your work far from here?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Arbeit",
+        "german": "Ja, meine Arbeit ist etwas weit von hier.",
+        "english": "Yes, my work is a bit far from here."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Reisen",
+        "german": "Wie reisen Sie am liebsten?",
+        "english": "How do you prefer to travel?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Reisen",
+        "german": "Ich reise am liebsten mit dem Flugzeug.",
+        "english": "I prefer to travel by plane."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Reisen",
+        "german": "Wohin sind Sie das letzte Mal gereist?",
+        "english": "Where did you travel last time?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Reisen",
+        "german": "Ich bin das letzte Mal nach Spanien gereist.",
+        "english": "I traveled to Spain last time."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "praktisch",
+        "german": "Finden Sie öffentliche Verkehrsmittel praktisch?",
+        "english": "Do you find public transport practical?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "praktisch",
+        "german": "Ja, ich finde öffentliche Verkehrsmittel sehr praktisch.",
+        "english": "Yes, I find public transport very practical."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "praktisch",
+        "german": "Ist ein eigenes Auto praktisch für Sie?",
+        "english": "Is having your own car practical for you?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "praktisch",
+        "german": "Ja, ein eigenes Auto ist sehr praktisch für mich.",
+        "english": "Yes, having my own car is very practical for me."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Bahn",
+        "german": "Ist der Bahnhof in der Nähe?",
+        "english": "Is the train station nearby?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Bahn",
+        "german": "Ja, der Bahnhof ist sehr nah.",
+        "english": "Yes, the train station is very close."
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Bahn",
+        "german": "Fährt die Bahn pünktlich?",
+        "english": "Is the train running on time?"
+      },
+      {
+        "thema": "Verkehrsmittel",
+        "keyword": "Bahn",
+        "german": "Ja, die Bahn fährt normalerweise pünktlich.",
+        "english": "Yes, the train usually runs on time."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Miete",
+        "german": "Ist die Miete hoch?",
+        "english": "Is the rent high?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Miete",
+        "german": "Ja, die Miete ist ziemlich hoch.",
+        "english": "Yes, the rent is quite high."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Miete",
+        "german": "Wann müssen Sie die Miete bezahlen?",
+        "english": "When do you have to pay the rent?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Miete",
+        "german": "Ich muss die Miete am ersten des Monats bezahlen.",
+        "english": "I have to pay the rent on the first of the month."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Zimmer",
+        "german": "Wie viele Zimmer hat Ihr Haus?",
+        "english": "How many rooms does your house have?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Zimmer",
+        "german": "Mein Haus hat vier Zimmer.",
+        "english": "My house has four rooms."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Zimmer",
+        "german": "Ist Ihr Zimmer groß?",
+        "english": "Is your room big?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Zimmer",
+        "german": "Ja, mein Zimmer ist sehr groß.",
+        "english": "Yes, my room is very big."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Balkon",
+        "german": "Sitzen Sie oft auf dem Balkon?",
+        "english": "Do you often sit on the balcony?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Balkon",
+        "german": "Ja, ich sitze gern auf dem Balkon.",
+        "english": "Yes, I like to sit on the balcony."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Balkon",
+        "german": "Haben Sie Blumen auf dem Balkon?",
+        "english": "Do you have flowers on the balcony?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Balkon",
+        "german": "Ja, ich habe viele Blumen auf dem Balkon.",
+        "english": "Yes, I have many flowers on the balcony."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Nachbarn",
+        "german": "Haben Sie Kontakt zu Ihren Nachbarn?",
+        "english": "Do you have contact with your neighbors?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Nachbarn",
+        "german": "Ja, ich habe guten Kontakt zu meinen Nachbarn.",
+        "english": "Yes, I have good contact with my neighbors."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Nachbarn",
+        "german": "Sind Ihre Nachbarn laut?",
+        "english": "Are your neighbors loud?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Nachbarn",
+        "german": "Nein, meine Nachbarn sind sehr ruhig.",
+        "english": "No, my neighbors are very quiet."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Garten",
+        "german": "Was machen Sie in Ihrem Garten?",
+        "english": "What do you do in your garden?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Garten",
+        "german": "Ich lese und entspanne mich in meinem Garten.",
+        "english": "I read and relax in my garden."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Garten",
+        "german": "Haben Sie einen großen Garten?",
+        "english": "Do you have a big garden?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Garten",
+        "german": "Nein, mein Garten ist nicht sehr groß.",
+        "english": "No, my garden is not very big."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Stadt",
+        "german": "Gefällt es Ihnen in der Stadt?",
+        "english": "Do you like it in the city?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Stadt",
+        "german": "Ja, es gefällt mir sehr gut in der Stadt.",
+        "english": "Yes, I like it very much in the city."
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Stadt",
+        "german": "Ist es laut in Ihrer Straße?",
+        "english": "Is it loud in your street?"
+      },
+      {
+        "thema": "Wohnen",
+        "keyword": "Stadt",
+        "german": "Manchmal ist es etwas laut in meiner Straße.",
+        "english": "Sometimes it is a bit loud in my street."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Winter",
+        "german": "Wohin fahren Sie im Winter in Urlaub?",
+        "english": "Where do you go on vacation in winter?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Winter",
+        "german": "Im Winter fahre ich gern in die Berge.",
+        "english": "In winter I like to go to the mountains."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Winter",
+        "german": "Was machen Sie im Winterurlaub?",
+        "english": "What do you do on your winter vacation?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Winter",
+        "german": "Ich fahre Ski im Winterurlaub.",
+        "english": "I go skiing on my winter vacation."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "schlafen",
+        "german": "Wo schlafen Sie im Urlaub?",
+        "english": "Where do you sleep on vacation?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "schlafen",
+        "german": "Ich schlafe meistens im Hotel.",
+        "english": "I mostly sleep in a hotel."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "schlafen",
+        "german": "Schlafen Sie gut im Urlaub?",
+        "english": "Do you sleep well on vacation?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "schlafen",
+        "german": "Ja, ich schlafe sehr gut im Urlaub.",
+        "english": "Yes, I sleep very well on vacation."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Meer",
+        "german": "Was machen Sie am Meer?",
+        "english": "What do you do at the sea?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Meer",
+        "german": "Ich schwimme und sonne mich am Meer.",
+        "english": "I swim and sunbathe at the sea."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Meer",
+        "german": "Ist das Meer weit von hier?",
+        "english": "Is the sea far from here?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Meer",
+        "german": "Ja, das Meer ist sehr weit von hier.",
+        "english": "Yes, the sea is very far from here."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Museum",
+        "german": "Welche Art von Museen besuchen Sie gern?",
+        "english": "What kind of museums do you like to visit?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Museum",
+        "german": "Ich besuche gern Kunstmuseen.",
+        "english": "I like to visit art museums."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Museum",
+        "german": "Gibt es ein gutes Museum in Ihrer Nähe?",
+        "english": "Is there a good museum near you?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Museum",
+        "german": "Ja, es gibt ein sehr interessantes Museum in meiner Nähe.",
+        "english": "Yes, there is a very interesting museum near me."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Sport",
+        "german": "Welchen Sport machen Sie im Urlaub?",
+        "english": "Which sports do you do on vacation?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Sport",
+        "german": "Ich schwimme und wandere im Urlaub.",
+        "english": "I swim and hike on vacation."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Sport",
+        "german": "Mögen Sie Wassersport?",
+        "english": "Do you like water sports?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Sport",
+        "german": "Ja, ich mag Wassersport sehr gern.",
+        "english": "Yes, I like water sports very much."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Zug fahren",
+        "german": "Ist Zug fahren teuer?",
+        "english": "Is traveling by train expensive?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Zug fahren",
+        "german": "Manchmal ist Zug fahren teuer.",
+        "english": "Sometimes traveling by train is expensive."
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Zug fahren",
+        "german": "Fahren Sie lieber mit dem Zug oder mit dem Auto?",
+        "english": "Do you prefer to travel by train or by car?"
+      },
+      {
+        "thema": "Urlaub",
+        "keyword": "Zug fahren",
+        "german": "Ich fahre lieber mit dem Zug.",
+        "english": "I prefer to travel by train."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Hobby",
+        "german": "Seit wann haben Sie dieses Hobby?",
+        "english": "Since when have you had this hobby?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Hobby",
+        "german": "Ich habe dieses Hobby seit fünf Jahren.",
+        "english": "I have had this hobby for five years."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Hobby",
+        "german": "Kostet Ihr Hobby viel Geld?",
+        "english": "Does your hobby cost a lot of money?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Hobby",
+        "german": "Nein, mein Hobby kostet nicht viel Geld.",
+        "english": "No, my hobby doesn't cost a lot of money."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Wochenende",
+        "german": "Gehen Sie am Wochenende aus?",
+        "english": "Do you go out on the weekend?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Wochenende",
+        "german": "Ja, ich gehe oft mit Freunden aus.",
+        "english": "Yes, I often go out with friends."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Wochenende",
+        "german": "Was essen Sie am Wochenende gern?",
+        "english": "What do you like to eat on the weekend?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Wochenende",
+        "german": "Am Wochenende esse ich gern Pizza.",
+        "english": "On the weekend I like to eat pizza."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Wan?",
+        "german": "Wann haben Sie am liebsten Freizeit?",
+        "english": "When do you prefer to have free time?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Wan?",
+        "german": "Ich habe am liebsten am Samstag Freizeit.",
+        "english": "I prefer to have free time on Saturday."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Wan?",
+        "german": "Was machen Sie, wenn Sie Freizeit haben?",
+        "english": "What do you do when you have free time?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Wan?",
+        "german": "Wenn ich Freizeit habe, lese ich oder sehe fern.",
+        "english": "When I have free time, I read or watch TV."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Fußball",
+        "german": "Sehen Sie Fußball im Fernsehen?",
+        "english": "Do you watch soccer on TV?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Fußball",
+        "german": "Ja, ich sehe oft Fußball im Fernsehen.",
+        "english": "Yes, I often watch soccer on TV."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Fußball",
+        "german": "Haben Sie eine Lieblingsmannschaft?",
+        "english": "Do you have a favorite team?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Fußball",
+        "german": "Ja, ich habe eine Lieblingsmannschaft.",
+        "english": "Yes, I have a favorite team."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Lieblingssport",
+        "german": "Betreiben Sie Ihren Lieblingssport oft?",
+        "english": "Do you practice your favorite sport often?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Lieblingssport",
+        "german": "Ja, ich schwimme zweimal pro Woche.",
+        "english": "Yes, I swim twice a week."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Lieblingssport",
+        "german": "Warum ist das Ihr Lieblingssport?",
+        "english": "Why is that your favorite sport?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Lieblingssport",
+        "german": "Weil es entspannend ist.",
+        "english": "Because it is relaxing."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Sonntag",
+        "german": "Frühstücken Sie spät am Sonntag?",
+        "english": "Do you have a late breakfast on Sunday?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Sonntag",
+        "german": "Ja, am Sonntag frühstücke ich immer spät.",
+        "english": "Yes, on Sunday I always have a late breakfast."
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Sonntag",
+        "german": "Besuchen Sie am Sonntag Ihre Familie?",
+        "english": "Do you visit your family on Sunday?"
+      },
+      {
+        "thema": "Freizeit",
+        "keyword": "Sonntag",
+        "german": "Manchmal besuche ich am Sonntag meine Familie.",
+        "english": "Sometimes I visit my family on Sunday."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Wo am liebsten?",
+        "german": "Kaufen Sie lieber online oder im Geschäft ein?",
+        "english": "Do you prefer to shop online or in a store?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Wo am liebsten?",
+        "german": "Ich kaufe lieber im Geschäft ein.",
+        "english": "I prefer to shop in a store."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Wo am liebsten?",
+        "german": "Gibt es ein gutes Einkaufszentrum in Ihrer Nähe?",
+        "english": "Is there a good shopping center near you?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Wo am liebsten?",
+        "german": "Ja, es gibt ein großes Einkaufszentrum in der Nähe.",
+        "english": "Yes, there is a big shopping center nearby."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Markt",
+        "german": "Was kaufen Sie auf dem Markt?",
+        "english": "What do you buy at the market?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Markt",
+        "german": "Ich kaufe frisches Obst und Gemüse auf dem Markt.",
+        "english": "I buy fresh fruit and vegetables at the market."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Markt",
+        "german": "Ist der Markt teuer?",
+        "english": "Is the market expensive?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Markt",
+        "german": "Manchmal sind die Preise auf dem Markt etwas höher.",
+        "english": "Sometimes the prices at the market are a bit higher."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Gemüse",
+        "german": "Welches Gemüse essen Sie gern?",
+        "english": "Which vegetables do you like to eat?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Gemüse",
+        "german": "Ich esse gern Tomaten und Gurken.",
+        "english": "I like to eat tomatoes and cucumbers."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Gemüse",
+        "german": "Kaufen Sie biologisches Gemüse?",
+        "english": "Do you buy organic vegetables?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Gemüse",
+        "german": "Ja, ich kaufe oft biologisches Gemüse.",
+        "english": "Yes, I often buy organic vegetables."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Getränke",
+        "german": "Trinken Sie lieber Wasser oder Saft?",
+        "english": "Do you prefer to drink water or juice?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Getränke",
+        "german": "Ich trinke lieber Wasser.",
+        "english": "I prefer to drink water."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Getränke",
+        "german": "Wo kaufen Sie Ihre Getränke?",
+        "english": "Where do you buy your drinks?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Getränke",
+        "german": "Ich kaufe meine Getränke im Supermarkt.",
+        "english": "I buy my drinks at the supermarket."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Schokolade",
+        "german": "Essen Sie lieber dunkle oder helle Schokolade?",
+        "english": "Do you prefer dark or milk chocolate?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Schokolade",
+        "german": "Ich esse lieber dunkle Schokolade.",
+        "english": "I prefer dark chocolate."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Schokolade",
+        "german": "Wie oft essen Sie Schokolade?",
+        "english": "How often do you eat chocolate?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Schokolade",
+        "german": "Ich esse nicht sehr oft Schokolade.",
+        "english": "I don't eat chocolate very often."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Wann?",
+        "german": "Gehen Sie lieber morgens oder nachmittags einkaufen?",
+        "english": "Do you prefer to go shopping in the morning or in the afternoon?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Wann?",
+        "german": "Ich gehe lieber am Nachmittag einkaufen.",
+        "english": "I prefer to go shopping in the afternoon."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Wann?",
+        "german": "Müssen Sie oft einkaufen gehen?",
+        "english": "Do you often have to go shopping?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Wann?",
+        "german": "Ja, ich muss mehrmals pro Woche einkaufen gehen.",
+        "english": "Yes, I have to go shopping several times a week."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Bier",
+        "german": "Welches Bier trinken Sie gern?",
+        "english": "Which beer do you like to drink?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Bier",
+        "german": "Ich trinke gern Pils.",
+        "english": "I like to drink Pils."
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Bier",
+        "german": "Kaufen Sie Bier im Supermarkt oder im Getränkemarkt?",
+        "english": "Do you buy beer at the supermarket or at the beverage store?"
+      },
+      {
+        "thema": "Einkaufen",
+        "keyword": "Bier",
+        "german": "Ich kaufe Bier meistens im Supermarkt.",
+        "english": "I mostly buy beer at the supermarket."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsessen",
+        "german": "Kochen Sie Ihr Lieblingsessen oft?",
+        "english": "Do you often cook your favorite food?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsessen",
+        "german": "Ja, ich koche Pizza oft.",
+        "english": "Yes, I often cook pizza."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsessen",
+        "german": "Essen Sie Ihr Lieblingsessen lieber zu Hause oder im Restaurant?",
+        "english": "Do you prefer to eat your favorite food at home or in a restaurant?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsessen",
+        "german": "Ich esse Pizza lieber im Restaurant.",
+        "english": "I prefer to eat pizza in a restaurant."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "kochen",
+        "german": "Was kochen Sie am liebsten?",
+        "english": "What do you like to cook the most?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "kochen",
+        "german": "Ich koche am liebsten Pasta.",
+        "english": "I like to cook pasta the most."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "kochen",
+        "german": "Kochen Sie jeden Tag?",
+        "english": "Do you cook every day?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "kochen",
+        "german": "Ja, ich koche fast jeden Tag.",
+        "english": "Yes, I cook almost every day."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Frühstück",
+        "german": "Trinken Sie Kaffee zum Frühstück?",
+        "english": "Do you drink coffee for breakfast?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Frühstück",
+        "german": "Ja, ich trinke immer Kaffee zum Frühstück.",
+        "english": "Yes, I always drink coffee for breakfast."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Frühstück",
+        "german": "Essen Sie lieber süß oder salzig zum Frühstück?",
+        "english": "Do you prefer to eat sweet or savory for breakfast?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Frühstück",
+        "german": "Ich esse lieber salzig zum Frühstück.",
+        "english": "I prefer to eat savory for breakfast."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsgetränk",
+        "german": "Trinken Sie Ihr Lieblingsgetränk oft?",
+        "english": "Do you drink your favorite drink often?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsgetränk",
+        "german": "Ja, ich trinke jeden Tag Kaffee.",
+        "english": "Yes, I drink coffee every day."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsgetränk",
+        "german": "Trinken Sie Ihr Lieblingsgetränk warm oder kalt?",
+        "english": "Do you drink your favorite drink hot or cold?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Lieblingsgetränk",
+        "german": "Ich trinke Kaffee meistens warm.",
+        "english": "I mostly drink coffee hot."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Bier",
+        "german": "Trinken Sie lieber Bier oder Wein?",
+        "english": "Do you prefer to drink beer or wine?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Bier",
+        "german": "Ich trinke lieber Wein.",
+        "english": "I prefer to drink wine."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Bier",
+        "german": "Trinken Sie Bier zu Hause oder in einer Bar?",
+        "english": "Do you drink beer at home or in a bar?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Bier",
+        "german": "Ich trinke Bier lieber zu Hause.",
+        "english": "I prefer to drink beer at home."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Fleisch",
+        "german": "Welche Art von Fleisch essen Sie gern?",
+        "english": "What kind of meat do you like to eat?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Fleisch",
+        "german": "Ich esse gern Hähnchen.",
+        "english": "I like to eat chicken."
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Fleisch",
+        "german": "Essen Sie oft Fleisch?",
+        "english": "Do you often eat meat?"
+      },
+      {
+        "thema": "Essen und Trinken",
+        "keyword": "Fleisch",
+        "german": "Ja, ich esse mehrmals pro Woche Fleisch.",
+        "english": "Yes, I eat meat several times a week."
+      },
+      {
+        "thema": "Reisen",
+        "keyword": "Wohin?",
+        "german": "Wohin möchten Sie gern reisen?",
+        "english": "Where would you like to travel to?"
+      },
+      {
+        "thema": "Reisen",
+        "keyword": "Wohin?",
+        "german": "Ich möchte gern nach Japan reisen.",
+        "english": "I would like to travel to Japan."
+      },
+      {
+        "thema": "Reisen",
+        "keyword": "Wohin?",
+        "german": "Sind Sie schon einmal ins Ausland gereist?",
+        "english": "Have you ever traveled abroad?"
+      },
+      {
+        "thema": "Reisen",
+        "keyword": "Wohin?",
+        "german": "Ja, ich bin schon oft ins Ausland gereist.",
+        "english": "Yes, I have traveled abroad many times."
+      },
+      {
+        "thema": "Reisen",
+        "keyword": "Hotel",
+        "german": "Buchen Sie Ihr Hotel online?",
+        "english": "Do you book your hotel online?"
+      },
+      {
+        "thema": "Reisen",
+        "keyword": "Hotel",
+        "german": "Ja, ich buche mein Hotel meistens online.",
+        "english": "Yes, I mostly book my hotel online."
+      },
+      {
+        "thema": "Reisen",
+        "keyword": "Hotel",
+        "german": "Mögen Sie lieber kleine oder große Hotels?",
+        "english": "Do you prefer small or big hotels?"
       },
       {
-        "german": "Ich genieße Spaziergänge in historischen Stadtteilen. Die Architektur ist beeindruckend.",
-        "english": "I enjoy walks in historic neighborhoods. The architecture is impressive."
+        "thema": "Reisen",
+        "keyword": "Hotel",
+        "german": "Ich mag lieber kleine Hotels.",
+        "english": "I prefer small hotels."
       },
       {
-        "german": "Ich koche gern verschiedene internationale Gerichte. Es macht Spaß, neue Rezepte auszuprobieren.",
-        "english": "I enjoy cooking various international dishes. It is fun to try new recipes."
+        "thema": "Reisen",
+        "keyword": "Urlab",
+        "german": "Wie lange dauert Ihr Urlaub normalerweise?",
+        "english": "How long does your vacation usually last?"
       },
       {
-        "german": "Ich besuche einen Tanzabend. Die Musik und Bewegung bringen Freude.",
-        "english": "I attend a dance evening. The music and movement bring joy."
+        "thema": "Reisen",
+        "keyword": "Urlab",
+        "german": "Mein Urlaub dauert normalerweise zwei Wochen.",
+        "english": "My vacation usually lasts two weeks."
       },
       {
-        "german": "Ich trinke gern ein Glas kaltes Wasser. Es erfrischt mich an heißen Tagen.",
-        "english": "I enjoy a glass of cold water. It refreshes me on hot days."
+        "thema": "Reisen",
+        "keyword": "Urlab",
+        "german": "Was machen Sie gern im Urlaub?",
+        "english": "What do you like to do on vacation?"
       },
       {
-        "german": "Ich mache jeden Morgen einen kurzen Lauf. Es gibt mir Energie für den Tag.",
-        "english": "I go for a short run every morning. It gives me energy for the day."
+        "thema": "Reisen",
+        "keyword": "Urlab",
+        "german": "Ich entspanne mich und besichtige neue Orte im Urlaub.",
+        "english": "I relax and visit new places on vacation."
       },
       {
-        "german": "Ich besuche oft meinen Lieblingsladen. Dort finde ich schöne und praktische Dinge.",
-        "english": "I often visit my favorite store. There, I find nice and practical things."
+        "thema": "Reisen",
+        "keyword": "Länder",
+        "german": "Welches Land möchten Sie noch besuchen?",
+        "english": "Which country would you still like to visit?"
       },
       {
-        "german": "Ich lerne Deutsch, um im Ausland zu studieren. Es ist eine spannende Herausforderung.",
-        "english": "I study German to study abroad. It is an exciting challenge."
+        "thema": "Reisen",
+        "keyword": "Länder",
+        "german": "Ich möchte gern die USA besuchen.",
+        "english": "I would like to visit the USA."
       },
       {
-        "german": "Ich genieße es, an lauen Abenden spazieren zu gehen. Die kühle Brise ist angenehm.",
-        "english": "I enjoy walking on mild evenings. The cool breeze is pleasant."
+        "thema": "Reisen",
+        "keyword": "Länder",
+        "german": "Sprechen Sie die Sprache der Länder, die Sie besuchen?",
+        "english": "Do you speak the language of the countries you visit?"
       },
       {
-        "german": "Ich besuche einen lokalen Markt. Die frischen Produkte sind von bester Qualität.",
-        "english": "I visit a local market. The fresh products are of the best quality."
+        "thema": "Reisen",
+        "keyword": "Länder",
+        "german": "Nicht immer, aber ich versuche es.",
+        "english": "Not always, but I try."
       },
       {
-        "german": "Ich trinke gern Früchtetee. Er ist aromatisch und gesund.",
-        "english": "I enjoy drinking fruit tea. It is aromatic and healthy."
+        "thema": "Reisen",
+        "keyword": "Auto",
+        "german": "Mieten Sie ein Auto, wenn Sie reisen?",
+        "english": "Do you rent a car when you travel?"
       },
       {
-        "german": "Ich mache jeden Tag ein kurzes Nickerchen. Es hilft mir, mich zu erholen.",
-        "english": "I take a short nap every day. It helps me to recover."
+        "thema": "Reisen",
+        "keyword": "Auto",
+        "german": "Manchmal miete ich ein Auto, wenn ich reise.",
+        "english": "Sometimes I rent a car when I travel."
       },
       {
-        "german": "Ich besuche oft meinen Lieblingspark im Sommer. Die Bäume spenden angenehmen Schatten.",
-        "english": "I often visit my favorite park in summer. The trees provide pleasant shade."
+        "thema": "Reisen",
+        "keyword": "Auto",
+        "german": "Fahren Sie gern lange Strecken mit dem Auto?",
+        "english": "Do you like to drive long distances by car?"
       },
       {
-        "german": "Ich lerne Deutsch, um mich mit Einheimischen zu unterhalten. Es macht die Kommunikation leichter.",
-        "english": "I study German to converse with locals. It makes communication easier."
+        "thema": "Reisen",
+        "keyword": "Auto",
+        "german": "Ja, ich fahre sehr gern lange Strecken mit dem Auto.",
+        "english": "Yes, I really like to drive long distances by car."
       },
       {
-        "german": "Ich genieße es, im Freien zu lesen. Die frische Luft und Natur inspirieren mich.",
-        "english": "I enjoy reading outdoors. The fresh air and nature inspire me."
+        "thema": "Reisen",
+        "keyword": "Wann?",
+        "german": "Reisen Sie lieber im Sommer oder im Winter?",
+        "english": "Do you prefer to travel in summer or winter?"
       },
       {
-        "german": "Ich mache regelmäßig Sport, um fit zu bleiben. Bewegung ist wichtig für die Gesundheit.",
-        "english": "I exercise regularly to stay fit. Exercise is important for health."
+        "thema": "Reisen",
+        "keyword": "Wann?",
+        "german": "Ich reise lieber im Sommer.",
+        "english": "I prefer to travel in summer."
       },
       {
-        "german": "Ich besuche oft kulturelle Festivals. Die Musik und Kunst sind sehr faszinierend.",
-        "english": "I often attend cultural festivals. The music and art are very fascinating."
+        "thema": "Reisen",
+        "keyword": "Wann?",
+        "german": "Wie oft reisen Sie im Jahr?",
+        "english": "How often do you travel per year?"
       },
       {
-        "german": "Ich trinke gern heiße Schokolade. Sie schmeckt besonders an kalten Tagen gut.",
-        "english": "I enjoy hot chocolate. It tastes especially good on cold days."
+        "thema": "Reisen",
+        "keyword": "Wann?",
+        "german": "Ich reise normalerweise zweimal im Jahr.",
+        "english": "I usually travel twice a year."
       },
       {
-        "german": "Ich mache jeden Morgen eine kurze Meditation. Es beruhigt meinen Geist und Körper.",
-        "english": "I do a short meditation every morning. It calms my mind and body."
+        "thema": "Sport",
+        "keyword": "Fußall",
+        "german": "Spielen Sie Fußball im Verein?",
+        "english": "Do you play soccer in a club?"
       },
       {
-        "german": "Ich besuche oft eine Bibliothek, um zu lernen. Die Bücher sind sehr hilfreich.",
-        "english": "I often visit a library to study. The books are very helpful."
+        "thema": "Sport",
+        "keyword": "Fußall",
+        "german": "Nein, ich spiele nur mit Freunden Fußball.",
+        "english": "No, I only play soccer with friends."
       },
       {
-        "german": "Ich lerne Deutsch, um mich beruflich weiterzuentwickeln. Es eröffnet neue Chancen.",
-        "english": "I study German to advance my career. It opens up new opportunities."
+        "thema": "Sport",
+        "keyword": "Fußall",
+        "german": "Gehen Sie ins Stadion, um Fußball zu sehen?",
+        "english": "Do you go to the stadium to watch soccer?"
       },
       {
-        "german": "Ich genieße es, im Garten zu arbeiten. Die frische Erde und Pflanzen machen mich glücklich.",
-        "english": "I enjoy working in the garden. The fresh soil and plants make me happy."
+        "thema": "Sport",
+        "keyword": "Fußall",
+        "german": "Manchmal gehe ich ins Stadion.",
+        "english": "Sometimes I go to the stadium."
       },
       {
-        "german": "Ich mache jeden Tag einen kurzen Spaziergang. Es hilft mir, den Kopf frei zu bekommen.",
-        "english": "I take a short walk every day. It helps clear my mind."
+        "thema": "Sport",
+        "keyword": "Fahrrad fahren",
+        "german": "Fahren Sie oft Fahrrad in der Natur?",
+        "english": "Do you often ride your bike in nature?"
       },
       {
-        "german": "Ich besuche oft einen ruhigen See. Die Stille und Natur beruhigen mich.",
-        "english": "I often visit a quiet lake. The silence and nature calm me."
+        "thema": "Sport",
+        "keyword": "Fahrrad fahren",
+        "german": "Ja, ich fahre oft im Wald Fahrrad.",
+        "english": "Yes, I often ride my bike in the forest."
       },
       {
-        "german": "Ich lerne Deutsch, um mich besser auszudrücken. Jede Lektion bringt mich voran.",
-        "english": "I study German to express myself better. Every lesson moves me forward."
+        "thema": "Sport",
+        "keyword": "Fahrrad fahren",
+        "german": "Haben Sie ein Mountainbike?",
+        "english": "Do you have a mountain bike?"
       },
       {
-        "german": "Ich genieße es, frische Luft zu atmen. Die Natur ist mein Rückzugsort.",
-        "english": "I enjoy breathing fresh air. Nature is my refuge."
+        "thema": "Sport",
+        "keyword": "Fahrrad fahren",
+        "german": "Nein, ich habe ein normales Fahrrad.",
+        "english": "No, I have a normal bicycle."
       },
       {
-        "german": "Ich mache jeden Morgen ein leichtes Frühstück. Es ist der perfekte Start in den Tag.",
-        "english": "I have a light breakfast every morning. It is the perfect start to the day."
+        "thema": "Sport",
+        "keyword": "schwimmen",
+        "german": "Gehen Sie lieber ins Schwimmbad oder ins Meer schwimmen?",
+        "english": "Do you prefer to go swimming in the pool or in the sea?"
       },
       {
-        "german": "Ich besuche oft ein kleines Café in meiner Nachbarschaft. Dort fühle ich mich wie zu Hause.",
-        "english": "I often visit a small café in my neighborhood. I feel at home there."
+        "thema": "Sport",
+        "keyword": "schwimmen",
+        "german": "Ich gehe lieber ins Meer schwimmen.",
+        "english": "I prefer to go swimming in the sea."
       },
       {
-        "german": "Ich lerne Deutsch, um mit Menschen aus verschiedenen Ländern zu sprechen. Es ist eine wertvolle Fähigkeit.",
-        "english": "I study German to speak with people from different countries. It is a valuable skill."
+        "thema": "Sport",
+        "keyword": "schwimmen",
+        "german": "Wie oft gehen Sie schwimmen?",
+        "english": "How often do you go swimming?"
       },
       {
-        "german": "Ich genieße es, neue Rezepte auszuprobieren. Das Kochen ist für mich eine kreative Tätigkeit.",
-        "english": "I enjoy trying new recipes. Cooking is a creative activity for me."
+        "thema": "Sport",
+        "keyword": "schwimmen",
+        "german": "Ich gehe einmal pro Woche schwimmen.",
+        "english": "I go swimming once a week."
       },
       {
-        "german": "Ich mache jeden Tag kleine Notizen in meinem Tagebuch. Sie helfen mir, den Tag zu reflektieren.",
-        "english": "I write small notes in my journal every day. They help me reflect on the day."
+        "thema": "Sport",
+        "keyword": "wandern",
+        "german": "Wo gehen Sie gern wandern?",
+        "english": "Where do you like to go hiking?"
       },
       {
-        "german": "Ich besuche oft einen Markt, um frisches Obst zu kaufen. Die Auswahl ist immer groß.",
-        "english": "I often visit a market to buy fresh fruit. The selection is always large."
+        "thema": "Sport",
+        "keyword": "wandern",
+        "german": "Ich gehe gern in den Bergen wandern.",
+        "english": "I like to go hiking in the mountains."
       },
       {
-        "german": "Ich lerne Deutsch, weil ich die Sprache liebe. Es ist eine schöne und interessante Sprache.",
-        "english": "I study German because I love the language. It is a beautiful and interesting language."
+        "thema": "Sport",
+        "keyword": "wandern",
+        "german": "Ist Wandern anstrengend?",
+        "english": "Is hiking strenuous?"
       },
       {
-        "german": "Ich genieße es, in einem ruhigen Café zu sitzen. Dort kann ich nachdenken und entspannen.",
-        "english": "I enjoy sitting in a quiet café. There, I can think and relax."
+        "thema": "Sport",
+        "keyword": "wandern",
+        "german": "Manchmal ist Wandern anstrengend, aber es macht Spaß.",
+        "english": "Sometimes hiking is strenuous, but it's fun."
       },
       {
-        "german": "Ich mache jeden Abend einen Spaziergang, um den Tag abzuschließen. Es hilft mir, zur Ruhe zu kommen.",
-        "english": "I take a walk every evening to end the day. It helps me calm down."
+        "thema": "Sport",
+        "keyword": "Verein",
+        "german": "Welchen Sportverein gibt es in Ihrer Nähe?",
+        "english": "Which sports club is there near you?"
       },
       {
-        "german": "Ich besuche oft ein kleines Theater in der Stadt. Die Aufführungen sind kreativ und unterhaltsam.",
-        "english": "I often visit a small theater in the city. The performances are creative and entertaining."
+        "thema": "Sport",
+        "keyword": "Verein",
+        "german": "Es gibt einen Fußballverein in meiner Nähe.",
+        "english": "There is a soccer club near me."
       },
       {
-        "german": "Ich lerne Deutsch, um meine Sprachkenntnisse zu verbessern. Es ist ein interessanter Lernprozess.",
-        "english": "I study German to improve my language skills. It is an interesting learning process."
+        "thema": "Sport",
+        "keyword": "Verein",
+        "german": "Sind Sie aktiv im Verein?",
+        "english": "Are you active in the club?"
       },
       {
-        "german": "Ich genieße es, frische Blumen im Garten zu sehen. Sie bringen Farbe in meinen Alltag.",
-        "english": "I enjoy seeing fresh flowers in the garden. They bring color to my daily life."
+        "thema": "Sport",
+        "keyword": "Verein",
+        "german": "Nein, ich bin nur Mitglied.",
+        "english": "No, I am only a member."
       },
       {
-        "german": "Ich mache jeden Morgen Dehnübungen, um fit zu bleiben. Es hilft mir, Verletzungen zu vermeiden.",
-        "english": "I do stretching exercises every morning to stay fit. It helps me avoid injuries."
+        "thema": "Sport",
+        "keyword": "Wochenende",
+        "german": "Welchen Sport machen Sie am Wochenende?",
+        "english": "Which sports do you do on the weekend?"
       },
       {
-        "german": "Ich besuche oft einen Park, um ein Buch zu lesen. Die Umgebung ist ruhig und inspirierend.",
-        "english": "I often visit a park to read a book. The environment is calm and inspiring."
+        "thema": "Sport",
+        "keyword": "Wochenende",
+        "german": "Am Wochenende gehe ich joggen.",
+        "english": "I go jogging on the weekend."
       },
       {
-        "german": "Ich lerne Deutsch, um mit meiner Familie besser zu kommunizieren. Es stärkt unsere Beziehungen.",
-        "english": "I study German to communicate better with my family. It strengthens our relationships."
+        "thema": "Sport",
+        "keyword": "Wochenende",
+        "german": "Sehen Sie am Wochenende Sportsendungen im Fernsehen?",
+        "english": "Do you watch sports programs on TV on the weekend?"
       },
       {
-        "german": "Ich genieße es, an warmen Tagen draußen zu sein. Die Sonne und der Himmel sind wunderbar.",
-        "english": "I enjoy being outside on warm days. The sun and sky are wonderful."
+        "thema": "Sport",
+        "keyword": "Wochenende",
+        "german": "Ja, ich sehe manchmal Sportsendungen.",
+        "english": "Yes, I sometimes watch sports programs."
       },
       {
-        "german": "Ich mache jeden Abend eine kurze Entspannungsübung. Es hilft mir, Stress abzubauen.",
-        "english": "I do a short relaxation exercise every evening. It helps me relieve stress."
+        "thema": "Lernen",
+        "keyword": "Sprachen",
+        "german": "Welche Sprachen möchten Sie noch lernen?",
+        "english": "Which languages would you still like to learn?"
       },
       {
-        "german": "Ich besuche oft einen kleinen Park in meiner Stadt. Dort finde ich Ruhe und Erholung.",
-        "english": "I often visit a small park in my city. There I find peace and relaxation."
+        "thema": "Lernen",
+        "keyword": "Sprachen",
+        "german": "Ich möchte gern Spanisch lernen.",
+        "english": "I would like to learn Spanish."
       },
       {
-        "german": "Ich lerne Deutsch, um besser zu verstehen, was in Filmen gesagt wird. Es macht das Anschauen interessanter.",
-        "english": "I study German to better understand what is said in films. It makes watching them more interesting."
+        "thema": "Lernen",
+        "keyword": "Sprachen",
+        "german": "Wie lange lernen Sie schon Deutsch?",
+        "english": "How long have you been learning German?"
       },
       {
-        "german": "Ich genieße es, am Morgen die Zeitung zu lesen. Die Nachrichten informieren mich über den Tag.",
-        "english": "I enjoy reading the newspaper in the morning. The news informs me about the day."
+        "thema": "Lernen",
+        "keyword": "Sprachen",
+        "german": "Ich lerne seit einem Jahr Deutsch.",
+        "english": "I have been learning German for a year."
       },
       {
-        "german": "Ich mache jeden Tag kleine Achtsamkeitsübungen. Sie helfen mir, im Moment zu leben.",
-        "english": "I do small mindfulness exercises every day. They help me live in the moment."
+        "thema": "Lernen",
+        "keyword": "Bücher",
+        "german": "Welche Art von Büchern lesen Sie gern?",
+        "english": "What kind of books do you like to read?"
       },
       {
-        "german": "Ich besuche oft einen Kunstmarkt. Dort finde ich einzigartige und kreative Werke.",
-        "english": "I often visit an art market. There I find unique and creative works."
+        "thema": "Lernen",
+        "keyword": "Bücher",
+        "german": "Ich lese gern Krimis.",
+        "english": "I like to read crime novels."
       },
       {
-        "german": "Ich lerne Deutsch, um in einer internationalen Firma zu arbeiten. Es ist ein wichtiger Schritt für meine Karriere.",
-        "english": "I study German to work in an international company. It is an important step for my career."
+        "thema": "Lernen",
+        "keyword": "Bücher",
+        "german": "Lesen Sie lieber E-Books oder gedruckte Bücher?",
+        "english": "Do you prefer to read e-books or printed books?"
       },
       {
-        "german": "Ich genieße es, am Abend einen Spaziergang zu machen. Die kühle Luft beruhigt mich.",
-        "english": "I enjoy taking a walk in the evening. The cool air calms me."
+        "thema": "Lernen",
+        "keyword": "Bücher",
+        "german": "Ich lese lieber gedruckte Bücher.",
+        "english": "I prefer to read printed books."
       },
       {
-        "german": "Ich mache jeden Morgen ein paar einfache Übungen. Sie bereiten mich auf den Tag vor.",
-        "english": "I do a few simple exercises every morning. They prepare me for the day."
+        "thema": "Lernen",
+        "keyword": "Schule",
+        "german": "Welche Fächer haben Sie in der Schule gelernt?",
+        "english": "Which subjects did you learn at school?"
       },
       {
-        "german": "Ich besuche oft meinen Lieblingspark. Dort fühle ich mich wohl und entspannt.",
-        "english": "I often visit my favorite park. I feel comfortable and relaxed there."
+        "thema": "Lernen",
+        "keyword": "Schule",
+        "german": "Ich habe Mathematik und Englisch gelernt.",
+        "english": "I learned mathematics and English."
       },
       {
-        "german": "Ich lerne Deutsch, weil ich neue Leute kennenlernen möchte. Es ist eine spannende Erfahrung.",
-        "english": "I study German because I want to meet new people. It is an exciting experience."
+        "thema": "Lernen",
+        "keyword": "Schule",
+        "german": "Hat Ihnen die Schule gefallen?",
+        "english": "Did you like school?"
       },
       {
-        "german": "Ich genieße es, am Wochenende lange zu schlafen. Es ist erholsam und angenehm.",
-        "english": "I enjoy sleeping in on weekends. It is relaxing and pleasant."
+        "thema": "Lernen",
+        "keyword": "Schule",
+        "german": "Ja, die Schule hat mir gut gefallen.",
+        "english": "Yes, I liked school."
       },
       {
-        "german": "Ich mache jeden Abend einen Spaziergang, um den Tag ausklingen zu lassen. Es ist mein Weg, Ruhe zu finden.",
-        "english": "I take a walk every evening to wind down the day. It is my way of finding peace."
+        "thema": "Lernen",
+        "keyword": "Internet",
+        "german": "Was lernen Sie noch mit dem Internet?",
+        "english": "What else do you learn with the internet?"
       },
       {
-          "german": "Heute ist Montag. Die Woche fängt gut an.",
-          "english": "Today is Monday. The week starts well."
+        "thema": "Lernen",
+        "keyword": "Internet",
+        "german": "Ich lerne auch Kochen mit dem Internet.",
+        "english": "I also learn cooking with the internet."
       },
       {
-          "german": "Am Samstag und Sonntag habe ich frei. Das ist mein Wochenende.",
-          "english": "On Saturday and Sunday I am off. That's my weekend."
+        "thema": "Lernen",
+        "keyword": "Internet",
+        "german": "Finden Sie das Internet hilfreich zum Lernen?",
+        "english": "Do you find the internet helpful for learning?"
       },
       {
-          "german": "Wir haben Weihnachten im Dezember gefeiert. Das Jahr ist fast zu Ende.",
-          "english": "We celebrated Christmas in December. The year is almost over."
+        "thema": "Lernen",
+        "keyword": "Internet",
+        "german": "Ja, das Internet ist sehr hilfreich zum Lernen.",
+        "english": "Yes, the internet is very helpful for learning."
       },
       {
-          "german": "Im Frühling wird es wärmer. Der Sommer kommt bald.",
-          "english": "In spring it gets warmer. Summer is coming soon."
+        "thema": "Lernen",
+        "keyword": "Lehren",
+        "german": "Haben Sie schon einmal etwas unterrichtet?",
+        "english": "Have you ever taught anything?"
       },
       {
-          "german": "Es ist jetzt Mittag. Wir essen um 12 Uhr.",
-          "english": "It is noon now. We eat at 12 o'clock."
+        "thema": "Lernen",
+        "keyword": "Lehren",
+        "german": "Nein, ich habe noch nie etwas unterrichtet.",
+        "english": "No, I have never taught anything."
       },
       {
-          "german": "Wie spät ist es? Es ist 9 Uhr.",
-          "english": "What time is it? It is 9 o'clock."
+        "thema": "Lernen",
+        "keyword": "Lehren",
+        "german": "Würden Sie gern Deutsch unterrichten?",
+        "english": "Would you like to teach German?"
       },
       {
-          "german": "Mein Vorname ist Anna und mein Nachname ist Müller. Können Sie das bitte buchstabieren?",
-          "english": "My first name is Anna and my last name is Müller. Can you please spell that?"
+        "thema": "Lernen",
+        "keyword": "Lehren",
+        "german": "Vielleicht in der Zukunft.",
+        "english": "Maybe in the future."
       },
       {
-          "german": "Ich bin Frau Schmidt und wohne in der Schillerstraße 5. Meine Hausnummer ist fünf.",
-          "english": "I am Mrs. Schmidt and I live in Schiller Street number 5. My house number is five."
+        "thema": "Lernen",
+        "keyword": "zu Hause",
+        "german": "Was lernen Sie gern zu Hause?",
+        "english": "What do you like to learn at home?"
       },
       {
-          "german": "Ich lebe in Berlin, das ist eine große Stadt in Deutschland. Meine Postleitzahl ist 10115.",
-          "english": "I live in Berlin, which is a big city in Germany. My postal code is 10115."
+        "thema": "Lernen",
+        "keyword": "zu Hause",
+        "german": "Ich lerne gern neue Vokabeln zu Hause.",
+        "english": "I like to learn new vocabulary at home."
       },
       {
-          "german": "Mein Telefon ist 0176-1234567. Sie können mich anrufen.",
-          "english": "My phone number is 0176-1234567. You can call me."
+        "thema": "Lernen",
+        "keyword": "zu Hause",
+        "german": "Ist es einfach, zu Hause zu lernen?",
+        "english": "Is it easy to learn at home?"
       },
       {
-          "german": "Mein Geburtstag ist am 15. Juli. Ich bin ledig.",
-          "english": "My birthday is on July 15th. I am single."
+        "thema": "Lernen",
+        "keyword": "zu Hause",
+        "german": "Manchmal ist es schwierig, sich zu konzentrieren.",
+        "english": "Sometimes it is difficult to concentrate."
       },
       {
-          "german": "Ich habe eine kleine Familie. Meine Mutter und mein Vater leben in einem Dorf.",
-          "english": "I have a small family. My mother and my father live in a village."
+        "thema": "Wochenende",
+        "keyword": "Ausflug",
+        "german": "Wohin machen Sie am Wochenende einen Ausflug?",
+        "english": "Where do you go for a trip on the weekend?"
       },
       {
-          "german": "Ich habe einen Bruder und eine Schwester. Meine Geschwister sind älter als ich.",
-          "english": "I have a brother and a sister. My siblings are older than me."
+        "thema": "Wochenende",
+        "keyword": "Ausflug",
+        "german": "Ich mache oft einen Ausflug in die Natur.",
+        "english": "I often take a trip into nature."
       },
       {
-          "german": "Meine Großmutter, oder Oma, ist sehr lieb. Mein Großvater, oder Opa, erzählt tolle Geschichten.",
-          "english": "My grandmother, or grandma, is very kind. My grandfather, or grandpa, tells great stories."
+        "thema": "Wochenende",
+        "keyword": "Ausflug",
+        "german": "Mit wem machen Sie am Wochenende einen Ausflug?",
+        "english": "With whom do you take a trip on the weekend?"
       },
       {
-          "german": "Mein Bruder ist Arzt und arbeitet im Krankenhaus. Seine Frau ist Ärztin.",
-          "english": "My brother is a doctor and works in the hospital. His wife is a doctor (female)."
+        "thema": "Wochenende",
+        "keyword": "Ausflug",
+        "german": "Ich mache meistens mit meiner Familie einen Ausflug.",
+        "english": "I mostly take a trip with my family."
       },
       {
-          "german": "Meine Schwester ist Lehrerin an einer Grundschule. Ihr Mann ist Lehrer.",
-          "english": "My sister is a teacher (female) at a primary school. Her husband is a teacher."
+        "thema": "Wochenende",
+        "keyword": "Sport",
+        "german": "Welchen Sport treiben Sie am Wochenende?",
+        "english": "Which sports do you do on the weekend?"
       },
       {
-          "german": "Ich arbeite als Verkäufer in einem Supermarkt. Meine Kollegin ist auch Verkäuferin.",
-          "english": "I work as a salesman in a supermarket. My colleague (female) is also a saleswoman."
+        "thema": "Wochenende",
+        "keyword": "Sport",
+        "german": "Ich gehe am Wochenende schwimmen.",
+        "english": "I go swimming on the weekend."
       },
       {
-          "german": "Mein Vater war früher Ingenieur. Jetzt ist er Rentner.",
-          "english": "My father used to be an engineer. Now he is retired."
+        "thema": "Wochenende",
+        "keyword": "Sport",
+        "german": "Wo treiben Sie am Wochenende Sport?",
+        "english": "Where do you do sports on the weekend?"
       },
       {
-          "german": "Meine Mutter ist Hausfrau und kümmert sich um den Haushalt. Manchmal arbeitet sie als Sekretärin.",
-          "english": "My mother is a housewife and takes care of the household. Sometimes she works as a secretary."
+        "thema": "Wochenende",
+        "keyword": "Sport",
+        "german": "Ich gehe ins Fitnessstudio.",
+        "english": "I go to the gym."
       },
       {
-          "german": "Ich trage heute eine blaue Hose und ein weißes Hemd. Meine Schuhe sind schwarz.",
-          "english": "Today I am wearing blue trousers and a white shirt. My shoes are black."
+        "thema": "Wochenende",
+        "keyword": "fernsehen",
+        "german": "Was sehen Sie am Wochenende gern im Fernsehen?",
+        "english": "What do you like to watch on TV on the weekend?"
       },
       {
-          "german": "Meine Lieblingsfarbe ist grün. Ich habe einen grünen Pullover und eine graue Jacke.",
-          "english": "My favourite colour is green. I have a green sweater and a grey jacket."
+        "thema": "Wochenende",
+        "keyword": "fernsehen",
+        "german": "Ich sehe gern Filme am Wochenende.",
+        "english": "I like to watch movies on the weekend."
       },
       {
-          "german": "Im Winter brauche ich einen warmen Mantel. Meine Jeans sind bequem.",
-          "english": "In winter I need a warm coat. My jeans are comfortable."
+        "thema": "Wochenende",
+        "keyword": "fernsehen",
+        "german": "Wie lange sehen Sie am Wochenende fern?",
+        "english": "How long do you watch TV on the weekend?"
       },
       {
-          "german": "Welche Größe haben Sie? Ich brauche Größe 38 für einen Rock.",
-          "english": "What size do you have? I need size 38 for a skirt."
+        "thema": "Wochenende",
+        "keyword": "fernsehen",
+        "german": "Ich sehe nicht sehr lange fern.",
+        "english": "I don't watch TV for very long."
       },
       {
-          "german": "In meiner Freizeit spiele ich gern Fußball und höre Musik. Mein Hobby ist Gitarre spielen.",
-          "english": "In my free time I like to play football and listen to music. My hobby is playing the guitar."
+        "thema": "Wochenende",
+        "keyword": "Kino",
+        "german": "Welchen Film haben Sie das letzte Mal im Kino gesehen?",
+        "english": "Which film did you see in the cinema last time?"
       },
       {
-          "german": "Am Wochenende gehe ich oft wandern oder schwimmen. Ich lese auch gern ein Buch.",
-          "english": "On the weekend I often go hiking or swimming. I also like to read a book."
+        "thema": "Wochenende",
+        "keyword": "Kino",
+        "german": "Ich habe den neuen James-Bond-Film gesehen.",
+        "english": "I saw the new James Bond movie."
       },
       {
-          "german": "Ich sehe gern fern und spiele manchmal Computer. Am liebsten treibe ich Sport.",
-          "english": "I like to watch television and sometimes play computer games. I like doing sports the most."
+        "thema": "Wochenende",
+        "keyword": "Kino",
+        "german": "Gehen Sie lieber allein oder mit Freunden ins Kino?",
+        "english": "Do you prefer to go to the cinema alone or with friends?"
       },
       {
-          "german": "Wir gehen oft ins Kino oder in die Disco. Das gefällt mir sehr.",
-          "english": "We often go to the cinema or to the disco. I like that very much."
+        "thema": "Wochenende",
+        "keyword": "Kino",
+        "german": "Ich gehe lieber mit Freunden ins Kino.",
+        "english": "I prefer to go to the cinema with friends."
       },
       {
-          "german": "Ich bin im Sportverein und wir spielen Karten. Das Museum ist auch sehr interessant.",
-          "english": "I am in the sports club and we play cards. The museum is also very interesting."
+        "thema": "Wochenende",
+        "keyword": "kochen",
+        "german": "Was kochen Sie am Wochenende gern?",
+        "english": "What do you like to cook on the weekend?"
       },
       {
-          "german": "Das Schwimmbad ist heute geöffnet. Die Eintrittskarte kostet 5 Euro.",
-          "english": "The swimming pool is open today. The entrance ticket costs 5 Euros."
+        "thema": "Wochenende",
+        "keyword": "kochen",
+        "german": "Am Wochenende koche ich gern etwas Besonderes.",
+        "english": "On the weekend I like to cook something special."
       },
       {
-          "german": "Mein Kopf tut weh und ich habe Fieber. Ich glaube, ich bin krank.",
-          "english": "My head hurts and I have a fever. I think I am sick."
+        "thema": "Wochenende",
+        "keyword": "kochen",
+        "german": "Wer kocht bei Ihnen am Wochenende?",
+        "english": "Who cooks at your place on the weekend?"
       },
       {
-          "german": "Ich habe Schmerzen im Bauch. Ich muss zum Arzt gehen.",
-          "english": "I have pain in my stomach. I have to go to the doctor."
+        "thema": "Wochenende",
+        "keyword": "kochen",
+        "german": "Ich koche meistens am Wochenende.",
+        "english": "I mostly cook on the weekend."
       },
       {
-          "german": "Meine Hände sind kalt. Ich brauche ein Medikament aus der Apotheke.",
-          "english": "My hands are cold. I need a medicine from the pharmacy."
+        "thema": "Wochenende",
+        "keyword": "shlafen",
+        "german": "Wie lange schlafen Sie normalerweise am Wochenende?",
+        "english": "How long do you usually sleep on the weekend?"
       },
       {
-          "german": "Ich putze meine Zähne jeden Morgen und Abend. Mein Zahnarzt ist sehr nett.",
-          "english": "I brush my teeth every morning and evening. My dentist is very nice."
+        "thema": "Wochenende",
+        "keyword": "shlafen",
+        "german": "Ich schlafe am Wochenende ungefähr acht Stunden.",
+        "english": "I sleep about eight hours on the weekend."
       },
       {
-          "german": "Ich schlafe acht Stunden pro Nacht. Das ist gut für meine Gesundheit.",
-          "english": "I sleep eight hours per night. That's good for my health."
+        "thema": "Wochenende",
+        "keyword": "shlafen",
+        "german": "Gehen Sie am Wochenende spät ins Bett?",
+        "english": "Do you go to bed late on the weekend?"
       },
       {
-          "german": "Ich habe Hunger und Durst. Ich möchte etwas essen und trinken.",
-          "english": "I am hungry and thirsty. I would like to eat and drink something."
+        "thema": "Wochenende",
+        "keyword": "shlafen",
+        "german": "Ja, ich gehe am Wochenende oft spät ins Bett.",
+        "english": "Yes, I often go to bed late on the weekend."
       },
       {
-          "german": "Zum Frühstück esse ich Brot mit Butter und Käse. Ich trinke Kaffee.",
-          "english": "For breakfast I eat bread with butter and cheese. I drink coffee."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeit",
+        "german": "Was machen Sie beruflich?",
+        "english": "What do you do for a living?"
       },
       {
-          "german": "Zum Mittagessen gibt es heute Fisch mit Kartoffeln und Gemüse. Zum Abendessen essen wir Salat.",
-          "english": "For lunch we have fish with potatoes and vegetables today. For dinner we eat salad."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeit",
+        "german": "Ich bin Lehrer von Beruf.",
+        "english": "I am a teacher by profession."
       },
       {
-          "german": "Ich mag Obst wie Äpfel und Bananen. Manchmal esse ich auch Kuchen.",
-          "english": "I like fruit like apples and bananas. Sometimes I also eat cake."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeit",
+        "german": "Arbeiten Sie gern?",
+        "english": "Do you like to work?"
       },
       {
-          "german": "Im Supermarkt kaufe ich Lebensmittel wie Milch und Eier. Das Kilo Tomaten ist günstig.",
-          "english": "In the supermarket I buy groceries like milk and eggs. A kilo of tomatoes is cheap."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeit",
+        "german": "Ja, ich arbeite sehr gern.",
+        "english": "Yes, I like to work very much."
       },
       {
-          "german": "Die Öffnungszeiten vom Geschäft sind von 8 bis 18 Uhr. Der Preis für das Brot ist 2 Euro.",
-          "english": "The opening hours of the shop are from 8 am to 6 pm. The price for the bread is 2 Euros."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Kollegen",
+        "german": "Unternehmen Sie etwas mit Ihren Kollegen nach der Arbeit?",
+        "english": "Do you do anything with your colleagues after work?"
       },
       {
-          "german": "Wir gehen ins Restaurant und bestellen eine Suppe und ein Hähnchen. Die Speisekarte ist lang.",
-          "english": "We go to the restaurant and order a soup and a chicken. The menu is long."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Kollegen",
+        "german": "Manchmal gehen wir zusammen essen.",
+        "english": "Sometimes we go out to eat together."
       },
       {
-          "german": "Ich möchte bitte die Rechnung bezahlen. Wir zahlen bar.",
-          "english": "I would like to pay the bill, please. We are paying cash."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Kollegen",
+        "german": "Haben Sie einen Lieblingskollegen?",
+        "english": "Do you have a favorite colleague?"
       },
       {
-          "german": "Wo ist der Bahnhof? Gehen Sie geradeaus und dann links an der Ecke.",
-          "english": "Where is the train station? Go straight ahead and then left at the corner."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Kollegen",
+        "german": "Ja, ich habe einen sehr netten Lieblingskollegen.",
+        "english": "Yes, I have a very nice favorite colleague."
       },
       {
-          "german": "Ich fahre mit dem Auto zur Arbeit. Manchmal nehme ich aber auch den Bus.",
-          "english": "I drive to work by car. But sometimes I also take the bus."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeitsplatz",
+        "german": "Ist Ihr Arbeitsplatz modern?",
+        "english": "Is your workplace modern?"
       },
       {
-          "german": "Ich habe kein Fahrrad. Ich fahre lieber mit der Straßenbahn oder der U-Bahn.",
-          "english": "I don't have a bicycle. I prefer to travel by tram or subway."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeitsplatz",
+        "german": "Ja, mein Arbeitsplatz ist sehr modern.",
+        "english": "Yes, my workplace is very modern."
       },
       {
-          "german": "Das Taxi hält hier. Wir müssen einsteigen.",
-          "english": "The taxi is stopping here. We have to get in."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeitsplatz",
+        "german": "Fühlen Sie sich wohl an Ihrem Arbeitsplatz?",
+        "english": "Do you feel comfortable at your workplace?"
       },
       {
-          "german": "Wir fliegen im Sommer nach Italien. Der Flug dauert zwei Stunden. Der Abflug ist um 10 Uhr.",
-          "english": "We are flying to Italy in the summer. The flight takes two hours. The departure is at 10 o'clock."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Arbeitsplatz",
+        "german": "Ja, ich fühle mich sehr wohl an meinem Arbeitsplatz.",
+        "english": "Yes, I feel very comfortable at my workplace."
       },
       {
-          "german": "Unser Zug kommt um 15 Uhr am Bahnhof an. Wir müssen umsteigen.",
-          "english": "Our train arrives at the station at 3 pm. We have to change trains."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Chef",
+        "german": "Ist Ihr Chef streng?",
+        "english": "Is your boss strict?"
       },
       {
-          "german": "Ich möchte eine Fahrkarte nach München reservieren. Erste Klasse bitte.",
-          "english": "I would like to reserve a ticket to Munich. First class, please."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Chef",
+        "german": "Nein, mein Chef ist sehr nett.",
+        "english": "No, my boss is very nice."
       },
       {
-          "german": "Wir machen Urlaub in den Bergen. Ich packe meinen Koffer und meine Reisetasche.",
-          "english": "We are going on vacation in the mountains. I am packing my suitcase and my travel bag."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Chef",
+        "german": "Haben Sie oft Besprechungen mit Ihrem Chef?",
+        "english": "Do you often have meetings with your boss?"
       },
       {
-          "german": "Wir besuchen viele Sehenswürdigkeiten. Der Reiseführer gibt uns Informationen.",
-          "english": "We visit many sights. The travel guide gives us information."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Chef",
+        "german": "Ja, wir haben regelmäßig Besprechungen.",
+        "english": "Yes, we have regular meetings."
       },
       {
-          "german": "Wir wohnen in einem Hotel. An der Rezeption müssen wir ein Formular ausfüllen und bezahlen.",
-          "english": "We are staying in a hotel. At the reception we have to fill out a form and pay."
+        "thema": "Arbeit und Beruf",
+        "keyword": "arbeitlos",
+        "german": "Suchen Sie eine neue Arbeit?",
+        "english": "Are you looking for a new job?"
       },
       {
-          "german": "Wir haben ein Doppelzimmer mit Halbpension. Der Schlüssel ist Nummer 205.",
-          "english": "We have a double room with half board. The key is number 205."
+        "thema": "Arbeit und Beruf",
+        "keyword": "arbeitlos",
+        "german": "Ja, ich suche aktiv nach einer neuen Arbeit.",
+        "english": "Yes, I am actively looking for a new job."
       },
       {
-          "german": "Ich wohne in einer kleinen Wohnung im ersten Stock. Meine Wohnung hat drei Zimmer.",
-          "english": "I live in a small apartment on the first floor. My apartment has three rooms."
+        "thema": "Arbeit und Beruf",
+        "keyword": "arbeitlos",
+        "german": "Wie lange sind Sie schon arbeitslos?",
+        "english": "How long have you been unemployed?"
       },
       {
-          "german": "Wir haben ein Haus mit einem großen Garten. Das Wohnzimmer ist sehr gemütlich.",
-          "english": "We have a house with a big garden. The living room is very cozy."
+        "thema": "Arbeit und Beruf",
+        "keyword": "arbeitlos",
+        "german": "Ich bin seit drei Monaten arbeitslos.",
+        "english": "I have been unemployed for three months."
       },
       {
-          "german": "Das Schlafzimmer ist neben dem Badezimmer. Die Toilette ist separat.",
-          "english": "The bedroom is next to the bathroom. The toilet is separate."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Urlaub",
+        "german": "Wohin fahren Sie im Urlaub?",
+        "english": "Where do you go on vacation?"
       },
       {
-          "german": "Die Miete für meine Wohnung ist 500 Euro pro Monat. Mein Vermieter ist sehr nett.",
-          "english": "The rent for my apartment is 500 Euros per month. My landlord is very nice."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Urlaub",
+        "german": "Ich fahre gern ans Meer in Urlaub.",
+        "english": "I like to go to the sea on vacation."
       },
       {
-          "german": "Wir möchten umziehen und suchen eine neue Wohnung. Die alte Wohnung ist zu klein.",
-          "english": "We would like to move and are looking for a new apartment. The old apartment is too small."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Urlaub",
+        "german": "Wie lange haben Sie Urlaub?",
+        "english": "How long do you have vacation?"
       },
       {
-          "german": "Die Tür ist offen, aber das Fenster ist zu. Die Wand ist gelb gestrichen.",
-          "english": "The door is open, but the window is closed. The wall is painted yellow."
+        "thema": "Arbeit und Beruf",
+        "keyword": "Urlaub",
+        "german": "Ich habe zwei Wochen Urlaub.",
+        "english": "I have two weeks of vacation."
       },
       {
-          "german": "Der Eingang ist auf der linken Seite. Der Ausgang ist hinten.",
-          "english": "The entrance is on the left side. The exit is at the back."
+        "thema": "Familie",
+        "keyword": "Eltern",
+        "german": "Wo wohnen Ihre Eltern?",
+        "english": "Where do your parents live?"
       },
       {
-          "german": "Wir haben einen kleinen Balkon. Im Garten stehen viele Blumen.",
-          "english": "We have a small balcony. There are many flowers in the garden."
+        "thema": "Familie",
+        "keyword": "Eltern",
+        "german": "Meine Eltern wohnen in München.",
+        "english": "My parents live in Munich."
       },
       {
-          "german": "Wir brauchen neue Möbel für das Wohnzimmer. Der Tisch und die Stühle sind alt.",
-          "english": "We need new furniture for the living room. The table and chairs are old."
+        "thema": "Familie",
+        "keyword": "Eltern",
+        "german": "Besuchen Sie Ihre Eltern oft?",
+        "english": "Do you visit your parents often?"
       },
       {
-          "german": "Im Badezimmer haben wir eine Dusche und einen Spiegel. Ich brauche ein neues Handtuch.",
-          "enlish": "In the bathroom we have a shower and a mirror. I need a new towel."
+        "thema": "Familie",
+        "keyword": "Eltern",
+        "german": "Ja, ich besuche meine Eltern einmal im Monat.",
+        "english": "Yes, I visit my parents once a month."
       },
       {
-          "german": "An der Wand hängt ein Bild und eine Uhr. Ich muss das Licht anmachen.",
-          "english": "There is a picture and a clock hanging on the wall. I have to turn on the light."
+        "thema": "Familie",
+        "keyword": "Geschwister",
+        "german": "Wie alt sind Ihre Geschwister?",
+        "english": "How old are your siblings?"
       },
       {
-          "german": "Der Aufzug ist kaputt, wir müssen die Treppe nehmen.",
-          "english": "The elevator is broken, we have to take the stairs."
+        "thema": "Familie",
+        "keyword": "Geschwister",
+        "german": "Mein Bruder ist 30 und meine Schwester ist 25.",
+        "english": "My brother is 30 and my sister is 25."
       },
       {
-          "german": "Ich muss einen Brief zur Post bringen. Ich brauche eine Briefmarke.",
-          "english": "I have to take a letter to the post office. I need a stamp."
+        "thema": "Familie",
+        "keyword": "Geschwister",
+        "german": "Haben Sie ein gutes Verhältnis zu Ihren Geschwistern?",
+        "english": "Do you have a good relationship with your siblings?"
       },
       {
-          "german": "Ich möchte eine Postkarte nach Hause schicken. Können Sie mir helfen?",
-          "english": "I would like to send a postcard home. Can you help me?"
+        "thema": "Familie",
+        "keyword": "Geschwister",
+        "german": "Ja, ich habe ein sehr gutes Verhältnis zu meinen Geschwistern.",
+        "english": "Yes, I have a very good relationship with my siblings."
       },
       {
-          "german": "Ich muss ein Paket abholen. Der Absender ist meine Mutter und ich bin der Empfänger.",
-          "english": "I have to pick up a package. The sender is my mother and I am the recipient."
+        "thema": "Familie",
+        "keyword": "Wohnort",
+        "german": "Gefällt Ihnen Ihr Wohnort?",
+        "english": "Do you like your place of residence?"
       },
       {
-          "german": "Ich habe eine Telefonnummer, aber kein Telefonbuch. Ich versuche anzurufen.",
-          "english": "I have a phone number, but no phone book. I will try to call."
+        "thema": "Familie",
+        "keyword": "Wohnort",
+        "german": "Ja, ich wohne sehr gern hier.",
+        "english": "Yes, I really like living here."
       },
       {
-          "german": "Niemand geht ans Telefon, es ist der Anrufbeantworter. Die Leitung ist besetzt.",
-          "english": "Nobody answers the phone, it's the answering machine. The line is busy."
+        "thema": "Familie",
+        "keyword": "Wohnort",
+        "german": "Ist Ihr Wohnort ruhig oder lebhaft?",
+        "english": "Is your place of residence quiet or lively?"
       },
       {
-          "german": "Ich gehe zur Bank, um Geld abzuheben. Ich zahle lieber bar als mit Kreditkarte.",
-          "english": "I am going to the bank to withdraw money. I prefer to pay cash rather than with a credit card."
+        "thema": "Familie",
+        "keyword": "Wohnort",
+        "german": "Mein Wohnort ist eher ruhig.",
+        "english": "My place of residence is rather quiet."
       },
       {
-          "german": "Ich habe ein Konto bei dieser Bank. Ich möchte Geld überweisen.",
-          "english": "I have an account at this bank. I would like to transfer money."
+        "thema": "Familie",
+        "keyword": "Einkaufen",
+        "german": "Wer kauft in Ihrer Familie ein?",
+        "english": "Who does the shopping in your family?"
       },
       {
-          "german": "Bitte kreuzen Sie hier an und unterschreiben Sie das Formular. Der Geldautomat ist draußen.",
-          "english": "Please tick here and sign the form. The ATM is outside."
+        "thema": "Familie",
+        "keyword": "Einkaufen",
+        "german": "Meistens gehe ich einkaufen.",
+        "english": "I mostly go shopping."
       },
       {
-          "german": "Ich brauche meinen Pass oder Ausweis. Ist dieser noch gültig?",
-          "english": "I need my passport or ID card. Is this still valid?"
+        "thema": "Familie",
+        "keyword": "Einkaufen",
+        "german": "Was kaufen Sie für Ihre Familie ein?",
+        "english": "What do you buy for your family?"
       },
       {
-          "german": "Ich gehe zur Schule und bin in der 10. Klasse. Mein Lieblingsfach ist Deutsch.",
-          "english": "I go to school and I am in the 10th grade. My favourite subject is German."
+        "thema": "Familie",
+        "keyword": "Einkaufen",
+        "german": "Ich kaufe Lebensmittel und andere Dinge für den Haushalt.",
+        "english": "I buy groceries and other household items."
       },
       {
-          "german": "Mein Lehrer ist sehr nett. Wir haben jeden Tag Unterricht und machen Pausen.",
-          "english": "My teacher is very nice. We have lessons every day and take breaks."
+        "thema": "Familie",
+        "keyword": "Hobby",
+        "german": "Was ist das Hobby Ihrer Familie?",
+        "english": "What is your family's hobby?"
       },
       {
-          "german": "Ich muss meine Hausaufgaben machen. Wir haben nächste Woche eine Prüfung.",
-          "english": "I have to do my homework. We have an exam next week."
+        "thema": "Familie",
+        "keyword": "Hobby",
+        "german": "Unser gemeinsames Hobby ist Wandern.",
+        "english": "Our common hobby is hiking."
       },
       {
-          "german": "Ich habe die Lösung für die Aufgabe gefunden. Ich habe keinen Fehler gemacht.",
-          "english": "I have found the solution for the task. I didn't make any mistakes."
+        "thema": "Familie",
+        "keyword": "Hobby",
+        "german": "Wie oft üben Sie Ihr Hobby mit Ihrer Familie aus?",
+        "english": "How often do you practice your hobby with your family?"
       },
       {
-          "german": "Ich arbeite in einem Büro. Mein Beruf ist Sekretärin.",
-          "english": "I work in an office. My profession is secretary."
+        "thema": "Familie",
+        "keyword": "Hobby",
+        "german": "Wir gehen jeden Sonntag wandern.",
+        "english": "We go hiking every Sunday."
       },
       {
-          "german": "Mein Arbeitsplatz ist in einer großen Firma. Mein Chef ist sehr streng.",
-          "english": "My workplace is in a large company. My boss is very strict."
+        "thema": "Familie",
+        "keyword": "Wochenende",
+        "german": "Was unternehmen Sie am Wochenende mit Ihrer Familie?",
+        "english": "What do you do with your family on the weekend?"
       },
       {
-          "german": "Meine Kollegin ist sehr hilfsbereit. Ich bin nicht arbeitslos, ich habe einen Job.",
-          "english": "My colleague (female) is very helpful. I am not unemployed, I have a job."
+        "thema": "Familie",
+        "keyword": "Wochenende",
+        "german": "Wir spielen oft Gesellschaftsspiele.",
+        "english": "We often play board games."
       },
       {
-          "german": "Mein Bruder ist Arbeiter in einer Fabrik. Meine Schwester macht ein Praktikum.",
-          "english": "My brother is a worker in a factory. My sister is doing an internship."
+        "thema": "Familie",
+        "keyword": "Wochenende",
+        "german": "Essen Sie am Wochenende zusammen mit Ihrer Familie?",
+        "english": "Do you eat together with your family on the weekend?"
       },
       {
-          "german": "Nach der Schule möchte ich eine Ausbildung machen.",
-          "english": "After school I would like to do an apprenticeship."
+        "thema": "Familie",
+        "keyword": "Wochenende",
+        "german": "Ja, wir essen immer zusammen am Sonntagmittag.",
+        "english": "Yes, we always eat together on Sunday afternoon."
       }
-    ]
+  ]
 }
